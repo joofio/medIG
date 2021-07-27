@@ -120,5 +120,5 @@ Parent: MedicationKnowledge
     basedOn 0..1 MS and //item reference is not for medicationKnowledge
     interaction 0..1 MS
 * relatedMedicationKnowledge[basedOn].type =  rel-med-cs#BD
-* relatedMedicationKnowledge[basedOn].type =  rel-med-cs#IT
+* relatedMedicationKnowledge[interaction].type =  rel-med-cs#IT
 
