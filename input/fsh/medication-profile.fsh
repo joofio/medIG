@@ -17,6 +17,20 @@ Description: "Values for classificating medicines"
     "Level III is above the pectoralis minor muscle."
 
 // Define a local code system
+CodeSystem: RelatedMedicationKnowledgeCS
+Id:         rel-med-cs
+Title: ""
+Description: ""
+// You can choose any url, or use the default, but in this case we want the URL to be in the HL7 namespace
+* ^url =  http://terminology.hl7.org/CodeSystem/relMedCS
+// Spacing layout over three lines per term is optional, for clarity
+// The definition (second text string) is optional
+* #BD  
+    "Level 2 Axillary Lymph Nodes"
+    "Level II is lying underneath the pectoralis minor muscle."
+
+
+// Define a local code system
 CodeSystem: DrugCharacteristicCS
 Id:         drug-char-cs
 Title: "Drug charachteristisc Code System"
@@ -93,5 +107,13 @@ Parent: MedicationKnowledge
 * regulatory MS
 * packaging MS
 * cost MS
-
+* relatedMedicationKnowledge MS
+* relatedMedicationKnowledge ^slicing.discriminator.type = #pattern
+* relatedMedicationKnowledge ^slicing.discriminator.path = "code"
+* relatedMedicationKnowledge ^slicing.rules = #open
+* relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
+* relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
+* relatedMedicationKnowledge contains
+    basedOn 0..1 MS 
+* relatedMedicationKnowledge[basedOn].type =  rel-med-cs#BD
 
