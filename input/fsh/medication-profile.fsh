@@ -28,6 +28,9 @@ Description: ""
 * #BD  
     "Level 2 Axillary Lymph Nodes"
     "Level II is lying underneath the pectoralis minor muscle."
+* #IT  
+    "Level 2 Axillary Lymph Nodes"
+    "Level II is lying underneath the pectoralis minor muscle."
 
 
 // Define a local code system
@@ -114,6 +117,8 @@ Parent: MedicationKnowledge
 * relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
 * relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
 * relatedMedicationKnowledge contains
-    basedOn 0..1 MS 
+    basedOn 0..1 MS and //item reference is not for medicationKnowledge
+    interaction 0..1 MS
 * relatedMedicationKnowledge[basedOn].type =  rel-med-cs#BD
+* relatedMedicationKnowledge[basedOn].type =  rel-med-cs#IT
 

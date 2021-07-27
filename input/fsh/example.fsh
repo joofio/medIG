@@ -34,6 +34,8 @@ Title:    "Example of drug with granularity 1"
 
 * drugCharacteristic[granularity].valueString = "product"
 
-* relatedMedicationKnowledge[basedOn].reference = Reference(example-1-of-drug-med) 
+* relatedMedicationKnowledge[basedOn].reference = Reference(example-1-of-drug-med)
+ 
+* relatedMedicationKnowledge[interaction].reference = Reference(example-3-of-drug-med) 
 
 * intendedRoute = http://snomed.info/sct#26643006  "Oral Route" 
