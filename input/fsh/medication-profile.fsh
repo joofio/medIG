@@ -58,6 +58,23 @@ Description: "Codes for drugCharchteristics"
     "ContraIndication"
     " "
 
+* #MA
+    "marketing Authorization"
+    " "
+* #MAH
+    "marketing Authorization Holder"
+    " "
+* #MAS
+    "marketing Authorization Status"
+    " "
+
+* #TRIAL
+    "Clinical Trial"
+    " "
+* #BATCH
+    "Batch Number"
+    " "
+
 Profile: MedicationMine
 Parent: MedicationKnowledge
 
@@ -77,7 +94,7 @@ Parent: MedicationKnowledge
 * medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
 * medicineClassification ^slicing.description = "Slice based on the component.code pattern"
 * medicineClassification contains
-    indication 0..* MS and 
+    indication 0..* MS   and
     associatedCondition 0..* MS and
     mechanismOfAction 0..* MS
 * medicineClassification[indication].type = type-med-class-cs#IND
@@ -95,12 +112,23 @@ Parent: MedicationKnowledge
     version 0..1 MS and
     granularity 1..1 MS and 
     contraindication 0..* MS and 
-    drugType 0..1 MS 
+    drugType 0..1 MS and 
+    marketingAuthorization 0..1 MS and 
+    marketingAuthorizationHolder 0..* MS and 
+    clinicalTrial 0..* MS and 
+    marketingAuthorizationStatus 0..1 MS and //make mandatory for level2+
+    batchNumber  0..1 MS
 * drugCharacteristic[domain].type = drug-char-cs#DOM
 * drugCharacteristic[version].type = drug-char-cs#VER
 * drugCharacteristic[drugType].type = drug-char-cs#DT
 * drugCharacteristic[granularity].type = drug-char-cs#GRA
 * drugCharacteristic[contraindication].type = drug-char-cs#CT
+* drugCharacteristic[marketingAuthorization].type = drug-char-cs#MA //link together MA and MAH - HOW?
+* drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
+* drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
+* drugCharacteristic[clinicalTrial].type = drug-char-cs#TRIAL //value should be reference
+* drugCharacteristic[batchNumber].type = drug-char-cs#BATCH //add expirationDate?
+
 
 * kineticCharacteristic MS
 * clinicalUseIssue MS
