@@ -1,0 +1,965 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 129, errors = 24, warn = 25, info = 7 -->
+<head>
+  <title>medicationIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for medicationIG</h1>
+ <p>Generated Tue Aug 03 18:14:19 UTC 2021, FHIR version 4.6.0 for medication.ig.example#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/example">http://hl7.org/fhir/us/example</a> (<a href="http://hl7.org/fhir/us/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
+ <tr><td>Publication Code:</td><td>example<span style="color: maroon; font-weight: bold"> </span>. PackageId = medication.ig.example, Canonical = http://hl7.org/fhir/us/example</td></tr>
+ <tr><td>Realm Check for IG:</td><td><span style="color: maroon; font-weight: bold">Error: realms in canonical and package id are different: ig vs us</span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> medication.ig.example</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.6.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/example</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = example. package-list.json: file not found in /github/workspace <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.org/fhir/us/example (Problem #1 with package-list.json at http://hl7.org/fhir/us/example: http://hl7.org/fhir/us/example/package-list.json)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 129, errors = 24, warn = 25, info = 7</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>129</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-drug-char-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-drug-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-drug-cs</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-rel-med-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-type-med-class-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-medication.ig.example"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-example-0-of-drug-med"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-example-1-of-drug-med"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-example-2-of-drug-med"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med</b></a></td><td><b>7</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-example-3-of-drug-med"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-packagedMedicinalProduct"><b>/github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct</b></a></td><td><b>4</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-substance"><b>/github/workspace/fsh-generated/resources/StructureDefinition-substance</b></a></td><td><b>4</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-granularity-vs"><b>/github/workspace/fsh-generated/resources/ValueSet-granularity-vs</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/packagedMedicinalProduct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/substance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/rel-med-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-char-cs.change.history.html#a726bcc9-cb01-401a-bedd-b9f7da67f742">CodeSystem-drug-char-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-char-cs.change.history.html#a726bcc9-cb01-401a-bedd-b9f7da67f742">CodeSystem-drug-char-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-char-cs.html#d8f32adf-6731-4236-b94e-246f090e5ec8">CodeSystem-drug-char-cs.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-char-cs.html#d8f32adf-6731-4236-b94e-246f090e5ec8">CodeSystem-drug-char-cs.html#/html/body/div/div/div/p/a at Line 208, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-char-cs.json.html#9c243cd1-3b5d-427c-b3a3-256db077f985">CodeSystem-drug-char-cs.json.html#/html/body/div/div/div/p/a at Line 247, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-char-cs.json.html#9c243cd1-3b5d-427c-b3a3-256db077f985">CodeSystem-drug-char-cs.json.html#/html/body/div/div/div/p/a at Line 247, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-char-cs.ttl.html#6dfe43dc-a116-462d-b6fe-59fc62b67977">CodeSystem-drug-char-cs.ttl.html#/html/body/div/div/div/p/a at Line 260, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-char-cs.ttl.html#6dfe43dc-a116-462d-b6fe-59fc62b67977">CodeSystem-drug-char-cs.ttl.html#/html/body/div/div/div/p/a at Line 260, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-char-cs.xml.html#19ea614c-f74c-461e-a0d1-428113fee0b5">CodeSystem-drug-char-cs.xml.html#/html/body/div/div/div/p/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-char-cs.xml.html#19ea614c-f74c-461e-a0d1-428113fee0b5">CodeSystem-drug-char-cs.xml.html#/html/body/div/div/div/p/a at Line 245, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-cs.change.history.html#97b75d36-742c-48d7-9cc9-dc15b01caffd">CodeSystem-drug-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-cs.change.history.html#97b75d36-742c-48d7-9cc9-dc15b01caffd">CodeSystem-drug-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-cs.html#a3d51827-061a-40ed-9939-93181d66f71d">CodeSystem-drug-cs.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-cs.html#a3d51827-061a-40ed-9939-93181d66f71d">CodeSystem-drug-cs.html#/html/body/div/div/div/p/a at Line 210, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-cs.json.html#f7033ae0-7e53-4102-82fb-958317bee3f9">CodeSystem-drug-cs.json.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-cs.json.html#f7033ae0-7e53-4102-82fb-958317bee3f9">CodeSystem-drug-cs.json.html#/html/body/div/div/div/p/a at Line 223, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-cs.ttl.html#07351b98-9432-44e7-90fa-e0396c274baa">CodeSystem-drug-cs.ttl.html#/html/body/div/div/div/p/a at Line 236, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-cs.ttl.html#07351b98-9432-44e7-90fa-e0396c274baa">CodeSystem-drug-cs.ttl.html#/html/body/div/div/div/p/a at Line 236, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-cs.xml.html#e5bacd3d-a71c-49f7-af7f-137e7f2ffbf0">CodeSystem-drug-cs.xml.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-drug-cs.xml.html#e5bacd3d-a71c-49f7-af7f-137e7f2ffbf0">CodeSystem-drug-cs.xml.html#/html/body/div/div/div/p/a at Line 221, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-rel-med-cs.change.history.html#5a66d7e6-757f-46d3-80d1-db0383afd120">CodeSystem-rel-med-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-rel-med-cs.change.history.html#5a66d7e6-757f-46d3-80d1-db0383afd120">CodeSystem-rel-med-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-rel-med-cs.html#8907360e-27cf-48b1-aa03-46e1251ba677">CodeSystem-rel-med-cs.html#/html/body/div/div/div/p/a at Line 205, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-rel-med-cs.html#8907360e-27cf-48b1-aa03-46e1251ba677">CodeSystem-rel-med-cs.html#/html/body/div/div/div/p/a at Line 205, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-rel-med-cs.json.html#279bf409-3f51-484b-add2-9ca72792d4ab">CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 213, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-rel-med-cs.json.html#279bf409-3f51-484b-add2-9ca72792d4ab">CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 213, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-rel-med-cs.ttl.html#96016e31-a60b-4b3b-990a-1a5fbb5164a4">CodeSystem-rel-med-cs.ttl.html#/html/body/div/div/div/p/a at Line 226, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-rel-med-cs.ttl.html#96016e31-a60b-4b3b-990a-1a5fbb5164a4">CodeSystem-rel-med-cs.ttl.html#/html/body/div/div/div/p/a at Line 226, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-rel-med-cs.xml.html#5615933e-b5bd-4779-bef8-63cd7b7d26f9">CodeSystem-rel-med-cs.xml.html#/html/body/div/div/div/p/a at Line 211, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-rel-med-cs.xml.html#5615933e-b5bd-4779-bef8-63cd7b7d26f9">CodeSystem-rel-med-cs.xml.html#/html/body/div/div/div/p/a at Line 211, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-type-med-class-cs.change.history.html#6e924cd5-ec81-49f4-a063-d4da64428a74">CodeSystem-type-med-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-type-med-class-cs.change.history.html#6e924cd5-ec81-49f4-a063-d4da64428a74">CodeSystem-type-med-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-type-med-class-cs.html#ea2ebc12-4fc0-4c68-9e3e-afafa48fd0f9">CodeSystem-type-med-class-cs.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-type-med-class-cs.html#ea2ebc12-4fc0-4c68-9e3e-afafa48fd0f9">CodeSystem-type-med-class-cs.html#/html/body/div/div/div/p/a at Line 208, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-type-med-class-cs.json.html#1949979a-1615-48a1-901b-c0a1f22fadb0">CodeSystem-type-med-class-cs.json.html#/html/body/div/div/div/p/a at Line 215, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-type-med-class-cs.json.html#1949979a-1615-48a1-901b-c0a1f22fadb0">CodeSystem-type-med-class-cs.json.html#/html/body/div/div/div/p/a at Line 215, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-type-med-class-cs.ttl.html#a84f2b10-d448-41aa-8347-c96622608359">CodeSystem-type-med-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-type-med-class-cs.ttl.html#a84f2b10-d448-41aa-8347-c96622608359">CodeSystem-type-med-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 228, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-type-med-class-cs.xml.html#53b440cd-ad20-4408-9d26-c7d819221382">CodeSystem-type-med-class-cs.xml.html#/html/body/div/div/div/p/a at Line 213, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-type-med-class-cs.xml.html#53b440cd-ad20-4408-9d26-c7d819221382">CodeSystem-type-med-class-cs.xml.html#/html/body/div/div/div/p/a at Line 213, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.change.history.html#dcb65557-bed5-4a6a-9535-dac871048ad8">MedicationKnowledge-example-0-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.change.history.html#dcb65557-bed5-4a6a-9535-dac871048ad8">MedicationKnowledge-example-0-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.html#923a653a-7178-4d2f-a9f0-0b28cc656ac6">MedicationKnowledge-example-0-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.html#923a653a-7178-4d2f-a9f0-0b28cc656ac6">MedicationKnowledge-example-0-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.json.html#90906593-c8b2-4d32-a8ae-5a1f84ad0338">MedicationKnowledge-example-0-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.json.html#90906593-c8b2-4d32-a8ae-5a1f84ad0338">MedicationKnowledge-example-0-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 233, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.ttl.html#26874984-2d85-4efb-b957-45c890e859e5">MedicationKnowledge-example-0-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.ttl.html#26874984-2d85-4efb-b957-45c890e859e5">MedicationKnowledge-example-0-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 249, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.xml.html#1bf74cfd-a44c-40ae-a1d9-a1622a4ab379">MedicationKnowledge-example-0-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 224, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.xml.html#1bf74cfd-a44c-40ae-a1d9-a1622a4ab379">MedicationKnowledge-example-0-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 224, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.change.history.html#ba49e248-9c5a-421b-af2a-d6bdfa1b5e6c">MedicationKnowledge-example-1-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.change.history.html#ba49e248-9c5a-421b-af2a-d6bdfa1b5e6c">MedicationKnowledge-example-1-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.html#78987778-5be5-40d7-a57d-b1df3c3fbf17">MedicationKnowledge-example-1-of-drug-med.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 157, column 1191</a></b></td><td><b>error</b></td><td><b>The link 'example-a-of-drug-med' for &quot;example-a-of-drug-med&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.html#68369d40-2a9c-4b17-8251-58cbf5686555">MedicationKnowledge-example-1-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.html#68369d40-2a9c-4b17-8251-58cbf5686555">MedicationKnowledge-example-1-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.json.html#4e7153b6-f0ed-4f56-8ca3-8dc3ddab1836">MedicationKnowledge-example-1-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 281, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.json.html#4e7153b6-f0ed-4f56-8ca3-8dc3ddab1836">MedicationKnowledge-example-1-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 281, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.ttl.html#4415c5da-dbf0-4bf2-8ae9-84de4f08039a">MedicationKnowledge-example-1-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 280, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.ttl.html#4415c5da-dbf0-4bf2-8ae9-84de4f08039a">MedicationKnowledge-example-1-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 280, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.xml.html#363139ef-b78e-48dc-aa1e-214a4f440a03">MedicationKnowledge-example-1-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 256, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.xml.html#363139ef-b78e-48dc-aa1e-214a4f440a03">MedicationKnowledge-example-1-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 256, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.change.history.html#e6426917-8877-44f4-bbdc-a49656025d0b">MedicationKnowledge-example-2-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.change.history.html#e6426917-8877-44f4-bbdc-a49656025d0b">MedicationKnowledge-example-2-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.html#4be001b7-4081-434d-8fb8-672074953158">MedicationKnowledge-example-2-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.html#4be001b7-4081-434d-8fb8-672074953158">MedicationKnowledge-example-2-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.json.html#ee1fcbb9-ceee-4ab6-bc1b-64dfc8d68019">MedicationKnowledge-example-2-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.json.html#ee1fcbb9-ceee-4ab6-bc1b-64dfc8d68019">MedicationKnowledge-example-2-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 235, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.ttl.html#2e4083fa-ac4d-4b4a-ac1b-72f08d2e3afb">MedicationKnowledge-example-2-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 246, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.ttl.html#2e4083fa-ac4d-4b4a-ac1b-72f08d2e3afb">MedicationKnowledge-example-2-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 246, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.xml.html#89aee937-c55a-4419-8ace-ac52eae3a108">MedicationKnowledge-example-2-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 226, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.xml.html#89aee937-c55a-4419-8ace-ac52eae3a108">MedicationKnowledge-example-2-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 226, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.change.history.html#cd5932d6-748f-408d-a0ea-fad635940048">MedicationKnowledge-example-3-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.change.history.html#cd5932d6-748f-408d-a0ea-fad635940048">MedicationKnowledge-example-3-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.html#1491b59d-2d77-44e5-ab05-2ccc29194e16">MedicationKnowledge-example-3-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.html#1491b59d-2d77-44e5-ab05-2ccc29194e16">MedicationKnowledge-example-3-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.json.html#7090f856-3b03-462a-9a06-3c2386c6e2db">MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.json.html#7090f856-3b03-462a-9a06-3c2386c6e2db">MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 219, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.ttl.html#062eb2a5-3a2b-4c20-9a5e-cda12328ee03">MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.ttl.html#062eb2a5-3a2b-4c20-9a5e-cda12328ee03">MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 233, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.xml.html#0a1ba067-065c-4b1e-b568-10a85adc5b73">MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 212, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.xml.html#0a1ba067-065c-4b1e-b568-10a85adc5b73">MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 212, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct-definitions.html#ce40ca1c-447b-4fa6-954a-4f93d492dea4">StructureDefinition-packagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 2212, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct-definitions.html#ce40ca1c-447b-4fa6-954a-4f93d492dea4">StructureDefinition-packagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 2212, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct-examples.html#8a82f9b1-a44a-4c6d-8be7-f0c5835e5b69">StructureDefinition-packagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 266, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct-examples.html#8a82f9b1-a44a-4c6d-8be7-f0c5835e5b69">StructureDefinition-packagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 266, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct-mappings.html#ebbe8334-16ac-45bc-9ebd-b9efc758457f">StructureDefinition-packagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 416, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct-mappings.html#ebbe8334-16ac-45bc-9ebd-b9efc758457f">StructureDefinition-packagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 416, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct.html#8ff3febf-e3cb-4c86-8d32-684ed0c62389">StructureDefinition-packagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2566, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct.html#8ff3febf-e3cb-4c86-8d32-684ed0c62389">StructureDefinition-packagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2566, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct.profile.history.html#86acbcba-4021-4a8f-b0c9-87796b67ba51">StructureDefinition-packagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct.profile.history.html#86acbcba-4021-4a8f-b0c9-87796b67ba51">StructureDefinition-packagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct.profile.json.html#a79068ed-0940-4723-8503-e98185ee35b2">StructureDefinition-packagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 9644, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct.profile.json.html#a79068ed-0940-4723-8503-e98185ee35b2">StructureDefinition-packagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 9644, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct.profile.ttl.html#4f038540-9628-4f19-9bec-1c1173abfe38">StructureDefinition-packagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 8472, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct.profile.ttl.html#4f038540-9628-4f19-9bec-1c1173abfe38">StructureDefinition-packagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 8472, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct.profile.xml.html#34ef7c2f-f81f-4d79-a99f-ec356ef3c68e">StructureDefinition-packagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 8703, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-packagedMedicinalProduct.profile.xml.html#34ef7c2f-f81f-4d79-a99f-ec356ef3c68e">StructureDefinition-packagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 8703, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance-definitions.html#ecf602b0-5e59-4842-b715-aa69b71d13b2">StructureDefinition-substance-definitions.html#/html/body/div/div/div/p/a at Line 2213, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance-definitions.html#ecf602b0-5e59-4842-b715-aa69b71d13b2">StructureDefinition-substance-definitions.html#/html/body/div/div/div/p/a at Line 2213, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance-examples.html#e67e086c-9421-4ade-8c5a-1cafed927698">StructureDefinition-substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance-examples.html#e67e086c-9421-4ade-8c5a-1cafed927698">StructureDefinition-substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance-mappings.html#870bc486-3bcc-4862-b8f4-f05584d382be">StructureDefinition-substance-mappings.html#/html/body/div/div/div/p/a at Line 416, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance-mappings.html#870bc486-3bcc-4862-b8f4-f05584d382be">StructureDefinition-substance-mappings.html#/html/body/div/div/div/p/a at Line 416, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance.html#21acbdb0-23d8-4967-82fe-a68f258449d6">StructureDefinition-substance.html#/html/body/div/div/div/p/a at Line 2576, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance.html#21acbdb0-23d8-4967-82fe-a68f258449d6">StructureDefinition-substance.html#/html/body/div/div/div/p/a at Line 2576, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance.profile.history.html#628fcf12-5fea-4562-93be-354682739038">StructureDefinition-substance.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance.profile.history.html#628fcf12-5fea-4562-93be-354682739038">StructureDefinition-substance.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance.profile.json.html#c6fca977-ec69-41f7-a170-124dd753688f">StructureDefinition-substance.profile.json.html#/html/body/div/div/div/p/a at Line 9656, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance.profile.json.html#c6fca977-ec69-41f7-a170-124dd753688f">StructureDefinition-substance.profile.json.html#/html/body/div/div/div/p/a at Line 9656, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance.profile.ttl.html#76363ca3-38d5-4fb1-8594-3f4314bb08a0">StructureDefinition-substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 8478, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance.profile.ttl.html#76363ca3-38d5-4fb1-8594-3f4314bb08a0">StructureDefinition-substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 8478, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance.profile.xml.html#e01efed2-7fff-4ebb-a4dc-dbb393ce53c3">StructureDefinition-substance.profile.xml.html#/html/body/div/div/div/p/a at Line 8714, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-substance.profile.xml.html#e01efed2-7fff-4ebb-a4dc-dbb393ce53c3">StructureDefinition-substance.profile.xml.html#/html/body/div/div/div/p/a at Line 8714, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.change.history.html#abce36a9-0daa-43b9-8ac4-58e43ff9ed0a">ValueSet-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.change.history.html#abce36a9-0daa-43b9-8ac4-58e43ff9ed0a">ValueSet-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.html#cdb1da4e-7e22-4a2e-a486-b8dc4ae7a4c1">ValueSet-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.html#cdb1da4e-7e22-4a2e-a486-b8dc4ae7a4c1">ValueSet-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.json.html#162aa11d-c3cc-48a0-a5d3-0bc23123b81f">ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.json.html#162aa11d-c3cc-48a0-a5d3-0bc23123b81f">ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 227, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.ttl.html#9a784e0d-9acc-45f7-8d64-a29a31637876">ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.ttl.html#9a784e0d-9acc-45f7-8d64-a29a31637876">ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 234, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.xml.html#01fb7bde-ff91-4023-817c-7b067789f126">ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.xml.html#01fb7bde-ff91-4023-817c-7b067789f126">ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 223, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#bf805992-7080-4d32-91a0-516ee2da6af6">artifacts.html#/html/body/div/div/div/p/a at Line 299, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#bf805992-7080-4d32-91a0-516ee2da6af6">artifacts.html#/html/body/div/div/div/p/a at Line 299, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#c8fcf507-3e77-4050-a906-d40cc2b18dff">index.html#/html/body/div/div/div/p/a at Line 155, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#c8fcf507-3e77-4050-a906-d40cc2b18dff">index.html#/html/body/div/div/div/p/a at Line 155, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#060ccd0a-033a-4350-82bf-9858da9b54f5">toc.html#/html/body/div/div/div/p/a at Line 137, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#060ccd0a-033a-4350-82bf-9858da9b54f5">toc.html#/html/body/div/div/div/p/a at Line 137, column 140</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/' for &quot;FHIR 4.6.0&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-drug-char-cs"> </a>
+<h2><a href="CodeSystem-drug-char-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs.json</a></h2>
+ <ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/codesystem.html">CodeSystem</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.status</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.content</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.concept[2].display</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-drug-cs"> </a>
+<h2><a href="CodeSystem-drug-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-drug-cs.json</a></h2>
+ <ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/codesystem.html">CodeSystem</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.status</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.content</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-rel-med-cs"> </a>
+<h2><a href="CodeSystem-rel-med-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs.json</a></h2>
+ <ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/codesystem.html">CodeSystem</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.status</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.content</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-type-med-class-cs"> </a>
+<h2><a href="CodeSystem-type-med-class-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs.json</a></h2>
+ <ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/codesystem.html">CodeSystem</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.status</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem.content</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-medication.ig.example"> </a>
+<h2><a href="ImplementationGuide-medication.ig.example.html">/github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide</b></td><td><b>warning</b></td><td title="cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.resource[5].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationKnowledge-example-0-of-drug-med"> </a>
+<h2><a href="MedicationKnowledge-example-0-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationKnowledge: Validated against <i>this.</i><a href="StructureDefinition-substance.html">substance</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[0] (l31/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[1] (l34/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[2] (l37/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/substance)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.code.coding[0] (l17/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationKnowledge-example-1-of-drug-med"> </a>
+<h2><a href="MedicationKnowledge-example-1-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationKnowledge: Validated against <i>this.</i><a href="StructureDefinition-packagedMedicinalProduct.html">packagedMedicinalProduct</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.relatedMedicationKnowledge[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.relatedMedicationKnowledge[1] (l25/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[0] (l74/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.code.coding[0] (l49/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.relatedMedicationKnowledge[1].reference[0] (l35/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'example-a-of-drug-med'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationKnowledge-example-2-of-drug-med"> </a>
+<h2><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationKnowledge: Validated against <i>this.</i><a href="StructureDefinition-packagedMedicinalProduct.html">packagedMedicinalProduct</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[0] (l20/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[1] (l23/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[2] (l26/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[3] (l29/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[4] (l32/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[1].value.ofType(string) (l25/c6)</b></td><td><b>error</b></td><td title="ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed"><b>ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[1].value.ofType(string) (l25/c6)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_Primitive_NotEmpty"><b>@value cannot be empty</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge.drugCharacteristic[4].value.ofType(CodeableConcept).coding[0] (l35/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://clinicaltrial-server.fhir.pt' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationKnowledge-example-3-of-drug-med"> </a>
+<h2><a href="MedicationKnowledge-example-3-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json</a></h2>
+ <ul style="font-size: 7px"><li>MedicationKnowledge: Validated against <i>this.</i><a href="StructureDefinition-packagedMedicinalProduct.html">packagedMedicinalProduct</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[0] (l20/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationKnowledge.drugCharacteristic[1] (l23/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationKnowledge (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-packagedMedicinalProduct"> </a>
+<h2><a href="StructureDefinition-packagedMedicinalProduct.html">/github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title="cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.status</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.fhirVersion</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.kind</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.derivation</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[4].binding.extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/build/StructureDefinition/definition is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[4].binding.extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/build/StructureDefinition/definition' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[48].type[0].targetProfile[0]</b></td><td><b>error</b></td><td title="SD_ED_TYPE_NO_TARGET_PROFILE"><b>Type CodeableReference does not allow for target Profiles </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[72].type[0].targetProfile[0]</b></td><td><b>error</b></td><td title="SD_ED_TYPE_NO_TARGET_PROFILE"><b>Type CodeableReference does not allow for target Profiles </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-substance"> </a>
+<h2><a href="StructureDefinition-substance.html">/github/workspace/fsh-generated/resources/StructureDefinition-substance.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title="cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.status</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.fhirVersion</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.kind</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.derivation</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[4].binding.extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/build/StructureDefinition/definition is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[4].binding.extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/build/StructureDefinition/definition' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[48].type[0].targetProfile[0]</b></td><td><b>error</b></td><td title="SD_ED_TYPE_NO_TARGET_PROFILE"><b>Type CodeableReference does not allow for target Profiles </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[72].type[0].targetProfile[0]</b></td><td><b>error</b></td><td title="SD_ED_TYPE_NO_TARGET_PROFILE"><b>Type CodeableReference does not allow for target Profiles </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-granularity-vs"> </a>
+<h2><a href="ValueSet-granularity-vs.html">/github/workspace/fsh-generated/resources/ValueSet-granularity-vs.json</a></h2>
+ <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://build.fhir.org/valueset.html">ValueSet</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.status</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Extension_EXT_Unknown_NotHere"> </a>
+<h2>Extension_EXT_Unknown_NotHere</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-packagedMedicinalProduct.html">/github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct.json</a></td><td><b>The extension http://hl7.org/fhir/build/StructureDefinition/definition is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-substance.html">/github/workspace/fsh-generated/resources/StructureDefinition-substance.json</a></td><td><b>The extension http://hl7.org/fhir/build/StructureDefinition/definition is unknown, and not allowed here</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-1-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></td><td><b>Unable to resolve resource 'example-a-of-drug-med'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_ED_TYPE_NO_TARGET_PROFILE"> </a>
+<h2>SD_ED_TYPE_NO_TARGET_PROFILE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-packagedMedicinalProduct.html">/github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct.json</a></td><td><b>Type CodeableReference does not allow for target Profiles </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-packagedMedicinalProduct.html">/github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct.json</a></td><td><b>Type CodeableReference does not allow for target Profiles </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-substance.html">/github/workspace/fsh-generated/resources/StructureDefinition-substance.json</a></td><td><b>Type CodeableReference does not allow for target Profiles </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-substance.html">/github/workspace/fsh-generated/resources/StructureDefinition-substance.json</a></td><td><b>Type CodeableReference does not allow for target Profiles </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SLICING_CANNOT_BE_EVALUATED"> </a>
+<h2>SLICING_CANNOT_BE_EVALUATED</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-0-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-0-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-0-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-1-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-1-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-1-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-3-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-3-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-example-0-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json</a></td><td><b>Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-example-1-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></td><td><b>Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>Code System URI 'http://clinicaltrial-server.fhir.pt' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_ValueSet_NotFound2"> </a>
+<h2>Terminology_TX_ValueSet_NotFound2</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-drug-char-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-drug-char-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-drug-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-drug-cs.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-drug-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-drug-cs.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-rel-med-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-rel-med-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-type-med-class-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-type-med-class-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-packagedMedicinalProduct.html">/github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-packagedMedicinalProduct.html">/github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-packagedMedicinalProduct.html">/github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-packagedMedicinalProduct.html">/github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-substance.html">/github/workspace/fsh-generated/resources/StructureDefinition-substance.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-substance.html">/github/workspace/fsh-generated/resources/StructureDefinition-substance.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-substance.html">/github/workspace/fsh-generated/resources/StructureDefinition-substance.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-substance.html">/github/workspace/fsh-generated/resources/StructureDefinition-substance.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-granularity-vs.html">/github/workspace/fsh-generated/resources/ValueSet-granularity-vs.json</a></td><td><b>ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_Primitive_NotEmpty"> </a>
+<h2>Type_Specific_Checks_DT_Primitive_NotEmpty</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>@value cannot be empty</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-drug-char-cs.html">/github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-medication.ig.example.html">/github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-packagedMedicinalProduct.html">/github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct.json</a></td><td><b>URL value 'http://hl7.org/fhir/build/StructureDefinition/definition' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-substance.html">/github/workspace/fsh-generated/resources/StructureDefinition-substance.json</a></td><td><b>URL value 'http://hl7.org/fhir/build/StructureDefinition/definition' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_NoCheckMin"> </a>
+<h2>Validation_VAL_Profile_NoCheckMin</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-example-0-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json</a></td><td><b>MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/substance)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-example-1-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></td><td><b>MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationKnowledge-example-3-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json</a></td><td><b>MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct)</b></td>
+   </tr>
+</table>
+</body>
+</html>

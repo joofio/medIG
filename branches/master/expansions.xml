@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="e9c64700-31b6-4dc5-acc8-5d88d40af1bb"/>
+  <meta>
+    <lastUpdated value="2021-08-03T18:13:53.558+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/granularity-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="granularity-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-drug-cs.html">Drug Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-drug-cs.html">
+                <code>http://terminology.hl7.org/CodeSystem/medicineCS</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-medicineCS-subs"> </a>
+                  <a href="CodeSystem-drug-cs.html#drug-cs-subs">subs</a>
+                </td>
+                <td>Substance</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-medicineCS-MEDPROD"> </a>
+                  <a href="CodeSystem-drug-cs.html#drug-cs-MEDPROD">MEDPROD</a>
+                </td>
+                <td>med product</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-medicineCS-MEDPACKPROD"> </a>
+                  <a href="CodeSystem-drug-cs.html#drug-cs-MEDPACKPROD">MEDPACKPROD</a>
+                </td>
+                <td>package product</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-medicineCS-PHARMPROD"> </a>
+                  <a href="CodeSystem-drug-cs.html#drug-cs-PHARMPROD">PHARMPROD</a>
+                </td>
+                <td/>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/example/ValueSet/granularity-vs"/>
+        <version value="0.1.0"/>
+        <name value="GranularityVS"/>
+        <title value="Granularity Value Set"/>
+        <status value="active"/>
+        <date value="2021-08-03T18:13:53+00:00"/>
+        <description value="Indicates the granularity of product"/>
+        <expansion>
+          <identifier value="urn:uuid:b778274c-f815-4e19-a8ea-53b35b123503"/>
+          <timestamp value="2021-08-03T18:14:08+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/medicineCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
+            <code value="subs"/>
+            <display value="Substance"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
+            <code value="MEDPROD"/>
+            <display value="med product"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
+            <code value="MEDPACKPROD"/>
+            <display value="package product"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
+            <code value="PHARMPROD"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

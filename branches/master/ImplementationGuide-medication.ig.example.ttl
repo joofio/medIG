@@ -1,0 +1,370 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/ImplementationGuide/medication.ig.example> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medication.ig.example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>medicationIG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/example/ImplementationGuide/medication.ig.example</pre></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/us/example/ImplementationGuide/medication.ig.example"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "medicationIG"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-03T18:13:53+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.packageId [ fhir:value "medication.ig.example"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.6.0";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/packagedMedicinalProduct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "packagedMedicinalProduct" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/substance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/substance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "substance" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/ValueSet/granularity-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/granularity-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Granularity Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the granularity of product" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/drug-char-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/drug-char-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Drug charachteristisc Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for drugCharacteristic" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/type-med-class-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/type-med-class-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Types of Medicine Classification Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for classificating medicines" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/drug-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/drug-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Drug Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for " ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/rel-med-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/rel-med-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RelatedMedicationKnowledgeCS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationKnowledge" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/MedicationKnowledge/example-0-of-drug-med>;
+         fhir:Reference.reference [ fhir:value "MedicationKnowledge/example-0-of-drug-med" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example of drug with granularity 0" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a drug with granularity 0" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/substance";
+         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/substance>
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationKnowledge" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/MedicationKnowledge/example-1-of-drug-med>;
+         fhir:Reference.reference [ fhir:value "MedicationKnowledge/example-1-of-drug-med" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example of drug with granularity 1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a drug with granularity 1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct";
+         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct>
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationKnowledge" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/MedicationKnowledge/example-2-of-drug-med>;
+         fhir:Reference.reference [ fhir:value "MedicationKnowledge/example-2-of-drug-med" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example of drug with granularity 2" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a drug with granularity 2" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct";
+         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct>
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationKnowledge" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/MedicationKnowledge/example-3-of-drug-med>;
+         fhir:Reference.reference [ fhir:value "MedicationKnowledge/example-3-of-drug-med" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example of drug with granularity 3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a drug with granularity 3" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct";
+         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct>
+       ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "copyrightyear" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "2021+" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "releaselabel" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "ci-build" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-history" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "http://hl7.org/fhir/us/example/history.html" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 15;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 16;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 17;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-liquid" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/liquid" ]
+     ], [
+       fhir:index 18;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-liquid" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/liquid" ]
+     ], [
+       fhir:index 19;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-qa" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "temp/qa" ]
+     ], [
+       fhir:index 20;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-temp" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "temp/pages" ]
+     ], [
+       fhir:index 21;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-output" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "output" ]
+     ], [
+       fhir:index 22;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ], [
+       fhir:index 23;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-suppressed-warnings" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/ignoreWarnings.txt" ]
+     ], [
+       fhir:index 24;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "template-html" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template-page.html" ]
+     ], [
+       fhir:index 25;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "template-md" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template-page-md.html" ]
+     ], [
+       fhir:index 26;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-contact" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 27;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-context" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 28;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-copyright" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 29;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-jurisdiction" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 30;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-license" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 31;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-publisher" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 32;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "apply-version" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ], [
+       fhir:index 33;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "active-tables" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "true" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct> a fhir:us .
+
+<http://hl7.org/fhir/us/example/StructureDefinition/substance> a fhir:us .
+
+<http://hl7.org/fhir/us/example/ValueSet/granularity-vs> a fhir:us .
+
+<http://hl7.org/fhir/us/example/CodeSystem/drug-char-cs> a fhir:us .
+
+<http://hl7.org/fhir/us/example/CodeSystem/type-med-class-cs> a fhir:us .
+
+<http://hl7.org/fhir/us/example/CodeSystem/drug-cs> a fhir:us .
+
+<http://hl7.org/fhir/us/example/CodeSystem/rel-med-cs> a fhir:us .
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/example-0-of-drug-med> a fhir:us .
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/example-1-of-drug-med> a fhir:us .
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/example-2-of-drug-med> a fhir:us .
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/example-3-of-drug-med> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/ImplementationGuide/medication.ig.example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/example/ImplementationGuide/medication.ig.example.ttl> .
+
+# -------------------------------------------------------------------------------------
+

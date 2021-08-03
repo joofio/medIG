@@ -1,0 +1,58 @@
+[
+  {
+    "id": "medication.ig.example",
+    "type": "ImplementationGuide",
+    "url": "http://hl7.org/fhir/us/example/ImplementationGuide/medication.ig.example",
+    "version": "0.1.0",
+    "name": "medicationIG"
+  },
+  {
+    "id": "packagedMedicinalProduct",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct",
+    "version": "0.1.0",
+    "name": "packagedMedicinalProduct"
+  },
+  {
+    "id": "substance",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/substance",
+    "version": "0.1.0",
+    "name": "substance"
+  },
+  {
+    "id": "granularity-vs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/example/ValueSet/granularity-vs",
+    "version": "0.1.0",
+    "name": "GranularityVS"
+  },
+  {
+    "id": "drug-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.hl7.org/CodeSystem/medicineCS",
+    "version": "0.1.0",
+    "name": "MedicineCodeSystem"
+  },
+  {
+    "id": "type-med-class-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.hl7.org/CodeSystem/medicineClassification",
+    "version": "0.1.0",
+    "name": "MedicineClassificationCS"
+  },
+  {
+    "id": "drug-char-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.hl7.org/CodeSystem/productType",
+    "version": "0.1.0",
+    "name": "DrugCharacteristicCS"
+  },
+  {
+    "id": "rel-med-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.hl7.org/CodeSystem/relMedCS",
+    "version": "0.1.0",
+    "name": "RelatedMedicationKnowledgeCS"
+  }
+]

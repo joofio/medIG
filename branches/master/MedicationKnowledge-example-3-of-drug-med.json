@@ -1,0 +1,31 @@
+{
+  "resourceType": "MedicationKnowledge",
+  "id": "example-3-of-drug-med",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95000</p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: MedicinalPackagedProduct</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: 345-CE-123</p></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://infarmed.pt",
+      "value": "95000"
+    }
+  ],
+  "status": "active",
+  "synonym": [
+    "Ben-U-Ron Oral Tablets 500 mg Box of 20 tab"
+  ],
+  "drugCharacteristic": [
+    {
+      "valueString": "MedicinalPackagedProduct"
+    },
+    {
+      "valueString": "345-CE-123"
+    }
+  ]
+}

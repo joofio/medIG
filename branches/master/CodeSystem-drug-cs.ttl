@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/CodeSystem/drug-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "drug-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/medicineCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">subs<a name=\"drug-cs-subs\"> </a></td><td>substance</td></tr><tr><td style=\"white-space:nowrap\">MEDPROD<a name=\"drug-cs-MEDPROD\"> </a></td><td>medicine Product</td></tr><tr><td style=\"white-space:nowrap\">MEDPACKPROD<a name=\"drug-cs-MEDPACKPROD\"> </a></td><td>pharmaceutical medicine product packaged</td></tr><tr><td style=\"white-space:nowrap\">PHARMPROD<a name=\"drug-cs-PHARMPROD\"> </a></td><td>pharmaceutical product</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://terminology.hl7.org/CodeSystem/medicineCS"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "MedicineCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Drug Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-08-03T18:13:53+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.description [ fhir:value "Codes for "];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "subs" ];
+     fhir:CodeSystem.concept.display [ fhir:value "substance" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "MEDPROD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "medicine Product" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "MEDPACKPROD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "pharmaceutical medicine product packaged" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "PHARMPROD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "pharmaceutical product" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/CodeSystem/drug-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/example/CodeSystem/drug-cs.ttl> .
+
+# -------------------------------------------------------------------------------------
+

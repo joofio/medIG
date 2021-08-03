@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/example-1-of-drug-med> a fhir:MedicationKnowledge;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-1-of-drug-med"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 950</p><p><b>code</b>: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>doseForm</b>: <span title=\"Codes: {http://snomed.info/sct 421026006}\">Oral Tablet</span></p><p><b>amount</b>: 500 mg</p><p><b>synonym</b>: Paracetamol Oral Tablets 500 mg</p><blockquote><p><b>relatedMedicationKnowledge</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/relMedCS BD}\">Based On</span></p><p><b>reference</b>: <a href=\"MedicationKnowledge-example-1-of-drug-med.html\">Generated Summary: id: 950; <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span>; status: active; <span title=\"Codes: {http://snomed.info/sct 421026006}\">Oral Tablet</span>; 500 mg; synonym: Paracetamol Oral Tablets 500 mg; <span title=\"Codes: {http://snomed.info/sct 26643006}\">Oral Route</span></a></p></blockquote><blockquote><p><b>relatedMedicationKnowledge</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/relMedCS IT}\">Interaction</span></p><p><b>reference</b>: <a href=\"example-a-of-drug-med\">example-a-of-drug-med</a></p></blockquote><p><b>intendedRoute</b>: <span title=\"Codes: {http://snomed.info/sct 26643006}\">Oral Route</span></p><h3>DrugCharacteristics</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>product</td></tr></table></div>"
+  ];
+  fhir:MedicationKnowledge.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://infarmed.pt" ];
+     fhir:Identifier.value [ fhir:value "950" ]
+  ];
+  fhir:MedicationKnowledge.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://go.drugbank.com/drugs/" ];
+       fhir:Coding.code [ fhir:value "DB00316" ];
+       fhir:Coding.display [ fhir:value "Acetaminophen" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.status [ fhir:value "active"];
+  fhir:MedicationKnowledge.doseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:421026006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "421026006" ];
+       fhir:Coding.display [ fhir:value "Oral Tablet" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.amount [
+     fhir:Quantity.value [ fhir:value "500"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mg" ]
+  ];
+  fhir:MedicationKnowledge.synonym [
+     fhir:value "Paracetamol Oral Tablets 500 mg";
+     fhir:index 0
+  ];
+  fhir:MedicationKnowledge.relatedMedicationKnowledge [
+     fhir:index 0;
+     fhir:MedicationKnowledge.relatedMedicationKnowledge.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/relMedCS" ];
+         fhir:Coding.code [ fhir:value "BD" ]
+       ]
+     ];
+     fhir:MedicationKnowledge.relatedMedicationKnowledge.reference [
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/example/MedicationKnowledge/example-1-of-drug-med>;
+       fhir:Reference.reference [ fhir:value "MedicationKnowledge/example-1-of-drug-med" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MedicationKnowledge.relatedMedicationKnowledge.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/relMedCS" ];
+         fhir:Coding.code [ fhir:value "IT" ]
+       ]
+     ];
+     fhir:MedicationKnowledge.relatedMedicationKnowledge.reference [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "example-a-of-drug-med" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.intendedRoute [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:26643006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "26643006" ];
+       fhir:Coding.display [ fhir:value "Oral Route" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.drugCharacteristic [
+     fhir:index 0;
+     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "product" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/example-1-of-drug-med.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/example/MedicationKnowledge/example-1-of-drug-med.ttl> .
+
+# -------------------------------------------------------------------------------------
+

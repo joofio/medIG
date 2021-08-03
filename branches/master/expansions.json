@@ -1,0 +1,58 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "e9c64700-31b6-4dc5-acc8-5d88d40af1bb",
+  "meta" : {
+    "lastUpdated" : "2021-08-03T18:13:53.558+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://hl7.org/fhir/us/example/ValueSet/granularity-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "granularity-vs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-drug-cs.html\">Drug Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-drug-cs.html\"><code>http://terminology.hl7.org/CodeSystem/medicineCS</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-subs\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-subs\">subs</a></td><td>Substance</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-MEDPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-MEDPROD\">MEDPROD</a></td><td>med product</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-MEDPACKPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-MEDPACKPROD\">MEDPACKPROD</a></td><td>package product</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-PHARMPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-PHARMPROD\">PHARMPROD</a></td><td/><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/example/ValueSet/granularity-vs",
+      "version" : "0.1.0",
+      "name" : "GranularityVS",
+      "title" : "Granularity Value Set",
+      "status" : "active",
+      "date" : "2021-08-03T18:13:53+00:00",
+      "description" : "Indicates the granularity of product",
+      "expansion" : {
+        "identifier" : "urn:uuid:b778274c-f815-4e19-a8ea-53b35b123503",
+        "timestamp" : "2021-08-03T18:14:08+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/medicineCS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicineCS",
+          "code" : "subs",
+          "display" : "Substance"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/medicineCS",
+          "code" : "MEDPROD",
+          "display" : "med product"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/medicineCS",
+          "code" : "MEDPACKPROD",
+          "display" : "package product"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/medicineCS",
+          "code" : "PHARMPROD"
+        }]
+      }
+    }
+  }]
+}

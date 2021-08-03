@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="rel-med-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://terminology.hl7.org/CodeSystem/relMedCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">BD<a name="rel-med-cs-BD"> </a></td><td>Based On</td></tr><tr><td style="white-space:nowrap">IT<a name="rel-med-cs-IT"> </a></td><td>Interaction</td></tr></table></div>
+  </text>
+  <url value="http://terminology.hl7.org/CodeSystem/relMedCS"/>
+  <version value="0.1.0"/>
+  <name value="RelatedMedicationKnowledgeCS"/>
+  <status value="active"/>
+  <date value="2021-08-03T18:13:53+00:00"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="BD"/>
+    <display value="Based On"/>
+  </concept>
+  <concept>
+    <code value="IT"/>
+    <display value="Interaction"/>
+  </concept>
+</CodeSystem>

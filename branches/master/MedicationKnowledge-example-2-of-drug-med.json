@@ -1,0 +1,47 @@
+{
+  "resourceType": "MedicationKnowledge",
+  "id": "example-2-of-drug-med",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 9500</p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg</p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: MedicinalProduct</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: </p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: Bene</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: Aproved</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: <span title=\"Codes: {http://clinicaltrial-server.fhir.pt 1}\">1</span></p></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://infarmed.pt",
+      "value": "9500"
+    }
+  ],
+  "status": "active",
+  "synonym": [
+    "Ben-U-Ron Oral Tablets 500 mg"
+  ],
+  "drugCharacteristic": [
+    {
+      "valueString": "MedicinalProduct"
+    },
+    {
+      "valueString": ""
+    },
+    {
+      "valueString": "Bene"
+    },
+    {
+      "valueString": "Aproved"
+    },
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://clinicaltrial-server.fhir.pt",
+            "code": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

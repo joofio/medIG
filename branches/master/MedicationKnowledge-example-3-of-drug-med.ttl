@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/example-3-of-drug-med> a fhir:MedicationKnowledge;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-3-of-drug-med"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95000</p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: MedicinalPackagedProduct</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: 345-CE-123</p></blockquote></div>"
+  ];
+  fhir:MedicationKnowledge.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://infarmed.pt" ];
+     fhir:Identifier.value [ fhir:value "95000" ]
+  ];
+  fhir:MedicationKnowledge.status [ fhir:value "active"];
+  fhir:MedicationKnowledge.synonym [
+     fhir:value "Ben-U-Ron Oral Tablets 500 mg Box of 20 tab";
+     fhir:index 0
+  ];
+  fhir:MedicationKnowledge.drugCharacteristic [
+     fhir:index 0;
+     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "MedicinalPackagedProduct" ]
+  ], [
+     fhir:index 1;
+     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "345-CE-123" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/example-3-of-drug-med.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/example/MedicationKnowledge/example-3-of-drug-med.ttl> .
+
+# -------------------------------------------------------------------------------------
+
