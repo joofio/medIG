@@ -83,12 +83,12 @@ Title:    "Example of drug with granularity 3"
 * synonym[+] = "Ben-U-Ron Oral Tablets 500 mg Box of 20 tab"
 
 * drugCharacteristic[granularity].valueString = "MedicinalPackagedProduct"
-* packaging[+].cost[+].type  =  http://infarmed.pt/#xxx "official"
-* packaging[=].cost[=].costMoney.value  =  3.08
-* packaging[=].cost[=].costMoney.currency  = http://iso.org/currency#EUR "Euro"  
+//* packaging[+].cost[+].type  =  http://infarmed.pt/#xxx "official"
+//* packaging[=].cost[=].costMoney.value  =  3.08
+//* packaging[=].cost[=].costMoney.currency  = http://iso.org/currency#EUR "Euro"  
 
-* packaging[=].type = http://standardterms.edqm.eu/PAC#30009000 "Box"
-* packaging[=].quantity.value  = 20
-* packaging[=].quantity.unit = "tablets" 
+//* packaging[=].type = http://standardterms.edqm.eu/PAC#30009000 "Box"
+//* packaging[=].quantity.value  = 20
+//* packaging[=].quantity.unit = "tablets" 
 * drugCharacteristic[batchNumber].valueString = "345-CE-123"
 
