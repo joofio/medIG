@@ -1,6 +1,6 @@
 
 Instance: example-0-of-drug-med
-InstanceOf: MedicationMine
+InstanceOf: substance
 Usage: #example
 Description: "Example of a drug with granularity 0"
 Title:    "Example of drug with granularity 0"
@@ -22,7 +22,7 @@ Title:    "Example of drug with granularity 0"
 
 
 Instance: example-1-of-drug-med
-InstanceOf: MedicationMine
+InstanceOf: substance
 Usage: #example
 Description: "Example of a drug with granularity 1"
 Title:    "Example of drug with granularity 1"
@@ -49,7 +49,7 @@ Title:    "Example of drug with granularity 1"
 * intendedRoute = http://snomed.info/sct#26643006  "Oral Route" 
 
 Instance: example-2-of-drug-med
-InstanceOf: MedicationMine
+InstanceOf: substance
 Usage: #example
 Description: "Example of a drug with granularity 2"
 Title:    "Example of drug with granularity 2"
@@ -70,7 +70,7 @@ Title:    "Example of drug with granularity 2"
 * drugCharacteristic[clinicalTrial].valueCodeableConcept = http://clinicaltrial-server.fhir.pt#1
 
 Instance: example-3-of-drug-med
-InstanceOf: MedicationMine
+InstanceOf: substance
 Usage: #example
 Description: "Example of a drug with granularity 3"
 Title:    "Example of drug with granularity 3"
@@ -83,12 +83,12 @@ Title:    "Example of drug with granularity 3"
 * synonym[+] = "Ben-U-Ron Oral Tablets 500 mg Box of 20 tab"
 
 * drugCharacteristic[granularity].valueString = "MedicinalPackagedProduct"
-* packaging.cost.type  =  http://infarmed.pt/#xxx "official"
-* packaging.cost.costMoney.value  =  3.08
-* packaging.cost.costMoney.currency  = http://iso.org/currency#EUR "Euro"  
+* packaging[+].cost[+].type  =  http://infarmed.pt/#xxx "official"
+* packaging[=].cost[=].costMoney.value  =  3.08
+* packaging[=].cost[=].costMoney.currency  = http://iso.org/currency#EUR "Euro"  
 
-* packaging.type = http://standardterms.edqm.eu/PAC#30009000 "Box"
-* packaging.quantity.value  = 20
-* packaging.quantity.unit = "tablets" 
+* packaging[=].type = http://standardterms.edqm.eu/PAC#30009000 "Box"
+* packaging[=].quantity.value  = 20
+* packaging[=].quantity.unit = "tablets" 
 * drugCharacteristic[batchNumber].valueString = "345-CE-123"
 
