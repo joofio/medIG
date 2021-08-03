@@ -22,7 +22,7 @@ Title:    "Example of drug with granularity 0"
 
 
 Instance: example-1-of-drug-med
-InstanceOf: substance
+InstanceOf: packagedMedicinalProduct
 Usage: #example
 Description: "Example of a drug with granularity 1"
 Title:    "Example of drug with granularity 1"
@@ -49,7 +49,7 @@ Title:    "Example of drug with granularity 1"
 * intendedRoute = http://snomed.info/sct#26643006  "Oral Route" 
 
 Instance: example-2-of-drug-med
-InstanceOf: substance
+InstanceOf: packagedMedicinalProduct
 Usage: #example
 Description: "Example of a drug with granularity 2"
 Title:    "Example of drug with granularity 2"
@@ -70,7 +70,7 @@ Title:    "Example of drug with granularity 2"
 * drugCharacteristic[clinicalTrial].valueCodeableConcept = http://clinicaltrial-server.fhir.pt#1
 
 Instance: example-3-of-drug-med
-InstanceOf: substance
+InstanceOf: packagedMedicinalProduct
 Usage: #example
 Description: "Example of a drug with granularity 3"
 Title:    "Example of drug with granularity 3"
