@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="example-1-of-drug-med"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 950</p><p><b>code</b>: <span title="Codes: {https://go.drugbank.com/drugs/ DB00316}">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>doseForm</b>: <span title="Codes: {http://snomed.info/sct 421026006}">Oral Tablet</span></p><p><b>amount</b>: 500 mg</p><p><b>synonym</b>: Paracetamol Oral Tablets 500 mg</p><blockquote><p><b>relatedMedicationKnowledge</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/relMedCS BD}">Based On</span></p><p><b>reference</b>: <a href="MedicationKnowledge-example-1-of-drug-med.html">Generated Summary: id: 950; <span title="Codes: {https://go.drugbank.com/drugs/ DB00316}">Acetaminophen</span>; status: active; <span title="Codes: {http://snomed.info/sct 421026006}">Oral Tablet</span>; 500 mg; synonym: Paracetamol Oral Tablets 500 mg; <span title="Codes: {http://snomed.info/sct 26643006}">Oral Route</span></a></p></blockquote><blockquote><p><b>relatedMedicationKnowledge</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/relMedCS IT}">Interaction</span></p><p><b>reference</b>: <a href="example-a-of-drug-med">example-a-of-drug-med</a></p></blockquote><p><b>intendedRoute</b>: <span title="Codes: {http://snomed.info/sct 26643006}">Oral Route</span></p><h3>DrugCharacteristics</h3><table class="grid"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>product</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://infarmed.pt"/>
+    <value value="950"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="https://go.drugbank.com/drugs/"/>
+      <code value="DB00316"/>
+      <display value="Acetaminophen"/>
+    </coding>
+  </code>
+  <status value="active"/>
+  <doseForm>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="421026006"/>
+      <display value="Oral Tablet"/>
+    </coding>
+  </doseForm>
+  <amount>
+    <value value="500"/>
+    <unit value="mg"/>
+  </amount>
+  <synonym value="Paracetamol Oral Tablets 500 mg"/>
+  <relatedMedicationKnowledge>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/relMedCS"/>
+        <code value="BD"/>
+      </coding>
+    </type>
+    <reference>
+      <reference value="MedicationKnowledge/example-1-of-drug-med"/>
+    </reference>
+  </relatedMedicationKnowledge>
+  <relatedMedicationKnowledge>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/relMedCS"/>
+        <code value="IT"/>
+      </coding>
+    </type>
+    <reference>
+      <reference value="example-a-of-drug-med"/>
+    </reference>
+  </relatedMedicationKnowledge>
+  <intendedRoute>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="26643006"/>
+      <display value="Oral Route"/>
+    </coding>
+  </intendedRoute>
+  <drugCharacteristic>
+    <valueString value="product"/>
+  </drugCharacteristic>
+</MedicationKnowledge>

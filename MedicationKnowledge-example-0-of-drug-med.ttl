@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/example-0-of-drug-med> a fhir:MedicationKnowledge;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-0-of-drug-med"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/substance";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/substance>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95</p><p><b>code</b>: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>synonym</b>: Acetaminophen, paracetamol, 4-(Acetylamino)phenol</p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: substance</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: human</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: small molecule</p></blockquote></div>"
+  ];
+  fhir:MedicationKnowledge.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://infarmed.pt" ];
+     fhir:Identifier.value [ fhir:value "95" ]
+  ];
+  fhir:MedicationKnowledge.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://go.drugbank.com/drugs/" ];
+       fhir:Coding.code [ fhir:value "DB00316" ];
+       fhir:Coding.display [ fhir:value "Acetaminophen" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.status [ fhir:value "active"];
+  fhir:MedicationKnowledge.synonym [
+     fhir:value "Acetaminophen";
+     fhir:index 0
+  ], [
+     fhir:value "paracetamol";
+     fhir:index 1
+  ], [
+     fhir:value "4-(Acetylamino)phenol";
+     fhir:index 2
+  ];
+  fhir:MedicationKnowledge.drugCharacteristic [
+     fhir:index 0;
+     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "substance" ]
+  ], [
+     fhir:index 1;
+     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "human" ]
+  ], [
+     fhir:index 2;
+     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "small molecule" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/example-0-of-drug-med.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/example/MedicationKnowledge/example-0-of-drug-med.ttl> .
+
+# -------------------------------------------------------------------------------------
+

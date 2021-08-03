@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="example-0-of-drug-med"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/example/StructureDefinition/substance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95</p><p><b>code</b>: <span title="Codes: {https://go.drugbank.com/drugs/ DB00316}">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>synonym</b>: Acetaminophen, paracetamol, 4-(Acetylamino)phenol</p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: substance</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: human</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: small molecule</p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://infarmed.pt"/>
+    <value value="95"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="https://go.drugbank.com/drugs/"/>
+      <code value="DB00316"/>
+      <display value="Acetaminophen"/>
+    </coding>
+  </code>
+  <status value="active"/>
+  <synonym value="Acetaminophen"/>
+  <synonym value="paracetamol"/>
+  <synonym value="4-(Acetylamino)phenol"/>
+  <drugCharacteristic>
+    <valueString value="substance"/>
+  </drugCharacteristic>
+  <drugCharacteristic>
+    <valueString value="human"/>
+  </drugCharacteristic>
+  <drugCharacteristic>
+    <valueString value="small molecule"/>
+  </drugCharacteristic>
+</MedicationKnowledge>

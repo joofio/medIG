@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="drug-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://terminology.hl7.org/CodeSystem/medicineCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">subs<a name="drug-cs-subs"> </a></td><td>substance</td></tr><tr><td style="white-space:nowrap">MEDPROD<a name="drug-cs-MEDPROD"> </a></td><td>medicine Product</td></tr><tr><td style="white-space:nowrap">MEDPACKPROD<a name="drug-cs-MEDPACKPROD"> </a></td><td>pharmaceutical medicine product packaged</td></tr><tr><td style="white-space:nowrap">PHARMPROD<a name="drug-cs-PHARMPROD"> </a></td><td>pharmaceutical product</td></tr></table></div>
+  </text>
+  <url value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
+  <version value="0.1.0"/>
+  <name value="MedicineCodeSystem"/>
+  <title value="Drug Code System"/>
+  <status value="active"/>
+  <date value="2021-08-03T18:13:53+00:00"/>
+  <description value="Codes for "/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="subs"/>
+    <display value="substance"/>
+  </concept>
+  <concept>
+    <code value="MEDPROD"/>
+    <display value="medicine Product"/>
+  </concept>
+  <concept>
+    <code value="MEDPACKPROD"/>
+    <display value="pharmaceutical medicine product packaged"/>
+  </concept>
+  <concept>
+    <code value="PHARMPROD"/>
+    <display value="pharmaceutical product"/>
+  </concept>
+</CodeSystem>
