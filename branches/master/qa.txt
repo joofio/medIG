@@ -3,7 +3,7 @@
 
 err = 24, warn = 25, info = 7
 IG Publisher Version: 1.1.77
-Generated Tue Aug 03 18:14:19 UTC 2021. FHIR version 4.6.0 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Thu Aug 05 10:47:21 UTC 2021. FHIR version 4.6.0 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
 
  Build Errors : 129 / 3 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 3 / 1
@@ -104,22 +104,22 @@ ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.ttl.ht
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 233, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 212, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 212, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 2212, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 2212, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 2213, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 2213, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 266, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 266, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 416, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 416, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2566, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2566, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2572, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2572, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 9644, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 9644, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 8472, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 8472, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 8703, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 8703, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 9649, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 9649, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 8476, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 8476, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 8709, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 8709, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-substance-definitions.html#/html/body/div/div/div/p/a at Line 2213, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-substance-definitions.html#/html/body/div/div/div/p/a at Line 2213, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
