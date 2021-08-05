@@ -248,6 +248,7 @@ Parent: MedicationKnowledge
 * packaging MS
 * cost MS
 * relatedMedicationKnowledge MS
+* relatedMedicationKnowledge.reference MS
 * relatedMedicationKnowledge ^slicing.discriminator.type = #pattern
 * relatedMedicationKnowledge ^slicing.discriminator.path = "code"
 * relatedMedicationKnowledge ^slicing.rules = #open
@@ -259,3 +260,4 @@ Parent: MedicationKnowledge
 * relatedMedicationKnowledge[basedOn].type =  rel-med-cs#BD
 * relatedMedicationKnowledge[interaction].type =  rel-med-cs#IT
 
+//modificar basedOn para mais especifico entre niveis 
