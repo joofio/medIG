@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "example-3-of-drug-med"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct";
+       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct>
+       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95000</p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: MedicinalPackagedProduct</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: 345-CE-123</p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95000</p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled - should not be here</b></p></div>"
   ];
   fhir:MedicationKnowledge.identifier [
      fhir:index 0;
@@ -29,11 +29,38 @@
      fhir:value "Ben-U-Ron Oral Tablets 500 mg Box of 20 tab";
      fhir:index 0
   ];
+  fhir:MedicationKnowledge.cost [
+     fhir:index 0;
+     fhir:MedicationKnowledge.cost.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://infarmed.pt/" ];
+         fhir:Coding.code [ fhir:value "xxx" ];
+         fhir:Coding.display [ fhir:value "official" ]
+       ]
+     ];
+     fhir:MedicationKnowledge.cost.costMoney [
+       fhir:Money.value [ fhir:value "3.08"^^xsd:decimal ];
+       fhir:Money.currency [ fhir:value "EUR" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.packaging [
+     fhir:index 0;
+     fhir:MedicationKnowledge.packaging.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://standardterms.edqm.eu/PAC" ];
+         fhir:Coding.code [ fhir:value "30009000" ];
+         fhir:Coding.display [ fhir:value "Box" ]
+       ]
+     ];
+     fhir:MedicationKnowledge.packaging.quantity [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "tablets" ]
+     ]
+  ];
   fhir:MedicationKnowledge.drugCharacteristic [
      fhir:index 0;
-     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "MedicinalPackagedProduct" ]
-  ], [
-     fhir:index 1;
      fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "345-CE-123" ]
   ] .
 

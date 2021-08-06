@@ -6,12 +6,20 @@
   "profiles": {
     "MedicationKnowledge": [
       {
-        "url": "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct",
-        "title": "packagedMedicinalProduct"
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct",
+        "title": "MedicinalProduct"
       },
       {
-        "url": "http://hl7.org/fhir/us/example/StructureDefinition/substance",
-        "title": "substance"
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct",
+        "title": "PackagedMedicinalProduct"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct",
+        "title": "PharmaceuticalProduct"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/Substance",
+        "title": "Substance"
       }
     ]
   },

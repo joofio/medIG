@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.7"}
-    h3,h4,h5,h6{--heading-prefix:"2.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.9"}
+    h3,h4,h5,h6{--heading-prefix:"2.9"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -159,23 +159,31 @@
   "<a href="http://build.fhir.org/codesystem.html#CodeSystem.id">id</a>" : "rel-med-cs",
   "<a href="http://build.fhir.org/codesystem.html#CodeSystem.text">text</a>" : {
     "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This code system http://terminology.hl7.org/CodeSystem/relMedCS defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;BD&lt;a name=\"rel-med-cs-BD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Based On&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;IT&lt;a name=\"rel-med-cs-IT\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Interaction&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://build.fhir.org/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This code system http://terminology.hl7.org/CodeSystem/relMedCS defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SUBOF&lt;a name=\"rel-med-cs-SUBOF\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substance from&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MEDOF&lt;a name=\"rel-med-cs-MEDOF\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Is a Medicine Of&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;PACKOF&lt;a name=\"rel-med-cs-PACKOF\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Packaged Form of &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;PHARMOF&lt;a name=\"rel-med-cs-PHARMOF\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Is the Pharmaceutical product of &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://build.fhir.org/codesystem.html#CodeSystem.url">url</a>" : "http://terminology.hl7.org/CodeSystem/relMedCS",
   "<a href="http://build.fhir.org/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
   "<a href="http://build.fhir.org/codesystem.html#CodeSystem.name">name</a>" : "RelatedMedicationKnowledgeCS",
   "<a href="http://build.fhir.org/codesystem.html#CodeSystem.status">status</a>" : "active",
-  "<a href="http://build.fhir.org/codesystem.html#CodeSystem.date">date</a>" : "2021-08-05T10:46:57+00:00",
+  "<a href="http://build.fhir.org/codesystem.html#CodeSystem.date">date</a>" : "2021-08-06T09:08:54+00:00",
   "<a href="http://build.fhir.org/codesystem.html#CodeSystem.content">content</a>" : "complete",
-  "<a href="http://build.fhir.org/codesystem.html#CodeSystem.count">count</a>" : 2,
+  "<a href="http://build.fhir.org/codesystem.html#CodeSystem.count">count</a>" : 4,
   "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept">concept</a>" : [
     {
-      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.code">code</a>" : "BD",
-      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.display">display</a>" : "Based On"
+      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.code">code</a>" : "SUBOF",
+      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.display">display</a>" : "Substance from"
     },
     {
-      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.code">code</a>" : "IT",
-      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.display">display</a>" : "Interaction"
+      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.code">code</a>" : "MEDOF",
+      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.display">display</a>" : "Is a Medicine Of"
+    },
+    {
+      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.code">code</a>" : "PACKOF",
+      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.display">display</a>" : "Packaged Form of "
+    },
+    {
+      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.code">code</a>" : "PHARMOF",
+      "<a href="http://build.fhir.org/codesystem.html#CodeSystem.concept.display">display</a>" : "Is the Pharmaceutical product of "
     }
   ]
 }</code></pre>
@@ -207,8 +215,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="47f0a8a5-965a-4008-8699-7695699c463b">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package medication.ig.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.6.0</a>. Generated <span title="Thu, Aug 5, 2021 10:46+0000">2021-08-05</span>
+        <p><a name="4562a449-a7d3-4f1b-a2b8-b4697dfced24">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package medication.ig.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://build.fhir.org/">FHIR 4.6.0</a>. Generated <span title="Fri, Aug 6, 2021 09:08+0000">2021-08-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
