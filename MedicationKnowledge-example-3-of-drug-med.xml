@@ -3,10 +3,10 @@
 <MedicationKnowledge xmlns="http://hl7.org/fhir">
   <id value="example-3-of-drug-med"/>
   <meta>
-    <profile value="http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct"/>
+    <profile value="http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95000</p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: MedicinalPackagedProduct</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: 345-CE-123</p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95000</p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><p><b style="color: maroon">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled - should not be here</b></p></div>
   </text>
   <identifier>
     <system value="http://infarmed.pt"/>
@@ -14,9 +14,32 @@
   </identifier>
   <status value="active"/>
   <synonym value="Ben-U-Ron Oral Tablets 500 mg Box of 20 tab"/>
-  <drugCharacteristic>
-    <valueString value="MedicinalPackagedProduct"/>
-  </drugCharacteristic>
+  <cost>
+    <type>
+      <coding>
+        <system value="http://infarmed.pt/"/>
+        <code value="xxx"/>
+        <display value="official"/>
+      </coding>
+    </type>
+    <costMoney>
+      <value value="3.08"/>
+      <currency value="EUR"/>
+    </costMoney>
+  </cost>
+  <packaging>
+    <type>
+      <coding>
+        <system value="http://standardterms.edqm.eu/PAC"/>
+        <code value="30009000"/>
+        <display value="Box"/>
+      </coding>
+    </type>
+    <quantity>
+      <value value="20"/>
+      <unit value="tablets"/>
+    </quantity>
+  </packaging>
   <drugCharacteristic>
     <valueString value="345-CE-123"/>
   </drugCharacteristic>

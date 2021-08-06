@@ -7,18 +7,32 @@
     "name": "medicationIG"
   },
   {
-    "id": "packagedMedicinalProduct",
+    "id": "MedicinalProduct",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct",
     "version": "0.1.0",
-    "name": "packagedMedicinalProduct"
+    "name": "MedicinalProduct"
   },
   {
-    "id": "substance",
+    "id": "PackagedMedicinalProduct",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/example/StructureDefinition/substance",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct",
     "version": "0.1.0",
-    "name": "substance"
+    "name": "PackagedMedicinalProduct"
+  },
+  {
+    "id": "PharmaceuticalProduct",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct",
+    "version": "0.1.0",
+    "name": "PharmaceuticalProduct"
+  },
+  {
+    "id": "Substance",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/Substance",
+    "version": "0.1.0",
+    "name": "Substance"
   },
   {
     "id": "granularity-vs",

@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2021-08-05T10:46:57+00:00",
+  "date": "2021-08-06T09:08:54+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -25,9 +25,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/packagedMedicinalProduct"
+          "reference": "StructureDefinition/MedicinalProduct"
         },
-        "name": "packagedMedicinalProduct",
+        "name": "MedicinalProduct",
         "exampleBoolean": false
       },
       {
@@ -38,9 +38,35 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/substance"
+          "reference": "StructureDefinition/PackagedMedicinalProduct"
         },
-        "name": "substance",
+        "name": "PackagedMedicinalProduct",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/PharmaceuticalProduct"
+        },
+        "name": "PharmaceuticalProduct",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Substance"
+        },
+        "name": "Substance",
         "exampleBoolean": false
       },
       {
@@ -124,7 +150,7 @@
         },
         "name": "Example of drug with granularity 0",
         "description": "Example of a drug with granularity 0",
-        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/substance"
+        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/Substance"
       },
       {
         "extension": [
@@ -138,7 +164,7 @@
         },
         "name": "Example of drug with granularity 1",
         "description": "Example of a drug with granularity 1",
-        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct"
+        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct"
       },
       {
         "extension": [
@@ -152,7 +178,7 @@
         },
         "name": "Example of drug with granularity 2",
         "description": "Example of a drug with granularity 2",
-        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct"
+        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct"
       },
       {
         "extension": [
@@ -166,7 +192,7 @@
         },
         "name": "Example of drug with granularity 3",
         "description": "Example of a drug with granularity 3",
-        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct"
+        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct"
       }
     ],
     "page": {

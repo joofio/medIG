@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "example-0-of-drug-med"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/substance";
+       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/Substance";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/substance>
+       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/Substance>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95</p><p><b>code</b>: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>synonym</b>: Acetaminophen, paracetamol, 4-(Acetylamino)phenol</p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: substance</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: human</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: small molecule</p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95</p><p><b>code</b>: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>synonym</b>: Acetaminophen, paracetamol, 4-(Acetylamino)phenol</p><p><b>productType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS SUBST}\">substance</span></p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: human</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: small molecule</p></blockquote></div>"
   ];
   fhir:MedicationKnowledge.identifier [
      fhir:index 0;
@@ -43,14 +43,19 @@
      fhir:value "4-(Acetylamino)phenol";
      fhir:index 2
   ];
+  fhir:MedicationKnowledge.productType [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/medicineCS" ];
+       fhir:Coding.code [ fhir:value "SUBST" ]
+     ]
+  ];
   fhir:MedicationKnowledge.drugCharacteristic [
      fhir:index 0;
-     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "substance" ]
-  ], [
-     fhir:index 1;
      fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "human" ]
   ], [
-     fhir:index 2;
+     fhir:index 1;
      fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "small molecule" ]
   ] .
 

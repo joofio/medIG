@@ -1,38 +1,42 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 24, warn = 25, info = 7
+err = 29, warn = 36, info = 9
 IG Publisher Version: 1.1.77
-Generated Thu Aug 05 10:47:21 UTC 2021. FHIR version 4.6.0 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Fri Aug 06 09:09:25 UTC 2021. FHIR version 4.6.0 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
 
- Build Errors : 129 / 3 / 0
+ Build Errors : 162 / 5 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-drug-cs : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med : 3 / 0 / 3
- /github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med : 4 / 0 / 3
- /github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med : 7 / 0 / 3
- /github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med : 2 / 0 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct : 4 / 5 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-substance : 4 / 5 / 1
- /github/workspace/fsh-generated/resources/ValueSet-granularity-vs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med : 2 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med : 7 / 0 / 4
+ /github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med : 1 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct : 4 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct : 4 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct : 4 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Substance : 4 / 4 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-granularity-vs : 0 / 2 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/packagedMedicinalProduct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/substance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MedicinalProduct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PackagedMedicinalProduct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PharmaceuticalProduct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Substance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/rel-med-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/CodeSystem-drug-char-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-char-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-char-cs.html#/html/body/div/div/div/p/a at Line 208, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-char-cs.html#/html/body/div/div/div/p/a at Line 208, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-drug-char-cs.json.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-drug-char-cs.json.html#/html/body/div/div/div/p/a at Line 247, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-drug-char-cs.ttl.html#/html/body/div/div/div/p/a at Line 260, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-drug-char-cs.ttl.html#/html/body/div/div/div/p/a at Line 260, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-drug-char-cs.xml.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-drug-char-cs.xml.html#/html/body/div/div/div/p/a at Line 245, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-drug-char-cs.json.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-drug-char-cs.json.html#/html/body/div/div/div/p/a at Line 243, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-drug-char-cs.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-drug-char-cs.ttl.html#/html/body/div/div/div/p/a at Line 256, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-drug-char-cs.xml.html#/html/body/div/div/div/p/a at Line 241, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-drug-char-cs.xml.html#/html/body/div/div/div/p/a at Line 241, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-cs.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
@@ -47,97 +51,130 @@ ERROR: /github/workspace/output/CodeSystem-rel-med-cs.change.history.html#/html/
 ERROR: /github/workspace/output/CodeSystem-rel-med-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-rel-med-cs.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-rel-med-cs.html#/html/body/div/div/div/p/a at Line 205, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 213, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-rel-med-cs.ttl.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-rel-med-cs.ttl.html#/html/body/div/div/div/p/a at Line 226, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-rel-med-cs.xml.html#/html/body/div/div/div/p/a at Line 211, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-rel-med-cs.xml.html#/html/body/div/div/div/p/a at Line 211, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 221, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 221, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rel-med-cs.ttl.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rel-med-cs.ttl.html#/html/body/div/div/div/p/a at Line 234, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rel-med-cs.xml.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rel-med-cs.xml.html#/html/body/div/div/div/p/a at Line 219, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.html#/html/body/div/div/div/p/a at Line 208, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.html#/html/body/div/div/div/p/a at Line 208, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.json.html#/html/body/div/div/div/p/a at Line 215, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.json.html#/html/body/div/div/div/p/a at Line 215, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 228, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 228, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.xml.html#/html/body/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.xml.html#/html/body/div/div/div/p/a at Line 213, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.json.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.json.html#/html/body/div/div/div/p/a at Line 219, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 232, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.xml.html#/html/body/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.xml.html#/html/body/div/div/div/p/a at Line 217, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 233, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 249, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 224, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 240, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 253, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-0-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 227, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 157, column 1191: The link 'example-a-of-drug-med' for "example-a-of-drug-med" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 281, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 281, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 280, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 280, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 256, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 256, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 271, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 271, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 273, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 273, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 248, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-1-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 248, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 235, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 246, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 226, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 242, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 242, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 250, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 250, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-2-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 229, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 219, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 233, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 212, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 212, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 2213, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 2213, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 266, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 266, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 416, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 416, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2572, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2572, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 9649, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 9649, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 8476, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 8476, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 8709, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-packagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 8709, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance-definitions.html#/html/body/div/div/div/p/a at Line 2213, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance-definitions.html#/html/body/div/div/div/p/a at Line 2213, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance-mappings.html#/html/body/div/div/div/p/a at Line 416, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance-mappings.html#/html/body/div/div/div/p/a at Line 416, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance.html#/html/body/div/div/div/p/a at Line 2576, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance.html#/html/body/div/div/div/p/a at Line 2576, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance.profile.json.html#/html/body/div/div/div/p/a at Line 9656, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance.profile.json.html#/html/body/div/div/div/p/a at Line 9656, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 8478, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 8478, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance.profile.xml.html#/html/body/div/div/div/p/a at Line 8714, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-substance.profile.xml.html#/html/body/div/div/div/p/a at Line 8714, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 250, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 250, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 254, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 235, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1827, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1827, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 384, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 384, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.html#/html/body/div/div/div/p/a at Line 1991, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.html#/html/body/div/div/div/p/a at Line 1991, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7805, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7805, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6875, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6875, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 7041, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 7041, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1936, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1936, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 396, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 396, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2177, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2177, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 8306, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 8306, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 7314, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 7314, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 7491, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 7491, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1885, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1885, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct-mappings.html#/html/body/div/div/div/p/a at Line 388, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct-mappings.html#/html/body/div/div/div/p/a at Line 388, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.html#/html/body/div/div/div/p/a at Line 2052, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.html#/html/body/div/div/div/p/a at Line 2052, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 8071, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 8071, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 7109, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 7109, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 7280, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 7280, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance-definitions.html#/html/body/div/div/div/p/a at Line 1822, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance-definitions.html#/html/body/div/div/div/p/a at Line 1822, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance-mappings.html#/html/body/div/div/div/p/a at Line 349, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance-mappings.html#/html/body/div/div/div/p/a at Line 349, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.html#/html/body/div/div/div/p/a at Line 1839, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.html#/html/body/div/div/div/p/a at Line 1839, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.profile.json.html#/html/body/div/div/div/p/a at Line 7805, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.profile.json.html#/html/body/div/div/div/p/a at Line 7805, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 6875, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 6875, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.profile.xml.html#/html/body/div/div/div/p/a at Line 7042, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.profile.xml.html#/html/body/div/div/div/p/a at Line 7042, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 177, column 293: The link 'CodeSystem-drug-cs.html#drug-cs-subs' for "subs" cannot be resolved (valid targets: [segment-header, drug-cs-PHARMPROD, publish-box, bottom, segment-post-footer, codesystem-drug-code-system, drug-cs-MEDPROD, ig-status, top, root, stripe, segment-footer, drug-cs-SUBST, drug-cs-MEDPACKPROD, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 183, column 639: The link 'CodeSystem-drug-cs.html#drug-cs-subs' for "subs" cannot be resolved (valid targets: [segment-header, drug-cs-PHARMPROD, publish-box, bottom, segment-post-footer, codesystem-drug-code-system, drug-cs-MEDPROD, ig-status, top, root, stripe, segment-footer, drug-cs-SUBST, drug-cs-MEDPACKPROD, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
@@ -146,8 +183,8 @@ ERROR: /github/workspace/output/ValueSet-granularity-vs.ttl.html#/html/body/div/
 ERROR: /github/workspace/output/ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 234, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 223, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 223, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 299, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 299, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 311, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 311, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 155, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 155, column 140: The link 'http://build.fhir.org/' for "FHIR 4.6.0" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 137, column 28: The link '' for "" cannot be resolved
@@ -155,65 +192,83 @@ ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 137,
 == /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs.json ==
 WARNING: CodeSystem/drug-char-cs: CodeSystem.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
 WARNING: CodeSystem/drug-char-cs: CodeSystem.content: ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator
-WARNING: CodeSystem/drug-char-cs: CodeSystem.concept[2].display: value should not start or finish with whitespace
+WARNING: CodeSystem/drug-char-cs: CodeSystem.concept[1].display: value should not start or finish with whitespace
 == /github/workspace/fsh-generated/resources/CodeSystem-drug-cs.json ==
 WARNING: CodeSystem/drug-cs: CodeSystem.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
 WARNING: CodeSystem/drug-cs: CodeSystem.content: ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator
 == /github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs.json ==
 WARNING: CodeSystem/rel-med-cs: CodeSystem.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
 WARNING: CodeSystem/rel-med-cs: CodeSystem.content: ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator
+WARNING: CodeSystem/rel-med-cs: CodeSystem.concept[2].display: value should not start or finish with whitespace
+WARNING: CodeSystem/rel-med-cs: CodeSystem.concept[3].display: value should not start or finish with whitespace
 == /github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs.json ==
 WARNING: CodeSystem/type-med-class-cs: CodeSystem.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
 WARNING: CodeSystem/type-med-class-cs: CodeSystem.content: ValueSet http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.6.0|4.6.0 not found by validator
 == /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example.json ==
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[5].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[7].description: value should not start or finish with whitespace
 == /github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json ==
+ERROR: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge.productType[0]: Slicing cannot be evaluated: Error processing path expression for discriminator: Error @1, 1: Found . expecting a token name (src = '.')
 ERROR: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge.drugCharacteristic[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
 ERROR: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge.drugCharacteristic[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
-ERROR: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge.drugCharacteristic[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
-INFORMATION: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge: MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/substance)
+INFORMATION: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge: MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/Substance)
 INFORMATION: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge.code.coding[0]: Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json ==
 ERROR: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge.relatedMedicationKnowledge[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
-ERROR: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge.relatedMedicationKnowledge[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
-ERROR: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge.drugCharacteristic[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
-INFORMATION: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge: MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct)
+ERROR: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge.productType[0]: Slicing cannot be evaluated: Error processing path expression for discriminator: Error @1, 1: Found . expecting a token name (src = '.')
+INFORMATION: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge: MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct)
 INFORMATION: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge.code.coding[0]: Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
-ERROR: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge.relatedMedicationKnowledge[1].reference[0]: Unable to resolve resource 'example-a-of-drug-med'
 == /github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json ==
+ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.productType[0]: Slicing cannot be evaluated: Error processing path expression for discriminator: Error @1, 1: Found . expecting a token name (src = '.')
 ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
 ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
 ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
 ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
-ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
-INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge: MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct)
-ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[1].value.ofType(string): ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
-ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[1].value.ofType(string): @value cannot be empty
-INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[4].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://clinicaltrial-server.fhir.pt' is unknown so the code cannot be validated
+INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge: MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct)
+INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge: MedicationKnowledge.drugCharacteristic:marketingAuthorizationStatus: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct)
+ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[0].value.ofType(string): ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
+ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[0].value.ofType(string): @value cannot be empty
+INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[3].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://clinicaltrial-server.fhir.pt' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json ==
 ERROR: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.drugCharacteristic[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
-ERROR: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.drugCharacteristic[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
-INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge: MedicationKnowledge.drugCharacteristic:granularity: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/packagedMedicinalProduct)
-== /github/workspace/fsh-generated/resources/StructureDefinition-packagedMedicinalProduct.json ==
-WARNING: StructureDefinition/packagedMedicinalProduct: StructureDefinition: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: StructureDefinition/packagedMedicinalProduct: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
-WARNING: StructureDefinition/packagedMedicinalProduct: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
-WARNING: StructureDefinition/packagedMedicinalProduct: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
-WARNING: StructureDefinition/packagedMedicinalProduct: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
-ERROR: StructureDefinition/packagedMedicinalProduct: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/definition is unknown, and not allowed here
-ERROR: StructureDefinition/packagedMedicinalProduct: StructureDefinition.snapshot.element[4].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/definition' does not resolve
-ERROR: StructureDefinition/packagedMedicinalProduct: StructureDefinition.snapshot.element[48].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/packagedMedicinalProduct: StructureDefinition.snapshot.element[72].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-== /github/workspace/fsh-generated/resources/StructureDefinition-substance.json ==
-WARNING: StructureDefinition/substance: StructureDefinition: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: StructureDefinition/substance: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
-WARNING: StructureDefinition/substance: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
-WARNING: StructureDefinition/substance: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
-WARNING: StructureDefinition/substance: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
-ERROR: StructureDefinition/substance: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/definition is unknown, and not allowed here
-ERROR: StructureDefinition/substance: StructureDefinition.snapshot.element[4].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/definition' does not resolve
-ERROR: StructureDefinition/substance: StructureDefinition.snapshot.element[48].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
-ERROR: StructureDefinition/substance: StructureDefinition.snapshot.element[72].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.cost[0].type.coding[0]: Code System URI 'http://infarmed.pt/' is unknown so the code cannot be validated
+INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.packaging[0].type.coding[0]: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct.json ==
+WARNING: StructureDefinition/MedicinalProduct: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/MedicinalProduct: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/MedicinalProduct: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/MedicinalProduct: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/MedicinalProduct: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/definition is unknown, and not allowed here
+ERROR: StructureDefinition/MedicinalProduct: StructureDefinition.snapshot.element[4].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/definition' does not resolve
+ERROR: StructureDefinition/MedicinalProduct: StructureDefinition.snapshot.element[43].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/MedicinalProduct: StructureDefinition.snapshot.element[67].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+== /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct.json ==
+WARNING: StructureDefinition/PackagedMedicinalProduct: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/PackagedMedicinalProduct: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/PackagedMedicinalProduct: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/PackagedMedicinalProduct: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/PackagedMedicinalProduct: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/definition is unknown, and not allowed here
+ERROR: StructureDefinition/PackagedMedicinalProduct: StructureDefinition.snapshot.element[4].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/definition' does not resolve
+ERROR: StructureDefinition/PackagedMedicinalProduct: StructureDefinition.snapshot.element[42].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/PackagedMedicinalProduct: StructureDefinition.snapshot.element[66].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+== /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct.json ==
+WARNING: StructureDefinition/PharmaceuticalProduct: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/PharmaceuticalProduct: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/PharmaceuticalProduct: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/PharmaceuticalProduct: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/PharmaceuticalProduct: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/definition is unknown, and not allowed here
+ERROR: StructureDefinition/PharmaceuticalProduct: StructureDefinition.snapshot.element[4].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/definition' does not resolve
+ERROR: StructureDefinition/PharmaceuticalProduct: StructureDefinition.snapshot.element[43].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/PharmaceuticalProduct: StructureDefinition.snapshot.element[67].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+== /github/workspace/fsh-generated/resources/StructureDefinition-Substance.json ==
+WARNING: StructureDefinition/Substance: StructureDefinition.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/Substance: StructureDefinition.fhirVersion: ValueSet http://hl7.org/fhir/ValueSet/FHIR-version|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/Substance: StructureDefinition.kind: ValueSet http://hl7.org/fhir/ValueSet/structure-definition-kind|4.6.0|4.6.0 not found by validator
+WARNING: StructureDefinition/Substance: StructureDefinition.derivation: ValueSet http://hl7.org/fhir/ValueSet/type-derivation-rule|4.6.0|4.6.0 not found by validator
+ERROR: StructureDefinition/Substance: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/build/StructureDefinition/definition is unknown, and not allowed here
+ERROR: StructureDefinition/Substance: StructureDefinition.snapshot.element[4].binding.extension[0].url: URL value 'http://hl7.org/fhir/build/StructureDefinition/definition' does not resolve
+ERROR: StructureDefinition/Substance: StructureDefinition.snapshot.element[43].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
+ERROR: StructureDefinition/Substance: StructureDefinition.snapshot.element[67].type[0].targetProfile[0]: Type CodeableReference does not allow for target Profiles 
 == /github/workspace/fsh-generated/resources/ValueSet-granularity-vs.json ==
 WARNING: ValueSet/granularity-vs: ValueSet.status: ValueSet http://hl7.org/fhir/ValueSet/publication-status|4.6.0|4.6.0 not found by validator
+WARNING: ValueSet/granularity-vs: ValueSet.compose[0].include[0].concept[0]: The code subs is not valid in the system http://terminology.hl7.org/CodeSystem/medicineCS
