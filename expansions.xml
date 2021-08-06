@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5be74af5-4969-407a-9aa5-1ea4c05b7ad1"/>
+  <id value="641209b0-f1fa-486d-ba85-d93a4394926d"/>
   <meta>
-    <lastUpdated value="2021-08-06T09:08:54.821+00:00"/>
+    <lastUpdated value="2021-08-06T09:22:09.129+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -75,11 +75,11 @@
         <name value="GranularityVS"/>
         <title value="Granularity Value Set"/>
         <status value="active"/>
-        <date value="2021-08-06T09:08:54+00:00"/>
+        <date value="2021-08-06T09:22:09+00:00"/>
         <description value="Indicates the granularity of product"/>
         <expansion>
-          <identifier value="urn:uuid:8a6ce050-4c3d-4b87-a747-c186870edf31"/>
-          <timestamp value="2021-08-06T09:09:11+00:00"/>
+          <identifier value="urn:uuid:2e84e884-01d3-415a-8cbd-b2d0856642d9"/>
+          <timestamp value="2021-08-06T09:22:30+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "Substance"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-06T09:08:54+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-06T09:22:09+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.6.0"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
