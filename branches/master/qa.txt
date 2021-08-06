@@ -3,7 +3,7 @@
 
 err = 29, warn = 36, info = 9
 IG Publisher Version: 1.1.77
-Generated Fri Aug 06 09:09:25 UTC 2021. FHIR version 4.6.0 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Fri Aug 06 09:22:45 UTC 2021. FHIR version 4.6.0 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
 
  Build Errors : 162 / 5 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 3 / 1
