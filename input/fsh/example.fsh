@@ -1,6 +1,6 @@
 
 Instance: example-0-of-drug-med
-InstanceOf: substance
+InstanceOf: Substance
 Usage: #example
 Description: "Example of a drug with granularity 0"
 Title:    "Example of drug with granularity 0"
@@ -16,13 +16,12 @@ Title:    "Example of drug with granularity 0"
 
 * status = #active
 
-* drugCharacteristic[granularity].valueString = "substance"
 * drugCharacteristic[domain].valueString = "human"
 * drugCharacteristic[drugType].valueString = "small molecule"
 
 
 Instance: example-1-of-drug-med
-InstanceOf: packagedMedicinalProduct
+InstanceOf: MedicinalProduct
 Usage: #example
 Description: "Example of a drug with granularity 1"
 Title:    "Example of drug with granularity 1"
@@ -39,17 +38,14 @@ Title:    "Example of drug with granularity 1"
 * amount.value = 500
 * amount.unit = "mg" 
 
-
-* drugCharacteristic[granularity].valueString = "product"
-
-* relatedMedicationKnowledge[basedOn].reference = Reference(example-1-of-drug-med)
+* relatedMedicationKnowledge[isAMedicineOf].reference = Reference(example-1-of-drug-med)
  
-* relatedMedicationKnowledge[interaction].reference = Reference(example-a-of-drug-med) 
+//* relatedMedicationKnowledge[interaction].reference = Reference(example-a-of-drug-med) 
 
 * intendedRoute = http://snomed.info/sct#26643006  "Oral Route" 
 
 Instance: example-2-of-drug-med
-InstanceOf: packagedMedicinalProduct
+InstanceOf: PharmaceuticalProduct
 Usage: #example
 Description: "Example of a drug with granularity 2"
 Title:    "Example of drug with granularity 2"
@@ -61,16 +57,13 @@ Title:    "Example of drug with granularity 2"
 
 * synonym[+] = "Ben-U-Ron Oral Tablets 500 mg"
 
-
-* drugCharacteristic[granularity].valueString = "MedicinalProduct"
-
 * drugCharacteristic[marketingAuthorization].valueString = ""
 * drugCharacteristic[marketingAuthorizationHolder].valueString = "Bene"
 * drugCharacteristic[marketingAuthorizationStatus].valueString = "Aproved"
 * drugCharacteristic[clinicalTrial].valueCodeableConcept = http://clinicaltrial-server.fhir.pt#1
 
 Instance: example-3-of-drug-med
-InstanceOf: packagedMedicinalProduct
+InstanceOf: PackagedMedicinalProduct
 Usage: #example
 Description: "Example of a drug with granularity 3"
 Title:    "Example of drug with granularity 3"
@@ -81,14 +74,13 @@ Title:    "Example of drug with granularity 3"
 * status = #active
 
 * synonym[+] = "Ben-U-Ron Oral Tablets 500 mg Box of 20 tab"
+* cost[+].type =  http://infarmed.pt/#xxx "official"
+* cost[=].costMoney.value =  3.08
+* cost[=].costMoney.currency  = http://iso.org/currency#EUR "Euro"  
 
-* drugCharacteristic[granularity].valueString = "MedicinalPackagedProduct"
-//* packaging[+].cost[+].type  =  http://infarmed.pt/#xxx "official"
-//* packaging[=].cost[=].costMoney.value  =  3.08
-//* packaging[=].cost[=].costMoney.currency  = http://iso.org/currency#EUR "Euro"  
+* packaging[+].type = http://standardterms.edqm.eu/PAC#30009000 "Box"
+* packaging[=].quantity.value  = 20
+* packaging[=].quantity.unit = "tablets" 
 
-//* packaging[=].type = http://standardterms.edqm.eu/PAC#30009000 "Box"
-//* packaging[=].quantity.value  = 20
-//* packaging[=].quantity.unit = "tablets" 
 * drugCharacteristic[batchNumber].valueString = "345-CE-123"
 
