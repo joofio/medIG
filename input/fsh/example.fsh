@@ -74,6 +74,7 @@ Title:    "Example of drug with granularity 3"
 * status = #active
 
 * synonym[+] = "Ben-U-Ron Oral Tablets 500 mg Box of 20 tab"
+
 * cost[+].type =  http://infarmed.pt/#xxx "official"
 * cost[=].costMoney.value =  3.08
 * cost[=].costMoney.currency  = http://iso.org/currency#EUR "Euro"  
