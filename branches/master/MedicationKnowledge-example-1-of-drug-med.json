@@ -8,14 +8,8 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 950</p><p><b>code</b>: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>doseForm</b>: <span title=\"Codes: {http://snomed.info/sct 421026006}\">Oral Tablet</span></p><p><b>amount</b>: 500 mg</p><p><b>synonym</b>: Paracetamol Oral Tablets 500 mg</p><h3>RelatedMedicationKnowledges</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/relMedCS MEDOF}\">Is a Medicine Of</span></td><td><a href=\"MedicationKnowledge-example-1-of-drug-med.html\">Generated Summary: id: 950; <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span>; status: active; <span title=\"Codes: {http://snomed.info/sct 421026006}\">Oral Tablet</span>; 500 mg; synonym: Paracetamol Oral Tablets 500 mg; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS MEDPROD}\">medicine Product</span>; <span title=\"Codes: {http://snomed.info/sct 26643006}\">Oral Route</span></a></td></tr></table><p><b>productType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS MEDPROD}\">medicine Product</span></p><p><b>intendedRoute</b>: <span title=\"Codes: {http://snomed.info/sct 26643006}\">Oral Route</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>doseForm</b>: <span title=\"Codes: {http://snomed.info/sct 421026006}\">Oral Tablet</span></p><p><b>amount</b>: 500 mg</p><p><b>synonym</b>: Paracetamol Oral Tablets 500 mg</p><h3>RelatedMedicationKnowledges</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/relMedCS MEDOF}\">Is a Medicine Of</span></td><td><a href=\"MedicationKnowledge-example-1-of-drug-med.html\">Generated Summary: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span>; status: active; <span title=\"Codes: {http://snomed.info/sct 421026006}\">Oral Tablet</span>; 500 mg; synonym: Paracetamol Oral Tablets 500 mg; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS MEDPROD}\">medicine Product</span>; <span title=\"Codes: {http://snomed.info/sct 26643006}\">Oral Route</span></a></td></tr></table><p><b>productType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS MEDPROD}\">medicine Product</span></p><p><b>intendedRoute</b>: <span title=\"Codes: {http://snomed.info/sct 26643006}\">Oral Route</span></p></div>"
   },
-  "identifier": [
-    {
-      "system": "http://infarmed.pt",
-      "value": "950"
-    }
-  ],
   "code": {
     "coding": [
       {

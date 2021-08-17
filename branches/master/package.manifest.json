@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "fhirVersion": "[4.6.0]",
-  "date": "20210806092133",
+  "fhirVersion": "[4.0.1]",
+  "date": "20210817095031",
   "name": "medication.ig.example"
 }

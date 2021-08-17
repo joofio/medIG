@@ -64,12 +64,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.identifier</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:identifier">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>MedicationKnowledge.code</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:code">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -82,14 +76,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.author</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:author">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.sponsor</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:sponsor">
+    <sch:title>MedicationKnowledge.manufacturer</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:manufacturer">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -157,12 +145,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.associatedDefinition</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:associatedDefinition">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>MedicationKnowledge.productType</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:productType">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -222,8 +204,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.ingredient.item</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:ingredient/f:item">
+    <sch:title>MedicationKnowledge.ingredient.item[x] 1</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:ingredient/f:item[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -234,14 +216,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.ingredient.strength[x] 1</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:ingredient/f:strength[x]">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.device</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:device">
+    <sch:title>MedicationKnowledge.ingredient.strength</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:ingredient/f:strength">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -278,12 +254,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.cost.effectiveDate</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:cost/f:effectiveDate">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>MedicationKnowledge.cost.type</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:cost/f:type">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -296,8 +266,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.cost.cost[x] 1</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:cost/f:cost[x]">
+    <sch:title>MedicationKnowledge.cost.cost</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:cost/f:cost">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -334,124 +304,92 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline">
+    <sch:title>MedicationKnowledge.administrationGuidelines</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.extension</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.modifierExtension</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:modifierExtension">
+    <sch:title>MedicationKnowledge.administrationGuidelines.extension</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.indication</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:indication">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.extension</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:extension">
+    <sch:title>MedicationKnowledge.administrationGuidelines.modifierExtension</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:modifierExtension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.modifierExtension</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:modifierExtension">
+    <sch:title>MedicationKnowledge.administrationGuidelines.dosage</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:dosage">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MedicationKnowledge.administrationGuidelines.dosage.extension</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:dosage/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.treatmentIntent</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:treatmentIntent">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.dosage</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:dosage">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.extension</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:dosage/f:extension">
+    <sch:title>MedicationKnowledge.administrationGuidelines.dosage.modifierExtension</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:dosage/f:modifierExtension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.modifierExtension</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:dosage/f:modifierExtension">
+    <sch:title>MedicationKnowledge.administrationGuidelines.dosage.type</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:dosage/f:type">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MedicationKnowledge.administrationGuidelines.dosage.dosage</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:dosage/f:dosage">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MedicationKnowledge.administrationGuidelines.indication[x] 1</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:indication[x]">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MedicationKnowledge.administrationGuidelines.patientCharacteristics</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:patientCharacteristics">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MedicationKnowledge.administrationGuidelines.patientCharacteristics.extension</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:patientCharacteristics/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:dosage/f:type">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:dosage/f:dosage">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.administrationTreatment</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:administrationTreatment">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:patientCharacteristic">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.extension</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:patientCharacteristic/f:extension">
+    <sch:title>MedicationKnowledge.administrationGuidelines.patientCharacteristics.modifierExtension</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:patientCharacteristics/f:modifierExtension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.modifierExtension</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:patientCharacteristic/f:modifierExtension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:patientCharacteristic/f:type">
+    <sch:title>MedicationKnowledge.administrationGuidelines.patientCharacteristics.characteristic[x] 1</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:patientCharacteristics/f:characteristic[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value[x] 1</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:indicationGuideline/f:dosingGuideline/f:patientCharacteristic/f:value[x]">
+    <sch:title>MedicationKnowledge.administrationGuidelines.patientCharacteristics.value</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:administrationGuidelines/f:patientCharacteristics/f:value">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -515,18 +453,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.packaging.identifier</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:packaging/f:identifier">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.packaging.cost</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:packaging/f:cost">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>MedicationKnowledge.packaging.type</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:packaging/f:type">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -535,24 +461,6 @@
   <sch:pattern>
     <sch:title>MedicationKnowledge.packaging.quantity</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:packaging/f:quantity">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.packaging.device</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:packaging/f:device">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.packaging.material</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:packaging/f:material">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.packaging.packaging</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:packaging/f:packaging">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -638,8 +546,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.clinicalUseIssue</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:clinicalUseIssue">
+    <sch:title>MedicationKnowledge.contraindication</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:contraindication">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -708,6 +616,26 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>MedicationKnowledge.regulatory.schedule.extension</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:regulatory/f:schedule/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MedicationKnowledge.regulatory.schedule.modifierExtension</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:regulatory/f:schedule/f:modifierExtension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MedicationKnowledge.regulatory.schedule.schedule</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:regulatory/f:schedule/f:schedule">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>MedicationKnowledge.regulatory.maxDispense</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:regulatory/f:maxDispense">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -740,34 +668,40 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.kineticCharacteristic</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:kineticCharacteristic">
+    <sch:title>MedicationKnowledge.kinetics</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:kinetics">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.kineticCharacteristic.extension</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:kineticCharacteristic/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>MedicationKnowledge.kineticCharacteristic.modifierExtension</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:kineticCharacteristic/f:modifierExtension">
+    <sch:title>MedicationKnowledge.kinetics.extension</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:kinetics/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.kineticCharacteristic.type</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:kineticCharacteristic/f:type">
+    <sch:title>MedicationKnowledge.kinetics.modifierExtension</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:kinetics/f:modifierExtension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MedicationKnowledge.kinetics.areaUnderCurve</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:kinetics/f:areaUnderCurve">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>MedicationKnowledge.kineticCharacteristic.value[x] 1</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:kineticCharacteristic/f:value[x]">
+    <sch:title>MedicationKnowledge.kinetics.lethalDose50</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:kinetics/f:lethalDose50">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MedicationKnowledge.kinetics.halfLifePeriod</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:kinetics/f:halfLifePeriod">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

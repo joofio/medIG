@@ -17,12 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95000</p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled - should not be here</b></p></div>"
-  ];
-  fhir:MedicationKnowledge.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://infarmed.pt" ];
-     fhir:Identifier.value [ fhir:value "95000" ]
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes: {http://infarmed.pt/ xxx}\">official</span></p></blockquote><h3>Packagings</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://standardterms.edqm.eu/PAC 30009000}\">Box</span></td><td>20 tablets</td></tr></table><h3>DrugCharacteristics</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>345-CE-123</td></tr></table></div>"
   ];
   fhir:MedicationKnowledge.status [ fhir:value "active"];
   fhir:MedicationKnowledge.synonym [
@@ -39,13 +34,12 @@
          fhir:Coding.display [ fhir:value "official" ]
        ]
      ];
-     fhir:MedicationKnowledge.cost.costMoney [
+     fhir:MedicationKnowledge.cost.cost [
        fhir:Money.value [ fhir:value "3.08"^^xsd:decimal ];
        fhir:Money.currency [ fhir:value "EUR" ]
      ]
   ];
   fhir:MedicationKnowledge.packaging [
-     fhir:index 0;
      fhir:MedicationKnowledge.packaging.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;

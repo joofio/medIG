@@ -7,6 +7,13 @@
     "name": "medicationIG"
   },
   {
+    "id": "MedicationKnowledgeMine",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/MedicationKnowledgeMine",
+    "version": "0.1.0",
+    "name": "MedicationKnowledgeMine"
+  },
+  {
     "id": "MedicinalProduct",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct",

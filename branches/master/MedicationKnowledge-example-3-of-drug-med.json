@@ -8,14 +8,8 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 95000</p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled - should not be here</b></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes: {http://infarmed.pt/ xxx}\">official</span></p></blockquote><h3>Packagings</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://standardterms.edqm.eu/PAC 30009000}\">Box</span></td><td>20 tablets</td></tr></table><h3>DrugCharacteristics</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>345-CE-123</td></tr></table></div>"
   },
-  "identifier": [
-    {
-      "system": "http://infarmed.pt",
-      "value": "95000"
-    }
-  ],
   "status": "active",
   "synonym": [
     "Ben-U-Ron Oral Tablets 500 mg Box of 20 tab"
@@ -31,29 +25,27 @@
           }
         ]
       },
-      "costMoney": {
+      "cost": {
         "value": 3.08,
         "currency": "EUR"
       }
     }
   ],
-  "packaging": [
-    {
-      "type": {
-        "coding": [
-          {
-            "system": "http://standardterms.edqm.eu/PAC",
-            "code": "30009000",
-            "display": "Box"
-          }
-        ]
-      },
-      "quantity": {
-        "value": 20,
-        "unit": "tablets"
-      }
+  "packaging": {
+    "type": {
+      "coding": [
+        {
+          "system": "http://standardterms.edqm.eu/PAC",
+          "code": "30009000",
+          "display": "Box"
+        }
+      ]
+    },
+    "quantity": {
+      "value": 20,
+      "unit": "tablets"
     }
-  ],
+  },
   "drugCharacteristic": [
     {
       "valueString": "345-CE-123"
