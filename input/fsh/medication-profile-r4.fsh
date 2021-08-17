@@ -1,0 +1,287 @@
+
+//based on R4
+
+Profile: Substance
+Parent: MedicationKnowledge
+
+
+//* identifier MS
+* code MS
+* status MS
+//* author MS
+//* sponsor MS
+* doseForm 0..0 
+* synonym MS
+* amount 0..0 
+* productType MS
+* productType ^slicing.discriminator.type = #pattern
+* productType ^slicing.discriminator.path = "."
+* productType ^slicing.rules = #open
+* productType contains
+	productLevel 1..1
+* productType[productLevel] = medCS#SUBST
+
+* medicineClassification MS
+* medicineClassification ^slicing.discriminator.type = #pattern
+* medicineClassification ^slicing.discriminator.path = "code"
+* medicineClassification ^slicing.rules = #open
+* medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
+* medicineClassification ^slicing.description = "Slice based on the component.code pattern"
+* medicineClassification contains
+    mechanismOfAction 0..* MS
+* medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
+
+* drugCharacteristic MS
+* drugCharacteristic ^slicing.discriminator.type = #pattern
+* drugCharacteristic ^slicing.discriminator.path = "code"
+* drugCharacteristic ^slicing.rules = #open
+* drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
+* drugCharacteristic ^slicing.description = "Slice based on the component.code pattern"
+* drugCharacteristic contains
+    domain 0..1 MS and 
+    version 0..1 MS and
+    drugType 0..1 MS and 
+    marketingAuthorization 0..1 MS and 
+    marketingAuthorizationHolder 0..* MS and 
+    marketingAuthorizationStatus 0..1 MS  //make mandatory for level2+
+* drugCharacteristic[domain].type = drug-char-cs#DOM
+* drugCharacteristic[version].type = drug-char-cs#VER
+* drugCharacteristic[drugType].type = drug-char-cs#DT
+* drugCharacteristic[marketingAuthorization].type = drug-char-cs#MA //link together MA and MAH - HOW?
+* drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
+* drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
+
+* kinetics MS
+* contraindication MS
+* monograph MS
+* intendedRoute	0..0
+* ingredient 0..0
+* regulatory 0..0
+* packaging 0..0 
+* cost MS
+* relatedMedicationKnowledge MS
+* relatedMedicationKnowledge.reference MS
+* relatedMedicationKnowledge ^slicing.discriminator.type = #pattern
+* relatedMedicationKnowledge ^slicing.discriminator.path = "code"
+* relatedMedicationKnowledge ^slicing.rules = #open
+* relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
+* relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
+* relatedMedicationKnowledge contains
+    isASubstanceFrom 0..1 MS  //item reference is not for medicationKnowledge
+* relatedMedicationKnowledge[isASubstanceFrom].type =  rel-med-cs#SUBOF
+
+
+Profile: MedicinalProduct
+Parent: MedicationKnowledge
+
+//* identifier MS
+* code MS
+* status MS
+//* author MS
+//* sponsor MS
+* doseForm MS
+* synonym MS
+* amount MS
+* productType MS
+* productType ^slicing.discriminator.type = #pattern
+* productType ^slicing.discriminator.path = "."
+* productType ^slicing.rules = #open
+* productType contains
+	productLevel 1..1
+* productType[productLevel] = medCS#MEDPROD
+* medicineClassification MS
+* medicineClassification ^slicing.discriminator.type = #pattern
+* medicineClassification ^slicing.discriminator.path = "code"
+* medicineClassification ^slicing.rules = #open
+* medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
+* medicineClassification ^slicing.description = "Slice based on the component.code pattern"
+* medicineClassification contains
+    mechanismOfAction 0..* MS
+
+* medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
+
+* drugCharacteristic MS
+* drugCharacteristic ^slicing.discriminator.type = #pattern
+* drugCharacteristic ^slicing.discriminator.path = "code"
+* drugCharacteristic ^slicing.rules = #open
+* drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
+* drugCharacteristic ^slicing.description = "Slice based on the component.code pattern"
+* drugCharacteristic contains
+    domain 0..1 MS and 
+    version 0..1 MS and
+    drugType 0..1 MS and 
+    marketingAuthorization 0..1 MS and 
+    marketingAuthorizationHolder 0..* MS and 
+    marketingAuthorizationStatus 0..1 MS  //make mandatory for level2+
+* drugCharacteristic[domain].type = drug-char-cs#DOM
+* drugCharacteristic[version].type = drug-char-cs#VER
+* drugCharacteristic[drugType].type = drug-char-cs#DT
+* drugCharacteristic[marketingAuthorization].type = drug-char-cs#MA //link together MA and MAH - HOW?
+* drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
+* drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
+
+* kinetics MS
+* contraindication MS
+* monograph MS
+* intendedRoute	MS
+* ingredient MS
+* regulatory MS
+* packaging 0..0
+* cost MS
+* relatedMedicationKnowledge MS
+* relatedMedicationKnowledge.reference MS
+* relatedMedicationKnowledge ^slicing.discriminator.type = #pattern
+* relatedMedicationKnowledge ^slicing.discriminator.path = "code"
+* relatedMedicationKnowledge ^slicing.rules = #open
+* relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
+* relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
+* relatedMedicationKnowledge contains
+    isAMedicineOf 0..1 MS 
+* relatedMedicationKnowledge[isAMedicineOf].type =  rel-med-cs#MEDOF
+
+Profile: PharmaceuticalProduct
+Parent: MedicationKnowledge
+
+//* identifier MS
+* code MS
+* status MS
+//* author MS
+//* sponsor MS
+* doseForm MS
+* synonym MS
+* amount MS
+* productType MS
+* productType ^slicing.discriminator.type = #pattern
+* productType ^slicing.discriminator.path = "."
+* productType ^slicing.rules = #open
+* productType contains
+	productLevel 1..1
+* productType[productLevel] = medCS#PHARMPROD
+* medicineClassification MS
+* medicineClassification ^slicing.discriminator.type = #pattern
+* medicineClassification ^slicing.discriminator.path = "code"
+* medicineClassification ^slicing.rules = #open
+* medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
+* medicineClassification ^slicing.description = "Slice based on the component.code pattern"
+* medicineClassification contains
+    mechanismOfAction 0..* MS
+
+* medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
+
+* drugCharacteristic MS
+* drugCharacteristic ^slicing.discriminator.type = #pattern
+* drugCharacteristic ^slicing.discriminator.path = "code"
+* drugCharacteristic ^slicing.rules = #open
+* drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
+* drugCharacteristic ^slicing.description = "Slice based on the component.code pattern"
+* drugCharacteristic contains
+    domain 0..1 MS and 
+    version 0..1 MS and
+    drugType 0..1 MS and 
+    marketingAuthorization 0..1 MS and 
+    marketingAuthorizationHolder 0..* MS and 
+    marketingAuthorizationStatus 1..1 MS  and 
+    clinicalTrial 0..* MS 
+
+* drugCharacteristic[domain].type = drug-char-cs#DOM
+* drugCharacteristic[version].type = drug-char-cs#VER
+* drugCharacteristic[drugType].type = drug-char-cs#DT
+* drugCharacteristic[marketingAuthorization].type = drug-char-cs#MA //link together MA and MAH - HOW?
+* drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
+* drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
+
+* kinetics MS
+* contraindication MS
+* monograph MS
+* intendedRoute	MS
+* ingredient MS
+* regulatory MS
+* packaging 0..0
+* cost MS
+* relatedMedicationKnowledge MS
+* relatedMedicationKnowledge.reference MS
+* relatedMedicationKnowledge ^slicing.discriminator.type = #pattern
+* relatedMedicationKnowledge ^slicing.discriminator.path = "code"
+* relatedMedicationKnowledge ^slicing.rules = #open
+* relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
+* relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
+* relatedMedicationKnowledge contains
+    isAPharmaceuticalProductOf 0..1 MS  //item reference is not for medicationKnowledge
+* relatedMedicationKnowledge[isAPharmaceuticalProductOf].type =  rel-med-cs#PHARMOF
+
+Profile: PackagedMedicinalProduct
+Parent: MedicationKnowledge
+
+//* identifier MS
+* code MS
+* status MS
+//* author MS
+//* sponsor MS
+* doseForm MS
+* synonym MS
+* amount MS
+* productType MS
+* medicineClassification MS
+* medicineClassification ^slicing.discriminator.type = #pattern
+* medicineClassification ^slicing.discriminator.path = "code"
+* medicineClassification ^slicing.rules = #open
+* medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
+* medicineClassification ^slicing.description = "Slice based on the component.code pattern"
+* medicineClassification contains
+ //   indication 0..* MS   and
+  //  associatedCondition 0..* MS and
+    mechanismOfAction 0..* MS
+//* medicineClassification[indication].type = type-med-class-cs#IND -> ClinicalIssue
+//* medicineClassification[associatedCondition].type = type-med-class-cs#ASSOCCOND -> ClinicalIssue
+* medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
+
+* drugCharacteristic MS
+* drugCharacteristic ^slicing.discriminator.type = #pattern
+* drugCharacteristic ^slicing.discriminator.path = "code"
+* drugCharacteristic ^slicing.rules = #open
+* drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
+* drugCharacteristic ^slicing.description = "Slice based on the component.code pattern"
+* drugCharacteristic contains
+    domain 0..1 MS and 
+    version 0..1 MS and
+    //granularity 1..1 MS and 
+   // contraindication 0..* MS and 
+    drugType 0..1 MS and 
+    marketingAuthorization 0..1 MS and 
+    marketingAuthorizationHolder 0..* MS and 
+    clinicalTrial 0..* MS and 
+    marketingAuthorizationStatus 0..1 MS and //make mandatory for level2+
+    batchNumber  0..1 MS
+* drugCharacteristic[domain].type = drug-char-cs#DOM
+* drugCharacteristic[version].type = drug-char-cs#VER
+* drugCharacteristic[drugType].type = drug-char-cs#DT
+//* drugCharacteristic[granularity].type = drug-char-cs#GRA
+//* drugCharacteristic[contraindication].type = drug-char-cs#CT -> ClinicalIssue
+* drugCharacteristic[marketingAuthorization].type = drug-char-cs#MA //link together MA and MAH - HOW?
+* drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
+* drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
+* drugCharacteristic[clinicalTrial].type = drug-char-cs#TRIAL //value should be reference
+* drugCharacteristic[batchNumber].type = drug-char-cs#BATCH //add expirationDate?
+
+
+* kinetics MS
+* contraindication MS
+* monograph MS
+* intendedRoute	MS
+* ingredient MS
+* regulatory MS
+* packaging MS
+//* packaging.cost 0..0
+* cost MS
+* relatedMedicationKnowledge MS
+* relatedMedicationKnowledge.reference MS
+* relatedMedicationKnowledge ^slicing.discriminator.type = #pattern
+* relatedMedicationKnowledge ^slicing.discriminator.path = "code"
+* relatedMedicationKnowledge ^slicing.rules = #open
+* relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
+* relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
+* relatedMedicationKnowledge contains
+    packagedFormOf 0..1 MS  //item reference is not for medicationKnowledge
+   // interaction 0..1 MS
+* relatedMedicationKnowledge[packagedFormOf].type =  rel-med-cs#PACKOF
+//* relatedMedicationKnowledge[interaction].type =  rel-med-cs#IT -> clinicalIssue
