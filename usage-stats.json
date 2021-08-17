@@ -1,7 +1,7 @@
 {
   "package": "medication.ig.example",
   "version": "0.1.0",
-  "fhirVersion": "4.6.0",
+  "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
     "MedicationKnowledge": [
@@ -24,6 +24,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/allergyintolerance-duration": [
+      "MedicationKnowledgeMine.kinetics.halfLifePeriod"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -48,8 +51,8 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
     ],
-    "http://hl7.org/fhir/build/StructureDefinition/definition": [
-      "StructureDefinition.snapshot.element.binding"
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"

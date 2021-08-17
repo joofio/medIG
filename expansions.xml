@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="641209b0-f1fa-486d-ba85-d93a4394926d"/>
+  <id value="b9ef4ca3-5175-41a8-8a15-2076214a408a"/>
   <meta>
-    <lastUpdated value="2021-08-06T09:22:09.129+00:00"/>
+    <lastUpdated value="2021-08-17T09:51:20.152+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -64,7 +64,7 @@
                   <a name="http---terminology.hl7.org-CodeSystem-medicineCS-PHARMPROD"> </a>
                   <a href="CodeSystem-drug-cs.html#drug-cs-PHARMPROD">PHARMPROD</a>
                 </td>
-                <td/>
+                <td>pharmaceutical product</td>
                 <td/>
               </tr>
             </table>
@@ -75,11 +75,11 @@
         <name value="GranularityVS"/>
         <title value="Granularity Value Set"/>
         <status value="active"/>
-        <date value="2021-08-06T09:22:09+00:00"/>
+        <date value="2021-08-17T09:51:20+00:00"/>
         <description value="Indicates the granularity of product"/>
         <expansion>
-          <identifier value="urn:uuid:2e84e884-01d3-415a-8cbd-b2d0856642d9"/>
-          <timestamp value="2021-08-06T09:22:30+00:00"/>
+          <identifier value="urn:uuid:8668f5b1-e4f7-44a4-bd20-10d0b76c6425"/>
+          <timestamp value="2021-08-17T09:51:41+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -107,6 +107,7 @@
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
             <code value="PHARMPROD"/>
+            <display value="pharmaceutical product"/>
           </contains>
         </expansion>
       </ValueSet>

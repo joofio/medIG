@@ -17,12 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 9500</p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg</p><p><b>productType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS PHARMPROD}\">pharmaceutical product</span></p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: </p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: Bene</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: Aproved</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: <span title=\"Codes: {http://clinicaltrial-server.fhir.pt 1}\">1</span></p></blockquote></div>"
-  ];
-  fhir:MedicationKnowledge.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://infarmed.pt" ];
-     fhir:Identifier.value [ fhir:value "9500" ]
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg</p><p><b>productType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS PHARMPROD}\">pharmaceutical product</span></p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: </p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: Bene</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: Aproved</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: <span title=\"Codes: {http://clinicaltrial-server.fhir.pt 1}\">1</span></p></blockquote></div>"
   ];
   fhir:MedicationKnowledge.status [ fhir:value "active"];
   fhir:MedicationKnowledge.synonym [
