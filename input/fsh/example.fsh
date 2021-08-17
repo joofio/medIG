@@ -5,8 +5,8 @@ Usage: #example
 Description: "Example of a drug with granularity 0"
 Title:    "Example of drug with granularity 0"
 
-* identifier[0].system = "http://infarmed.pt"
-* identifier[0].value = "95"
+//* identifier[0].system = "http://infarmed.pt"
+//* identifier[0].value = "95"
 
 * code = https://go.drugbank.com/drugs/#DB00316 "Acetaminophen"
 
@@ -26,8 +26,8 @@ Usage: #example
 Description: "Example of a drug with granularity 1"
 Title:    "Example of drug with granularity 1"
 
-* identifier[0].system = "http://infarmed.pt"
-* identifier[0].value = "950"
+//* identifier[0].system = "http://infarmed.pt"
+//* identifier[0].value = "950"
 
 * code = https://go.drugbank.com/drugs/#DB00316 "Acetaminophen"
 
@@ -50,8 +50,8 @@ Usage: #example
 Description: "Example of a drug with granularity 2"
 Title:    "Example of drug with granularity 2"
 
-* identifier[0].system = "http://infarmed.pt"
-* identifier[0].value = "9500"
+//* identifier[0].system = "http://infarmed.pt"
+//* identifier[0].value = "9500"
 
 * status = #active
 
@@ -68,16 +68,16 @@ Usage: #example
 Description: "Example of a drug with granularity 3"
 Title:    "Example of drug with granularity 3"
 
-* identifier[0].system = "http://infarmed.pt"
-* identifier[0].value = "95000"
+//* identifier[0].system = "http://infarmed.pt"
+//* identifier[0].value = "95000"
 
 * status = #active
 
 * synonym[+] = "Ben-U-Ron Oral Tablets 500 mg Box of 20 tab"
 
 * cost[+].type =  http://infarmed.pt/#xxx "official"
-* cost[=].costMoney.value =  3.08
-* cost[=].costMoney.currency  = http://iso.org/currency#EUR "Euro"  
+* cost[=].cost.value =  3.08 //costMoney r5
+* cost[=].cost.currency  = http://iso.org/currency#EUR "Euro"   //cost.costMoney R5
 
 * packaging[+].type = http://standardterms.edqm.eu/PAC#30009000 "Box"
 * packaging[=].quantity.value  = 20
