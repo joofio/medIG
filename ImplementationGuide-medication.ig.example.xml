@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2021-08-17T09:51:20+00:00"/>
+  <date value="2021-08-18T13:03:39+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -322,6 +322,11 @@
         <nameUrl value="index.html"/>
         <title value="Home"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="download.html"/>
+        <title value="Download"/>
+        <generation value="html"/>
       </page>
     </page>
     <parameter>
