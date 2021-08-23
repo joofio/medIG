@@ -51,7 +51,10 @@ Parent: MedicationKnowledge
 * drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
 * drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
 
-* kinetics MS
+* administrationGuidelines 0..0
+* preparationInstruction 0..0
+* monitoringProgram 0..0
+* kinetics 0..0
 * contraindication MS
 * monograph MS
 * intendedRoute	0..0
