@@ -155,7 +155,7 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance
 "MedicationKnowledge.ingredient.strength","","","",0,1,"","","","Ratio {[]} {[]}
 ","Quantity of ingredient present","Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.  This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.ingredient.strength",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".quantity","//element(*,DrugCodedType)/Strength","RXC-3-Component Amount & RXC-4-Component Units  if medication: RXO-2-Requested Give Amount - Minimum & RXO-4-Requested Give Units / RXO-3-Requested Give Amount - Maximum & RXO-4-Requested Give Units / RXO-11-Requested Dispense Amount & RXO-12-Requested Dispense Units / RXE-3-Give Amount - Minimum & RXE-5-Give Units / RXE-4-Give Amount - Maximum & RXE-5-Give Units / RXE-10-Dispense Amount & RXE-10-Dispense Units"
-"MedicationKnowledge.preparationInstruction","","","",0,1,"","","","markdown {[]} {[]}
+"MedicationKnowledge.preparationInstruction","","","",0,0,"","","","markdown {[]} {[]}
 ","The instructions for preparing the medication","The instructions for preparing the medication.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.preparationInstruction",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.intendedRoute","","","",0,0,"","","","CodeableConcept {[]} {[]}
@@ -185,7 +185,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationKnowledge.cost.cost","","","",1,1,"","","","Money {[]} {[]}
 ","The price of the medication","The price of the medication.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.cost.cost",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MedicationKnowledge.monitoringProgram","","","",0,*,"","","","BackboneElement {[]} {[]}
+"MedicationKnowledge.monitoringProgram","","","",0,0,"","","","BackboneElement {[]} {[]}
 ","Program under which a medication is reviewed","The program under which the medication is reviewed.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.monitoringProgram",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.monitoringProgram.id","","","",0,1,"","","","string {[]} {[]}
@@ -206,7 +206,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationKnowledge.monitoringProgram.name","","","",0,1,"","","","string {[]} {[]}
 ","Name of the reviewing program","Name of the reviewing program.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.monitoringProgram.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MedicationKnowledge.administrationGuidelines","","","",0,*,"","","","BackboneElement {[]} {[]}
+"MedicationKnowledge.administrationGuidelines","","","",0,0,"","","","BackboneElement {[]} {[]}
 ","Guidelines for administration of the medication","Guidelines for the administration of the medication.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.administrationGuidelines",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.administrationGuidelines.id","","","",0,1,"","","","string {[]} {[]}
@@ -594,7 +594,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationKnowledge.regulatory.maxDispense.period","","","",0,1,"","","","Duration {[]} {[]}
 ","The period that applies to the maximum number of units","The period that applies to the maximum number of units.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.regulatory.maxDispense.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MedicationKnowledge.kinetics","","","",0,*,"Y","","","BackboneElement {[]} {[]}
+"MedicationKnowledge.kinetics","","","",0,0,"","","","BackboneElement {[]} {[]}
 ","The time course of drug absorption, distribution, metabolism and excretion of a medication from the body","The time course of drug absorption, distribution, metabolism and excretion of a medication from the body.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.kinetics",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.kinetics.id","","","",0,1,"","","","string {[]} {[]}
