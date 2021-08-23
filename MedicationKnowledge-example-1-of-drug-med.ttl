@@ -11,9 +11,9 @@
   fhir:Resource.id [ fhir:value "example-1-of-drug-med"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct";
+       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct>
+       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct>
      ]
   ];
   fhir:DomainResource.text [

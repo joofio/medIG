@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "medicationIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-18T13:03:39+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-23T12:09:47+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "medication.ig.example"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -418,8 +418,8 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example of drug with granularity 1" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a drug with granularity 1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct";
-         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct>
+         fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct";
+         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct>
        ]
      ], [
        fhir:index 12;
@@ -435,8 +435,8 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example of drug with granularity 2" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a drug with granularity 2" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct";
-         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct>
+         fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct";
+         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct>
        ]
      ], [
        fhir:index 13;

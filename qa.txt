@@ -3,7 +3,7 @@
 
 err = 22, warn = 25, info = 9
 IG Publisher Version: 1.1.77
-Generated Wed Aug 18 13:04:10 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Mon Aug 23 12:10:20 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
 
  Build Errors : 91 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 1 / 1
@@ -77,14 +77,14 @@ ERROR: /github/workspace/output/StructureDefinition-MedicationKnowledgeMine.prof
 ERROR: /github/workspace/output/StructureDefinition-MedicationKnowledgeMine.profile.json.html#/html/body/div/div/div/p/a at Line 2836, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicationKnowledgeMine.profile.ttl.html#/html/body/div/div/div/p/a at Line 2223, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicationKnowledgeMine.profile.xml.html#/html/body/div/div/div/p/a at Line 2376, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1731, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1789, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 386, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.html#/html/body/div/div/div/p/a at Line 1902, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 390, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.html#/html/body/div/div/div/p/a at Line 1959, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7323, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6448, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6573, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7584, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6678, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6807, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1840, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 398, column 28: The link '' for "" cannot be resolved
@@ -93,14 +93,14 @@ ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.pro
 ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7811, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6877, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-PackagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 7010, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1789, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1731, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct-mappings.html#/html/body/div/div/div/p/a at Line 390, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.html#/html/body/div/div/div/p/a at Line 1959, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct-mappings.html#/html/body/div/div/div/p/a at Line 386, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.html#/html/body/div/div/div/p/a at Line 1902, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7584, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6678, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6807, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7323, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6448, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6573, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance-definitions.html#/html/body/div/div/div/p/a at Line 1726, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance-mappings.html#/html/body/div/div/div/p/a at Line 347, column 28: The link '' for "" cannot be resolved
@@ -139,7 +139,7 @@ INFORMATION: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge.code
 == /github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json ==
 ERROR: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge.relatedMedicationKnowledge[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
 ERROR: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge.productType[0]: Slicing cannot be evaluated: Error processing path expression for discriminator: Error @1, 1: Found . expecting a token name (src = '.')
-INFORMATION: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge: MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct)
+INFORMATION: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge: MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct)
 INFORMATION: MedicationKnowledge/example-1-of-drug-med: MedicationKnowledge.code.coding[0]: Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json ==
 ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.productType[0]: Slicing cannot be evaluated: Error processing path expression for discriminator: Error @1, 1: Found . expecting a token name (src = '.')
@@ -147,8 +147,8 @@ ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharac
 ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
 ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
 ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: code (@char 1)
-INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge: MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct)
-INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge: MedicationKnowledge.drugCharacteristic:marketingAuthorizationStatus: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct)
+INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge: MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct)
+INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge: MedicationKnowledge.drugCharacteristic:marketingAuthorizationStatus: Unable to check minimum required (MedicationKnowledge.drugCharacteristic) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct)
 ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[0].value.ofType(string): ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed
 ERROR: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[0].value.ofType(string): @value cannot be empty
 INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drugCharacteristic[3].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://clinicaltrial-server.fhir.pt' is unknown so the code cannot be validated
