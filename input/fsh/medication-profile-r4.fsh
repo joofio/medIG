@@ -14,7 +14,7 @@ Parent: MedicationKnowledge
 * synonym MS
 * amount 0..0 
 * productType MS
-* productType ^slicing.discriminator.type = #pattern
+* productType ^slicing.discriminator.type = #value
 * productType ^slicing.discriminator.path = "."
 * productType ^slicing.rules = #open
 * productType contains
@@ -22,7 +22,7 @@ Parent: MedicationKnowledge
 * productType[productLevel] = medCS#SUBST
 
 * medicineClassification MS
-* medicineClassification ^slicing.discriminator.type = #pattern
+* medicineClassification ^slicing.discriminator.type = #value
 * medicineClassification ^slicing.discriminator.path = "code"
 * medicineClassification ^slicing.rules = #open
 * medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
@@ -32,7 +32,7 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
-* drugCharacteristic ^slicing.discriminator.type = #pattern
+* drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "code"
 * drugCharacteristic ^slicing.rules = #open
 * drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
@@ -64,7 +64,7 @@ Parent: MedicationKnowledge
 * cost MS
 * relatedMedicationKnowledge MS
 * relatedMedicationKnowledge.reference MS
-* relatedMedicationKnowledge ^slicing.discriminator.type = #pattern
+* relatedMedicationKnowledge ^slicing.discriminator.type = #value
 * relatedMedicationKnowledge ^slicing.discriminator.path = "code"
 * relatedMedicationKnowledge ^slicing.rules = #open
 * relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
@@ -86,14 +86,14 @@ Parent: MedicationKnowledge
 * synonym MS
 * amount MS
 * productType MS
-* productType ^slicing.discriminator.type = #pattern
+* productType ^slicing.discriminator.type = #value
 * productType ^slicing.discriminator.path = "."
 * productType ^slicing.rules = #open
 * productType contains
 	productLevel 1..1
 * productType[productLevel] = medCS#MEDPROD
 * medicineClassification MS
-* medicineClassification ^slicing.discriminator.type = #pattern
+* medicineClassification ^slicing.discriminator.type = #value
 * medicineClassification ^slicing.discriminator.path = "code"
 * medicineClassification ^slicing.rules = #open
 * medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
@@ -104,7 +104,7 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
-* drugCharacteristic ^slicing.discriminator.type = #pattern
+* drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "code"
 * drugCharacteristic ^slicing.rules = #open
 * drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
@@ -133,7 +133,7 @@ Parent: MedicationKnowledge
 * cost MS
 * relatedMedicationKnowledge MS
 * relatedMedicationKnowledge.reference MS
-* relatedMedicationKnowledge ^slicing.discriminator.type = #pattern
+* relatedMedicationKnowledge ^slicing.discriminator.type = #value
 * relatedMedicationKnowledge ^slicing.discriminator.path = "code"
 * relatedMedicationKnowledge ^slicing.rules = #open
 * relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
@@ -154,14 +154,14 @@ Parent: MedicationKnowledge
 * synonym MS
 * amount MS
 * productType MS
-* productType ^slicing.discriminator.type = #pattern
+* productType ^slicing.discriminator.type = #value
 * productType ^slicing.discriminator.path = "."
 * productType ^slicing.rules = #open
 * productType contains
 	productLevel 1..1
 * productType[productLevel] = medCS#PHARMPROD
 * medicineClassification MS
-* medicineClassification ^slicing.discriminator.type = #pattern
+* medicineClassification ^slicing.discriminator.type = #value
 * medicineClassification ^slicing.discriminator.path = "code"
 * medicineClassification ^slicing.rules = #open
 * medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
@@ -172,7 +172,7 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
-* drugCharacteristic ^slicing.discriminator.type = #pattern
+* drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "code"
 * drugCharacteristic ^slicing.rules = #open
 * drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
@@ -203,7 +203,7 @@ Parent: MedicationKnowledge
 * cost MS
 * relatedMedicationKnowledge MS
 * relatedMedicationKnowledge.reference MS
-* relatedMedicationKnowledge ^slicing.discriminator.type = #pattern
+* relatedMedicationKnowledge ^slicing.discriminator.type = #value
 * relatedMedicationKnowledge ^slicing.discriminator.path = "code"
 * relatedMedicationKnowledge ^slicing.rules = #open
 * relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
@@ -225,7 +225,7 @@ Parent: MedicationKnowledge
 * amount MS
 * productType MS
 * medicineClassification MS
-* medicineClassification ^slicing.discriminator.type = #pattern
+* medicineClassification ^slicing.discriminator.type = #value
 * medicineClassification ^slicing.discriminator.path = "code"
 * medicineClassification ^slicing.rules = #open
 * medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
@@ -239,7 +239,7 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
-* drugCharacteristic ^slicing.discriminator.type = #pattern
+* drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "code"
 * drugCharacteristic ^slicing.rules = #open
 * drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
@@ -278,7 +278,7 @@ Parent: MedicationKnowledge
 * cost MS
 * relatedMedicationKnowledge MS
 * relatedMedicationKnowledge.reference MS
-* relatedMedicationKnowledge ^slicing.discriminator.type = #pattern
+* relatedMedicationKnowledge ^slicing.discriminator.type = #value
 * relatedMedicationKnowledge ^slicing.discriminator.path = "code"
 * relatedMedicationKnowledge ^slicing.rules = #open
 * relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
