@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2021-08-18T13:03:39+00:00",
+  "date": "2021-08-23T12:09:47+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -426,7 +426,7 @@
         },
         "name": "Example of drug with granularity 1",
         "description": "Example of a drug with granularity 1",
-        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct"
+        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct"
       },
       {
         "extension": [
@@ -440,7 +440,7 @@
         },
         "name": "Example of drug with granularity 2",
         "description": "Example of a drug with granularity 2",
-        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct"
+        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct"
       },
       {
         "extension": [

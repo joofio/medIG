@@ -3,7 +3,7 @@
   "id": "example-2-of-drug-med",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct"
+      "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct"
     ]
   },
   "text": {
