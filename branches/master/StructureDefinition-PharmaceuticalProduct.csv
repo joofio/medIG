@@ -48,7 +48,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Additional names for a medication","Additional names for a medication, for example, the name(s) given to a medication in different countries.  For example, acetaminophen and paracetamol or salbutamol and albuterol.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.synonym",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.relatedMedicationKnowledge","","","",0,*,"Y","","","BackboneElement {[]} {[]}
-","Associated or related medication information","Associated or related knowledge about a medication.","","","","","","","","","",,,,,"","pattern:code}
+","Associated or related medication information","Associated or related knowledge about a medication.","","","","","","","","","",,,,,"","value:code}
 ","Slice based on the component.code pattern",,"open","MedicationKnowledge.relatedMedicationKnowledge",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.relatedMedicationKnowledge.id","","","",0,1,"","","","string {[]} {[]}
@@ -99,7 +99,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","A medication resource that is associated with this medication","Associated or related medications.  For example, if the medication is a branded product (e.g. Crestor), this is the Therapeutic Moeity (e.g. Rosuvastatin) or if this is a generic medication (e.g. Rosuvastatin), this would link to a branded product (e.g. Crestor).","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.associatedMedication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.productType","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
-","Category of the medication or product","Category of the medication or product (e.g. branded product, therapeutic moeity, generic product, innovator product, etc.).","","","","","","","","","",,,,,"","pattern:.}
+","Category of the medication or product","Category of the medication or product (e.g. branded product, therapeutic moeity, generic product, innovator product, etc.).","","","","","","","","","",,,,,"","value:.}
 ","",,"open","MedicationKnowledge.productType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.productType","productLevel","","",1,1,"","","","CodeableConcept {[]} {[]}
@@ -267,7 +267,7 @@ Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]
 ","The specific characteristic","The specific characteristic (e.g. height, weight, gender, etc.).","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.administrationGuidelines.patientCharacteristics.value",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.medicineClassification","","","",0,*,"Y","","","BackboneElement {[]} {[]}
-","Categorization of the medication within a formulary or classification system","Categorization of the medication within a formulary or classification system.","","","","","","","","","",,,,,"","pattern:code}
+","Categorization of the medication within a formulary or classification system","Categorization of the medication within a formulary or classification system.","","","","","","","","","",,,,,"","value:code}
 ","Slice based on the component.code pattern",,"open","MedicationKnowledge.medicineClassification",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.medicineClassification.id","","","",0,1,"","","","string {[]} {[]}
@@ -336,7 +336,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The number of product units the package would contain if fully loaded","The number of product units the package would contain if fully loaded.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.packaging.quantity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.drugCharacteristic","","","",0,*,"Y","","","BackboneElement {[]} {[]}
-","Specifies descriptive properties of the medicine","Specifies descriptive properties of the medicine, such as color, shape, imprints, etc.","","","","","","","","","",,,,,"","pattern:code}
+","Specifies descriptive properties of the medicine","Specifies descriptive properties of the medicine, such as color, shape, imprints, etc.","","","","","","","","","",,,,,"","value:code}
 ","Slice based on the component.code pattern",,"open","MedicationKnowledge.drugCharacteristic",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.drugCharacteristic.id","","","",0,1,"","","","string {[]} {[]}
