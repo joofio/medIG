@@ -15,9 +15,13 @@
       <sch:assert test="count(f:doseForm) &lt;= 0">doseForm: maximum cardinality of 'doseForm' is 0</sch:assert>
       <sch:assert test="count(f:amount) &lt;= 0">amount: maximum cardinality of 'amount' is 0</sch:assert>
       <sch:assert test="count(f:ingredient) &lt;= 0">ingredient: maximum cardinality of 'ingredient' is 0</sch:assert>
+      <sch:assert test="count(f:preparationInstruction) &lt;= 0">preparationInstruction: maximum cardinality of 'preparationInstruction' is 0</sch:assert>
       <sch:assert test="count(f:intendedRoute) &lt;= 0">intendedRoute: maximum cardinality of 'intendedRoute' is 0</sch:assert>
+      <sch:assert test="count(f:monitoringProgram) &lt;= 0">monitoringProgram: maximum cardinality of 'monitoringProgram' is 0</sch:assert>
+      <sch:assert test="count(f:administrationGuidelines) &lt;= 0">administrationGuidelines: maximum cardinality of 'administrationGuidelines' is 0</sch:assert>
       <sch:assert test="count(f:packaging) &lt;= 0">packaging: maximum cardinality of 'packaging' is 0</sch:assert>
       <sch:assert test="count(f:regulatory) &lt;= 0">regulatory: maximum cardinality of 'regulatory' is 0</sch:assert>
+      <sch:assert test="count(f:kinetics) &lt;= 0">kinetics: maximum cardinality of 'kinetics' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

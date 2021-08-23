@@ -3,7 +3,7 @@
 
 err = 22, warn = 25, info = 9
 IG Publisher Version: 1.1.77
-Generated Mon Aug 23 12:10:20 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Mon Aug 23 15:49:30 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
 
  Build Errors : 91 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 1 / 1
@@ -101,14 +101,14 @@ ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profil
 ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7323, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6448, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6573, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Substance-definitions.html#/html/body/div/div/div/p/a at Line 1726, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance-definitions.html#/html/body/div/div/div/p/a at Line 1725, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Substance-mappings.html#/html/body/div/div/div/p/a at Line 347, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Substance.html#/html/body/div/div/div/p/a at Line 1734, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance-mappings.html#/html/body/div/div/div/p/a at Line 327, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.html#/html/body/div/div/div/p/a at Line 1575, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Substance.profile.json.html#/html/body/div/div/div/p/a at Line 7318, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 6443, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Substance.profile.xml.html#/html/body/div/div/div/p/a at Line 6569, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.profile.json.html#/html/body/div/div/div/p/a at Line 7332, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 6454, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Substance.profile.xml.html#/html/body/div/div/div/p/a at Line 6583, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 177, column 293: The link 'CodeSystem-drug-cs.html#drug-cs-subs' for "subs" cannot be resolved (valid targets: [segment-header, drug-cs-PHARMPROD, publish-box, bottom, segment-post-footer, codesystem-drug-code-system, drug-cs-MEDPROD, ig-status, top, root, stripe, segment-footer, drug-cs-SUBST, drug-cs-MEDPACKPROD, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 183, column 639: The link 'CodeSystem-drug-cs.html#drug-cs-subs' for "subs" cannot be resolved (valid targets: [segment-header, drug-cs-PHARMPROD, publish-box, bottom, segment-post-footer, codesystem-drug-code-system, drug-cs-MEDPROD, ig-status, top, root, stripe, segment-footer, drug-cs-SUBST, drug-cs-MEDPACKPROD, segment-navbar, segment-content, segment-breadcrumb])
