@@ -71,7 +71,7 @@ Parent: MedicationKnowledge
 * relatedMedicationKnowledge[isASubstanceFrom].type =  rel-med-cs#SUBOF
 
 
-Profile: MedicinalProduct
+Profile: PharmaceuticalProduct
 Parent: MedicationKnowledge
 
 //* identifier MS
@@ -139,7 +139,7 @@ Parent: MedicationKnowledge
     isAMedicineOf 0..1 MS 
 * relatedMedicationKnowledge[isAMedicineOf].type =  rel-med-cs#MEDOF
 
-Profile: PharmaceuticalProduct
+Profile: MedicinalProduct
 Parent: MedicationKnowledge
 
 //* identifier MS
