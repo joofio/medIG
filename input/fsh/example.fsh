@@ -38,7 +38,7 @@ Title:    "Example of drug with granularity 1"
 * amount.value = 500
 * amount.unit = "mg" 
 
-* relatedMedicationKnowledge[isAMedicineOf].reference = Reference(example-1-of-drug-med)
+* relatedMedicationKnowledge[isaPharmaceuticalProductOf].reference = Reference(example-0-of-drug-med)
  
 //* relatedMedicationKnowledge[interaction].reference = Reference(example-a-of-drug-med) 
 
@@ -61,6 +61,8 @@ Title:    "Example of drug with granularity 2"
 * drugCharacteristic[marketingAuthorizationHolder].valueString = "Bene"
 * drugCharacteristic[marketingAuthorizationStatus].valueString = "Aproved"
 * drugCharacteristic[clinicalTrial].valueCodeableConcept = http://clinicaltrial-server.fhir.pt#1
+
+* relatedMedicationKnowledge[isAMedicinalProductOf].reference = Reference(example-1-of-drug-med)
 
 Instance: example-3-of-drug-med
 InstanceOf: PackagedMedicinalProduct
@@ -85,3 +87,5 @@ Title:    "Example of drug with granularity 3"
 
 * drugCharacteristic[batchNumber].valueString = "345-CE-123"
 
+
+* relatedMedicationKnowledge[packagedFormOf].reference = Reference(example-2-of-drug-med)
