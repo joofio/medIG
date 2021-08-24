@@ -6,7 +6,7 @@
     <profile value="http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title="Codes: {https://go.drugbank.com/drugs/ DB00316}">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>doseForm</b>: <span title="Codes: {http://snomed.info/sct 421026006}">Oral Tablet</span></p><p><b>amount</b>: 500 mg</p><p><b>synonym</b>: Paracetamol Oral Tablets 500 mg</p><h3>RelatedMedicationKnowledges</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/relMedCS MEDOF}">Is a Medicine of</span></td><td><a href="MedicationKnowledge-example-1-of-drug-med.html">Generated Summary: <span title="Codes: {https://go.drugbank.com/drugs/ DB00316}">Acetaminophen</span>; status: active; <span title="Codes: {http://snomed.info/sct 421026006}">Oral Tablet</span>; 500 mg; synonym: Paracetamol Oral Tablets 500 mg; <span title="Codes: {http://terminology.hl7.org/CodeSystem/medicineCS PHARMPROD}">pharmaceutical product</span>; <span title="Codes: {http://snomed.info/sct 26643006}">Oral Route</span></a></td></tr></table><p><b>productType</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/medicineCS PHARMPROD}">pharmaceutical product</span></p><p><b>intendedRoute</b>: <span title="Codes: {http://snomed.info/sct 26643006}">Oral Route</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title="Codes: {https://go.drugbank.com/drugs/ DB00316}">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>doseForm</b>: <span title="Codes: {http://snomed.info/sct 421026006}">Oral Tablet</span></p><p><b>amount</b>: 500 mg</p><p><b>synonym</b>: Paracetamol Oral Tablets 500 mg</p><h3>RelatedMedicationKnowledges</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/relMedCS PHARMOF}">Is the Pharmaceutical product of</span></td><td><a href="MedicationKnowledge-example-0-of-drug-med.html">Generated Summary: <span title="Codes: {https://go.drugbank.com/drugs/ DB00316}">Acetaminophen</span>; status: active; synonym: Acetaminophen, synonym: paracetamol, synonym: 4-(Acetylamino)phenol; <span title="Codes: {http://terminology.hl7.org/CodeSystem/medicineCS SUBST}">Substance</span></a></td></tr></table><p><b>productType</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/medicineCS PHARMPROD}">pharmaceutical product</span></p><p><b>intendedRoute</b>: <span title="Codes: {http://snomed.info/sct 26643006}">Oral Route</span></p></div>
   </text>
   <code>
     <coding>
@@ -32,11 +32,11 @@
     <type>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/relMedCS"/>
-        <code value="MEDOF"/>
+        <code value="PHARMOF"/>
       </coding>
     </type>
     <reference>
-      <reference value="MedicationKnowledge/example-1-of-drug-med"/>
+      <reference value="MedicationKnowledge/example-0-of-drug-med"/>
     </reference>
   </relatedMedicationKnowledge>
   <productType>
