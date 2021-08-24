@@ -48,7 +48,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Additional names for a medication","Additional names for a medication, for example, the name(s) given to a medication in different countries.  For example, acetaminophen and paracetamol or salbutamol and albuterol.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.synonym",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.relatedMedicationKnowledge","","","",0,*,"Y","","","BackboneElement {[]} {[]}
-","Associated or related medication information","Associated or related knowledge about a medication.","","","","","","","","","",,,,,"","value:code}
+","Associated or related medication information","Associated or related knowledge about a medication.","","","","","","","","","",,,,,"","value:type}
 ","Slice based on the component.code pattern",,"open","MedicationKnowledge.relatedMedicationKnowledge",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.relatedMedicationKnowledge.id","","","",0,1,"","","","string {[]} {[]}
