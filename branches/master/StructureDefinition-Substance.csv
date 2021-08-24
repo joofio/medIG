@@ -69,7 +69,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationKnowledge.relatedMedicationKnowledge.reference","","","",1,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationKnowledge]]}
 ","Associated documentation about the associated medication knowledge","Associated documentation about the associated medication knowledge.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.relatedMedicationKnowledge.reference",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MedicationKnowledge.relatedMedicationKnowledge","isASubstanceFrom","","",0,1,"Y","","","BackboneElement {[]} {[]}
+"MedicationKnowledge.relatedMedicationKnowledge","isASubstanceFrom","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Associated or related medication information","Associated or related knowledge about a medication.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.relatedMedicationKnowledge",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.relatedMedicationKnowledge.id","","","",0,1,"","","","string {[]} {[]}
