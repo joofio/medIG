@@ -99,7 +99,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","A medication resource that is associated with this medication","Associated or related medications.  For example, if the medication is a branded product (e.g. Crestor), this is the Therapeutic Moeity (e.g. Rosuvastatin) or if this is a generic medication (e.g. Rosuvastatin), this would link to a branded product (e.g. Crestor).","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.associatedMedication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.productType","","","",1,*,"Y","","","CodeableConcept {[]} {[]}
-","Category of the medication or product","Category of the medication or product (e.g. branded product, therapeutic moeity, generic product, innovator product, etc.).","","","","","","","","","",,,,,"","value:coding.code}
+","Category of the medication or product","Category of the medication or product (e.g. branded product, therapeutic moeity, generic product, innovator product, etc.).","","","","","","","","","",,,,,"","value:$this}
 ","",,"open","MedicationKnowledge.productType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.productType","productLevel","","",1,1,"","","","CodeableConcept {[]} {[]}
