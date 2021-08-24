@@ -164,7 +164,7 @@
   },
   "<a href="http://hl7.org/fhir/R4/medicationknowledge.html#MedicationKnowledge.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;synonym&lt;/b&gt;: Ben-U-Ron Oral Tablets 500 mg&lt;/p&gt;&lt;p&gt;&lt;b&gt;productType&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS PHARMPROD}\"&gt;pharmaceutical product&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;drugCharacteristic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MAS}\"&gt;marketing Authorization Status&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Aproved&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;drugCharacteristic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MA}\"&gt;marketing Authorization&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;drugCharacteristic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MAH}\"&gt;marketing Authorization Holder&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Bene&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;synonym&lt;/b&gt;: Ben-U-Ron Oral Tablets 500 mg&lt;/p&gt;&lt;p&gt;&lt;b&gt;productType&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS PHARMPROD}\"&gt;pharmaceutical product&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;drugCharacteristic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MAS}\"&gt;marketing Authorization Status&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Aproved&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;drugCharacteristic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MA}\"&gt;marketing Authorization&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;drugCharacteristic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MAH}\"&gt;marketing Authorization Holder&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Bene&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;drugCharacteristic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType TRIAL}\"&gt;Clinical Trial&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\"Codes: {http://clinicaltrial-server.fhir.pt 1}\"&gt;1&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/medicationknowledge.html#MedicationKnowledge.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/medicationknowledge.html#MedicationKnowledge.synonym">synonym</a>" : [
@@ -213,6 +213,24 @@
         ]
       },
       "<a href="http://hl7.org/fhir/R4/medicationknowledge.html#MedicationKnowledge.drugCharacteristic.value[x]">valueString</a>" : "Bene"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/medicationknowledge.html#MedicationKnowledge.drugCharacteristic.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/productType",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "TRIAL"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/medicationknowledge.html#MedicationKnowledge.drugCharacteristic.value[x]">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://clinicaltrial-server.fhir.pt",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "1"
+          }
+        ]
+      }
     }
   ]
 }</code></pre>
@@ -244,8 +262,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="2c63715d-ed72-4bc2-9af9-fbc0ebdaafd3">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package medication.ig.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 24, 2021 08:01+0000">2021-08-24</span>
+        <p><a name="7d00de7f-86b6-42ae-8a69-19ec56712cb5">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package medication.ig.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 24, 2021 08:10+0000">2021-08-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
