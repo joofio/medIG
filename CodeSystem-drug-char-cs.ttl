@@ -10,53 +10,62 @@
   fhir:Resource.id [ fhir:value "drug-char-cs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/productType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DT<a name=\"drug-char-cs-DT\"> </a></td><td>Drug Type</td></tr><tr><td style=\"white-space:nowrap\">DOM<a name=\"drug-char-cs-DOM\"> </a></td><td>Domain of drug </td></tr><tr><td style=\"white-space:nowrap\">VER<a name=\"drug-char-cs-VER\"> </a></td><td>Version</td></tr><tr><td style=\"white-space:nowrap\">CT<a name=\"drug-char-cs-CT\"> </a></td><td>ContraIndication</td></tr><tr><td style=\"white-space:nowrap\">MA<a name=\"drug-char-cs-MA\"> </a></td><td>marketing Authorization</td></tr><tr><td style=\"white-space:nowrap\">MAH<a name=\"drug-char-cs-MAH\"> </a></td><td>marketing Authorization Holder</td></tr><tr><td style=\"white-space:nowrap\">MAS<a name=\"drug-char-cs-MAS\"> </a></td><td>marketing Authorization Status</td></tr><tr><td style=\"white-space:nowrap\">TRIAL<a name=\"drug-char-cs-TRIAL\"> </a></td><td>Clinical Trial</td></tr><tr><td style=\"white-space:nowrap\">BATCH<a name=\"drug-char-cs-BATCH\"> </a></td><td>Batch Number</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/productType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DT<a name=\"drug-char-cs-DT\"> </a></td><td>Drug Type</td><td>Drug Type</td></tr><tr><td style=\"white-space:nowrap\">DOM<a name=\"drug-char-cs-DOM\"> </a></td><td>Domain of drug</td><td>Domain of drug</td></tr><tr><td style=\"white-space:nowrap\">VER<a name=\"drug-char-cs-VER\"> </a></td><td>Version</td><td>Version</td></tr><tr><td style=\"white-space:nowrap\">CT<a name=\"drug-char-cs-CT\"> </a></td><td>ContraIndication</td><td>ContraIndication</td></tr><tr><td style=\"white-space:nowrap\">MA<a name=\"drug-char-cs-MA\"> </a></td><td>marketing Authorization</td><td>marketing Authorization</td></tr><tr><td style=\"white-space:nowrap\">MAH<a name=\"drug-char-cs-MAH\"> </a></td><td>marketing Authorization Holder</td><td>marketing Authorization Holder</td></tr><tr><td style=\"white-space:nowrap\">MAS<a name=\"drug-char-cs-MAS\"> </a></td><td>marketing Authorization Status</td><td>marketing Authorization Status</td></tr><tr><td style=\"white-space:nowrap\">TRIAL<a name=\"drug-char-cs-TRIAL\"> </a></td><td>Clinical Trial</td><td>Clinical Trial</td></tr><tr><td style=\"white-space:nowrap\">BATCH<a name=\"drug-char-cs-BATCH\"> </a></td><td>Batch Number</td><td>Batch Number</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://terminology.hl7.org/CodeSystem/productType"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "DrugCharacteristicCS"];
   fhir:CodeSystem.title [ fhir:value "Drug charachteristisc Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-08-24T09:10:26+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-08-24T11:14:54+00:00"^^xsd:dateTime];
   fhir:CodeSystem.description [ fhir:value "Codes for drugCharacteristic"];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "9"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "DT" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Drug Type" ]
+     fhir:CodeSystem.concept.display [ fhir:value "Drug Type" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Drug Type" ]
   ], [
      fhir:index 1;
      fhir:CodeSystem.concept.code [ fhir:value "DOM" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Domain of drug " ]
+     fhir:CodeSystem.concept.display [ fhir:value "Domain of drug" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Domain of drug" ]
   ], [
      fhir:index 2;
      fhir:CodeSystem.concept.code [ fhir:value "VER" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Version" ]
+     fhir:CodeSystem.concept.display [ fhir:value "Version" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Version" ]
   ], [
      fhir:index 3;
      fhir:CodeSystem.concept.code [ fhir:value "CT" ];
-     fhir:CodeSystem.concept.display [ fhir:value "ContraIndication" ]
+     fhir:CodeSystem.concept.display [ fhir:value "ContraIndication" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ContraIndication" ]
   ], [
      fhir:index 4;
      fhir:CodeSystem.concept.code [ fhir:value "MA" ];
-     fhir:CodeSystem.concept.display [ fhir:value "marketing Authorization" ]
+     fhir:CodeSystem.concept.display [ fhir:value "marketing Authorization" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "marketing Authorization" ]
   ], [
      fhir:index 5;
      fhir:CodeSystem.concept.code [ fhir:value "MAH" ];
-     fhir:CodeSystem.concept.display [ fhir:value "marketing Authorization Holder" ]
+     fhir:CodeSystem.concept.display [ fhir:value "marketing Authorization Holder" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "marketing Authorization Holder" ]
   ], [
      fhir:index 6;
      fhir:CodeSystem.concept.code [ fhir:value "MAS" ];
-     fhir:CodeSystem.concept.display [ fhir:value "marketing Authorization Status" ]
+     fhir:CodeSystem.concept.display [ fhir:value "marketing Authorization Status" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "marketing Authorization Status" ]
   ], [
      fhir:index 7;
      fhir:CodeSystem.concept.code [ fhir:value "TRIAL" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Clinical Trial" ]
+     fhir:CodeSystem.concept.display [ fhir:value "Clinical Trial" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Clinical Trial" ]
   ], [
      fhir:index 8;
      fhir:CodeSystem.concept.code [ fhir:value "BATCH" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Batch Number" ]
+     fhir:CodeSystem.concept.display [ fhir:value "Batch Number" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Batch Number" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

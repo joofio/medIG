@@ -3,53 +3,62 @@
   "id": "drug-char-cs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/productType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DT<a name=\"drug-char-cs-DT\"> </a></td><td>Drug Type</td></tr><tr><td style=\"white-space:nowrap\">DOM<a name=\"drug-char-cs-DOM\"> </a></td><td>Domain of drug </td></tr><tr><td style=\"white-space:nowrap\">VER<a name=\"drug-char-cs-VER\"> </a></td><td>Version</td></tr><tr><td style=\"white-space:nowrap\">CT<a name=\"drug-char-cs-CT\"> </a></td><td>ContraIndication</td></tr><tr><td style=\"white-space:nowrap\">MA<a name=\"drug-char-cs-MA\"> </a></td><td>marketing Authorization</td></tr><tr><td style=\"white-space:nowrap\">MAH<a name=\"drug-char-cs-MAH\"> </a></td><td>marketing Authorization Holder</td></tr><tr><td style=\"white-space:nowrap\">MAS<a name=\"drug-char-cs-MAS\"> </a></td><td>marketing Authorization Status</td></tr><tr><td style=\"white-space:nowrap\">TRIAL<a name=\"drug-char-cs-TRIAL\"> </a></td><td>Clinical Trial</td></tr><tr><td style=\"white-space:nowrap\">BATCH<a name=\"drug-char-cs-BATCH\"> </a></td><td>Batch Number</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/productType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DT<a name=\"drug-char-cs-DT\"> </a></td><td>Drug Type</td><td>Drug Type</td></tr><tr><td style=\"white-space:nowrap\">DOM<a name=\"drug-char-cs-DOM\"> </a></td><td>Domain of drug</td><td>Domain of drug</td></tr><tr><td style=\"white-space:nowrap\">VER<a name=\"drug-char-cs-VER\"> </a></td><td>Version</td><td>Version</td></tr><tr><td style=\"white-space:nowrap\">CT<a name=\"drug-char-cs-CT\"> </a></td><td>ContraIndication</td><td>ContraIndication</td></tr><tr><td style=\"white-space:nowrap\">MA<a name=\"drug-char-cs-MA\"> </a></td><td>marketing Authorization</td><td>marketing Authorization</td></tr><tr><td style=\"white-space:nowrap\">MAH<a name=\"drug-char-cs-MAH\"> </a></td><td>marketing Authorization Holder</td><td>marketing Authorization Holder</td></tr><tr><td style=\"white-space:nowrap\">MAS<a name=\"drug-char-cs-MAS\"> </a></td><td>marketing Authorization Status</td><td>marketing Authorization Status</td></tr><tr><td style=\"white-space:nowrap\">TRIAL<a name=\"drug-char-cs-TRIAL\"> </a></td><td>Clinical Trial</td><td>Clinical Trial</td></tr><tr><td style=\"white-space:nowrap\">BATCH<a name=\"drug-char-cs-BATCH\"> </a></td><td>Batch Number</td><td>Batch Number</td></tr></table></div>"
   },
   "url": "http://terminology.hl7.org/CodeSystem/productType",
   "version": "0.1.0",
   "name": "DrugCharacteristicCS",
   "title": "Drug charachteristisc Code System",
   "status": "active",
-  "date": "2021-08-24T09:10:26+00:00",
+  "date": "2021-08-24T11:14:54+00:00",
   "description": "Codes for drugCharacteristic",
   "content": "complete",
   "count": 9,
   "concept": [
     {
       "code": "DT",
-      "display": "Drug Type"
+      "display": "Drug Type",
+      "definition": "Drug Type"
     },
     {
       "code": "DOM",
-      "display": "Domain of drug "
+      "display": "Domain of drug",
+      "definition": "Domain of drug"
     },
     {
       "code": "VER",
-      "display": "Version"
+      "display": "Version",
+      "definition": "Version"
     },
     {
       "code": "CT",
-      "display": "ContraIndication"
+      "display": "ContraIndication",
+      "definition": "ContraIndication"
     },
     {
       "code": "MA",
-      "display": "marketing Authorization"
+      "display": "marketing Authorization",
+      "definition": "marketing Authorization"
     },
     {
       "code": "MAH",
-      "display": "marketing Authorization Holder"
+      "display": "marketing Authorization Holder",
+      "definition": "marketing Authorization Holder"
     },
     {
       "code": "MAS",
-      "display": "marketing Authorization Status"
+      "display": "marketing Authorization Status",
+      "definition": "marketing Authorization Status"
     },
     {
       "code": "TRIAL",
-      "display": "Clinical Trial"
+      "display": "Clinical Trial",
+      "definition": "Clinical Trial"
     },
     {
       "code": "BATCH",
-      "display": "Batch Number"
+      "display": "Batch Number",
+      "definition": "Batch Number"
     }
   ]
 }

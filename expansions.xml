@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="c7ab585b-04e8-4143-adba-7eaa3bcd21c6"/>
+  <id value="22d44c01-1f12-4feb-b414-4e331aa68f51"/>
   <meta>
-    <lastUpdated value="2021-08-24T09:10:26.893+00:00"/>
+    <lastUpdated value="2021-08-24T11:14:54.705+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -45,26 +45,26 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-medicineCS-MEDPROD"> </a>
-                  <a href="CodeSystem-drug-cs.html#drug-cs-MEDPROD">MEDPROD</a>
-                </td>
-                <td>med product</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-medicineCS-MEDPACKPROD"> </a>
-                  <a href="CodeSystem-drug-cs.html#drug-cs-MEDPACKPROD">MEDPACKPROD</a>
-                </td>
-                <td>package product</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-medicineCS-PHARMPROD"> </a>
                   <a href="CodeSystem-drug-cs.html#drug-cs-PHARMPROD">PHARMPROD</a>
                 </td>
-                <td>pharmaceutical product</td>
+                <td>Pharmaceutical Product</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-medicineCS-MEDPROD"> </a>
+                  <a href="CodeSystem-drug-cs.html#drug-cs-MEDPROD">MEDPROD</a>
+                </td>
+                <td>Medicinal Product</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-medicineCS-PACKMEDPROD"> </a>
+                  <a href="CodeSystem-drug-cs.html#drug-cs-PACKMEDPROD">PACKMEDPROD</a>
+                </td>
+                <td>Packaged Medicinal Product</td>
                 <td/>
               </tr>
             </table>
@@ -75,11 +75,11 @@
         <name value="GranularityVS"/>
         <title value="Granularity Value Set"/>
         <status value="active"/>
-        <date value="2021-08-24T09:10:26+00:00"/>
+        <date value="2021-08-24T11:14:54+00:00"/>
         <description value="Indicates the granularity of product"/>
         <expansion>
-          <identifier value="urn:uuid:3c827793-d176-468a-9a04-c2bade002954"/>
-          <timestamp value="2021-08-24T09:10:50+00:00"/>
+          <identifier value="urn:uuid:f52890b8-91b8-4d33-b818-b31f80b3985b"/>
+          <timestamp value="2021-08-24T11:15:17+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -96,18 +96,18 @@
           </contains>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
-            <code value="MEDPROD"/>
-            <display value="med product"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
-            <code value="MEDPACKPROD"/>
-            <display value="package product"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
             <code value="PHARMPROD"/>
-            <display value="pharmaceutical product"/>
+            <display value="Pharmaceutical Product"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
+            <code value="MEDPROD"/>
+            <display value="Medicinal Product"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
+            <code value="PACKMEDPROD"/>
+            <display value="Packaged Medicinal Product"/>
           </contains>
         </expansion>
       </ValueSet>
