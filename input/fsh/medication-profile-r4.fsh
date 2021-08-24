@@ -70,7 +70,7 @@ Parent: MedicationKnowledge
 * relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
 * relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
 * relatedMedicationKnowledge contains
-    isASubstanceFrom 0..1 MS  //item reference is not for medicationKnowledge
+    isASubstanceFrom 0..* MS  //item reference is not for medicationKnowledge
 * relatedMedicationKnowledge[isASubstanceFrom].type =  rel-med-cs#SUBOF
 
 
@@ -286,7 +286,7 @@ Parent: MedicationKnowledge
 * relatedMedicationKnowledge MS
 * relatedMedicationKnowledge.reference MS
 * relatedMedicationKnowledge ^slicing.discriminator.type = #value
-* relatedMedicationKnowledge ^slicing.discriminator.path = "code"
+* relatedMedicationKnowledge ^slicing.discriminator.path = "type"
 * relatedMedicationKnowledge ^slicing.rules = #open
 * relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
 * relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
