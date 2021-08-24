@@ -87,11 +87,11 @@ Parent: MedicationKnowledge
 * amount MS
 * productType MS
 * productType ^slicing.discriminator.type = #value
-* productType ^slicing.discriminator.path = "."
+* productType ^slicing.discriminator.path = "$this"
 * productType ^slicing.rules = #open
 * productType contains
 	productLevel 1..1
-* productType[productLevel] = medCS#MEDPROD
+* productType[productLevel] = medCS#PHARMPROD
 * medicineClassification MS
 * medicineClassification ^slicing.discriminator.type = #value
 * medicineClassification ^slicing.discriminator.path = "type"
@@ -155,11 +155,11 @@ Parent: MedicationKnowledge
 * amount MS
 * productType MS
 * productType ^slicing.discriminator.type = #value
-* productType ^slicing.discriminator.path = "."
+* productType ^slicing.discriminator.path = "$this"
 * productType ^slicing.rules = #open
 * productType contains
 	productLevel 1..1
-* productType[productLevel] = medCS#PHARMPROD
+* productType[productLevel] = medCS#MEDPROD
 * medicineClassification MS
 * medicineClassification ^slicing.discriminator.type = #value
 * medicineClassification ^slicing.discriminator.path = "type"
@@ -225,6 +225,12 @@ Parent: MedicationKnowledge
 * synonym MS
 * amount MS
 * productType MS
+* productType ^slicing.discriminator.type = #value
+* productType ^slicing.discriminator.path = "$this"
+* productType ^slicing.rules = #open
+* productType contains
+	productLevel 1..1
+* productType[productLevel] = medCS#PACKMEDPROD
 * medicineClassification MS
 * medicineClassification ^slicing.discriminator.type = #value
 * medicineClassification ^slicing.discriminator.path = "type"

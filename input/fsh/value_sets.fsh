@@ -88,14 +88,15 @@ Description: "Codes for "
 // Spacing layout over three lines per term is optional, for clarity
 // The definition (second text string) is optional
 * #SUBST  
-    "substance"
+    "Substance"
     ""
-* #MEDPROD
-    "medicine Product"
-* #MEDPACKPROD
-    "pharmaceutical medicine product packaged"
 * #PHARMPROD
     "pharmaceutical product"
+* #MEDPROD
+    "Medicinal Product"
+* #PACKMEDPROD
+    "Packaged Medicinal Product"
+
 
 // @Name: Include Single Codes
 // @Description: Value set with explicit codes
