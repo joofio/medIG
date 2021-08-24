@@ -474,12 +474,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:MedicationKnowledge/f:drugCharacteristic</sch:title>
-    <sch:rule context="f:MedicationKnowledge/f:drugCharacteristic">
-      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>MedicationKnowledge.drugCharacteristic</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:drugCharacteristic">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -551,6 +545,17 @@
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:MedicationKnowledge/f:drugCharacteristic</sch:title>
+    <sch:rule context="f:MedicationKnowledge/f:drugCharacteristic">
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
