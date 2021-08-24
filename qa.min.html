@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 91, errors = 13, warn = 25, info = 7 -->
+<!-- broken links = 93, errors = 11, warn = 26, info = 5 -->
 <head>
   <title>medicationIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for medicationIG</h1>
- <p>Generated Tue Aug 24 08:56:44 UTC 2021, FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/example">http://hl7.org/fhir/us/example</a> (<a href="http://hl7.org/fhir/us/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Tue Aug 24 09:11:05 UTC 2021, FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/example">http://hl7.org/fhir/us/example</a> (<a href="http://hl7.org/fhir/us/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
  <tr><td>Publication Code:</td><td>example<span style="color: maroon; font-weight: bold"> </span>. PackageId = medication.ig.example, Canonical = http://hl7.org/fhir/us/example</td></tr>
@@ -36,14 +36,14 @@
  <tr><td>Publication Rules:</td><td>Code = example. package-list.json: file not found in /github/workspace <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.org/fhir/us/example (Problem #1 with package-list.json at http://hl7.org/fhir/us/example: http://hl7.org/fhir/us/example/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 91, errors = 13, warn = 25, info = 7</td></tr>
+ <tr><td>Summary:</td><td> broken links = 93, errors = 11, warn = 26, info = 5</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>91</b></td><td><b>6</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>93</b></td><td><b>6</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-drug-char-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -55,16 +55,13 @@
      <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-medication.ig.example"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-example-1-of-drug-med"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-example-2-of-drug-med"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>2</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationKnowledge-example-2-of-drug-med"><b>/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-MedicationKnowledgeMine"><b>/github/workspace/fsh-generated/resources/StructureDefinition-MedicationKnowledgeMine</b></a></td><td><b>9</b></td><td><b>13</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-granularity-vs"><b>/github/workspace/fsh-generated/resources/ValueSet-granularity-vs</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-granularity-vs"><b>/github/workspace/fsh-generated/resources/ValueSet-granularity-vs</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -90,277 +87,283 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/rel-med-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-char-cs.change.history.html#bf70682b-deb2-4bc5-a182-ce17556bfa72">CodeSystem-drug-char-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-char-cs.change.history.html#6d313541-7427-42c9-9f39-96328d77eca2">CodeSystem-drug-char-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-char-cs.html#2754be96-7e97-4ec1-9692-f618c0b040e9">CodeSystem-drug-char-cs.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-char-cs.html#7fbd9642-76c6-4fbc-92bd-b09b6f30ccfc">CodeSystem-drug-char-cs.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-char-cs.json.html#59d6bfed-a1fb-4a80-bf08-7a327c9fffed">CodeSystem-drug-char-cs.json.html#/html/body/div/div/div/p/a at Line 243, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-char-cs.json.html#c7136574-c39d-4248-ab3d-e9a55c7857b4">CodeSystem-drug-char-cs.json.html#/html/body/div/div/div/p/a at Line 243, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-char-cs.ttl.html#a4e065c2-19dd-4f95-a638-0f69bce59dc3">CodeSystem-drug-char-cs.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-char-cs.ttl.html#d17bb3dc-114d-4982-967e-ed59ace31fda">CodeSystem-drug-char-cs.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-char-cs.xml.html#08da0308-9fb8-4a72-9b34-2468d75097d9">CodeSystem-drug-char-cs.xml.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-char-cs.xml.html#b6af2f23-cb7c-4eab-ae16-7aa00c16bd55">CodeSystem-drug-char-cs.xml.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-cs.change.history.html#91352a22-4319-4f0e-b108-f381d24f0efa">CodeSystem-drug-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-cs.change.history.html#f30ee65a-d9b8-45b1-9ff2-d01bfb486bb0">CodeSystem-drug-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-cs.html#c2761bd1-ad6f-4358-84ad-3e0606797719">CodeSystem-drug-cs.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-cs.html#f91b2a19-d389-480d-a61a-8817bbcddacd">CodeSystem-drug-cs.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-cs.json.html#8b649d4a-be91-4b3c-ac20-74088e3b0723">CodeSystem-drug-cs.json.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-cs.json.html#6732c352-1066-4150-a3a1-475ecc19f57b">CodeSystem-drug-cs.json.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-cs.ttl.html#63887231-caba-4874-9929-cf469744d3c3">CodeSystem-drug-cs.ttl.html#/html/body/div/div/div/p/a at Line 236, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-cs.ttl.html#b73a8454-d84b-40c5-a1c1-c44406c026e0">CodeSystem-drug-cs.ttl.html#/html/body/div/div/div/p/a at Line 236, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-cs.xml.html#45687c5b-53ef-4ad4-a5ad-aa6e364d5cc7">CodeSystem-drug-cs.xml.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-cs.xml.html#f6b571f6-4beb-4135-9d79-3a5d427f7a02">CodeSystem-drug-cs.xml.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-rel-med-cs.change.history.html#35124e24-a804-485b-a0ad-e3fb5319f6ff">CodeSystem-rel-med-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-rel-med-cs.change.history.html#9b511af0-a337-456a-b8e2-4c01bfd17269">CodeSystem-rel-med-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-rel-med-cs.html#ad104bb0-b67d-45e8-be82-feb5229eddfa">CodeSystem-rel-med-cs.html#/html/body/div/div/div/p/a at Line 205, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-rel-med-cs.html#44b8d4df-6fcb-4d6e-a33c-80dc851e1fcb">CodeSystem-rel-med-cs.html#/html/body/div/div/div/p/a at Line 205, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-rel-med-cs.json.html#2bc443e9-43a9-48b4-af90-14439e7b1824">CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-rel-med-cs.json.html#67b7caa1-b01a-47ed-9767-0a0533e2bc3d">CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-rel-med-cs.ttl.html#2771983f-b320-4363-a3aa-afc19faeb0df">CodeSystem-rel-med-cs.ttl.html#/html/body/div/div/div/p/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-rel-med-cs.ttl.html#717fb1b0-e077-401f-a41a-7461c08bc7ad">CodeSystem-rel-med-cs.ttl.html#/html/body/div/div/div/p/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-rel-med-cs.xml.html#1f216b6c-6f3d-4282-ac56-d23a1eb2d284">CodeSystem-rel-med-cs.xml.html#/html/body/div/div/div/p/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-rel-med-cs.xml.html#6afd3ab5-70e0-4acd-b54e-f2e200713f7b">CodeSystem-rel-med-cs.xml.html#/html/body/div/div/div/p/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-type-med-class-cs.change.history.html#28beb8a7-1512-451d-a5c6-d1ae4d4fa62a">CodeSystem-type-med-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-type-med-class-cs.change.history.html#5db4cb47-64cf-442a-add8-cff705232faa">CodeSystem-type-med-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-type-med-class-cs.html#8b1a4e52-e14e-4235-9c17-006c5268ba12">CodeSystem-type-med-class-cs.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-type-med-class-cs.html#0fd5263b-1814-4393-8e58-07fdfec678f6">CodeSystem-type-med-class-cs.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-type-med-class-cs.json.html#63f2af52-66c7-41f7-8451-e87adea36a2b">CodeSystem-type-med-class-cs.json.html#/html/body/div/div/div/p/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-type-med-class-cs.json.html#38a2ef44-6508-4ca6-8dc6-d15be869f4c9">CodeSystem-type-med-class-cs.json.html#/html/body/div/div/div/p/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-type-med-class-cs.ttl.html#d4dddaf8-9965-4676-8fff-da0377de3c68">CodeSystem-type-med-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-type-med-class-cs.ttl.html#796ce5a1-d1f8-4994-8689-7ee640c19c48">CodeSystem-type-med-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-type-med-class-cs.xml.html#8deef9ec-8e87-428f-aa6c-b2b4b37ff565">CodeSystem-type-med-class-cs.xml.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-type-med-class-cs.xml.html#e14acfb8-aaab-4dc2-b152-411f57890e64">CodeSystem-type-med-class-cs.xml.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.change.history.html#98c71033-6fb4-4c52-a01c-27dda54e9ef5">MedicationKnowledge-example-0-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.change.history.html#2c0b1afc-a408-42d1-90cf-a4408933bae7">MedicationKnowledge-example-0-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.html#dc8dfc90-999e-4fd5-be92-c0491c8172b2">MedicationKnowledge-example-0-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.html#76dd9117-6314-4a1a-9194-46ede98146db">MedicationKnowledge-example-0-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.json.html#29209428-8b66-4dca-9c83-784a1dcf665d">MedicationKnowledge-example-0-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.json.html#81903bd5-34b8-481c-b691-32a36ac30182">MedicationKnowledge-example-0-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.ttl.html#fd9ef5e4-1fa0-4e57-9205-e96d0335d503">MedicationKnowledge-example-0-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 258, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.ttl.html#944c1804-06d8-4e08-abdd-6d1b9f0960b7">MedicationKnowledge-example-0-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 258, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.xml.html#2df8c959-5929-4769-a05b-ba50c07d51a8">MedicationKnowledge-example-0-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.xml.html#45061ff3-a8dd-4e3b-9e9b-f8b9a310df22">MedicationKnowledge-example-0-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.change.history.html#e36d6487-8e5b-4d5f-bd41-4d8e76bd7178">MedicationKnowledge-example-1-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.change.history.html#c8c73902-d0ef-4d42-9c0a-e169090db481">MedicationKnowledge-example-1-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.html#24ca7fda-9f9e-4165-9bae-51750640d8ba">MedicationKnowledge-example-1-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.html#ef713343-e36e-4db3-9dd6-c7fb9088c14a">MedicationKnowledge-example-1-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.json.html#7ec34110-54e6-4857-8425-bb9459186267">MedicationKnowledge-example-1-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.json.html#5b45f5a5-4cb1-4a8e-9694-c49752b2c471">MedicationKnowledge-example-1-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.ttl.html#d2984353-aedb-4232-b5f4-b03d9a6c4518">MedicationKnowledge-example-1-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.ttl.html#fab26811-c08c-4706-9bfa-17516b69b49a">MedicationKnowledge-example-1-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.xml.html#8d66fb4e-a9b9-4eec-a58f-f68c355f478d">MedicationKnowledge-example-1-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.xml.html#cbebb83e-67f7-48ec-9f51-9ca3a44cc502">MedicationKnowledge-example-1-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.change.history.html#d0590db1-8fad-4ade-89f6-47307f7df1cd">MedicationKnowledge-example-2-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.change.history.html#4c4dbbbb-c143-4137-b53f-6156870b1632">MedicationKnowledge-example-2-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.html#f8e589e1-d52f-4318-be96-aea30cd474b5">MedicationKnowledge-example-2-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.html#20cb99a3-60f5-470e-be73-88c539c764c0">MedicationKnowledge-example-2-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.json.html#2e75501f-6ecd-424f-892b-e027890df892">MedicationKnowledge-example-2-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.json.html#7e5702e0-be30-4da9-a428-951c8a638744">MedicationKnowledge-example-2-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.ttl.html#74998e1a-6dbd-49bc-a350-411b58d1be2d">MedicationKnowledge-example-2-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.ttl.html#4c442f20-0503-42f5-a57e-42362dbf9b26">MedicationKnowledge-example-2-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.xml.html#73d57507-b360-4fbb-b824-7761a5ae6c1f">MedicationKnowledge-example-2-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.xml.html#4440bd3f-9592-4d47-859f-dbde262bf529">MedicationKnowledge-example-2-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.change.history.html#df4335c8-c763-49d2-956c-176639692a4b">MedicationKnowledge-example-3-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.change.history.html#29f59697-13fb-4c32-b0b9-728187730884">MedicationKnowledge-example-3-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.html#73cf8b42-bec3-4902-be7f-8a972ec7e20a">MedicationKnowledge-example-3-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.html#c18d93f5-84f0-423b-a305-1a796700a2f5">MedicationKnowledge-example-3-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.json.html#ba1917a0-1c00-4939-ba8d-6337d0027977">MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.json.html#96e80c8e-4d08-4c6f-a4bf-486d0d5b4ac8">MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 260, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.ttl.html#1a29a2ed-cbfa-4d57-857f-8d30517bb0f8">MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.ttl.html#d4034deb-17cf-473b-9f08-d2710e31b795">MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 260, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.xml.html#49a30c28-4615-4096-8db1-21b07616244d">MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.xml.html#99e7cf6b-69f1-4fdf-bd19-2f235aba1862">MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 243, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicationKnowledgeMine-definitions.html#0883485b-6309-470b-ad3b-4defdf7459e4">StructureDefinition-MedicationKnowledgeMine-definitions.html#/html/body/div/div/div/p/a at Line 514, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicationKnowledgeMine-definitions.html#3edc38bc-b2d6-4a1b-b803-2236f843a665">StructureDefinition-MedicationKnowledgeMine-definitions.html#/html/body/div/div/div/p/a at Line 514, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicationKnowledgeMine-examples.html#be54a7dc-a901-42c3-8c19-1c5570ba4d37">StructureDefinition-MedicationKnowledgeMine-examples.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicationKnowledgeMine-examples.html#f986eb6f-eac6-46c9-b340-7fdfe6b20cca">StructureDefinition-MedicationKnowledgeMine-examples.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicationKnowledgeMine-mappings.html#cfd91094-b17e-4841-be3d-f7082f119dde">StructureDefinition-MedicationKnowledgeMine-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicationKnowledgeMine-mappings.html#9e86cfb9-bcab-4357-adfb-e3f450854881">StructureDefinition-MedicationKnowledgeMine-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicationKnowledgeMine.html#64e6f3ba-cdb2-4cb0-b6aa-23a164462e2d">StructureDefinition-MedicationKnowledgeMine.html#/html/body/div/div/div/p/a at Line 1049, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicationKnowledgeMine.html#98749006-87ac-4722-b725-4d7a458c200e">StructureDefinition-MedicationKnowledgeMine.html#/html/body/div/div/div/p/a at Line 1049, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicationKnowledgeMine.profile.history.html#5ce1e1aa-85e0-47bc-998b-5b9088057a74">StructureDefinition-MedicationKnowledgeMine.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicationKnowledgeMine.profile.history.html#92fd8832-0e2c-4672-a365-efb9f01c34c7">StructureDefinition-MedicationKnowledgeMine.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicationKnowledgeMine.profile.json.html#dd4ec40b-30f5-4d4d-944f-6f90a652df7d">StructureDefinition-MedicationKnowledgeMine.profile.json.html#/html/body/div/div/div/p/a at Line 2836, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicationKnowledgeMine.profile.json.html#c3e71aea-1eb8-4e49-b591-8375f963702b">StructureDefinition-MedicationKnowledgeMine.profile.json.html#/html/body/div/div/div/p/a at Line 2836, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicationKnowledgeMine.profile.ttl.html#027c44d7-763d-4d4e-8de9-5b522d60ddff">StructureDefinition-MedicationKnowledgeMine.profile.ttl.html#/html/body/div/div/div/p/a at Line 2223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicationKnowledgeMine.profile.ttl.html#72f31e7a-56e3-4694-af79-e5f87f1678e7">StructureDefinition-MedicationKnowledgeMine.profile.ttl.html#/html/body/div/div/div/p/a at Line 2223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicationKnowledgeMine.profile.xml.html#aa3c792d-6ee8-4d55-813a-bcb7a8b26b40">StructureDefinition-MedicationKnowledgeMine.profile.xml.html#/html/body/div/div/div/p/a at Line 2376, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicationKnowledgeMine.profile.xml.html#10e09687-5313-4585-bea7-f1c2138f0c3f">StructureDefinition-MedicationKnowledgeMine.profile.xml.html#/html/body/div/div/div/p/a at Line 2376, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct-definitions.html#b60e9b5b-4fb0-42fe-8cfd-a1cd7ca39b20">StructureDefinition-MedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1790, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct-definitions.html#bb2b1e26-36af-490a-b646-fb8b393828d7">StructureDefinition-MedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1790, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct-examples.html#945bb856-a34a-420b-9672-3e24f5f2cc7d">StructureDefinition-MedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct-examples.html#48cb8816-ff8d-4df6-8834-2380f37dab04">StructureDefinition-MedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct-mappings.html#e67a1852-5e6c-4fbe-835f-be1aae411fd1">StructureDefinition-MedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 390, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct-mappings.html#813bace9-1d01-4800-90d8-564c8887da82">StructureDefinition-MedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 390, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct.html#f5ee2c81-a90e-421e-81cd-d5f89411e899">StructureDefinition-MedicinalProduct.html#/html/body/div/div/div/p/a at Line 1989, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct.html#9d691aef-217c-4c30-9780-fd82a3750b49">StructureDefinition-MedicinalProduct.html#/html/body/div/div/div/p/a at Line 1989, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct.profile.history.html#bacf3d56-624e-4ef6-bb3f-0f3d02ef5085">StructureDefinition-MedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct.profile.history.html#ebd7e7ce-1515-4208-8153-f0b035f3e12f">StructureDefinition-MedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct.profile.json.html#43c6e6db-114e-46d1-ae4e-690d2d380150">StructureDefinition-MedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7611, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct.profile.json.html#39e001fa-4d43-4f2d-8633-a0f343a4a6d0">StructureDefinition-MedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7611, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct.profile.ttl.html#63ae5d41-d25f-4b56-b38a-de6742ebd4b6">StructureDefinition-MedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6698, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct.profile.ttl.html#571eb2fe-e88b-4e48-979c-4eab9f68c049">StructureDefinition-MedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6698, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct.profile.xml.html#d60c1c67-a7a3-4f71-8bc2-dd279ef4312b">StructureDefinition-MedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6833, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct.profile.xml.html#3daeadd5-0f7b-4d82-9c35-60dc19368b4a">StructureDefinition-MedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6833, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-definitions.html#cab5fce8-55c2-46c0-97bc-9ea94a67c9b8">StructureDefinition-PackagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1840, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-definitions.html#1750fcc6-c56a-415c-9e8a-a3027f4eda0f">StructureDefinition-PackagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1850, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-examples.html#73308cc5-db99-49c8-b3b4-8db951071f6a">StructureDefinition-PackagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-examples.html#d36f5fd1-3f8e-42b7-8354-cd9cc0b60fc8">StructureDefinition-PackagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-mappings.html#bdeadbc7-cda0-4dac-b2ca-fe22703c2f90">StructureDefinition-PackagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 398, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-mappings.html#7d6f6ce3-19b4-46d4-8593-b9e0a0ce71c8">StructureDefinition-PackagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 398, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.html#57be43ea-4e5d-46dd-8049-9f0651e3c500">StructureDefinition-PackagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2063, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.html#d975fd31-f667-4a0f-a2eb-b3910ceb201a">StructureDefinition-PackagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2106, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.history.html#9499d941-fd1c-42c6-ae6b-5583098d395e">StructureDefinition-PackagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.history.html#1ba0997d-8f35-4118-9308-e8a7c50f5aea">StructureDefinition-PackagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.json.html#d47b5500-1281-49e0-ba69-708699b5360e">StructureDefinition-PackagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7819, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.json.html#65d102df-bb35-4667-a266-05204eb4d8d2">StructureDefinition-PackagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7892, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.ttl.html#1a75ee50-8528-4f6e-9e66-e9710021d27b">StructureDefinition-PackagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6885, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.ttl.html#de5fa619-9aa1-480c-bb22-8495162936f1">StructureDefinition-PackagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6941, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.xml.html#8c011eb4-bbac-452f-87fc-12438e995263">StructureDefinition-PackagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 7018, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.xml.html#21de5380-84f3-4355-8f0a-0b4ce086a477">StructureDefinition-PackagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 7082, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct-definitions.html#baa7ae98-d66e-49d0-9381-4d95f9b7db6e">StructureDefinition-PharmaceuticalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1731, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-definitions.html#e67f23d1-8ccc-487a-8c9a-ec750eb2e88d">StructureDefinition-PharmaceuticalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1731, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct-examples.html#0aca43e3-064c-4877-a43b-0489d175db92">StructureDefinition-PharmaceuticalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-examples.html#600a6298-bdde-4d00-8cfc-c00ea0676a16">StructureDefinition-PharmaceuticalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct-mappings.html#b5419489-81dc-42a1-9193-0e55851da4e4">StructureDefinition-PharmaceuticalProduct-mappings.html#/html/body/div/div/div/p/a at Line 386, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-mappings.html#ad967a48-6f46-4ff9-94fc-976a823a4627">StructureDefinition-PharmaceuticalProduct-mappings.html#/html/body/div/div/div/p/a at Line 386, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct.html#58736189-1ea0-4b56-9147-a909f76a1a76">StructureDefinition-PharmaceuticalProduct.html#/html/body/div/div/div/p/a at Line 1902, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct.html#9e758ef6-98de-4498-a74f-dc18954a9619">StructureDefinition-PharmaceuticalProduct.html#/html/body/div/div/div/p/a at Line 1902, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.history.html#d5938896-a627-4e14-87fb-6f790f172051">StructureDefinition-PharmaceuticalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.history.html#fbd1aed7-fcc6-4ed1-a2e1-5526b313731f">StructureDefinition-PharmaceuticalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.json.html#f983f2da-5a2e-43ae-b716-f2951294a092">StructureDefinition-PharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7329, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.json.html#8f0458ae-9daf-4799-9ec2-126c2a4aadde">StructureDefinition-PharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7329, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.ttl.html#8b469f24-b051-4e4a-bbef-3f8111462613">StructureDefinition-PharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6454, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.ttl.html#51e939f6-5b29-4d6f-80e9-2ea5d0ad59aa">StructureDefinition-PharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6454, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.xml.html#e514c3c6-a303-4de4-bb85-e1c8003f34ab">StructureDefinition-PharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6579, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.xml.html#744b9b86-d417-4cd0-8be5-0af2c782441f">StructureDefinition-PharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6579, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance-definitions.html#ac5be746-eb93-4f6a-a443-a0827360ff7b">StructureDefinition-Substance-definitions.html#/html/body/div/div/div/p/a at Line 1725, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance-definitions.html#5e581f51-56ef-4c7d-bf94-2c064a261912">StructureDefinition-Substance-definitions.html#/html/body/div/div/div/p/a at Line 1725, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance-examples.html#98951f36-02a5-4f6c-95dc-5d053d3b0924">StructureDefinition-Substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance-examples.html#5a2b58a0-e1ee-4d4b-8f6f-6d3fdb8cf1d1">StructureDefinition-Substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance-mappings.html#4ae252cc-001b-469b-ba75-88b5687fc82b">StructureDefinition-Substance-mappings.html#/html/body/div/div/div/p/a at Line 327, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance-mappings.html#b58d9026-4940-4436-b9e5-c2eaaae799b0">StructureDefinition-Substance-mappings.html#/html/body/div/div/div/p/a at Line 327, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance.html#2dbfe5be-c077-4f5c-acef-a62dff73eb8d">StructureDefinition-Substance.html#/html/body/div/div/div/p/a at Line 1575, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance.html#422fe3b4-898b-4016-9463-5f62b50dbf4e">StructureDefinition-Substance.html#/html/body/div/div/div/p/a at Line 1575, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance.profile.history.html#129f7978-d372-4a40-86b2-9f3b2a2d89e7">StructureDefinition-Substance.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance.profile.history.html#d40982a8-3593-4d4d-a127-d16b39df384d">StructureDefinition-Substance.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance.profile.json.html#e3fcc870-6321-412b-b2c2-d0c618eec182">StructureDefinition-Substance.profile.json.html#/html/body/div/div/div/p/a at Line 7338, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance.profile.json.html#2be33e9b-473f-48de-a3fc-803dc2e64cf1">StructureDefinition-Substance.profile.json.html#/html/body/div/div/div/p/a at Line 7338, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance.profile.ttl.html#e6f434d1-16a1-4167-922a-179954cc780c">StructureDefinition-Substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 6460, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance.profile.ttl.html#535531ad-36f8-46d9-b12f-a57e3fc57c96">StructureDefinition-Substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 6460, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance.profile.xml.html#94c2034e-54f4-4c50-9196-bcde1caa880b">StructureDefinition-Substance.profile.xml.html#/html/body/div/div/div/p/a at Line 6589, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance.profile.xml.html#352f119a-eda1-4052-8579-8464f5bfce5c">StructureDefinition-Substance.profile.xml.html#/html/body/div/div/div/p/a at Line 6589, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.change.history.html#16aaec20-a60d-4e57-ba5e-0f72ca52e9d8">ValueSet-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-granularity-vs.change.history.html#1a678874-1228-4fd4-8008-6be54fbd1f13">ValueSet-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.html#4a160eef-7375-4f23-a86f-092847f022e0">ValueSet-granularity-vs.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 177, column 293</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-drug-cs.html#drug-cs-subs' for &quot;subs&quot; cannot be resolved (valid targets: [segment-header, drug-cs-PHARMPROD, publish-box, bottom, segment-post-footer, codesystem-drug-code-system, drug-cs-MEDPROD, ig-status, top, root, stripe, segment-footer, drug-cs-SUBST, drug-cs-MEDPACKPROD, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+     <td><b><a href="ValueSet-granularity-vs.html#5fc880a6-5e1b-474a-b944-d17798d94268">ValueSet-granularity-vs.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 177, column 293</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-drug-cs.html#drug-cs-subs' for &quot;subs&quot; cannot be resolved (valid targets: [segment-header, drug-cs-PHARMPROD, publish-box, bottom, segment-post-footer, codesystem-drug-code-system, drug-cs-MEDPROD, ig-status, top, root, stripe, segment-footer, drug-cs-SUBST, segment-navbar, segment-content, segment-breadcrumb, drug-cs-PACKMEDPROD])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.html#8b3b5252-b2c4-46d4-a457-2b1373717987">ValueSet-granularity-vs.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 183, column 639</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-drug-cs.html#drug-cs-subs' for &quot;subs&quot; cannot be resolved (valid targets: [segment-header, drug-cs-PHARMPROD, publish-box, bottom, segment-post-footer, codesystem-drug-code-system, drug-cs-MEDPROD, ig-status, top, root, stripe, segment-footer, drug-cs-SUBST, drug-cs-MEDPACKPROD, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+     <td><b><a href="ValueSet-granularity-vs.html#ca9463cf-becb-4d21-ab41-2e45b552b3ed">ValueSet-granularity-vs.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 177, column 483</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-drug-cs.html#drug-cs-MEDPACKPROD' for &quot;MEDPACKPROD&quot; cannot be resolved (valid targets: [segment-header, drug-cs-PHARMPROD, publish-box, bottom, segment-post-footer, codesystem-drug-code-system, drug-cs-MEDPROD, ig-status, top, root, stripe, segment-footer, drug-cs-SUBST, segment-navbar, segment-content, segment-breadcrumb, drug-cs-PACKMEDPROD])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.html#53f98247-ef15-4686-bd2d-f2e2e98b4cd2">ValueSet-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-granularity-vs.html#f56c3903-8fe2-4c4b-9a3d-6f19bcd8ba35">ValueSet-granularity-vs.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 183, column 639</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-drug-cs.html#drug-cs-subs' for &quot;subs&quot; cannot be resolved (valid targets: [segment-header, drug-cs-PHARMPROD, publish-box, bottom, segment-post-footer, codesystem-drug-code-system, drug-cs-MEDPROD, ig-status, top, root, stripe, segment-footer, drug-cs-SUBST, segment-navbar, segment-content, segment-breadcrumb, drug-cs-PACKMEDPROD])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.json.html#8fffbc35-6915-4af5-8a2e-d54bcd101b8c">ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-granularity-vs.html#bb82bb88-aa3e-4795-978c-44e7640fa93d">ValueSet-granularity-vs.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 183, column 1041</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-drug-cs.html#drug-cs-MEDPACKPROD' for &quot;MEDPACKPROD&quot; cannot be resolved (valid targets: [segment-header, drug-cs-PHARMPROD, publish-box, bottom, segment-post-footer, codesystem-drug-code-system, drug-cs-MEDPROD, ig-status, top, root, stripe, segment-footer, drug-cs-SUBST, segment-navbar, segment-content, segment-breadcrumb, drug-cs-PACKMEDPROD])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.ttl.html#469cb30f-f9e1-44d8-ab6a-5bffbbfdebad">ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-granularity-vs.html#5d6cfd0b-7170-4ce8-ab7d-d8de804bc2af">ValueSet-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.xml.html#a9846429-777e-4c68-a7be-0c48053b0bef">ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-granularity-vs.json.html#a9717890-33f0-47a1-b631-db78d660cda5">ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#7a8d453c-b9dd-4308-8935-1fd24729dd8a">artifacts.html#/html/body/div/div/div/p/a at Line 332, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-granularity-vs.ttl.html#4178608e-0cf9-49df-b1b1-9b7874b90dbc">ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="download.html#6b81cf45-40e0-4caf-9c1b-9276b9138e5c">download.html#/html/body/div/div/div/p/a at Line 184, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-granularity-vs.xml.html#98d2819c-3bf5-478f-ac51-8ce385de91e9">ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#9e735ef9-0f42-4ba1-80ac-d35803da0048">index.html#/html/body/div/div/div/p/a at Line 155, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#8bd74f60-7ad6-420d-88c2-d4388aaec56c">artifacts.html#/html/body/div/div/div/p/a at Line 332, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#8d5d1260-5c84-4464-938e-373cd992c2d8">toc.html#/html/body/div/div/div/p/a at Line 137, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="download.html#ef0acff5-1ad8-43d1-9e33-c38dc5719672">download.html#/html/body/div/div/div/p/a at Line 184, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#53170ccb-33ac-4fa4-b21b-575a485a08de">index.html#/html/body/div/div/div/p/a at Line 155, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#8016d74b-d390-4ee4-a086-a60fb2aa55f0">toc.html#/html/body/div/div/div/p/a at Line 137, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -407,25 +410,6 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_MedicationKnowledge-example-1-of-drug-med"> </a>
-<h2><a href="MedicationKnowledge-example-1-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></h2>
- <ul style="font-size: 7px"><li>MedicationKnowledge: Validated against <i>this.</i><a href="StructureDefinition-PharmaceuticalProduct.html">PharmaceuticalProduct</a></li></ul>
-
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>MedicationKnowledge.productType[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Error processing path expression for discriminator: Error @1, 1: Found . expecting a token name (src = '.')</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationKnowledge (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct)</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationKnowledge.code.coding[0] (l38/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated</b></td>
-   </tr>
-</table>
-<hr/>
 <a name="_github_workspace_fsh-generated_resources_MedicationKnowledge-example-2-of-drug-med"> </a>
 <h2><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></h2>
  <ul style="font-size: 7px"><li>MedicationKnowledge: Validated against <i>this.</i><a href="StructureDefinition-MedicinalProduct.html">MedicinalProduct</a></li></ul>
@@ -433,12 +417,6 @@
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>MedicationKnowledge.productType[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Error processing path expression for discriminator: Error @1, 1: Found . expecting a token name (src = '.')</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>MedicationKnowledge (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>MedicationKnowledge.drugCharacteristic[1].value.ofType(string) (l41/c6)</b></td><td><b>error</b></td><td title="ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed"><b>ele-1: 'All FHIR elements must have a @value or children' Rule 'All FHIR elements must have a @value or children' Failed</b></td>
@@ -538,6 +516,9 @@
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet.compose[0].include[0].concept[0]</b></td><td><b>warning</b></td><td title=""><b>The code subs is not valid in the system http://terminology.hl7.org/CodeSystem/medicineCS</b></td>
    </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[2]</b></td><td><b>warning</b></td><td title=""><b>The code MEDPACKPROD is not valid in the system http://terminology.hl7.org/CodeSystem/medicineCS</b></td>
+   </tr>
 </table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
@@ -552,17 +533,6 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-MedicationKnowledgeMine.html">/github/workspace/fsh-generated/resources/StructureDefinition-MedicationKnowledgeMine.json</a></td><td><b>Duplicate id value 'MedicationKnowledgeMine.cost'</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="SLICING_CANNOT_BE_EVALUATED"> </a>
-<h2>SLICING_CANNOT_BE_EVALUATED</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="MedicationKnowledge-example-1-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Error processing path expression for discriminator: Error @1, 1: Found . expecting a token name (src = '.')</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>Slicing cannot be evaluated: Error processing path expression for discriminator: Error @1, 1: Found . expecting a token name (src = '.')</b></td>
    </tr>
 </table>
 <hr/>
@@ -616,17 +586,6 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="ImplementationGuide-medication.ig.example.html">/github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example.json</a></td><td><b>value should not start or finish with whitespace</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Validation_VAL_Profile_NoCheckMin"> </a>
-<h2>Validation_VAL_Profile_NoCheckMin</h2>
- <table class="grid">
-   <tr style="background-color: #fffff2">
-     <td><a href="MedicationKnowledge-example-1-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></td><td><b>MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct)</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct)</b></td>
    </tr>
 </table>
 </body>
