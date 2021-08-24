@@ -3,7 +3,7 @@
 
 err = 14, warn = 25, info = 8
 IG Publisher Version: 1.1.77
-Generated Tue Aug 24 08:11:03 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Tue Aug 24 08:33:57 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
 
  Build Errors : 91 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 1 / 1
@@ -131,7 +131,7 @@ WARNING: CodeSystem/rel-med-cs: CodeSystem.concept[3].display: value should not 
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[8].description: value should not start or finish with whitespace
 == /github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json ==
-ERROR: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge.productType[0]: Slicing cannot be evaluated: Error processing path expression for discriminator: Error @1, 1: Found . expecting a token name (src = '.')
+ERROR: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge.productType[0]: Slicing cannot be evaluated: Could not match discriminator ([coding.code]) for slice MedicationKnowledge.productType:productLevel in profile http://hl7.org/fhir/us/example/StructureDefinition/Substance - the discriminator [coding.code] does not have fixed value, binding or existence assertions
 INFORMATION: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge: MedicationKnowledge.productType:productLevel: Unable to check minimum required (MedicationKnowledge.productType) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/Substance)
 INFORMATION: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge.code.coding[0]: Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json ==
