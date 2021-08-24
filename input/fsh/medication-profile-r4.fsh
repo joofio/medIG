@@ -140,7 +140,7 @@ Parent: MedicationKnowledge
 * relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
 * relatedMedicationKnowledge contains
     isAMedicineOf 0..1 MS 
-* relatedMedicationKnowledge[isAMedicineOf].type =  rel-med-cs#MEDOF
+* relatedMedicationKnowledge[isaPharmaceuticalProductOf].type =  rel-med-cs#PHARMOF
 
 Profile: MedicinalProduct
 Parent: MedicationKnowledge
@@ -211,7 +211,7 @@ Parent: MedicationKnowledge
 * relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
 * relatedMedicationKnowledge contains
     isAPharmaceuticalProductOf 0..1 MS  //item reference is not for medicationKnowledge
-* relatedMedicationKnowledge[isAPharmaceuticalProductOf].type =  rel-med-cs#PHARMOF
+* relatedMedicationKnowledge[isAMedicinalProductOf].type =  rel-med-cs#MEDOF
 
 Profile: PackagedMedicinalProduct
 Parent: MedicationKnowledge
