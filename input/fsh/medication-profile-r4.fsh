@@ -15,7 +15,7 @@ Parent: MedicationKnowledge
 * amount 0..0 
 * productType MS
 * productType ^slicing.discriminator.type = #value
-* productType ^slicing.discriminator.path = "coding.code"
+* productType ^slicing.discriminator.path = "$this"
 * productType ^slicing.rules = #open
 * productType contains
 	productLevel 1..1
