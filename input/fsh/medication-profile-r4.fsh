@@ -23,7 +23,7 @@ Parent: MedicationKnowledge
 
 * medicineClassification MS
 * medicineClassification ^slicing.discriminator.type = #value
-* medicineClassification ^slicing.discriminator.path = "code"
+* medicineClassification ^slicing.discriminator.path = "type"
 * medicineClassification ^slicing.rules = #open
 * medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
 * medicineClassification ^slicing.description = "Slice based on the component.code pattern"
@@ -35,7 +35,7 @@ Parent: MedicationKnowledge
 * drugCharacteristic.type 1..1
 
 * drugCharacteristic ^slicing.discriminator.type = #value
-* drugCharacteristic ^slicing.discriminator.path = "code"
+* drugCharacteristic ^slicing.discriminator.path = "type"
 * drugCharacteristic ^slicing.rules = #open
 * drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
 * drugCharacteristic ^slicing.description = "Slice based on the component.code pattern"
@@ -67,7 +67,7 @@ Parent: MedicationKnowledge
 * relatedMedicationKnowledge MS
 * relatedMedicationKnowledge.reference MS
 * relatedMedicationKnowledge ^slicing.discriminator.type = #value
-* relatedMedicationKnowledge ^slicing.discriminator.path = "code"
+* relatedMedicationKnowledge ^slicing.discriminator.path = "type"
 * relatedMedicationKnowledge ^slicing.rules = #open
 * relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
 * relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
@@ -96,7 +96,7 @@ Parent: MedicationKnowledge
 * productType[productLevel] = medCS#MEDPROD
 * medicineClassification MS
 * medicineClassification ^slicing.discriminator.type = #value
-* medicineClassification ^slicing.discriminator.path = "code"
+* medicineClassification ^slicing.discriminator.path = "type"
 * medicineClassification ^slicing.rules = #open
 * medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
 * medicineClassification ^slicing.description = "Slice based on the component.code pattern"
@@ -108,7 +108,7 @@ Parent: MedicationKnowledge
 * drugCharacteristic MS
 * drugCharacteristic.type 1..1
 * drugCharacteristic ^slicing.discriminator.type = #value
-* drugCharacteristic ^slicing.discriminator.path = "code"
+* drugCharacteristic ^slicing.discriminator.path = "type"
 * drugCharacteristic ^slicing.rules = #open
 * drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
 * drugCharacteristic ^slicing.description = "Slice based on the component.code pattern"
@@ -137,7 +137,7 @@ Parent: MedicationKnowledge
 * relatedMedicationKnowledge MS
 * relatedMedicationKnowledge.reference MS
 * relatedMedicationKnowledge ^slicing.discriminator.type = #value
-* relatedMedicationKnowledge ^slicing.discriminator.path = "code"
+* relatedMedicationKnowledge ^slicing.discriminator.path = "type"
 * relatedMedicationKnowledge ^slicing.rules = #open
 * relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
 * relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
@@ -165,7 +165,7 @@ Parent: MedicationKnowledge
 * productType[productLevel] = medCS#PHARMPROD
 * medicineClassification MS
 * medicineClassification ^slicing.discriminator.type = #value
-* medicineClassification ^slicing.discriminator.path = "code"
+* medicineClassification ^slicing.discriminator.path = "type"
 * medicineClassification ^slicing.rules = #open
 * medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
 * medicineClassification ^slicing.description = "Slice based on the component.code pattern"
@@ -178,7 +178,7 @@ Parent: MedicationKnowledge
 * drugCharacteristic.type 1..1
 
 * drugCharacteristic ^slicing.discriminator.type = #value
-* drugCharacteristic ^slicing.discriminator.path = "code"
+* drugCharacteristic ^slicing.discriminator.path = "type"
 * drugCharacteristic ^slicing.rules = #open
 * drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
 * drugCharacteristic ^slicing.description = "Slice based on the component.code pattern"
@@ -209,7 +209,7 @@ Parent: MedicationKnowledge
 * relatedMedicationKnowledge MS
 * relatedMedicationKnowledge.reference MS
 * relatedMedicationKnowledge ^slicing.discriminator.type = #value
-* relatedMedicationKnowledge ^slicing.discriminator.path = "code"
+* relatedMedicationKnowledge ^slicing.discriminator.path = "type"
 * relatedMedicationKnowledge ^slicing.rules = #open
 * relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
 * relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
@@ -231,7 +231,7 @@ Parent: MedicationKnowledge
 * productType MS
 * medicineClassification MS
 * medicineClassification ^slicing.discriminator.type = #value
-* medicineClassification ^slicing.discriminator.path = "code"
+* medicineClassification ^slicing.discriminator.path = "type"
 * medicineClassification ^slicing.rules = #open
 * medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
 * medicineClassification ^slicing.description = "Slice based on the component.code pattern"
@@ -246,7 +246,7 @@ Parent: MedicationKnowledge
 * drugCharacteristic MS
 * drugCharacteristic.type 1..1
 * drugCharacteristic ^slicing.discriminator.type = #value
-* drugCharacteristic ^slicing.discriminator.path = "code"
+* drugCharacteristic ^slicing.discriminator.path = "type"
 * drugCharacteristic ^slicing.rules = #open
 * drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
 * drugCharacteristic ^slicing.description = "Slice based on the component.code pattern"
