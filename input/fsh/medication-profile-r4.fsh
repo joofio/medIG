@@ -32,8 +32,6 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
-* drugCharacteristic.type 1..1 MS
-
 * drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "type"
 * drugCharacteristic ^slicing.rules = #open
@@ -106,7 +104,6 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
-* drugCharacteristic.type 1..1
 * drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "type"
 * drugCharacteristic ^slicing.rules = #open
@@ -175,8 +172,6 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
-* drugCharacteristic.type 1..1
-
 * drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "type"
 * drugCharacteristic ^slicing.rules = #open
@@ -197,6 +192,7 @@ Parent: MedicationKnowledge
 * drugCharacteristic[marketingAuthorization].type = drug-char-cs#MA //link together MA and MAH - HOW?
 * drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
 * drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
+* drugCharacteristic[clinicalTrial].type = drug-char-cs#TRIAL //value should be reference
 
 * kinetics MS
 * contraindication MS
@@ -244,7 +240,6 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
-* drugCharacteristic.type 1..1
 * drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "type"
 * drugCharacteristic ^slicing.rules = #open
@@ -283,7 +278,6 @@ Parent: MedicationKnowledge
 //* packaging.cost 0..0
 * cost MS
 * relatedMedicationKnowledge MS
-* relatedMedicationKnowledge.type 1..1
 * relatedMedicationKnowledge.reference MS
 * relatedMedicationKnowledge ^slicing.discriminator.type = #value
 * relatedMedicationKnowledge ^slicing.discriminator.path = "code"
