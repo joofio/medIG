@@ -32,6 +32,8 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
+* drugCharacteristic.type 1..1
+
 * drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "code"
 * drugCharacteristic ^slicing.rules = #open
@@ -104,6 +106,7 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
+* drugCharacteristic.type 1..1
 * drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "code"
 * drugCharacteristic ^slicing.rules = #open
@@ -172,6 +175,8 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
+* drugCharacteristic.type 1..1
+
 * drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "code"
 * drugCharacteristic ^slicing.rules = #open
@@ -239,6 +244,7 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
+* drugCharacteristic.type 1..1
 * drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "code"
 * drugCharacteristic ^slicing.rules = #open
@@ -277,6 +283,7 @@ Parent: MedicationKnowledge
 //* packaging.cost 0..0
 * cost MS
 * relatedMedicationKnowledge MS
+* relatedMedicationKnowledge.type 1..1
 * relatedMedicationKnowledge.reference MS
 * relatedMedicationKnowledge ^slicing.discriminator.type = #value
 * relatedMedicationKnowledge ^slicing.discriminator.path = "code"
