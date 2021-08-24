@@ -57,7 +57,7 @@ Title:    "Example of drug with granularity 2"
 
 * synonym[+] = "Ben-U-Ron Oral Tablets 500 mg"
 
-* drugCharacteristic[marketingAuthorization].valueString = ""
+* drugCharacteristic[marketingAuthorization].valueString = "example"
 * drugCharacteristic[marketingAuthorizationHolder].valueString = "Bene"
 * drugCharacteristic[marketingAuthorizationStatus].valueString = "Aproved"
 * drugCharacteristic[clinicalTrial].valueCodeableConcept = http://clinicaltrial-server.fhir.pt#1

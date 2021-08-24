@@ -108,7 +108,7 @@ ValueSet: GranularityVS
 Id: granularity-vs
 Title: "Granularity Value Set"
 Description: "Indicates the granularity of product"
-* medCS#subs  "Substance"
+* medCS#SUBST  "Substance"
 * medCS#PHARMPROD "Pharmaceutical Product"
 * medCS#MEDPROD  "Medicinal Product"
 * medCS#PACKMEDPROD "Packaged Medicinal Product"
