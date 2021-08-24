@@ -6,7 +6,7 @@
     <profile value="http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg</p><p><b>productType</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/medicineCS PHARMPROD}">pharmaceutical product</span></p><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: </p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: Bene</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: Aproved</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>value</b>: <span title="Codes: {http://clinicaltrial-server.fhir.pt 1}">1</span></p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg</p><p><b>productType</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/medicineCS PHARMPROD}">pharmaceutical product</span></p><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/productType MAS}">marketing Authorization Status</span></p><p><b>value</b>: Aproved</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/productType MA}">marketing Authorization</span></p><p><b>value</b>: </p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/productType MAH}">marketing Authorization Holder</span></p><p><b>value</b>: Bene</p></blockquote></div>
   </text>
   <status value="active"/>
   <synonym value="Ben-U-Ron Oral Tablets 500 mg"/>
@@ -17,20 +17,30 @@
     </coding>
   </productType>
   <drugCharacteristic>
-    <valueString value=""/>
-  </drugCharacteristic>
-  <drugCharacteristic>
-    <valueString value="Bene"/>
-  </drugCharacteristic>
-  <drugCharacteristic>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/productType"/>
+        <code value="MAS"/>
+      </coding>
+    </type>
     <valueString value="Aproved"/>
   </drugCharacteristic>
   <drugCharacteristic>
-    <valueCodeableConcept>
+    <type>
       <coding>
-        <system value="http://clinicaltrial-server.fhir.pt"/>
-        <code value="1"/>
+        <system value="http://terminology.hl7.org/CodeSystem/productType"/>
+        <code value="MA"/>
       </coding>
-    </valueCodeableConcept>
+    </type>
+    <valueString value=""/>
+  </drugCharacteristic>
+  <drugCharacteristic>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/productType"/>
+        <code value="MAH"/>
+      </coding>
+    </type>
+    <valueString value="Bene"/>
   </drugCharacteristic>
 </MedicationKnowledge>

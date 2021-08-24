@@ -6,7 +6,7 @@
     <profile value="http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title="Codes: {http://infarmed.pt/ xxx}">official</span></p></blockquote><h3>Packagings</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td><span title="Codes: {http://standardterms.edqm.eu/PAC 30009000}">Box</span></td><td>20 tablets</td></tr></table><h3>DrugCharacteristics</h3><table class="grid"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>345-CE-123</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title="Codes: {http://infarmed.pt/ xxx}">official</span></p></blockquote><h3>Packagings</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td><span title="Codes: {http://standardterms.edqm.eu/PAC 30009000}">Box</span></td><td>20 tablets</td></tr></table><h3>DrugCharacteristics</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/productType BATCH}">Batch Number</span></td><td>345-CE-123</td></tr></table></div>
   </text>
   <status value="active"/>
   <synonym value="Ben-U-Ron Oral Tablets 500 mg Box of 20 tab"/>
@@ -37,6 +37,12 @@
     </quantity>
   </packaging>
   <drugCharacteristic>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/productType"/>
+        <code value="BATCH"/>
+      </coding>
+    </type>
     <valueString value="345-CE-123"/>
   </drugCharacteristic>
 </MedicationKnowledge>
