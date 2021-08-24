@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>synonym</b>: Acetaminophen, paracetamol, 4-(Acetylamino)phenol</p><p><b>productType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS SUBST}\">Substance</span></p><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType DOM}\">Domain of drug </span></p><p><b>value</b>: human</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType DT}\">Drug Type</span></p><p><b>value</b>: small molecule</p></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>synonym</b>: Acetaminophen, paracetamol, 4-(Acetylamino)phenol</p><p><b>productType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS SUBST}\">Substance</span></p><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType DOM}\">Domain of drug</span></p><p><b>value</b>: human</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType DT}\">Drug Type</span></p><p><b>value</b>: small molecule</p></blockquote></div>"
   },
   "code": {
     "coding": [

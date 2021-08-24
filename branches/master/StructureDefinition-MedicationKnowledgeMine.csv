@@ -170,8 +170,8 @@
 ","","","","","","","","","","","",,,,,"",,,,"MedicationKnowledgeMine.cost.type",1,1,"",""
 "MedicationKnowledgeMine.cost.source","","","",0,1,"","","","string {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"MedicationKnowledgeMine.cost.source",0,1,"",""
-"MedicationKnowledgeMine.cost","","","",1,1,"","","","Money {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"MedicationKnowledgeMine.cost",1,1,"",""
+"MedicationKnowledgeMine.cost.cost","","","",1,1,"","","","Money {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationKnowledgeMine.cost.cost",1,1,"",""
 "MedicationKnowledgeMine.administrationinstructions","","","",0,1,"","","","markdown {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"MedicationKnowledgeMine.administrationinstructions",0,1,"",""
 "MedicationKnowledgeMine.productImage","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Binary]]}

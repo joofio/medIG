@@ -3,51 +3,60 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="drug-char-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://terminology.hl7.org/CodeSystem/productType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">DT<a name="drug-char-cs-DT"> </a></td><td>Drug Type</td></tr><tr><td style="white-space:nowrap">DOM<a name="drug-char-cs-DOM"> </a></td><td>Domain of drug </td></tr><tr><td style="white-space:nowrap">VER<a name="drug-char-cs-VER"> </a></td><td>Version</td></tr><tr><td style="white-space:nowrap">CT<a name="drug-char-cs-CT"> </a></td><td>ContraIndication</td></tr><tr><td style="white-space:nowrap">MA<a name="drug-char-cs-MA"> </a></td><td>marketing Authorization</td></tr><tr><td style="white-space:nowrap">MAH<a name="drug-char-cs-MAH"> </a></td><td>marketing Authorization Holder</td></tr><tr><td style="white-space:nowrap">MAS<a name="drug-char-cs-MAS"> </a></td><td>marketing Authorization Status</td></tr><tr><td style="white-space:nowrap">TRIAL<a name="drug-char-cs-TRIAL"> </a></td><td>Clinical Trial</td></tr><tr><td style="white-space:nowrap">BATCH<a name="drug-char-cs-BATCH"> </a></td><td>Batch Number</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://terminology.hl7.org/CodeSystem/productType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">DT<a name="drug-char-cs-DT"> </a></td><td>Drug Type</td><td>Drug Type</td></tr><tr><td style="white-space:nowrap">DOM<a name="drug-char-cs-DOM"> </a></td><td>Domain of drug</td><td>Domain of drug</td></tr><tr><td style="white-space:nowrap">VER<a name="drug-char-cs-VER"> </a></td><td>Version</td><td>Version</td></tr><tr><td style="white-space:nowrap">CT<a name="drug-char-cs-CT"> </a></td><td>ContraIndication</td><td>ContraIndication</td></tr><tr><td style="white-space:nowrap">MA<a name="drug-char-cs-MA"> </a></td><td>marketing Authorization</td><td>marketing Authorization</td></tr><tr><td style="white-space:nowrap">MAH<a name="drug-char-cs-MAH"> </a></td><td>marketing Authorization Holder</td><td>marketing Authorization Holder</td></tr><tr><td style="white-space:nowrap">MAS<a name="drug-char-cs-MAS"> </a></td><td>marketing Authorization Status</td><td>marketing Authorization Status</td></tr><tr><td style="white-space:nowrap">TRIAL<a name="drug-char-cs-TRIAL"> </a></td><td>Clinical Trial</td><td>Clinical Trial</td></tr><tr><td style="white-space:nowrap">BATCH<a name="drug-char-cs-BATCH"> </a></td><td>Batch Number</td><td>Batch Number</td></tr></table></div>
   </text>
   <url value="http://terminology.hl7.org/CodeSystem/productType"/>
   <version value="0.1.0"/>
   <name value="DrugCharacteristicCS"/>
   <title value="Drug charachteristisc Code System"/>
   <status value="active"/>
-  <date value="2021-08-24T09:10:26+00:00"/>
+  <date value="2021-08-24T11:14:54+00:00"/>
   <description value="Codes for drugCharacteristic"/>
   <content value="complete"/>
   <count value="9"/>
   <concept>
     <code value="DT"/>
     <display value="Drug Type"/>
+    <definition value="Drug Type"/>
   </concept>
   <concept>
     <code value="DOM"/>
-    <display value="Domain of drug "/>
+    <display value="Domain of drug"/>
+    <definition value="Domain of drug"/>
   </concept>
   <concept>
     <code value="VER"/>
     <display value="Version"/>
+    <definition value="Version"/>
   </concept>
   <concept>
     <code value="CT"/>
     <display value="ContraIndication"/>
+    <definition value="ContraIndication"/>
   </concept>
   <concept>
     <code value="MA"/>
     <display value="marketing Authorization"/>
+    <definition value="marketing Authorization"/>
   </concept>
   <concept>
     <code value="MAH"/>
     <display value="marketing Authorization Holder"/>
+    <definition value="marketing Authorization Holder"/>
   </concept>
   <concept>
     <code value="MAS"/>
     <display value="marketing Authorization Status"/>
+    <definition value="marketing Authorization Status"/>
   </concept>
   <concept>
     <code value="TRIAL"/>
     <display value="Clinical Trial"/>
+    <definition value="Clinical Trial"/>
   </concept>
   <concept>
     <code value="BATCH"/>
     <display value="Batch Number"/>
+    <definition value="Batch Number"/>
   </concept>
 </CodeSystem>

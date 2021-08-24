@@ -3,31 +3,35 @@
   "id": "rel-med-cs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/relMedCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SUBOF<a name=\"rel-med-cs-SUBOF\"> </a></td><td>Substance from</td></tr><tr><td style=\"white-space:nowrap\">MEDOF<a name=\"rel-med-cs-MEDOF\"> </a></td><td>Is a Medicine Of</td></tr><tr><td style=\"white-space:nowrap\">PACKOF<a name=\"rel-med-cs-PACKOF\"> </a></td><td>Packaged Form of </td></tr><tr><td style=\"white-space:nowrap\">PHARMOF<a name=\"rel-med-cs-PHARMOF\"> </a></td><td>Is the Pharmaceutical product of </td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/relMedCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SUBOF<a name=\"rel-med-cs-SUBOF\"> </a></td><td>Substance from</td><td>Substance from</td></tr><tr><td style=\"white-space:nowrap\">MEDOF<a name=\"rel-med-cs-MEDOF\"> </a></td><td>Is a Medicine of</td><td>Is a Medicine of</td></tr><tr><td style=\"white-space:nowrap\">PACKOF<a name=\"rel-med-cs-PACKOF\"> </a></td><td>Packaged Form of</td><td>Packaged Form of</td></tr><tr><td style=\"white-space:nowrap\">PHARMOF<a name=\"rel-med-cs-PHARMOF\"> </a></td><td>Is the Pharmaceutical product of</td><td>Is the Pharmaceutical product of</td></tr></table></div>"
   },
   "url": "http://terminology.hl7.org/CodeSystem/relMedCS",
   "version": "0.1.0",
   "name": "RelatedMedicationKnowledgeCS",
   "status": "active",
-  "date": "2021-08-24T09:10:26+00:00",
+  "date": "2021-08-24T11:14:54+00:00",
   "content": "complete",
   "count": 4,
   "concept": [
     {
       "code": "SUBOF",
-      "display": "Substance from"
+      "display": "Substance from",
+      "definition": "Substance from"
     },
     {
       "code": "MEDOF",
-      "display": "Is a Medicine Of"
+      "display": "Is a Medicine of",
+      "definition": "Is a Medicine of"
     },
     {
       "code": "PACKOF",
-      "display": "Packaged Form of "
+      "display": "Packaged Form of",
+      "definition": "Packaged Form of"
     },
     {
       "code": "PHARMOF",
-      "display": "Is the Pharmaceutical product of "
+      "display": "Is the Pharmaceutical product of",
+      "definition": "Is the Pharmaceutical product of"
     }
   ]
 }

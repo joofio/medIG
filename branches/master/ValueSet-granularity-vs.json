@@ -3,14 +3,14 @@
   "id": "granularity-vs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-drug-cs.html\"><code>http://terminology.hl7.org/CodeSystem/medicineCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-subs\">subs</a></td><td>Substance</td></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-MEDPROD\">MEDPROD</a></td><td>med product</td></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-MEDPACKPROD\">MEDPACKPROD</a></td><td>package product</td></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-PHARMPROD\">PHARMPROD</a></td><td>pharmaceutical product</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-drug-cs.html\"><code>http://terminology.hl7.org/CodeSystem/medicineCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-subs\">subs</a></td><td>Substance</td></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-PHARMPROD\">PHARMPROD</a></td><td>Pharmaceutical Product</td></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-MEDPROD\">MEDPROD</a></td><td>Medicinal Product</td></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-PACKMEDPROD\">PACKMEDPROD</a></td><td>Packaged Medicinal Product</td></tr></table></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/example/ValueSet/granularity-vs",
   "version": "0.1.0",
   "name": "GranularityVS",
   "title": "Granularity Value Set",
   "status": "active",
-  "date": "2021-08-24T09:10:26+00:00",
+  "date": "2021-08-24T11:14:54+00:00",
   "description": "Indicates the granularity of product",
   "compose": {
     "include": [
@@ -22,15 +22,16 @@
             "display": "Substance"
           },
           {
+            "code": "PHARMPROD",
+            "display": "Pharmaceutical Product"
+          },
+          {
             "code": "MEDPROD",
-            "display": "med product"
+            "display": "Medicinal Product"
           },
           {
-            "code": "MEDPACKPROD",
-            "display": "package product"
-          },
-          {
-            "code": "PHARMPROD"
+            "code": "PACKMEDPROD",
+            "display": "Packaged Medicinal Product"
           }
         ]
       }
