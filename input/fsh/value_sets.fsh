@@ -29,16 +29,18 @@ Description: ""
 // The definition (second text string) is optional
 * #SUBOF  
     "Substance from"
-    ""
+    "Substance from"
 * #MEDOF  
-    "Is a Medicine Of"
-    ""
+    "Is a Medicine of"
+    "Is a Medicine of"
 * #PACKOF
-    "Packaged Form of "
-    ""
+    "Packaged Form of"
+    "Packaged Form of"
 * #PHARMOF
-    "Is the Pharmaceutical product of "
-    ""
+    "Is the Pharmaceutical product of"
+    "Is the Pharmaceutical product of"
+
+
 // Define a local code system
 CodeSystem: DrugCharacteristicCS
 Id:         drug-char-cs
@@ -50,32 +52,32 @@ Description: "Codes for drugCharacteristic"
 // The definition (second text string) is optional
 * #DT  
     "Drug Type"
-    ""
+    "Drug Type"
 * #DOM
-    "Domain of drug "
-    " "
+    "Domain of drug"
+    "Domain of drug"
 * #VER
     "Version"
-    " "
+    "Version"
 * #CT
     "ContraIndication"
-    " "
+    "ContraIndication"
 * #MA
     "marketing Authorization"
-    " "
+    "marketing Authorization"
 * #MAH
     "marketing Authorization Holder"
-    " "
+    "marketing Authorization Holder"
 * #MAS
     "marketing Authorization Status"
-    " "
+    "marketing Authorization Status"
 
 * #TRIAL
     "Clinical Trial"
-    " "
+    "Clinical Trial"
 * #BATCH
     "Batch Number"
-    " "
+    "Batch Number"
 
 
 // Define a local code system
@@ -89,7 +91,7 @@ Description: "Codes for "
 // The definition (second text string) is optional
 * #SUBST  
     "Substance"
-    ""
+    "Substance"
 * #PHARMPROD
     "pharmaceutical product"
 * #MEDPROD
@@ -107,6 +109,7 @@ Id: granularity-vs
 Title: "Granularity Value Set"
 Description: "Indicates the granularity of product"
 * medCS#subs  "Substance"
-* medCS#MEDPROD  "med product"
-* medCS#MEDPACKPROD  "package product"
-* medCS#PHARMPROD " "
+* medCS#PHARMPROD "Pharmaceutical Product"
+* medCS#MEDPROD  "Medicinal Product"
+* medCS#PACKMEDPROD "Packaged Medicinal Product"
+
