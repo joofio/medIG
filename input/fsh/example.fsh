@@ -60,7 +60,7 @@ Title:    "Example of drug with granularity 2"
 * drugCharacteristic[marketingAuthorization].valueString = ""
 * drugCharacteristic[marketingAuthorizationHolder].valueString = "Bene"
 * drugCharacteristic[marketingAuthorizationStatus].valueString = "Aproved"
-* drugCharacteristic[clinicalTrial].valueCodeableConcept = http://clinicaltrial-server.fhir.pt#1
+// * drugCharacteristic[clinicalTrial].valueCodeableConcept = http://clinicaltrial-server.fhir.pt#1
 
 Instance: example-3-of-drug-med
 InstanceOf: PackagedMedicinalProduct

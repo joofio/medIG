@@ -32,7 +32,7 @@ Parent: MedicationKnowledge
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
-* drugCharacteristic.type 1..1
+* drugCharacteristic.type 1..1 MS
 
 * drugCharacteristic ^slicing.discriminator.type = #value
 * drugCharacteristic ^slicing.discriminator.path = "type"
