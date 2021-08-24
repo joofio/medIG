@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg</p><p><b>productType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS MEDPROD}\">Medicinal Product</span></p><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MAS}\">marketing Authorization Status</span></p><p><b>value</b>: Aproved</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MA}\">marketing Authorization</span></p><p><b>value</b>: </p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MAH}\">marketing Authorization Holder</span></p><p><b>value</b>: Bene</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType TRIAL}\">Clinical Trial</span></p><p><b>value</b>: <span title=\"Codes: {http://clinicaltrial-server.fhir.pt 1}\">1</span></p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg</p><p><b>productType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS MEDPROD}\">Medicinal Product</span></p><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MAS}\">marketing Authorization Status</span></p><p><b>value</b>: Aproved</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MA}\">marketing Authorization</span></p><p><b>value</b>: example</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType MAH}\">marketing Authorization Holder</span></p><p><b>value</b>: Bene</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType TRIAL}\">Clinical Trial</span></p><p><b>value</b>: <span title=\"Codes: {http://clinicaltrial-server.fhir.pt 1}\">1</span></p></blockquote></div>"
   ];
   fhir:MedicationKnowledge.status [ fhir:value "active"];
   fhir:MedicationKnowledge.synonym [
@@ -51,7 +51,7 @@
          fhir:Coding.code [ fhir:value "MA" ]
        ]
      ];
-     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "" ]
+     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "example" ]
   ], [
      fhir:index 2;
      fhir:MedicationKnowledge.drugCharacteristic.type [
