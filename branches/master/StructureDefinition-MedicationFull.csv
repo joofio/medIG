@@ -11,7 +11,7 @@
 "MedicationFull.domain","","","",0,1,"","","","string {[]} {[]}
 ","human or veterinary","human or veterinary","","","","","","","","","",,,,,"",,,,"MedicationFull.domain",0,1,"",""
 "MedicationFull.indication","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","indication of the product","indication of the product","","","","","","","","","",,,,,"",,,,"MedicationFull.indication",0,*,"",""
+","indication of the product","human or veterinary","","","","","","","","","",,,,,"",,,,"MedicationFull.indication",0,*,"",""
 "MedicationFull.associatedCondition","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","associated conditions","associated conditions","","","","","","","","","",,,,,"",,,,"MedicationFull.associatedCondition",0,*,"",""
 "MedicationFull.name","","","",1,*,"","","","BackboneElement {[]} {[]}
@@ -89,7 +89,7 @@
 "MedicationFull.interactions.type","","","",1,1,"","","","string {[]} {[]}
 ","type of interaction","type of interaction","","","","","","","","","",,,,,"",,,,"MedicationFull.interactions.type",1,1,"",""
 "MedicationFull.interactions.substance","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationKnowledge]]}
-","","","","","","","","","","","",,,,,"",,,,"MedicationFull.interactions.substance",1,1,"",""
+","product","product","","","","","","","","","",,,,,"",,,,"MedicationFull.interactions.substance",1,1,"",""
 "MedicationFull.interactions.reaction","","","",0,1,"","","","string {[]} {[]}
 ","what is the reaction","what is the reaction","","","","","","","","","",,,,,"",,,,"MedicationFull.interactions.reaction",0,1,"",""
 "MedicationFull.interactions.riskLevel","","","",0,1,"","","","string {[]} {[]}
