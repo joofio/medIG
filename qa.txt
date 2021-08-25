@@ -1,11 +1,11 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 2, warn = 23, info = 5
+err = 4, warn = 25, info = 5
 IG Publisher Version: 1.1.77
-Generated Wed Aug 25 12:01:54 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Wed Aug 25 12:19:16 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
 
- Build Errors : 89 / 6 / 0
+ Build Errors : 97 / 7 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-drug-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs : 0 / 0 / 1
@@ -20,6 +20,7 @@ Generated Wed Aug 25 12:01:54 UTC 2021. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Substance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-SubstanceModel : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-granularity-vs : 0 / 0 / 1
 </table>
 == n/a ==
@@ -28,6 +29,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PharmaceuticalProduct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Substance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MedicationFull.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SubstanceModel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/rel-med-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/CodeSystem-drug-char-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-char-cs.html#/html/body/div/div/div/p/a at Line 208, column 28: The link '' for "" cannot be resolved
@@ -69,14 +71,14 @@ ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.html#/
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 277, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 271, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull-definitions.html#/html/body/div/div/div/p/a at Line 667, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationFull-definitions.html#/html/body/div/div/div/p/a at Line 669, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicationFull-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicationFull-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicationFull.html#/html/body/div/div/div/p/a at Line 1025, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicationFull.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull.profile.json.html#/html/body/div/div/div/p/a at Line 3032, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull.profile.ttl.html#/html/body/div/div/div/p/a at Line 2459, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull.profile.xml.html#/html/body/div/div/div/p/a at Line 2589, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationFull.profile.json.html#/html/body/div/div/div/p/a at Line 3036, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationFull.profile.ttl.html#/html/body/div/div/div/p/a at Line 2463, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MedicationFull.profile.xml.html#/html/body/div/div/div/p/a at Line 2593, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1790, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 390, column 28: The link '' for "" cannot be resolved
@@ -109,12 +111,20 @@ ERROR: /github/workspace/output/StructureDefinition-Substance.profile.history.ht
 ERROR: /github/workspace/output/StructureDefinition-Substance.profile.json.html#/html/body/div/div/div/p/a at Line 7338, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 6460, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance.profile.xml.html#/html/body/div/div/div/p/a at Line 6589, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel-definitions.html#/html/body/div/div/div/p/a at Line 401, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.html#/html/body/div/div/div/p/a at Line 651, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.profile.json.html#/html/body/div/div/div/p/a at Line 1335, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.profile.ttl.html#/html/body/div/div/div/p/a at Line 1123, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.profile.xml.html#/html/body/div/div/div/p/a at Line 1164, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 228, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 332, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 338, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/download.html#/html/body/div/div/div/p/a at Line 184, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 155, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 137, column 28: The link '' for "" cannot be resolved
@@ -124,7 +134,7 @@ ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 137,
 == /github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs.json ==
 == /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example.json ==
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[8].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[9].description: value should not start or finish with whitespace
 == /github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json ==
 INFORMATION: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge.code.coding[0]: Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json ==
@@ -156,4 +166,8 @@ WARNING: StructureDefinition/MedicationFull: StructureDefinition: Unable to find
 == /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-Substance.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-SubstanceModel.json ==
+ERROR: StructureDefinition/SubstanceModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+ERROR: StructureDefinition/SubstanceModel: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/SubstanceModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == /github/workspace/fsh-generated/resources/ValueSet-granularity-vs.json ==

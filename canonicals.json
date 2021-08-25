@@ -42,6 +42,13 @@
     "name": "Substance"
   },
   {
+    "id": "SubstanceModel",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/SubstanceModel",
+    "version": "0.1.0",
+    "name": "SubstanceModel"
+  },
+  {
     "id": "granularity-vs",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/example/ValueSet/granularity-vs",
