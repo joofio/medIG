@@ -11,7 +11,7 @@
 "SubstanceModel.domain","","","",0,1,"","","","string {[]} {[]}
 ","human or veterinary","human or veterinary","","","","","","","","","",,,,,"",,,,"SubstanceModel.domain",0,1,"",""
 "SubstanceModel.indication","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","indication of the product","indication of the product","","","","","","","","","",,,,,"",,,,"SubstanceModel.indication",0,*,"",""
+","indication of the product","human or veterinary","","","","","","","","","",,,,,"",,,,"SubstanceModel.indication",0,*,"",""
 "SubstanceModel.associatedCondition","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","associated conditions","associated conditions","","","","","","","","","",,,,,"",,,,"SubstanceModel.associatedCondition",0,*,"",""
 "SubstanceModel.name","","","",1,*,"","","","BackboneElement {[]} {[]}
@@ -47,7 +47,7 @@
 "SubstanceModel.interactions.type","","","",1,1,"","","","string {[]} {[]}
 ","type of interaction","type of interaction","","","","","","","","","",,,,,"",,,,"SubstanceModel.interactions.type",1,1,"",""
 "SubstanceModel.interactions.substance","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationKnowledge]]}
-","","","","","","","","","","","",,,,,"",,,,"SubstanceModel.interactions.substance",1,1,"",""
+","product","product","","","","","","","","","",,,,,"",,,,"SubstanceModel.interactions.substance",1,1,"",""
 "SubstanceModel.interactions.reaction","","","",0,1,"","","","string {[]} {[]}
 ","what is the reaction","what is the reaction","","","","","","","","","",,,,,"",,,,"SubstanceModel.interactions.reaction",0,1,"",""
 "SubstanceModel.interactions.riskLevel","","","",0,1,"","","","string {[]} {[]}
@@ -56,6 +56,8 @@
 ","reference for clinicalIssue","reference for clinicalIssue","","","","","","","","","",,,,,"",,,,"SubstanceModel.interactions.clinicalIssue",0,*,"",""
 "SubstanceModel.contraIndication","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","contraindication","contraindication","","","","","","","","","",,,,,"",,,,"SubstanceModel.contraIndication",0,*,"",""
+"SubstanceModel.monograph","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/DocumentReference]]}
+","Associated documentation about the medication","Associated documentation about the medication","","","","","","","","","",,,,,"",,,,"SubstanceModel.monograph",0,*,"",""
 "SubstanceModel.masterfile","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/DocumentReference]]}
 ","masterfile from where the product comes from","masterfile from where the product comes from","","","","","","","","","",,,,,"",,,,"SubstanceModel.masterfile",0,*,"",""
 "SubstanceModel.classification","","","",0,*,"","","","CodeableConcept {[]} {[]}

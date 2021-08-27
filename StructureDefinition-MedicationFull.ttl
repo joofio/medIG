@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "MedicationFull"];
   fhir:StructureDefinition.title [ fhir:value "Medication Knowledge by me logical model"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-27T09:35:10+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-27T09:59:30+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "Medication Knowledge by me logical model."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
