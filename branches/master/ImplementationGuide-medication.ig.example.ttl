@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "medicationIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-25T12:18:39+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-27T09:35:10+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "medication.ig.example"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -317,6 +317,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationFull" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Knowledge by me logical model" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication Knowledge by me logical model." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -330,6 +331,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/SubstanceModel" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Substance logical model" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Substance logical model" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
