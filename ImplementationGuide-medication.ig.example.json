@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2021-08-25T12:18:39+00:00",
+  "date": "2021-08-27T09:35:10+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -329,6 +329,7 @@
           "reference": "StructureDefinition/MedicationFull"
         },
         "name": "Medication Knowledge by me logical model",
+        "description": "Medication Knowledge by me logical model.",
         "exampleBoolean": false
       },
       {
@@ -342,6 +343,7 @@
           "reference": "StructureDefinition/SubstanceModel"
         },
         "name": "Substance logical model",
+        "description": "Substance logical model",
         "exampleBoolean": false
       },
       {
