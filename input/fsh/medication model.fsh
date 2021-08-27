@@ -1,5 +1,6 @@
 Logical: MedicationFull
 Title: "Medication Knowledge by me logical model"
+Description:    "Medication Knowledge by me logical model."
 
 * identifier 0..* Identifier "Business identifier for this medication" "Business identifier for this medication"
 * code 0..* CodeableConcept "Code that identifies this medication" "Code that identifies this medication"
@@ -91,6 +92,7 @@ Title: "Medication Knowledge by me logical model"
 
 Logical: SubstanceModel
 Title: "Substance logical model"
+Description: "Substance logical model"
 
 * identifier 0..* Identifier "Business identifier for this medication" ""
 * code 0..* CodeableConcept "Code that identifies this medication" ""
