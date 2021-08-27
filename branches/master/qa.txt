@@ -1,9 +1,9 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 3, warn = 23, info = 5
+err = 2, warn = 23, info = 5
 IG Publisher Version: 1.1.77
-Generated Fri Aug 27 09:35:49 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Fri Aug 27 09:59:59 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
 
  Build Errors : 97 / 5 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 0 / 1
@@ -20,7 +20,7 @@ Generated Fri Aug 27 09:35:49 UTC 2021. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Substance : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-SubstanceModel : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-SubstanceModel : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-granularity-vs : 0 / 0 / 1
 </table>
 == n/a ==
@@ -109,14 +109,14 @@ ERROR: /github/workspace/output/StructureDefinition-Substance.profile.history.ht
 ERROR: /github/workspace/output/StructureDefinition-Substance.profile.json.html#/html/body/div/div/div/p/a at Line 7338, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 6460, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance.profile.xml.html#/html/body/div/div/div/p/a at Line 6589, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-SubstanceModel-definitions.html#/html/body/div/div/div/p/a at Line 403, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel-definitions.html#/html/body/div/div/div/p/a at Line 410, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-SubstanceModel-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-SubstanceModel-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.html#/html/body/div/div/div/p/a at Line 653, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.html#/html/body/div/div/div/p/a at Line 659, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.profile.json.html#/html/body/div/div/div/p/a at Line 1338, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.profile.ttl.html#/html/body/div/div/div/p/a at Line 1126, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.profile.xml.html#/html/body/div/div/div/p/a at Line 1167, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.profile.json.html#/html/body/div/div/div/p/a at Line 1379, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.profile.ttl.html#/html/body/div/div/div/p/a at Line 1162, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SubstanceModel.profile.xml.html#/html/body/div/div/div/p/a at Line 1201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 228, column 28: The link '' for "" cannot be resolved
@@ -165,6 +165,5 @@ WARNING: StructureDefinition/MedicationFull: StructureDefinition: Unable to find
 == /github/workspace/fsh-generated/resources/StructureDefinition-Substance.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-SubstanceModel.json ==
 ERROR: StructureDefinition/SubstanceModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
-ERROR: StructureDefinition/SubstanceModel: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
 WARNING: StructureDefinition/SubstanceModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == /github/workspace/fsh-generated/resources/ValueSet-granularity-vs.json ==
