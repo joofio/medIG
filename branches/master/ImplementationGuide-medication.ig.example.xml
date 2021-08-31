@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2021-08-27T09:59:30+00:00"/>
+  <date value="2021-08-31T08:12:58+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -211,10 +211,10 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MedicationFull"/>
+        <reference value="StructureDefinition/PharmaceuticalProdut"/>
       </reference>
-      <name value="Medication Knowledge by me logical model"/>
-      <description value="Medication Knowledge by me logical model."/>
+      <name value="Pharmaceutical Product logical model"/>
+      <description value="Pharmaceutical Product logical model"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
