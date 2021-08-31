@@ -7,13 +7,6 @@
     "name": "medicationIG"
   },
   {
-    "id": "MedicationFull",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/example/StructureDefinition/MedicationFull",
-    "version": "0.1.0",
-    "name": "MedicationFull"
-  },
-  {
     "id": "MedicinalProduct",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct",
@@ -33,6 +26,13 @@
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct",
     "version": "0.1.0",
     "name": "PharmaceuticalProduct"
+  },
+  {
+    "id": "PharmaceuticalProdut",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProdut",
+    "version": "0.1.0",
+    "name": "PharmaceuticalProdut"
   },
   {
     "id": "Substance",

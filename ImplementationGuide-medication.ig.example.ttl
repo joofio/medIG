@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "medicationIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-27T09:59:30+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-31T08:12:58+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "medication.ig.example"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -313,11 +313,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MedicationFull>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationFull" ]
+         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProdut>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PharmaceuticalProdut" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Knowledge by me logical model" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication Knowledge by me logical model." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pharmaceutical Product logical model" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pharmaceutical Product logical model" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -558,7 +558,7 @@
 
 <http://hl7.org/fhir/us/example/StructureDefinition/Substance> a fhir:us .
 
-<http://hl7.org/fhir/us/example/StructureDefinition/MedicationFull> a fhir:us .
+<http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProdut> a fhir:us .
 
 <http://hl7.org/fhir/us/example/StructureDefinition/SubstanceModel> a fhir:us .
 

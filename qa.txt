@@ -3,7 +3,7 @@
 
 err = 2, warn = 23, info = 5
 IG Publisher Version: 1.1.77
-Generated Fri Aug 27 09:59:59 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Tue Aug 31 08:13:32 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
 
  Build Errors : 97 / 5 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 0 / 1
@@ -15,10 +15,10 @@ Generated Fri Aug 27 09:59:59 UTC 2021. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-MedicationFull : 1 / 15 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProdut : 1 / 15 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Substance : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-SubstanceModel : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-granularity-vs : 0 / 0 / 1
@@ -69,14 +69,6 @@ ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.html#/
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 277, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 271, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull-definitions.html#/html/body/div/div/div/p/a at Line 671, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull.html#/html/body/div/div/div/p/a at Line 1027, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull.profile.json.html#/html/body/div/div/div/p/a at Line 3039, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull.profile.ttl.html#/html/body/div/div/div/p/a at Line 2466, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MedicationFull.profile.xml.html#/html/body/div/div/div/p/a at Line 2596, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1790, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 390, column 28: The link '' for "" cannot be resolved
@@ -101,6 +93,14 @@ ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profil
 ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7329, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6454, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6581, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProdut-definitions.html#/html/body/div/div/div/p/a at Line 541, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProdut-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProdut-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProdut.html#/html/body/div/div/div/p/a at Line 863, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProdut.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProdut.profile.json.html#/html/body/div/div/div/p/a at Line 2203, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProdut.profile.ttl.html#/html/body/div/div/div/p/a at Line 1802, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalProdut.profile.xml.html#/html/body/div/div/div/p/a at Line 1913, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance-definitions.html#/html/body/div/div/div/p/a at Line 1725, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Substance-mappings.html#/html/body/div/div/div/p/a at Line 327, column 28: The link '' for "" cannot be resolved
@@ -142,26 +142,26 @@ INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drug
 == /github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json ==
 INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.cost[0].type.coding[0]: Code System URI 'http://infarmed.pt/' is unknown so the code cannot be validated
 INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.packaging.type.coding[0]: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
-== /github/workspace/fsh-generated/resources/StructureDefinition-MedicationFull.json ==
-ERROR: StructureDefinition/MedicationFull: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.snapshot.element[27].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.snapshot.element[34]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.snapshot.element[35]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.snapshot.element[36]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.snapshot.element[37]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.snapshot.element[38]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.snapshot.element[39]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.differential.element[27].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.differential.element[34]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.differential.element[35]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.differential.element[36]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.differential.element[37]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.differential.element[38]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition.differential.element[39]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationFull: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProdut.json ==
+ERROR: StructureDefinition/PharmaceuticalProdut: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.snapshot.element[27].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.snapshot.element[34]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.snapshot.element[35]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.snapshot.element[36]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.snapshot.element[37]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.snapshot.element[38]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.snapshot.element[39]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.differential.element[27].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.differential.element[34]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.differential.element[35]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.differential.element[36]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.differential.element[37]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.differential.element[38]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition.differential.element[39]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == /github/workspace/fsh-generated/resources/StructureDefinition-Substance.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-SubstanceModel.json ==
 ERROR: StructureDefinition/SubstanceModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
