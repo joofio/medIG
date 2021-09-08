@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "76af4da4-9c1e-4f2a-b983-f2633d6c1c93",
+  "id" : "cb503685-cf80-4de5-b93d-cc2087a9a593",
   "meta" : {
-    "lastUpdated" : "2021-08-31T08:12:58.794+00:00"
+    "lastUpdated" : "2021-09-08T12:25:09.543+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,18 +12,18 @@
       "id" : "granularity-vs",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-drug-cs.html\">Drug Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-drug-cs.html\"><code>http://terminology.hl7.org/CodeSystem/medicineCS</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-SUBST\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-SUBST\">SUBST</a></td><td>Substance</td><td>Substance</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-PHARMPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-PHARMPROD\">PHARMPROD</a></td><td>Pharmaceutical Product</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-MEDPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-MEDPROD\">MEDPROD</a></td><td>Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-PACKMEDPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-PACKMEDPROD\">PACKMEDPROD</a></td><td>Packaged Medicinal Product</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-drug-cs.html\">Drug Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-drug-cs.html\"><code>http://terminology.hl7.org/CodeSystem/medicineCS</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-SUBST\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-SUBST\">SUBST</a></td><td>Substance</td><td>Substance</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-PHARMPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-PHARMPROD\">PHARMPROD</a></td><td>Pharmaceutical Product</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-MEDPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-MEDPROD\">MEDPROD</a></td><td>Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-PACKMEDPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-PACKMEDPROD\">PACKMEDPROD</a></td><td>Packaged Medicinal Product</td><td/></tr></table></div>"
       },
       "url" : "http://hl7.org/fhir/us/example/ValueSet/granularity-vs",
       "version" : "0.1.0",
       "name" : "GranularityVS",
       "title" : "Granularity Value Set",
       "status" : "active",
-      "date" : "2021-08-31T08:12:58+00:00",
+      "date" : "2021-09-08T12:25:09+00:00",
       "description" : "Indicates the granularity of product",
       "expansion" : {
-        "identifier" : "urn:uuid:f2851a88-f845-4ff7-8184-a175f43a1ddc",
-        "timestamp" : "2021-08-31T08:13:17+00:00",
+        "identifier" : "urn:uuid:4519e202-2b37-43e3-95d9-95dd09b83545",
+        "timestamp" : "2021-09-08T12:25:28+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",

@@ -1,11 +1,13 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 97, errors = 2, warn = 23, info = 5 -->
+<!-- broken links = 105, errors = 4, warn = 158, info = 5 -->
 <head>
   <title>medicationIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
   <style>
     span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
   </style>
   <script>
     function flip(id) {
@@ -19,13 +21,24 @@
         span.innerHTML = 'Show Reasoning';
       }
     }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
   </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for medicationIG</h1>
- <p>Generated Tue Aug 31 08:13:32 UTC 2021, FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/example">http://hl7.org/fhir/us/example</a> (<a href="http://hl7.org/fhir/us/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Wed Sep 08 12:25:42 UTC 2021, FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/example">http://hl7.org/fhir/us/example</a> (<a href="http://hl7.org/fhir/us/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.79</span></td></tr>
  <tr><td>Publication Code:</td><td>example<span style="color: maroon; font-weight: bold"> </span>. PackageId = medication.ig.example, Canonical = http://hl7.org/fhir/us/example</td></tr>
  <tr><td>Realm Check for IG:</td><td><span style="color: maroon; font-weight: bold">Error: realms in canonical and package id are different: ig vs us</span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
@@ -36,17 +49,20 @@
  <tr><td>Publication Rules:</td><td>Code = example. package-list.json: file not found in /github/workspace <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.org/fhir/us/example (Problem #1 with package-list.json at http://hl7.org/fhir/us/example: http://hl7.org/fhir/us/example/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 97, errors = 2, warn = 23, info = 5</td></tr>
+ <tr><td>Summary:</td><td> broken links = 105, errors = 4, warn = 158, info = 5</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>97</b></td><td><b>5</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>105</b></td><td><b>5</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-medication.ig.example"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PharmaceuticalProduct-withbox"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct-withbox</b></a></td><td><b>2</b></td><td><b>135</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PharmaceuticalProdut"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProdut</b></a></td><td><b>1</b></td><td><b>15</b></td><td><b>0</b></td>
@@ -57,7 +73,8 @@
 </table>
 <hr/>
 <a name="internal"> </a>
-<h2><a href="">n/a</a></h2>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MedicinalProduct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
@@ -75,300 +92,325 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/rel-med-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-char-cs.change.history.html#c96613eb-6aa8-46a9-af25-0008425d6da7">CodeSystem-drug-char-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-char-cs.change.history.html#l277">output/CodeSystem-drug-char-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-char-cs.html#82b61d4b-21c9-443d-868d-7bd7b1dc5b42">CodeSystem-drug-char-cs.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-char-cs.html#l455">output/CodeSystem-drug-char-cs.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-char-cs.json.html#d636092d-1b2d-4fec-bdc5-a7b4ab7b594e">CodeSystem-drug-char-cs.json.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-char-cs.json.html#l424">output/CodeSystem-drug-char-cs.json.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-char-cs.ttl.html#bf79c4ca-dfff-4c19-a020-29c2b14b3dd4">CodeSystem-drug-char-cs.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-char-cs.ttl.html#l560">output/CodeSystem-drug-char-cs.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-char-cs.xml.html#1cff7616-2869-458c-986d-fdda383a4ab3">CodeSystem-drug-char-cs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-char-cs.xml.html#l559">output/CodeSystem-drug-char-cs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-cs.change.history.html#9f87f567-9e9d-4681-831a-b20d8f38b40d">CodeSystem-drug-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-cs.change.history.html#l277">output/CodeSystem-drug-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-cs.html#9cc1b103-df7e-4455-bdcf-c0a2e6b7ffe3">CodeSystem-drug-cs.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-cs.html#l411">output/CodeSystem-drug-cs.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-cs.json.html#d1278ad0-0e45-41a9-8fe3-b2c6b9a11c66">CodeSystem-drug-cs.json.html#/html/body/div/div/div/p/a at Line 224, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-cs.json.html#l370">output/CodeSystem-drug-cs.json.html#/html/body/div/div/div/p/a at Line 224, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-cs.ttl.html#65c72cfb-505d-443b-9a7b-247dfd79bd28">CodeSystem-drug-cs.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-cs.ttl.html#l437">output/CodeSystem-drug-cs.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-drug-cs.xml.html#aae3da03-3cc1-4119-bc19-d6b8704dd2ff">CodeSystem-drug-cs.xml.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-drug-cs.xml.html#l436">output/CodeSystem-drug-cs.xml.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-rel-med-cs.change.history.html#bec87084-265f-4912-b418-e57a3fc6aad2">CodeSystem-rel-med-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-rel-med-cs.change.history.html#l277">output/CodeSystem-rel-med-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-rel-med-cs.html#7ea0d933-3357-4417-b595-00b7f5fd598d">CodeSystem-rel-med-cs.html#/html/body/div/div/div/p/a at Line 205, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-rel-med-cs.html#l396">output/CodeSystem-rel-med-cs.html#/html/body/div/div/div/p/a at Line 205, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-rel-med-cs.json.html#bb40c876-8683-426f-91e1-2a1fa756d550">CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-rel-med-cs.json.html#l373">output/CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-rel-med-cs.ttl.html#b9850baf-0a6c-42ef-86c4-afb0011293fa">CodeSystem-rel-med-cs.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-rel-med-cs.ttl.html#l443">output/CodeSystem-rel-med-cs.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-rel-med-cs.xml.html#a3254bee-d2ed-4cd6-a151-0d3f85585197">CodeSystem-rel-med-cs.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-rel-med-cs.xml.html#l442">output/CodeSystem-rel-med-cs.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-type-med-class-cs.change.history.html#b0284175-21a6-4b1e-a04a-d8d20d51332d">CodeSystem-type-med-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-type-med-class-cs.change.history.html#l277">output/CodeSystem-type-med-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-type-med-class-cs.html#0dbcd01e-6e69-4484-be89-7d615e013456">CodeSystem-type-med-class-cs.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-type-med-class-cs.html#l392">output/CodeSystem-type-med-class-cs.html#/html/body/div/div/div/p/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-type-med-class-cs.json.html#9ba640dd-9227-4583-bcdb-ab8666276a1a">CodeSystem-type-med-class-cs.json.html#/html/body/div/div/div/p/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-type-med-class-cs.json.html#l361">output/CodeSystem-type-med-class-cs.json.html#/html/body/div/div/div/p/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-type-med-class-cs.ttl.html#cd73763b-de99-4e29-bfc9-a7d9625c0eec">CodeSystem-type-med-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-type-med-class-cs.ttl.html#l416">output/CodeSystem-type-med-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-type-med-class-cs.xml.html#bd7afef7-f56e-4b4e-a8a2-bfaaa5463c20">CodeSystem-type-med-class-cs.xml.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-type-med-class-cs.xml.html#l415">output/CodeSystem-type-med-class-cs.xml.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.change.history.html#8ad741c8-96cd-4cea-a206-bc976ff8edf2">MedicationKnowledge-example-0-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.change.history.html#l277">output/MedicationKnowledge-example-0-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.html#d1d43a86-89a4-4d7c-8c8e-47d4884e9766">MedicationKnowledge-example-0-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.html#l338">output/MedicationKnowledge-example-0-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.json.html#18178493-8108-4495-bda4-ada7c1ed489a">MedicationKnowledge-example-0-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.json.html#l385">output/MedicationKnowledge-example-0-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.ttl.html#a367ebbd-e8ad-4f31-a1ad-7fbb7b2dc03a">MedicationKnowledge-example-0-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 258, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.ttl.html#l470">output/MedicationKnowledge-example-0-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 258, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.xml.html#8cc44c10-e580-4da1-9af2-32bf5ec95b81">MedicationKnowledge-example-0-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-0-of-drug-med.xml.html#l445">output/MedicationKnowledge-example-0-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.change.history.html#e5c7eca8-11c0-4516-8bbe-f22ff38bfd21">MedicationKnowledge-example-1-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.change.history.html#l277">output/MedicationKnowledge-example-1-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.html#d63363eb-2166-48b8-8932-464f12bb393a">MedicationKnowledge-example-1-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.html#l352">output/MedicationKnowledge-example-1-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.json.html#005450be-d67f-4f8c-ae16-3a43732af752">MedicationKnowledge-example-1-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.json.html#l412">output/MedicationKnowledge-example-1-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.ttl.html#eaa3519e-1e18-47df-a88f-1ff534dbef78">MedicationKnowledge-example-1-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.ttl.html#l506">output/MedicationKnowledge-example-1-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.xml.html#ea54b444-ca5f-49c3-a830-7b1969efa73f">MedicationKnowledge-example-1-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-1-of-drug-med.xml.html#l472">output/MedicationKnowledge-example-1-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.change.history.html#fe326ac6-b83e-4683-9fd0-b03a384bf73c">MedicationKnowledge-example-2-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.change.history.html#l277">output/MedicationKnowledge-example-2-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.html#172e2e2e-3b66-4bea-b166-8c32032bef32">MedicationKnowledge-example-2-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.html#l394">output/MedicationKnowledge-example-2-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.json.html#f6f45543-c0ab-4194-9186-b2b9f311634d">MedicationKnowledge-example-2-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 285, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.json.html#l430">output/MedicationKnowledge-example-2-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 285, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.ttl.html#cdf88767-5cc7-4415-8910-1a5dfbf4292a">MedicationKnowledge-example-2-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 276, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.ttl.html#l545">output/MedicationKnowledge-example-2-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 276, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.xml.html#25c5a637-69b9-4288-982e-b6994b6525ce">MedicationKnowledge-example-2-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 260, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-2-of-drug-med.xml.html#l505">output/MedicationKnowledge-example-2-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 260, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.change.history.html#2ecfcf1b-ab25-4e95-96df-ecbf6881fac4">MedicationKnowledge-example-3-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.change.history.html#l277">output/MedicationKnowledge-example-3-of-drug-med.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.html#ad4f505a-f474-4275-aaae-2d1dc055b2ce">MedicationKnowledge-example-3-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.html#l377">output/MedicationKnowledge-example-3-of-drug-med.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.json.html#61e6f784-a5cb-4349-bbfb-c24dea65ad80">MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.json.html#l430">output/MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.ttl.html#28838aaf-74e3-4398-8be3-456cb1c957b5">MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.ttl.html#l533">output/MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.xml.html#f999921c-d875-45d8-8f74-e55f1bc47d13">MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="MedicationKnowledge-example-3-of-drug-med.xml.html#l496">output/MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct-definitions.html#044804bb-4647-41eb-a8ec-9282ef281c6e">StructureDefinition-MedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1790, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct-definitions.html#l11142">output/StructureDefinition-MedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1790, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct-examples.html#dbe2cdf5-e1f6-49ab-9dbd-326860696102">StructureDefinition-MedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct-examples.html#l325">output/StructureDefinition-MedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct-mappings.html#a276caaa-8989-450b-b3dd-1e63b7f7fbac">StructureDefinition-MedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 390, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct-mappings.html#l1217">output/StructureDefinition-MedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 390, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct.html#bf8b531c-5aab-4619-b11e-8a36a4d9f74a">StructureDefinition-MedicinalProduct.html#/html/body/div/div/div/p/a at Line 1989, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct.html#l21552">output/StructureDefinition-MedicinalProduct.html#/html/body/div/div/div/p/a at Line 1989, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct.profile.history.html#2a5ee563-5af3-4a74-903d-ac55c2050fcb">StructureDefinition-MedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct.profile.history.html#l294">output/StructureDefinition-MedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct.profile.json.html#d362b9b8-78e6-4a42-88cb-99c32e2fa353">StructureDefinition-MedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7611, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct.profile.json.html#l14759">output/StructureDefinition-MedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7611, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct.profile.ttl.html#85223277-b36f-4c97-bf8f-48b3a47128df">StructureDefinition-MedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6698, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct.profile.ttl.html#l30990">output/StructureDefinition-MedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6698, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-MedicinalProduct.profile.xml.html#7c26c10a-d953-482a-bded-c0849a57d013">StructureDefinition-MedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6833, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-MedicinalProduct.profile.xml.html#l27776">output/StructureDefinition-MedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6833, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-definitions.html#642bbae3-b3fe-48ad-897e-6d230bf84e41">StructureDefinition-PackagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1850, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-definitions.html#l11579">output/StructureDefinition-PackagedMedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1850, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-examples.html#896d4c0c-e87a-4c42-ab78-10ba92a00c77">StructureDefinition-PackagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-examples.html#l325">output/StructureDefinition-PackagedMedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-mappings.html#da531bea-e587-449c-b530-4de4b49b4046">StructureDefinition-PackagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 398, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct-mappings.html#l1271">output/StructureDefinition-PackagedMedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 398, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.html#9d9c4a7c-98a8-4097-b350-a776fbfa5122">StructureDefinition-PackagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2106, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.html#l23163">output/StructureDefinition-PackagedMedicinalProduct.html#/html/body/div/div/div/p/a at Line 2106, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.history.html#233768de-4b13-4015-aade-c839dbb8cbfe">StructureDefinition-PackagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.history.html#l294">output/StructureDefinition-PackagedMedicinalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.json.html#902beb00-6239-4147-b491-b84087e159d6">StructureDefinition-PackagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7892, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.json.html#l15302">output/StructureDefinition-PackagedMedicinalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7892, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.ttl.html#dd79bd2d-961f-4b72-bd2b-0619f47310ed">StructureDefinition-PackagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6941, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.ttl.html#l32145">output/StructureDefinition-PackagedMedicinalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6941, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.xml.html#b32dae82-ddd7-4f86-a359-d9dbc91df70d">StructureDefinition-PackagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 7082, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PackagedMedicinalProduct.profile.xml.html#l28808">output/StructureDefinition-PackagedMedicinalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 7082, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct-definitions.html#8fac3999-550a-413e-a3ac-68e9e84b2349">StructureDefinition-PharmaceuticalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1731, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-definitions.html#l10712">output/StructureDefinition-PharmaceuticalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1731, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct-examples.html#e4285729-4fe2-4e05-a687-826425108be7">StructureDefinition-PharmaceuticalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-examples.html#l325">output/StructureDefinition-PharmaceuticalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct-mappings.html#870b70ce-15de-47d6-850e-e0d2341c0425">StructureDefinition-PharmaceuticalProduct-mappings.html#/html/body/div/div/div/p/a at Line 386, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-mappings.html#l1190">output/StructureDefinition-PharmaceuticalProduct-mappings.html#/html/body/div/div/div/p/a at Line 386, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct.html#6e99a157-9c6a-4ee2-aca5-3627ec40e703">StructureDefinition-PharmaceuticalProduct.html#/html/body/div/div/div/p/a at Line 1902, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-withbox-definitions.html#l2808">output/StructureDefinition-PharmaceuticalProduct-withbox-definitions.html#/html/body/div/div/div/p/a at Line 566, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.history.html#399bb249-9e7f-4524-a366-bf83e0b8fb87">StructureDefinition-PharmaceuticalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-withbox-examples.html#l293">output/StructureDefinition-PharmaceuticalProduct-withbox-examples.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.json.html#92008318-bd30-426d-9f9d-b54b7e57d5fb">StructureDefinition-PharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7329, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-withbox-mappings.html#l319">output/StructureDefinition-PharmaceuticalProduct-withbox-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.ttl.html#73b6a685-9adb-41fc-9728-ab24755b9a13">StructureDefinition-PharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6454, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-withbox.html#l6387">output/StructureDefinition-PharmaceuticalProduct-withbox.html#/html/body/div/div/div/p/a at Line 895, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.xml.html#7abda7c1-f54e-4048-b46b-1c50089e823a">StructureDefinition-PharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6581, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-withbox.profile.history.html#l288">output/StructureDefinition-PharmaceuticalProduct-withbox.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProdut-definitions.html#03c2beef-4d7a-42c8-aa66-593c177e997d">StructureDefinition-PharmaceuticalProdut-definitions.html#/html/body/div/div/div/p/a at Line 541, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-withbox.profile.json.html#l4388">output/StructureDefinition-PharmaceuticalProduct-withbox.profile.json.html#/html/body/div/div/div/p/a at Line 2358, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProdut-examples.html#135697ff-7671-49e6-bee7-5b0bc08ff1ec">StructureDefinition-PharmaceuticalProdut-examples.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-withbox.profile.ttl.html#l8718">output/StructureDefinition-PharmaceuticalProduct-withbox.profile.ttl.html#/html/body/div/div/div/p/a at Line 1922, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProdut-mappings.html#41a9b87c-9cfa-4517-bf09-ced52557a5cf">StructureDefinition-PharmaceuticalProdut-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct-withbox.profile.xml.html#l7850">output/StructureDefinition-PharmaceuticalProduct-withbox.profile.xml.html#/html/body/div/div/div/p/a at Line 2058, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProdut.html#131f3735-60a6-4c25-8722-1113d0b2ad87">StructureDefinition-PharmaceuticalProdut.html#/html/body/div/div/div/p/a at Line 863, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct.html#l20251">output/StructureDefinition-PharmaceuticalProduct.html#/html/body/div/div/div/p/a at Line 1902, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProdut.profile.history.html#e9a1b40b-77c8-4094-ba83-d09ffa5ccdc4">StructureDefinition-PharmaceuticalProdut.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.history.html#l294">output/StructureDefinition-PharmaceuticalProduct.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProdut.profile.json.html#1cd03b68-0c73-489b-a3d0-b3f8492cbfd6">StructureDefinition-PharmaceuticalProdut.profile.json.html#/html/body/div/div/div/p/a at Line 2203, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.json.html#l14213">output/StructureDefinition-PharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 7329, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProdut.profile.ttl.html#7400c503-dcc6-4f66-a616-8a89eebc95e0">StructureDefinition-PharmaceuticalProdut.profile.ttl.html#/html/body/div/div/div/p/a at Line 1802, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.ttl.html#l29829">output/StructureDefinition-PharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 6454, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-PharmaceuticalProdut.profile.xml.html#c7eb1393-00ee-4b5a-8645-15d970253a7d">StructureDefinition-PharmaceuticalProdut.profile.xml.html#/html/body/div/div/div/p/a at Line 1913, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProduct.profile.xml.html#l26738">output/StructureDefinition-PharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 6581, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance-definitions.html#6f1382de-f909-4fb4-83a2-df2a1f19ceed">StructureDefinition-Substance-definitions.html#/html/body/div/div/div/p/a at Line 1725, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProdut-definitions.html#l2623">output/StructureDefinition-PharmaceuticalProdut-definitions.html#/html/body/div/div/div/p/a at Line 541, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance-examples.html#819f67e4-11ad-44f9-b9c6-c6e9efde3753">StructureDefinition-Substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProdut-examples.html#l293">output/StructureDefinition-PharmaceuticalProdut-examples.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance-mappings.html#181f4512-fb74-4d98-a116-c05f1f3e4040">StructureDefinition-Substance-mappings.html#/html/body/div/div/div/p/a at Line 327, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProdut-mappings.html#l319">output/StructureDefinition-PharmaceuticalProdut-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance.html#74a2cd61-5563-4aa7-82b7-5d966408fffe">StructureDefinition-Substance.html#/html/body/div/div/div/p/a at Line 1575, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProdut.html#l5987">output/StructureDefinition-PharmaceuticalProdut.html#/html/body/div/div/div/p/a at Line 863, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance.profile.history.html#c4bb5a77-1507-4480-a704-c4cd1a576a87">StructureDefinition-Substance.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProdut.profile.history.html#l288">output/StructureDefinition-PharmaceuticalProdut.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance.profile.json.html#d4200460-d33f-4efe-a0dd-1390e914d81a">StructureDefinition-Substance.profile.json.html#/html/body/div/div/div/p/a at Line 7338, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProdut.profile.json.html#l4088">output/StructureDefinition-PharmaceuticalProdut.profile.json.html#/html/body/div/div/div/p/a at Line 2203, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance.profile.ttl.html#15ed4e63-b478-4455-8d86-1c880cc5d191">StructureDefinition-Substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 6460, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProdut.profile.ttl.html#l8103">output/StructureDefinition-PharmaceuticalProdut.profile.ttl.html#/html/body/div/div/div/p/a at Line 1802, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-Substance.profile.xml.html#298629eb-d89a-4aa4-a608-be91d817def5">StructureDefinition-Substance.profile.xml.html#/html/body/div/div/div/p/a at Line 6589, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-PharmaceuticalProdut.profile.xml.html#l7295">output/StructureDefinition-PharmaceuticalProdut.profile.xml.html#/html/body/div/div/div/p/a at Line 1913, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-SubstanceModel-definitions.html#fc295c50-c5dc-41bd-9ba3-c623dd8344b2">StructureDefinition-SubstanceModel-definitions.html#/html/body/div/div/div/p/a at Line 410, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance-definitions.html#l10670">output/StructureDefinition-Substance-definitions.html#/html/body/div/div/div/p/a at Line 1725, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-SubstanceModel-examples.html#c4e27c41-91e4-4fb6-af5b-66716e944273">StructureDefinition-SubstanceModel-examples.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance-examples.html#l325">output/StructureDefinition-Substance-examples.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-SubstanceModel-mappings.html#9cd8847f-faba-4579-854f-2f2ad7c8d9ec">StructureDefinition-SubstanceModel-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance-mappings.html#l831">output/StructureDefinition-Substance-mappings.html#/html/body/div/div/div/p/a at Line 327, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-SubstanceModel.html#296211bf-7b2e-432e-aa46-88e74a97124a">StructureDefinition-SubstanceModel.html#/html/body/div/div/div/p/a at Line 659, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance.html#l17074">output/StructureDefinition-Substance.html#/html/body/div/div/div/p/a at Line 1575, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-SubstanceModel.profile.history.html#55dcde23-3e0d-49ea-97ec-4c07b805388e">StructureDefinition-SubstanceModel.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance.profile.history.html#l294">output/StructureDefinition-Substance.profile.history.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-SubstanceModel.profile.json.html#a7a0205b-5236-477f-bcba-9af1ba058a67">StructureDefinition-SubstanceModel.profile.json.html#/html/body/div/div/div/p/a at Line 1379, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance.profile.json.html#l14222">output/StructureDefinition-Substance.profile.json.html#/html/body/div/div/div/p/a at Line 7338, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-SubstanceModel.profile.ttl.html#b1f7bb76-dd93-4011-b15e-6fe08a21070b">StructureDefinition-SubstanceModel.profile.ttl.html#/html/body/div/div/div/p/a at Line 1162, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance.profile.ttl.html#l29856">output/StructureDefinition-Substance.profile.ttl.html#/html/body/div/div/div/p/a at Line 6460, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-SubstanceModel.profile.xml.html#9d0f14dc-e8e4-474f-9aae-036b0015e728">StructureDefinition-SubstanceModel.profile.xml.html#/html/body/div/div/div/p/a at Line 1201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-Substance.profile.xml.html#l26756">output/StructureDefinition-Substance.profile.xml.html#/html/body/div/div/div/p/a at Line 6589, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.change.history.html#377daba1-c3b6-4647-8ff1-01a5b38b5b70">ValueSet-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-SubstanceModel-definitions.html#l1632">output/StructureDefinition-SubstanceModel-definitions.html#/html/body/div/div/div/p/a at Line 410, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.html#845b3bd6-a9e5-4f9b-a8f5-e298d7acd1df">ValueSet-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-SubstanceModel-examples.html#l293">output/StructureDefinition-SubstanceModel-examples.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.json.html#1508af59-fe89-4bc9-bd80-9f0e7b37d5a6">ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-SubstanceModel-mappings.html#l319">output/StructureDefinition-SubstanceModel-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.ttl.html#b0597abb-9b5f-48c6-ac9d-d463e5dafe5f">ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-SubstanceModel.html#l3617">output/StructureDefinition-SubstanceModel.html#/html/body/div/div/div/p/a at Line 659, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-granularity-vs.xml.html#47a9c4db-d982-46b4-b587-dc041818c9bb">ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 224, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-SubstanceModel.profile.history.html#l288">output/StructureDefinition-SubstanceModel.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#698409a3-1b0d-477e-9d16-0f419a3be8c0">artifacts.html#/html/body/div/div/div/p/a at Line 344, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-SubstanceModel.profile.json.html#l2510">output/StructureDefinition-SubstanceModel.profile.json.html#/html/body/div/div/div/p/a at Line 1379, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="download.html#aed246dc-f74e-4027-8be3-45d1e33ca471">download.html#/html/body/div/div/div/p/a at Line 184, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-SubstanceModel.profile.ttl.html#l4845">output/StructureDefinition-SubstanceModel.profile.ttl.html#/html/body/div/div/div/p/a at Line 1162, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#3a004c7d-9b23-4aeb-9a6b-cb89faf44527">index.html#/html/body/div/div/div/p/a at Line 155, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-SubstanceModel.profile.xml.html#l4361">output/StructureDefinition-SubstanceModel.profile.xml.html#/html/body/div/div/div/p/a at Line 1201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#679b8ad6-6044-42d2-9999-94b5489c5f1d">toc.html#/html/body/div/div/div/p/a at Line 137, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-granularity-vs.change.history.html#l277">output/ValueSet-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.html#l550">output/ValueSet-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.json.html#l370">output/ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.ttl.html#l434">output/ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-granularity-vs.xml.html#l430">output/ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 224, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l624">output/artifacts.html#/html/body/div/div/div/p/a at Line 353, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="download.html#l313">output/download.html#/html/body/div/div/div/p/a at Line 184, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l264">output/index.html#/html/body/div/div/div/p/a at Line 155, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l406">output/toc.html#/html/body/div/div/div/p/a at Line 137, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ImplementationGuide-medication.ig.example"> </a>
-<h2><a href="ImplementationGuide-medication.ig.example.html">/github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example.json</a></h2>
+<h2><a href="ImplementationGuide-medication.ig.example.html">fsh-generated/resources/ImplementationGuide-medication.ig.example.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"></div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
@@ -377,14 +419,435 @@
      <td><b>ImplementationGuide</b></td><td><b>warning</b></td><td title="ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[9].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[10].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PharmaceuticalProduct-withbox"> </a>
+<h2><a href="StructureDefinition-PharmaceuticalProduct-withbox.html">fsh-generated/resources/StructureDefinition-PharmaceuticalProduct-withbox.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: PharmaceuticalProduct-withbox/http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct_withbox</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[0]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[1]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[2]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[3]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[4]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[5]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[6]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[7]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[8]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[9]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[10]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[11]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[12]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[13]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[14]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[15]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[16]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[17]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[18]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[19]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[20]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[21]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[22]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[23]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[24]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[25]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[26]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[27]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[27].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[28]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[29]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[30]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[31]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[32]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[33]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[34]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[35]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[36]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[37]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[38]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[39]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[40]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[41]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[42]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[43]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[44]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[45]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[46]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[47]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[48]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[49]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[50]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[51]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[52]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[53]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[54]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[55]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[56]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[57]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[58]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[59]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[60]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[61]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[62]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[63]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[64]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[65]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[0]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[1]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[4]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[5]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[6]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[7]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[8]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[9]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[10]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[11]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[12]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[13]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[14]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[15]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[16]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[17]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[18]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[19]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[20]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[21]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[22]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[23]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[24]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[25]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[26]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[27]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[27].short</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[28]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[29]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[30]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[31]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[32]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[33]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[34]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[35]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[36]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[37]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[38]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[39]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[40]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[41]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[42]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[43]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[44]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[45]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[46]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[47]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[48]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[49]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[50]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[51]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[52]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[53]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[54]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[55]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[56]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[57]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[58]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[59]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[60]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[61]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[62]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[63]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[64]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[65]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-PharmaceuticalProdut"> </a>
-<h2><a href="StructureDefinition-PharmaceuticalProdut.html">/github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProdut.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-PharmaceuticalProdut.html">fsh-generated/resources/StructureDefinition-PharmaceuticalProdut.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
@@ -440,9 +903,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-SubstanceModel"> </a>
-<h2><a href="StructureDefinition-SubstanceModel.html">/github/workspace/fsh-generated/resources/StructureDefinition-SubstanceModel.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-SubstanceModel.html">fsh-generated/resources/StructureDefinition-SubstanceModel.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
@@ -459,14 +922,25 @@
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-PharmaceuticalProduct-withbox.html">fsh-generated/resources/StructureDefinition-PharmaceuticalProduct-withbox.json</a></td><td><b>Resource id/url mismatch: PharmaceuticalProduct-withbox/http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct_withbox</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
 <h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-PharmaceuticalProdut.html">/github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProdut.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+     <td><a href="StructureDefinition-PharmaceuticalProduct-withbox.html">fsh-generated/resources/StructureDefinition-PharmaceuticalProduct-withbox.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-SubstanceModel.html">/github/workspace/fsh-generated/resources/StructureDefinition-SubstanceModel.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+     <td><a href="StructureDefinition-PharmaceuticalProdut.html">fsh-generated/resources/StructureDefinition-PharmaceuticalProdut.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-SubstanceModel.html">fsh-generated/resources/StructureDefinition-SubstanceModel.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
    </tr>
 </table>
 <hr/>
@@ -474,19 +948,19 @@
 <h2>Terminology_TX_System_NotKnown</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
-     <td><a href="MedicationKnowledge-example-0-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json</a></td><td><b>Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated</b></td>
+     <td><a href="MedicationKnowledge-example-0-of-drug-med.html">fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json</a></td><td><b>Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="MedicationKnowledge-example-1-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></td><td><b>Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated</b></td>
+     <td><a href="MedicationKnowledge-example-1-of-drug-med.html">fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json</a></td><td><b>Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>Code System URI 'http://clinicaltrial-server.fhir.pt' is unknown so the code cannot be validated</b></td>
+     <td><a href="MedicationKnowledge-example-2-of-drug-med.html">fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med.json</a></td><td><b>Code System URI 'http://clinicaltrial-server.fhir.pt' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="MedicationKnowledge-example-3-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json</a></td><td><b>Code System URI 'http://infarmed.pt/' is unknown so the code cannot be validated</b></td>
+     <td><a href="MedicationKnowledge-example-3-of-drug-med.html">fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json</a></td><td><b>Code System URI 'http://infarmed.pt/' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="MedicationKnowledge-example-3-of-drug-med.html">/github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
+     <td><a href="MedicationKnowledge-example-3-of-drug-med.html">fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json</a></td><td><b>Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -494,13 +968,19 @@
 <h2>Type_Specific_Checks_DT_String_WS</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="ImplementationGuide-medication.ig.example.html">/github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+     <td><a href="ImplementationGuide-medication.ig.example.html">fsh-generated/resources/ImplementationGuide-medication.ig.example.json</a></td><td><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-PharmaceuticalProdut.html">/github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProdut.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+     <td><a href="StructureDefinition-PharmaceuticalProduct-withbox.html">fsh-generated/resources/StructureDefinition-PharmaceuticalProduct-withbox.json</a></td><td><b>value should not start or finish with whitespace</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-PharmaceuticalProdut.html">/github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProdut.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+     <td><a href="StructureDefinition-PharmaceuticalProduct-withbox.html">fsh-generated/resources/StructureDefinition-PharmaceuticalProduct-withbox.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-PharmaceuticalProdut.html">fsh-generated/resources/StructureDefinition-PharmaceuticalProdut.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-PharmaceuticalProdut.html">fsh-generated/resources/StructureDefinition-PharmaceuticalProdut.json</a></td><td><b>value should not start or finish with whitespace</b></td>
    </tr>
 </table>
 </body>

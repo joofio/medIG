@@ -28,6 +28,13 @@
     "name": "PharmaceuticalProduct"
   },
   {
+    "id": "PharmaceuticalProduct-withbox",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct_withbox",
+    "version": "0.1.0",
+    "name": "PharmaceuticalProduct_withbox"
+  },
+  {
     "id": "PharmaceuticalProdut",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProdut",

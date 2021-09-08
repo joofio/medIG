@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2021-08-31T08:12:58+00:00"/>
+  <date value="2021-09-08T12:25:09+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -204,6 +204,17 @@
         <reference value="StructureDefinition/Substance"/>
       </reference>
       <name value="Substance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PharmaceuticalProduct-withbox"/>
+      </reference>
+      <name value="Packaged Medicinal Product logical model"/>
+      <description value="Medication Knowledge by me logical model."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

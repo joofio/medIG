@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="76af4da4-9c1e-4f2a-b983-f2633d6c1c93"/>
+  <id value="cb503685-cf80-4de5-b93d-cc2087a9a593"/>
   <meta>
-    <lastUpdated value="2021-08-31T08:12:58.794+00:00"/>
+    <lastUpdated value="2021-09-08T12:25:09.543+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -18,7 +18,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-drug-cs.html">Drug Code System v0.1.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-drug-cs.html">
                 <code>http://terminology.hl7.org/CodeSystem/medicineCS</code>
               </a>
@@ -75,11 +75,11 @@
         <name value="GranularityVS"/>
         <title value="Granularity Value Set"/>
         <status value="active"/>
-        <date value="2021-08-31T08:12:58+00:00"/>
+        <date value="2021-09-08T12:25:09+00:00"/>
         <description value="Indicates the granularity of product"/>
         <expansion>
-          <identifier value="urn:uuid:f2851a88-f845-4ff7-8184-a175f43a1ddc"/>
-          <timestamp value="2021-08-31T08:13:17+00:00"/>
+          <identifier value="urn:uuid:4519e202-2b37-43e3-95d9-95dd09b83545"/>
+          <timestamp value="2021-09-08T12:25:28+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
