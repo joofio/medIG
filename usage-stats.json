@@ -25,6 +25,7 @@
   },
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/allergyintolerance-duration": [
+      "PharmaceuticalProduct_withbox.kinetics.halfLifePeriod",
       "PharmaceuticalProdut.kinetics.halfLifePeriod"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [

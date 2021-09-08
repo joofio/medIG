@@ -74,7 +74,7 @@
   <name value="PharmaceuticalProdut"/>
   <title value="Pharmaceutical Product logical model"/>
   <status value="active"/>
-  <date value="2021-08-31T08:12:58+00:00"/>
+  <date value="2021-09-08T12:25:09+00:00"/>
   <description value="Pharmaceutical Product logical model"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
