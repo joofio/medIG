@@ -10,7 +10,7 @@
   "name": "PharmaceuticalProduct_withbox",
   "title": "Packaged Medicinal Product logical model",
   "status": "active",
-  "date": "2021-09-08T12:25:09+00:00",
+  "date": "2021-09-13T09:25:05+00:00",
   "description": "Medication Knowledge by me logical model.",
   "fhirVersion": "4.0.1",
   "mapping": [
