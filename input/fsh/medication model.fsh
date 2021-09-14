@@ -282,8 +282,8 @@ Description:    "Medication Knowledge by me logical model."
 * impurity 0..* Reference "impurities potentially contained in product, allergenes, etc" "impurities potentially contained in product, allergenes, etc" //SubstanceDefinition
 
 Logical: PharmaceuticalProduct_withbox
-Title: "Packaged Medicinal Product logical model"
-Description:    "Medication Knowledge by me logical model."
+Title: "VMPP logical model"
+Description:    "VMPP logical model."
 
 
 * identifier 0..* Identifier "Business identifier for this medication" "Business identifier for this medication"
