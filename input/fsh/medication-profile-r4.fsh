@@ -113,15 +113,15 @@ Parent: MedicationKnowledge
     domain 0..1 MS and 
     version 0..1 MS and
     drugType 0..1 MS and 
-    marketingAuthorization 0..1 MS and 
-    marketingAuthorizationHolder 0..* MS and 
-    marketingAuthorizationStatus 0..1 MS  //make mandatory for level2+
+//    marketingAuthorization 0..1 MS and 
+ //   marketingAuthorizationHolder 0..* MS and 
+  //  marketingAuthorizationStatus 0..1 MS  //make mandatory for level2+
 * drugCharacteristic[domain].type = drug-char-cs#DOM
 * drugCharacteristic[version].type = drug-char-cs#VER
 * drugCharacteristic[drugType].type = drug-char-cs#DT
-* drugCharacteristic[marketingAuthorization].type = drug-char-cs#MA //link together MA and MAH - HOW?
-* drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
-* drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
+//* drugCharacteristic[marketingAuthorization].type = drug-char-cs#MA //link together MA and MAH - HOW?
+//* drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
+//* drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
 
 * kinetics MS
 * contraindication MS
@@ -295,3 +295,64 @@ Parent: MedicationKnowledge
    // interaction 0..1 MS
 * relatedMedicationKnowledge[packagedFormOf].type =  rel-med-cs#PACKOF
 //* relatedMedicationKnowledge[interaction].type =  rel-med-cs#IT -> clinicalIssue
+
+
+
+
+
+Profile: VirtualPackagedPharmaceuticalProduct
+Parent: MedicationKnowledge
+
+* code MS
+* status MS
+* doseForm MS
+* synonym MS
+* amount MS
+* productType MS
+* productType ^slicing.discriminator.type = #value
+* productType ^slicing.discriminator.path = "$this"
+* productType ^slicing.rules = #open
+* productType contains
+	productLevel 1..1
+* productType[productLevel] = medCS#VMPP
+* medicineClassification MS
+* medicineClassification ^slicing.discriminator.type = #value
+* medicineClassification ^slicing.discriminator.path = "type"
+* medicineClassification ^slicing.rules = #open
+* medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
+* medicineClassification ^slicing.description = "Slice based on the component.code pattern"
+* medicineClassification contains
+    mechanismOfAction 0..* MS
+* medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
+
+* drugCharacteristic MS
+* drugCharacteristic ^slicing.discriminator.type = #value
+* drugCharacteristic ^slicing.discriminator.path = "type"
+* drugCharacteristic ^slicing.rules = #open
+* drugCharacteristic ^slicing.ordered = false   // can be omitted, since false is the default
+* drugCharacteristic ^slicing.description = "Slice based on the component.code pattern"
+* drugCharacteristic contains
+    domain 0..1 MS and 
+    version 0..1 MS and
+    drugType 0..1 MS and 
+* drugCharacteristic[domain].type = drug-char-cs#DOM
+* drugCharacteristic[version].type = drug-char-cs#VER
+* drugCharacteristic[drugType].type = drug-char-cs#DT
+
+* kinetics MS
+* contraindication MS
+* monograph MS
+* intendedRoute	MS
+* ingredient MS
+* packaging MS
+* cost MS
+* relatedMedicationKnowledge MS
+* relatedMedicationKnowledge.reference MS
+* relatedMedicationKnowledge ^slicing.discriminator.type = #value
+* relatedMedicationKnowledge ^slicing.discriminator.path = "type"
+* relatedMedicationKnowledge ^slicing.rules = #open
+* relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
+* relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
+* relatedMedicationKnowledge contains
+    VirtualpackageFormOf 0..1 MS  //item reference is not for medicationKnowledge
+* relatedMedicationKnowledge[VirtualpackageFormOf].type =  rel-med-cs#VIRTUALPACKOF

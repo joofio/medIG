@@ -34,11 +34,15 @@ Description: ""
     "Is a Medicine of"
     "Is a Medicine of"
 * #PACKOF
-    "Packaged Form of"
-    "Packaged Form of"
+    "Is a Packaged Form of"
+    "Is a Packaged Form of"
 * #PHARMOF
-    "Is the Pharmaceutical product of"
-    "Is the Pharmaceutical product of"
+    "Is a Pharmaceutical product of"
+    "Is a Pharmaceutical product of"
+
+* #VIRTUALPACKOF
+    "Is a Virtual Package Form of"
+    "Is a Virtual Package Form of"
 
 
 // Define a local code system
@@ -98,6 +102,8 @@ Description: "Codes for "
     "Medicinal Product"
 * #PACKMEDPROD
     "Packaged Medicinal Product"
+* #VMPP
+    "Virtual Package Product"
 
 
 // @Name: Include Single Codes
