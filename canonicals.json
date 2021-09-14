@@ -28,13 +28,6 @@
     "name": "PharmaceuticalProduct"
   },
   {
-    "id": "PharmaceuticalProduct-withbox",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct_withbox",
-    "version": "0.1.0",
-    "name": "PharmaceuticalProduct_withbox"
-  },
-  {
     "id": "PharmaceuticalProdut",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProdut",
@@ -54,6 +47,20 @@
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/SubstanceModel",
     "version": "0.1.0",
     "name": "SubstanceModel"
+  },
+  {
+    "id": "VirtualPackagePharmaceuticalProduct",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/VirtualPackagePharmaceuticalProduct",
+    "version": "0.1.0",
+    "name": "VirtualPackagePharmaceuticalProduct"
+  },
+  {
+    "id": "VirtualPackagedPharmaceuticalProduct",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/VirtualPackagedPharmaceuticalProduct",
+    "version": "0.1.0",
+    "name": "VirtualPackagedPharmaceuticalProduct"
   },
   {
     "id": "granularity-vs",

@@ -3,15 +3,15 @@
   "id": "rel-med-cs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/relMedCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SUBOF<a name=\"rel-med-cs-SUBOF\"> </a></td><td>Substance from</td><td>Substance from</td></tr><tr><td style=\"white-space:nowrap\">MEDOF<a name=\"rel-med-cs-MEDOF\"> </a></td><td>Is a Medicine of</td><td>Is a Medicine of</td></tr><tr><td style=\"white-space:nowrap\">PACKOF<a name=\"rel-med-cs-PACKOF\"> </a></td><td>Packaged Form of</td><td>Packaged Form of</td></tr><tr><td style=\"white-space:nowrap\">PHARMOF<a name=\"rel-med-cs-PHARMOF\"> </a></td><td>Is the Pharmaceutical product of</td><td>Is the Pharmaceutical product of</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/relMedCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SUBOF<a name=\"rel-med-cs-SUBOF\"> </a></td><td>Substance from</td><td>Substance from</td></tr><tr><td style=\"white-space:nowrap\">MEDOF<a name=\"rel-med-cs-MEDOF\"> </a></td><td>Is a Medicine of</td><td>Is a Medicine of</td></tr><tr><td style=\"white-space:nowrap\">PACKOF<a name=\"rel-med-cs-PACKOF\"> </a></td><td>Is a Packaged Form of</td><td>Is a Packaged Form of</td></tr><tr><td style=\"white-space:nowrap\">PHARMOF<a name=\"rel-med-cs-PHARMOF\"> </a></td><td>Is a Pharmaceutical product of</td><td>Is a Pharmaceutical product of</td></tr><tr><td style=\"white-space:nowrap\">VIRTUALPACKOF<a name=\"rel-med-cs-VIRTUALPACKOF\"> </a></td><td>Is a Virtual Package Form of</td><td>Is a Virtual Package Form of</td></tr></table></div>"
   },
   "url": "http://terminology.hl7.org/CodeSystem/relMedCS",
   "version": "0.1.0",
   "name": "RelatedMedicationKnowledgeCS",
   "status": "active",
-  "date": "2021-09-14T08:11:10+00:00",
+  "date": "2021-09-14T08:27:49+00:00",
   "content": "complete",
-  "count": 4,
+  "count": 5,
   "concept": [
     {
       "code": "SUBOF",
@@ -25,13 +25,18 @@
     },
     {
       "code": "PACKOF",
-      "display": "Packaged Form of",
-      "definition": "Packaged Form of"
+      "display": "Is a Packaged Form of",
+      "definition": "Is a Packaged Form of"
     },
     {
       "code": "PHARMOF",
-      "display": "Is the Pharmaceutical product of",
-      "definition": "Is the Pharmaceutical product of"
+      "display": "Is a Pharmaceutical product of",
+      "definition": "Is a Pharmaceutical product of"
+    },
+    {
+      "code": "VIRTUALPACKOF",
+      "display": "Is a Virtual Package Form of",
+      "definition": "Is a Virtual Package Form of"
     }
   ]
 }

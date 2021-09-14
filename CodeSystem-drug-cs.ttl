@@ -10,17 +10,17 @@
   fhir:Resource.id [ fhir:value "drug-cs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/medicineCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SUBST<a name=\"drug-cs-SUBST\"> </a></td><td>Substance</td><td>Substance</td></tr><tr><td style=\"white-space:nowrap\">PHARMPROD<a name=\"drug-cs-PHARMPROD\"> </a></td><td>pharmaceutical product</td><td/></tr><tr><td style=\"white-space:nowrap\">MEDPROD<a name=\"drug-cs-MEDPROD\"> </a></td><td>Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\">PACKMEDPROD<a name=\"drug-cs-PACKMEDPROD\"> </a></td><td>Packaged Medicinal Product</td><td/></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/medicineCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SUBST<a name=\"drug-cs-SUBST\"> </a></td><td>Substance</td><td>Substance</td></tr><tr><td style=\"white-space:nowrap\">PHARMPROD<a name=\"drug-cs-PHARMPROD\"> </a></td><td>pharmaceutical product</td><td/></tr><tr><td style=\"white-space:nowrap\">MEDPROD<a name=\"drug-cs-MEDPROD\"> </a></td><td>Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\">PACKMEDPROD<a name=\"drug-cs-PACKMEDPROD\"> </a></td><td>Packaged Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\">VMPP<a name=\"drug-cs-VMPP\"> </a></td><td>Virtual Package Product</td><td/></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://terminology.hl7.org/CodeSystem/medicineCS"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "MedicineCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "Drug Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-09-14T08:11:10+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-09-14T08:27:49+00:00"^^xsd:dateTime];
   fhir:CodeSystem.description [ fhir:value "Codes for "];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "SUBST" ];
@@ -38,6 +38,10 @@
      fhir:index 3;
      fhir:CodeSystem.concept.code [ fhir:value "PACKMEDPROD" ];
      fhir:CodeSystem.concept.display [ fhir:value "Packaged Medicinal Product" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "VMPP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Virtual Package Product" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2021-09-14T08:11:10+00:00",
+  "date": "2021-09-14T08:27:49+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -322,14 +322,13 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
+            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/PharmaceuticalProduct-withbox"
+          "reference": "StructureDefinition/VirtualPackagedPharmaceuticalProduct"
         },
-        "name": "VMPP logical model",
-        "description": "VMPP logical model.",
+        "name": "VirtualPackagedPharmaceuticalProduct",
         "exampleBoolean": false
       },
       {
@@ -358,6 +357,20 @@
         },
         "name": "Substance logical model",
         "description": "Substance logical model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/VirtualPackagePharmaceuticalProduct"
+        },
+        "name": "VMPP logical model",
+        "description": "VMPP logical model.",
         "exampleBoolean": false
       },
       {
