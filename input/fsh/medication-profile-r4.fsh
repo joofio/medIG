@@ -40,16 +40,12 @@ Parent: MedicationKnowledge
 * drugCharacteristic contains
     domain 0..1 MS and 
     version 0..1 MS and
-    drugType 0..1 MS and 
-    marketingAuthorization 0..1 MS and 
-    marketingAuthorizationHolder 0..* MS and 
-    marketingAuthorizationStatus 0..1 MS  //make mandatory for level2+
+    drugType 0..1 MS  
+
 * drugCharacteristic[domain].type = drug-char-cs#DOM
 * drugCharacteristic[version].type = drug-char-cs#VER
 * drugCharacteristic[drugType].type = drug-char-cs#DT
-* drugCharacteristic[marketingAuthorization].type = drug-char-cs#MA //link together MA and MAH - HOW?
-* drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
-* drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
+
 
 * administrationGuidelines 0..0
 * preparationInstruction 0..0
@@ -112,16 +108,12 @@ Parent: MedicationKnowledge
 * drugCharacteristic contains
     domain 0..1 MS and 
     version 0..1 MS and
-    drugType 0..1 MS and 
-//    marketingAuthorization 0..1 MS and 
- //   marketingAuthorizationHolder 0..* MS and 
-  //  marketingAuthorizationStatus 0..1 MS  //make mandatory for level2+
+    drugType 0..1 MS  
+
 * drugCharacteristic[domain].type = drug-char-cs#DOM
 * drugCharacteristic[version].type = drug-char-cs#VER
 * drugCharacteristic[drugType].type = drug-char-cs#DT
-//* drugCharacteristic[marketingAuthorization].type = drug-char-cs#MA //link together MA and MAH - HOW?
-//* drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
-//* drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
+
 
 * kinetics MS
 * contraindication MS
@@ -238,11 +230,9 @@ Parent: MedicationKnowledge
 * medicineClassification ^slicing.ordered = false   // can be omitted, since false is the default
 * medicineClassification ^slicing.description = "Slice based on the component.code pattern"
 * medicineClassification contains
- //   indication 0..* MS   and
-  //  associatedCondition 0..* MS and
+
     mechanismOfAction 0..* MS
-//* medicineClassification[indication].type = type-med-class-cs#IND -> ClinicalIssue
-//* medicineClassification[associatedCondition].type = type-med-class-cs#ASSOCCOND -> ClinicalIssue
+
 * medicineClassification[mechanismOfAction].type = type-med-class-cs#MECHAACTION
 
 * drugCharacteristic MS
@@ -254,8 +244,7 @@ Parent: MedicationKnowledge
 * drugCharacteristic contains
     domain 0..1 MS and 
     version 0..1 MS and
-    //granularity 1..1 MS and 
-   // contraindication 0..* MS and 
+
     drugType 0..1 MS and 
     marketingAuthorization 0..1 MS and 
     marketingAuthorizationHolder 0..* MS and 
@@ -265,8 +254,7 @@ Parent: MedicationKnowledge
 * drugCharacteristic[domain].type = drug-char-cs#DOM
 * drugCharacteristic[version].type = drug-char-cs#VER
 * drugCharacteristic[drugType].type = drug-char-cs#DT
-//* drugCharacteristic[granularity].type = drug-char-cs#GRA
-//* drugCharacteristic[contraindication].type = drug-char-cs#CT -> ClinicalIssue
+
 * drugCharacteristic[marketingAuthorization].type = drug-char-cs#MA //link together MA and MAH - HOW?
 * drugCharacteristic[marketingAuthorizationHolder].type = drug-char-cs#MAH //link together MA and MAH - HOW?
 * drugCharacteristic[marketingAuthorizationStatus].type = drug-char-cs#MAS //link together MA and MAH - HOW?
@@ -334,7 +322,7 @@ Parent: MedicationKnowledge
 * drugCharacteristic contains
     domain 0..1 MS and 
     version 0..1 MS and
-    drugType 0..1 MS and 
+    drugType 0..1 MS  
 * drugCharacteristic[domain].type = drug-char-cs#DOM
 * drugCharacteristic[version].type = drug-char-cs#VER
 * drugCharacteristic[drugType].type = drug-char-cs#DT
