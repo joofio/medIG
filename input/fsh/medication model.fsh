@@ -281,7 +281,7 @@ Description:    "Medication Knowledge by me logical model."
   * expirationDate 0..1 dateTime "expirationdate" "expirationdate"
 * impurity 0..* Reference "impurities potentially contained in product, allergenes, etc" "impurities potentially contained in product, allergenes, etc" //SubstanceDefinition
 
-Logical: PharmaceuticalProduct_withbox
+Logical: VirtualPackagePharmaceuticalProduct
 Title: "VMPP logical model"
 Description:    "VMPP logical model."
 
