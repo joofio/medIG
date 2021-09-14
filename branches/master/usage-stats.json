@@ -20,13 +20,17 @@
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/Substance",
         "title": "Substance"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/VirtualPackagedPharmaceuticalProduct",
+        "title": "VirtualPackagedPharmaceuticalProduct"
       }
     ]
   },
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/allergyintolerance-duration": [
-      "PharmaceuticalProduct_withbox.kinetics.halfLifePeriod",
-      "PharmaceuticalProdut.kinetics.halfLifePeriod"
+      "PharmaceuticalProdut.kinetics.halfLifePeriod",
+      "VirtualPackagePharmaceuticalProduct.kinetics.halfLifePeriod"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"

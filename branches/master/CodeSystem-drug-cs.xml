@@ -3,17 +3,17 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="drug-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://terminology.hl7.org/CodeSystem/medicineCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">SUBST<a name="drug-cs-SUBST"> </a></td><td>Substance</td><td>Substance</td></tr><tr><td style="white-space:nowrap">PHARMPROD<a name="drug-cs-PHARMPROD"> </a></td><td>pharmaceutical product</td><td/></tr><tr><td style="white-space:nowrap">MEDPROD<a name="drug-cs-MEDPROD"> </a></td><td>Medicinal Product</td><td/></tr><tr><td style="white-space:nowrap">PACKMEDPROD<a name="drug-cs-PACKMEDPROD"> </a></td><td>Packaged Medicinal Product</td><td/></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://terminology.hl7.org/CodeSystem/medicineCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">SUBST<a name="drug-cs-SUBST"> </a></td><td>Substance</td><td>Substance</td></tr><tr><td style="white-space:nowrap">PHARMPROD<a name="drug-cs-PHARMPROD"> </a></td><td>pharmaceutical product</td><td/></tr><tr><td style="white-space:nowrap">MEDPROD<a name="drug-cs-MEDPROD"> </a></td><td>Medicinal Product</td><td/></tr><tr><td style="white-space:nowrap">PACKMEDPROD<a name="drug-cs-PACKMEDPROD"> </a></td><td>Packaged Medicinal Product</td><td/></tr><tr><td style="white-space:nowrap">VMPP<a name="drug-cs-VMPP"> </a></td><td>Virtual Package Product</td><td/></tr></table></div>
   </text>
   <url value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
   <version value="0.1.0"/>
   <name value="MedicineCodeSystem"/>
   <title value="Drug Code System"/>
   <status value="active"/>
-  <date value="2021-09-14T08:11:10+00:00"/>
+  <date value="2021-09-14T08:27:49+00:00"/>
   <description value="Codes for "/>
   <content value="complete"/>
-  <count value="4"/>
+  <count value="5"/>
   <concept>
     <code value="SUBST"/>
     <display value="Substance"/>
@@ -30,5 +30,9 @@
   <concept>
     <code value="PACKMEDPROD"/>
     <display value="Packaged Medicinal Product"/>
+  </concept>
+  <concept>
+    <code value="VMPP"/>
+    <display value="Virtual Package Product"/>
   </concept>
 </CodeSystem>
