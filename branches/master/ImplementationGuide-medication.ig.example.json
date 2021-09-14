@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2021-09-14T08:10:14+00:00",
+  "date": "2021-09-14T08:11:10+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -328,8 +328,8 @@
         "reference": {
           "reference": "StructureDefinition/PharmaceuticalProduct-withbox"
         },
-        "name": "Packaged Medicinal Product logical model",
-        "description": "Medication Knowledge by me logical model.",
+        "name": "VMPP logical model",
+        "description": "VMPP logical model.",
         "exampleBoolean": false
       },
       {
