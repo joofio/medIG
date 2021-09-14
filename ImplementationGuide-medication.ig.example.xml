@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2021-09-14T08:10:14+00:00"/>
+  <date value="2021-09-14T08:11:10+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -213,8 +213,8 @@
       <reference>
         <reference value="StructureDefinition/PharmaceuticalProduct-withbox"/>
       </reference>
-      <name value="Packaged Medicinal Product logical model"/>
-      <description value="Medication Knowledge by me logical model."/>
+      <name value="VMPP logical model"/>
+      <description value="VMPP logical model."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
