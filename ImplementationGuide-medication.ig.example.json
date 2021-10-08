@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2021-10-08T08:43:20+00:00",
+  "date": "2021-10-08T09:20:52+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -274,6 +274,19 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/BeVmpGroup"
+        },
+        "name": "BeVmpGroup",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/MedicinalProduct"
         },
         "name": "MedicinalProduct",
@@ -342,19 +355,6 @@
           "reference": "StructureDefinition/VirtualPackagedPharmaceuticalProduct"
         },
         "name": "VirtualPackagedPharmaceuticalProduct",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/be-vmpgroup"
-        },
-        "name": "be-vmpgroup",
         "exampleBoolean": false
       },
       {
@@ -435,10 +435,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/be-drug-cs"
+          "reference": "CodeSystem/beMedCS"
         },
         "name": "Drug Code System",
-        "description": "Codes for ",
+        "description": "Codes for belgian medicine level ",
         "exampleBoolean": false
       },
       {
@@ -477,10 +477,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/drug-cs"
+          "reference": "CodeSystem/medics"
         },
         "name": "Drug Code System",
-        "description": "Codes for ",
+        "description": "Codes for medicine level",
         "exampleBoolean": false
       },
       {

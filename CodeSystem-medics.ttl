@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/example/CodeSystem/drug-cs> a fhir:CodeSystem;
+<http://hl7.org/fhir/us/example/CodeSystem/medics> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "drug-cs"];
+  fhir:Resource.id [ fhir:value "medics"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://terminology.hl7.org/CodeSystem/medicineCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SUBST<a name=\"drug-cs-SUBST\"> </a></td><td>Substance</td><td>Substance</td></tr><tr><td style=\"white-space:nowrap\">PHARMPROD<a name=\"drug-cs-PHARMPROD\"> </a></td><td>pharmaceutical product</td><td/></tr><tr><td style=\"white-space:nowrap\">MEDPROD<a name=\"drug-cs-MEDPROD\"> </a></td><td>Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\">PACKMEDPROD<a name=\"drug-cs-PACKMEDPROD\"> </a></td><td>Packaged Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\">VMPP<a name=\"drug-cs-VMPP\"> </a></td><td>Virtual Medicinal Packaged Product</td><td/></tr><tr><td style=\"white-space:nowrap\">VMP<a name=\"drug-cs-VMP\"> </a></td><td>Virtual Medicinal Product</td><td/></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/mediCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SUBST<a name=\"medics-SUBST\"> </a></td><td>Substance</td><td>Substance</td></tr><tr><td style=\"white-space:nowrap\">PHARMPROD<a name=\"medics-PHARMPROD\"> </a></td><td>pharmaceutical product</td><td/></tr><tr><td style=\"white-space:nowrap\">MEDPROD<a name=\"medics-MEDPROD\"> </a></td><td>Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\">PACKMEDPROD<a name=\"medics-PACKMEDPROD\"> </a></td><td>Packaged Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\">VMPP<a name=\"medics-VMPP\"> </a></td><td>Virtual Medicinal Packaged Product</td><td/></tr><tr><td style=\"white-space:nowrap\">VMP<a name=\"medics-VMP\"> </a></td><td>Virtual Medicinal Product</td><td/></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://terminology.hl7.org/CodeSystem/medicineCS"];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/mediCS"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "MedicineCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "Drug Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-10-08T08:43:20+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.description [ fhir:value "Codes for "];
+  fhir:CodeSystem.date [ fhir:value "2021-10-08T09:20:52+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.description [ fhir:value "Codes for medicine level"];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
@@ -50,9 +50,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/example/CodeSystem/drug-cs.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/example/CodeSystem/medics.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/example/CodeSystem/drug-cs.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/example/CodeSystem/medics.ttl> .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,10 +1,31 @@
 [
   {
+    "id": "beMedCS",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/example/CodeSystem/beMedCS",
+    "version": "0.1.0",
+    "name": "BEMedicineCodeSystem"
+  },
+  {
+    "id": "medics",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/example/CodeSystem/mediCS",
+    "version": "0.1.0",
+    "name": "MedicineCodeSystem"
+  },
+  {
     "id": "medication.ig.example",
     "type": "ImplementationGuide",
     "url": "http://hl7.org/fhir/us/example/ImplementationGuide/medication.ig.example",
     "version": "0.1.0",
     "name": "medicationIG"
+  },
+  {
+    "id": "BeVmpGroup",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup",
+    "version": "0.1.0",
+    "name": "BeVmpGroup"
   },
   {
     "id": "MedicinalProduct",
@@ -70,18 +91,11 @@
     "name": "VirtualPackagedPharmaceuticalProduct"
   },
   {
-    "id": "be-vmpgroup",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/example/StructureDefinition/be-vmpgroup",
-    "version": "0.1.0",
-    "name": "be-vmpgroup"
-  },
-  {
     "id": "be-granularity-vs",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs",
     "version": "0.1.0",
-    "name": "BE-GranularityVS"
+    "name": "BEGranularityVS"
   },
   {
     "id": "granularity-vs",
@@ -89,20 +103,6 @@
     "url": "http://hl7.org/fhir/us/example/ValueSet/granularity-vs",
     "version": "0.1.0",
     "name": "GranularityVS"
-  },
-  {
-    "id": "be-drug-cs",
-    "type": "CodeSystem",
-    "url": "http://terminology.hl7.org/CodeSystem/bemedicineCS",
-    "version": "0.1.0",
-    "name": "BE-MedicineCodeSystem"
-  },
-  {
-    "id": "drug-cs",
-    "type": "CodeSystem",
-    "url": "http://terminology.hl7.org/CodeSystem/medicineCS",
-    "version": "0.1.0",
-    "name": "MedicineCodeSystem"
   },
   {
     "id": "type-med-class-cs",

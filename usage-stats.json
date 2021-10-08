@@ -6,6 +6,10 @@
   "profiles": {
     "MedicationKnowledge": [
       {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup",
+        "title": "BeVmpGroup"
+      },
+      {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct",
         "title": "MedicinalProduct"
       },
@@ -28,10 +32,6 @@
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/VirtualPackagedPharmaceuticalProduct",
         "title": "VirtualPackagedPharmaceuticalProduct"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/example/StructureDefinition/be-vmpgroup",
-        "title": "be-vmpgroup"
       }
     ]
   },

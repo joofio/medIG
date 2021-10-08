@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><h3>RelatedMedicationKnowledges</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/relMedCS PACKOF}\">Is a Packaged Form of</span></td><td><a href=\"MedicationKnowledge-example-2-of-drug-med.html\">Generated Summary: status: active; synonym: Ben-U-Ron Oral Tablets 500 mg; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS MEDPROD}\">Medicinal Product</span></a></td></tr></table><p><b>productType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS PACKMEDPROD}\">Packaged Medicinal Product</span></p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes: {http://infarmed.pt/ xxx}\">official</span></p></blockquote><h3>Packagings</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://standardterms.edqm.eu/PAC 30009000}\">Box</span></td><td>20 tablets</td></tr></table><h3>DrugCharacteristics</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType BATCH}\">Batch Number</span></td><td>345-CE-123</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>synonym</b>: Ben-U-Ron Oral Tablets 500 mg Box of 20 tab</p><h3>RelatedMedicationKnowledges</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/relMedCS PACKOF}\">Is a Packaged Form of</span></td><td><a href=\"MedicationKnowledge-example-2-of-drug-med.html\">Generated Summary: status: active; synonym: Ben-U-Ron Oral Tablets 500 mg; <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS MEDPROD}\">Medicinal Product</span></a></td></tr></table><p><b>productType</b>: <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS PACKMEDPROD}\">Packaged Medicinal Product</span></p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes: {http://infarmed.pt/ xxx}\">official</span></p></blockquote><h3>Packagings</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://standardterms.edqm.eu/PAC 30009000}\">Box</span></td><td>20 tablets</td></tr></table><h3>DrugCharacteristics</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType BATCH}\">Batch Number</span></td><td>345-CE-123</td></tr></table></div>"
   ];
   fhir:MedicationKnowledge.status [ fhir:value "active"];
   fhir:MedicationKnowledge.synonym [
@@ -43,7 +43,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/medicineCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/mediCS" ];
        fhir:Coding.code [ fhir:value "PACKMEDPROD" ]
      ]
   ];

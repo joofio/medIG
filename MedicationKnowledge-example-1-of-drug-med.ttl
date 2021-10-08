@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>doseForm</b>: <span title=\"Codes: {http://snomed.info/sct 421026006}\">Oral Tablet</span></p><p><b>amount</b>: 500 mg</p><p><b>synonym</b>: Paracetamol Oral Tablets 500 mg</p><h3>RelatedMedicationKnowledges</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/relMedCS PHARMOF}\">Is a Pharmaceutical product of</span></td><td><a href=\"MedicationKnowledge-example-0-of-drug-med.html\">Generated Summary: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span>; status: active; synonym: Acetaminophen, synonym: paracetamol, synonym: 4-(Acetylamino)phenol; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS SUBST}\">Substance</span></a></td></tr></table><p><b>productType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/medicineCS PHARMPROD}\">pharmaceutical product</span></p><p><b>intendedRoute</b>: <span title=\"Codes: {http://snomed.info/sct 26643006}\">Oral Route</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span></p><p><b>status</b>: active</p><p><b>doseForm</b>: <span title=\"Codes: {http://snomed.info/sct 421026006}\">Oral Tablet</span></p><p><b>amount</b>: 500 mg</p><p><b>synonym</b>: Paracetamol Oral Tablets 500 mg</p><h3>RelatedMedicationKnowledges</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/relMedCS PHARMOF}\">Is a Pharmaceutical product of</span></td><td><a href=\"MedicationKnowledge-example-0-of-drug-med.html\">Generated Summary: <span title=\"Codes: {https://go.drugbank.com/drugs/ DB00316}\">Acetaminophen</span>; status: active; synonym: Acetaminophen, synonym: paracetamol, synonym: 4-(Acetylamino)phenol; <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS SUBST}\">Substance</span></a></td></tr></table><p><b>productType</b>: <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS PHARMPROD}\">pharmaceutical product</span></p><p><b>intendedRoute</b>: <span title=\"Codes: {http://snomed.info/sct 26643006}\">Oral Route</span></p></div>"
   ];
   fhir:MedicationKnowledge.code [
      fhir:CodeableConcept.coding [
@@ -65,7 +65,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/medicineCS" ];
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/mediCS" ];
        fhir:Coding.code [ fhir:value "PHARMPROD" ]
      ]
   ];

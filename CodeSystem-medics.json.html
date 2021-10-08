@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.13"}
-    h3,h4,h5,h6{--heading-prefix:"3.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.16"}
+    h3,h4,h5,h6{--heading-prefix:"3.16"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -112,13 +112,13 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="CodeSystem-be-drug-cs.html">Narrative Content</a>
+    <a href="CodeSystem-medics.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="CodeSystem-be-drug-cs.xml.html">XML</a>
+      <a href="CodeSystem-medics.xml.html">XML</a>
     </li>
   
 
@@ -132,7 +132,7 @@
 
   
     <li>
-      <a href="CodeSystem-be-drug-cs.ttl.html">TTL</a>
+      <a href="CodeSystem-medics.ttl.html">TTL</a>
     </li>
   
 
@@ -146,7 +146,7 @@
 
 <h2 id="root">: Drug Code System - JSON Representation</h2>
 
-<p><a href="CodeSystem-be-drug-cs.json" no-download="true">Raw json</a> | <a download="null" href="CodeSystem-be-drug-cs.json">Download</a></p>
+<p><a href="CodeSystem-medics.json" no-download="true">Raw json</a> | <a download="null" href="CodeSystem-medics.json">Download</a></p>
 
     <!-- insert intro if present -->
   
@@ -156,21 +156,38 @@
   <pre class="json"><code class="language-json">
 {
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "be-drug-cs",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "medics",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This code system http://terminology.hl7.org/CodeSystem/bemedicineCS defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;VMPP&lt;a name=\"be-drug-cs-VMPP\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Virtual Medicinal Packaged Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;VMP&lt;a name=\"be-drug-cs-VMP\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Virtual Medicinal Product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;VMPG&lt;a name=\"be-drug-cs-VMPG\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;asdas&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This code system http://hl7.org/fhir/us/example/CodeSystem/mediCS defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SUBST&lt;a name=\"medics-SUBST\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Substance&lt;/td&gt;&lt;td&gt;Substance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;PHARMPROD&lt;a name=\"medics-PHARMPROD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;pharmaceutical product&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;MEDPROD&lt;a name=\"medics-MEDPROD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medicinal Product&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;PACKMEDPROD&lt;a name=\"medics-PACKMEDPROD\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Packaged Medicinal Product&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;VMPP&lt;a name=\"medics-VMPP\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Virtual Medicinal Packaged Product&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;VMP&lt;a name=\"medics-VMP\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Virtual Medicinal Product&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://terminology.hl7.org/CodeSystem/bemedicineCS",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://hl7.org/fhir/us/example/CodeSystem/mediCS",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "BE-MedicineCodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "MedicineCodeSystem",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Drug Code System",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2021-10-08T08:43:20+00:00",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Codes for ",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2021-10-08T09:20:52+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Codes for medicine level",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 3,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 6,
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SUBST",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Substance",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Substance"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PHARMPROD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "pharmaceutical product"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MEDPROD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Medicinal Product"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PACKMEDPROD",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Packaged Medicinal Product"
+    },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VMPP",
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Virtual Medicinal Packaged Product"
@@ -178,10 +195,6 @@
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VMP",
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Virtual Medicinal Product"
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "VMPG",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "asdas"
     }
   ]
 }</code></pre>
@@ -213,8 +226,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l361">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package medication.ig.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 8, 2021 08:43+0000">2021-10-08</span>
+        <p><a name="l382">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package medication.ig.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 8, 2021 09:20+0000">2021-10-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

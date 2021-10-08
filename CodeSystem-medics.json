@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medics",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/mediCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SUBST<a name=\"medics-SUBST\"> </a></td><td>Substance</td><td>Substance</td></tr><tr><td style=\"white-space:nowrap\">PHARMPROD<a name=\"medics-PHARMPROD\"> </a></td><td>pharmaceutical product</td><td/></tr><tr><td style=\"white-space:nowrap\">MEDPROD<a name=\"medics-MEDPROD\"> </a></td><td>Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\">PACKMEDPROD<a name=\"medics-PACKMEDPROD\"> </a></td><td>Packaged Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\">VMPP<a name=\"medics-VMPP\"> </a></td><td>Virtual Medicinal Packaged Product</td><td/></tr><tr><td style=\"white-space:nowrap\">VMP<a name=\"medics-VMP\"> </a></td><td>Virtual Medicinal Product</td><td/></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/us/example/CodeSystem/mediCS",
+  "version": "0.1.0",
+  "name": "MedicineCodeSystem",
+  "title": "Drug Code System",
+  "status": "active",
+  "date": "2021-10-08T09:20:52+00:00",
+  "description": "Codes for medicine level",
+  "content": "complete",
+  "count": 6,
+  "concept": [
+    {
+      "code": "SUBST",
+      "display": "Substance",
+      "definition": "Substance"
+    },
+    {
+      "code": "PHARMPROD",
+      "display": "pharmaceutical product"
+    },
+    {
+      "code": "MEDPROD",
+      "display": "Medicinal Product"
+    },
+    {
+      "code": "PACKMEDPROD",
+      "display": "Packaged Medicinal Product"
+    },
+    {
+      "code": "VMPP",
+      "display": "Virtual Medicinal Packaged Product"
+    },
+    {
+      "code": "VMP",
+      "display": "Virtual Medicinal Product"
+    }
+  ]
+}
