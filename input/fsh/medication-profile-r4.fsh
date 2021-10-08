@@ -394,25 +394,12 @@ Parent: MedicationKnowledge
 * drugCharacteristic[version].type = drug-char-cs#VER
 * drugCharacteristic[drugType].type = drug-char-cs#DT
 
-
 * kinetics MS
 * contraindication MS
 * monograph MS
 * intendedRoute	MS
 * ingredient MS
-* regulatory MS
-* packaging 0..0
-* cost MS
-* relatedMedicationKnowledge MS
-* relatedMedicationKnowledge.reference MS
-* relatedMedicationKnowledge ^slicing.discriminator.type = #value
-* relatedMedicationKnowledge ^slicing.discriminator.path = "type"
-* relatedMedicationKnowledge ^slicing.rules = #open
-* relatedMedicationKnowledge ^slicing.ordered = false   // can be omitted, since false is the default
-* relatedMedicationKnowledge ^slicing.description = "Slice based on the component.code pattern"
-* relatedMedicationKnowledge contains
-    isaPharmaceuticalProductOf 0..* MS 
-* relatedMedicationKnowledge[isaPharmaceuticalProductOf].type =  rel-med-cs#PHARMOF
+
 
 
 

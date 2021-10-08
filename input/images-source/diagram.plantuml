@@ -64,7 +64,7 @@ skinparam class<<PMP>> {
       |_ synonym
       |_ mechanismOfAction
       --
-      Substance  
+      VTM  
     }
 
     class " **Pharmaceutical Product** " as PhP<<PhP>> {
@@ -82,7 +82,7 @@ skinparam class<<PMP>> {
       |_ kinetics
       |_ pharmacoeconomics
       --
-      Pharmaceutical Product
+      VMP
     }
 
     class " **Medicinal Product ** " as MP<<MP>>{
@@ -97,7 +97,7 @@ skinparam class<<PMP>> {
       |_ **preparationInstructions**
       |_ **administrationInstructions**
       --
-      Medicinal Product
+      AMP
     }
 
     class " **Packaged ** \n  **Medicinal Product **  " as PMP<<PMP>>{
@@ -109,7 +109,7 @@ skinparam class<<PMP>> {
       |_ **batch**
       |_ **impurity**
       --
-      Packaged\nMedicinal Product
+     AMPP
     }
 
     class " **CNPEM **  " as CNPEM <<VMPP>>{
@@ -126,6 +126,18 @@ skinparam class<<PMP>> {
       VMPP
 }
 
+    class " **VMPG **  " as VMPG <<VMPG>>{
+      --
+      |_ **identifier**
+      |_ <color:gray>//ingredient//</color>
+        |_ <color:gray>//item//
+        |_ <color:gray>//isActive//
+        |_ <color:gray>//strength//
+      |_ <color:gray>//strength//
+      --
+      VMPG
+}
+
 
   S <-r- PhP: " Pharmaceutical Product of"
   
@@ -135,6 +147,7 @@ skinparam class<<PMP>> {
   
   CNPEM -u-> PhP: " Virtual Packaged form of"
   'CNPEM -r[hidden]--> MP
-  
+    VMPG -u-> PhP: " Virtual Pharmaceutical Product Grouping"
+  'CNPEM -r[hidden]--> MP
 }
 @enduml

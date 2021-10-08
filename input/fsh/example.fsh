@@ -89,3 +89,65 @@ Title:    "Example of drug with granularity 3"
 
 
 * relatedMedicationKnowledge[packagedFormOf].reference = Reference(example-2-of-drug-med)
+
+
+Instance: vmp-1
+InstanceOf: VMP
+Usage: #example
+Description: "Example of a VMP"
+Title:    "Example of VMP"
+
+//* identifier[0].system = "http://infarmed.pt"
+//* identifier[0].value = "950"
+
+* code = https://be.codes.product/vmp/#x "amlodipine 10 mg tablet (or.)"
+
+* doseForm = http://snomed.info/sct#421026006 "Oral Tablet"
+
+* status = #active
+* synonym[+] = "amlodipine 10 mg tablet (or.)"
+* amount.value = 10
+* amount.unit = "mg" 
+
+* relatedMedicationKnowledge[isaVirtualPharmaceuticalProductOf].reference = Reference(be-substance)
+* relatedMedicationKnowledge[hasGroup].reference = Reference(be-vmpgroup)
+
+
+* intendedRoute = http://snomed.info/sct#26643006  "Oral Route" 
+
+Instance: be-vmpgroup
+InstanceOf: BeVmpGroup
+Usage: #example
+Description: "Example of a VMP group"
+Title:    "Example of VMP group"
+
+//* identifier[0].system = "http://infarmed.pt"
+//* identifier[0].value = "950"
+
+* code = https://be.codes.product/vmpg/#x "amlodipine oraal 10 mg"
+
+* status = #active
+* synonym[+] = "amlodipine oraal 10 mg"
+* amount.value = 10
+* amount.unit = "mg" 
+
+
+
+* intendedRoute = http://snomed.info/sct#26643006  "Oral Route" 
+
+
+Instance: be-substance
+InstanceOf: Substance
+Usage: #example
+Description: "Example of a substance for be market"
+Title: "Example of a substance for be market"
+
+
+* code = https://be.codes.product/substance/#x "amlodipine"
+
+
+* status = #active
+
+* drugCharacteristic[domain].valueString = "human"
+* drugCharacteristic[drugType].valueString = "small molecule"
+

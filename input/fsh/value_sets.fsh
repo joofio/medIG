@@ -48,10 +48,9 @@ Description: ""
     "Is a Virtual Package Form of"
     "Is a Virtual Package Form of"
 
-
 * #HASG
-    "Is a Virtual Package Form of"
-    "Is a Virtual Package Form of"
+    "Is a from a virtual pharmaceutical product group"
+    "Is a from a virtual pharmaceutical product group"
 
 
 
@@ -112,10 +111,7 @@ Description: "Codes for medicine level"
     "Medicinal Product"
 * #PACKMEDPROD
     "Packaged Medicinal Product"
-* #VMPP
-    "Virtual Medicinal Packaged Product"
-* #VMP
-    "Virtual Medicinal Product"
+
 
  
 
@@ -132,7 +128,7 @@ Description: "Codes for belgian medicine level "
 * #VMP
     "Virtual Medicinal Product"
 * #VMPG
-    "asdas"
+    "Virtual Medicinal Product Group"
 
 Alias: medCS = http://hl7.org/fhir/us/example/CodeSystem/mediCS
 
