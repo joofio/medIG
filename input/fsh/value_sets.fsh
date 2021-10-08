@@ -44,6 +44,16 @@ Description: ""
     "Is a Virtual Package Form of"
     "Is a Virtual Package Form of"
 
+* #VPHARMOF
+    "Is a Virtual Package Form of"
+    "Is a Virtual Package Form of"
+
+
+* #HASG
+    "Is a Virtual Package Form of"
+    "Is a Virtual Package Form of"
+
+
 
 // Define a local code system
 CodeSystem: DrugCharacteristicCS
@@ -103,8 +113,25 @@ Description: "Codes for "
 * #PACKMEDPROD
     "Packaged Medicinal Product"
 * #VMPP
-    "Virtual Package Product"
+    "Virtual Medicinal Packaged Product"
+* #VMP
+    "Virtual Medicinal Product"
 
+// Define a local code system
+CodeSystem: BE-MedicineCodeSystem
+Id:         be-drug-cs
+Title: "Drug Code System"
+Description: "Codes for "
+// You can choose any url, or use the default, but in this case we want the URL to be in the HL7 namespace
+* ^url =  http://terminology.hl7.org/CodeSystem/bemedicineCS
+// Spacing layout over three lines per term is optional, for clarity
+// The definition (second text string) is optional
+* #VMPP
+    "Virtual Medicinal Packaged Product"
+* #VMP
+    "Virtual Medicinal Product"
+* #VMPG
+    "asdas"
 
 // @Name: Include Single Codes
 // @Description: Value set with explicit codes
@@ -118,4 +145,18 @@ Description: "Indicates the granularity of product"
 * medCS#PHARMPROD "Pharmaceutical Product"
 * medCS#MEDPROD  "Medicinal Product"
 * medCS#PACKMEDPROD "Packaged Medicinal Product"
+
+// @Name: Include Single Codes
+// @Description: Value set with explicit codes
+Alias: beMedCS = http://terminology.hl7.org/CodeSystem/bemedicineCS
+
+ValueSet: BE-GranularityVS
+Id: be-granularity-vs
+Title: "Be Granularity Value Set"
+Description: "Indicates the granularity of product"
+* medCS#SUBST  "Substance"
+* medCS#PHARMPROD "Pharmaceutical Product"
+* medCS#MEDPROD  "Medicinal Product"
+* medCS#PACKMEDPROD "Packaged Medicinal Product"
+* beMedCS#VMPG "VMP Group"
 
