@@ -293,7 +293,7 @@ Parent: MedicationKnowledge
 
 * code MS
 * status MS
-* doseForm MS
+* doseForm 0..0
 * synonym MS
 * amount MS
 * productType MS

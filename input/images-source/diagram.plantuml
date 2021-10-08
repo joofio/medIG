@@ -103,6 +103,7 @@ skinparam class<<PMP>> {
     class " **Packaged ** \n  **Medicinal Product **  " as PMP<<PMP>>{
       --
       |_ **identifier**
+        |_ GTIN
       |_ **packaging**
       |_ **productImage**
       |_ **batch**
