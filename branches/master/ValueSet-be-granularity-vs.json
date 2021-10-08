@@ -3,19 +3,19 @@
   "id": "be-granularity-vs",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-drug-cs.html\"><code>http://terminology.hl7.org/CodeSystem/medicineCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-SUBST\">SUBST</a></td><td>Substance</td><td>Substance</td></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-PHARMPROD\">PHARMPROD</a></td><td>Pharmaceutical Product</td><td/></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-MEDPROD\">MEDPROD</a></td><td>Medicinal Product</td><td/></tr><tr><td><a href=\"CodeSystem-drug-cs.html#drug-cs-PACKMEDPROD\">PACKMEDPROD</a></td><td>Packaged Medicinal Product</td><td/></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-be-drug-cs.html\"><code>http://terminology.hl7.org/CodeSystem/bemedicineCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-be-drug-cs.html#be-drug-cs-VMPG\">VMPG</a></td><td>VMP Group</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-medics.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/mediCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-medics.html#medics-SUBST\">SUBST</a></td><td>Substance</td><td>Substance</td></tr><tr><td><a href=\"CodeSystem-medics.html#medics-PHARMPROD\">PHARMPROD</a></td><td>Pharmaceutical Product</td><td/></tr><tr><td><a href=\"CodeSystem-medics.html#medics-MEDPROD\">MEDPROD</a></td><td>Medicinal Product</td><td/></tr><tr><td><a href=\"CodeSystem-medics.html#medics-PACKMEDPROD\">PACKMEDPROD</a></td><td>Packaged Medicinal Product</td><td/></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-beMedCS.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/beMedCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-beMedCS.html#beMedCS-VMPG\">VMPG</a></td><td>VMP Group</td></tr></table></li></ul></div>"
   },
   "url": "http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs",
   "version": "0.1.0",
-  "name": "BE-GranularityVS",
+  "name": "BEGranularityVS",
   "title": "Be Granularity Value Set",
   "status": "active",
-  "date": "2021-10-08T08:43:20+00:00",
+  "date": "2021-10-08T09:20:52+00:00",
   "description": "Indicates the granularity of product",
   "compose": {
     "include": [
       {
-        "system": "http://terminology.hl7.org/CodeSystem/medicineCS",
+        "system": "http://hl7.org/fhir/us/example/CodeSystem/mediCS",
         "concept": [
           {
             "code": "SUBST",
@@ -36,7 +36,7 @@
         ]
       },
       {
-        "system": "http://terminology.hl7.org/CodeSystem/bemedicineCS",
+        "system": "http://hl7.org/fhir/us/example/CodeSystem/beMedCS",
         "concept": [
           {
             "code": "VMPG",

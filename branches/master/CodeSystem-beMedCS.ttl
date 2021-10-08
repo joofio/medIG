@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/CodeSystem/beMedCS> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "beMedCS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/beMedCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">VMPP<a name=\"beMedCS-VMPP\"> </a></td><td>Virtual Medicinal Packaged Product</td></tr><tr><td style=\"white-space:nowrap\">VMP<a name=\"beMedCS-VMP\"> </a></td><td>Virtual Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">VMPG<a name=\"beMedCS-VMPG\"> </a></td><td>asdas</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/beMedCS"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "BEMedicineCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Drug Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-10-08T09:20:52+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.description [ fhir:value "Codes for belgian medicine level "];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "VMPP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Virtual Medicinal Packaged Product" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "VMP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Virtual Medicinal Product" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "VMPG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "asdas" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/CodeSystem/beMedCS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/example/CodeSystem/beMedCS.ttl> .
+
+# -------------------------------------------------------------------------------------
+

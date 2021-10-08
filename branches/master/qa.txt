@@ -1,20 +1,21 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 3, warn = 48, info = 5
+err = 4, warn = 44, info = 5
 IG Publisher Version: 1.1.81
-Generated Fri Oct 08 08:44:01 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Fri Oct 08 09:21:31 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
  Build Errors : 139 / 8 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-be-drug-cs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-drug-cs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-medics : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeVmpGroup : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProduct : 0 / 0 / 1
@@ -24,34 +25,33 @@ Generated Fri Oct 08 08:44:01 UTC 2021. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/StructureDefinition-VMP : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPackagePharmaceuticalProduct : 1 / 15 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPackagedPharmaceuticalProduct : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-vmpgroup : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/ValueSet-be-granularity-vs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-granularity-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-granularity-vs : 0 / 0 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeVmpGroup.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MedicinalProduct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PackagedMedicinalProduct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PharmaceuticalProduct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Substance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/VMP.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/VirtualPackagedPharmaceuticalProduct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/be-vmpgroup.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/rel-med-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/CodeSystem-be-drug-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-be-drug-cs.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-be-drug-cs.json.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-be-drug-cs.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-be-drug-cs.xml.html#/html/body/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-beMedCS.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-beMedCS.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-beMedCS.json.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-beMedCS.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-beMedCS.xml.html#/html/body/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-char-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-char-cs.html#/html/body/div/div/div/p/a at Line 208, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-char-cs.json.html#/html/body/div/div/div/p/a at Line 252, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-char-cs.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-drug-char-cs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-drug-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-drug-cs.html#/html/body/div/div/div/p/a at Line 211, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-drug-cs.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-drug-cs.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-drug-cs.xml.html#/html/body/div/div/div/p/a at Line 230, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-medics.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-medics.html#/html/body/div/div/div/p/a at Line 211, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-medics.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-medics.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-medics.xml.html#/html/body/div/div/div/p/a at Line 230, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-rel-med-cs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-rel-med-cs.html#/html/body/div/div/div/p/a at Line 205, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
@@ -82,6 +82,14 @@ ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.html#/
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 277, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 271, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-definitions.html#/html/body/div/div/div/p/a at Line 1552, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-mappings.html#/html/body/div/div/div/p/a at Line 359, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup.html#/html/body/div/div/div/p/a at Line 1663, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup.profile.json.html#/html/body/div/div/div/p/a at Line 6529, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup.profile.ttl.html#/html/body/div/div/div/p/a at Line 5757, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup.profile.xml.html#/html/body/div/div/div/p/a at Line 5846, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-definitions.html#/html/body/div/div/div/p/a at Line 1790, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MedicinalProduct-mappings.html#/html/body/div/div/div/p/a at Line 390, column 28: The link '' for "" cannot be resolved
@@ -154,14 +162,6 @@ ERROR: /github/workspace/output/StructureDefinition-VirtualPackagedPharmaceutica
 ERROR: /github/workspace/output/StructureDefinition-VirtualPackagedPharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 6471, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-VirtualPackagedPharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 5711, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-VirtualPackagedPharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 5794, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-be-vmpgroup-definitions.html#/html/body/div/div/div/p/a at Line 1552, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-be-vmpgroup-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-be-vmpgroup-mappings.html#/html/body/div/div/div/p/a at Line 359, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-be-vmpgroup.html#/html/body/div/div/div/p/a at Line 1663, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-be-vmpgroup.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-be-vmpgroup.profile.json.html#/html/body/div/div/div/p/a at Line 6529, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-be-vmpgroup.profile.ttl.html#/html/body/div/div/div/p/a at Line 5757, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-be-vmpgroup.profile.xml.html#/html/body/div/div/div/p/a at Line 5846, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-be-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-be-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-be-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
@@ -176,16 +176,15 @@ ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Lin
 ERROR: /github/workspace/output/download.html#/html/body/div/div/div/p/a at Line 184, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 155, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 137, column 28: The link '' for "" cannot be resolved
-== fsh-generated/resources/CodeSystem-be-drug-cs.json ==
-WARNING: CodeSystem/be-drug-cs: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/CodeSystem-beMedCS.json ==
 == fsh-generated/resources/CodeSystem-drug-char-cs.json ==
-== fsh-generated/resources/CodeSystem-drug-cs.json ==
+== fsh-generated/resources/CodeSystem-medics.json ==
+ERROR: CodeSystem.url: Resource id/url mismatch: medics/http://hl7.org/fhir/us/example/CodeSystem/mediCS
 == fsh-generated/resources/CodeSystem-rel-med-cs.json ==
 == fsh-generated/resources/CodeSystem-type-med-class-cs.json ==
 == fsh-generated/resources/ImplementationGuide-medication.ig.example.json ==
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[12].description: value should not start or finish with whitespace
-WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[15].description: value should not start or finish with whitespace
 == fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med.json ==
 INFORMATION: MedicationKnowledge/example-0-of-drug-med: MedicationKnowledge.code.coding[0]: Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med.json ==
@@ -195,6 +194,8 @@ INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drug
 == fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json ==
 INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.cost[0].type.coding[0]: Code System URI 'http://infarmed.pt/' is unknown so the code cannot be validated
 INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.packaging.type.coding[0]: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-BeVmpGroup.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-MedicinalProduct.json ==
 == fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct.json ==
 == fsh-generated/resources/StructureDefinition-PharmaceuticalProduct.json ==
@@ -240,9 +241,5 @@ WARNING: StructureDefinition/VirtualPackagePharmaceuticalProduct: StructureDefin
 WARNING: StructureDefinition/VirtualPackagePharmaceuticalProduct: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/StructureDefinition-VirtualPackagedPharmaceuticalProduct.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/VirtualPackagedPharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-be-vmpgroup.json ==
-WARNING: StructureDefinition/be-vmpgroup: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/be-vmpgroup'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-be-granularity-vs.json ==
-WARNING: ValueSet/be-granularity-vs: ValueSet: vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/ValueSet-granularity-vs.json ==

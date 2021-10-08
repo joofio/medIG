@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2021-10-08T08:43:20+00:00"/>
+  <date value="2021-10-08T09:20:52+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -171,6 +171,16 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/BeVmpGroup"/>
+      </reference>
+      <name value="BeVmpGroup"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/MedicinalProduct"/>
       </reference>
       <name value="MedicinalProduct"/>
@@ -224,16 +234,6 @@
         <reference value="StructureDefinition/VirtualPackagedPharmaceuticalProduct"/>
       </reference>
       <name value="VirtualPackagedPharmaceuticalProduct"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/be-vmpgroup"/>
-      </reference>
-      <name value="be-vmpgroup"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -296,10 +296,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/be-drug-cs"/>
+        <reference value="CodeSystem/beMedCS"/>
       </reference>
       <name value="Drug Code System"/>
-      <description value="Codes for "/>
+      <description value="Codes for belgian medicine level "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -329,10 +329,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/drug-cs"/>
+        <reference value="CodeSystem/medics"/>
       </reference>
       <name value="Drug Code System"/>
-      <description value="Codes for "/>
+      <description value="Codes for medicine level"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

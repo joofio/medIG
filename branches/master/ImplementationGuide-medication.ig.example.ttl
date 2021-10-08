@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "medicationIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-10-08T08:43:20+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-10-08T09:20:52+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "medication.ig.example"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -261,13 +261,26 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BeVmpGroup" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BeVmpGroup" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/MedicinalProduct" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicinalProduct" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -280,7 +293,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PackagedMedicinalProduct" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -293,7 +306,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PharmaceuticalProduct" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -306,7 +319,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Substance" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -319,7 +332,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VMP" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -330,19 +343,6 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/VirtualPackagedPharmaceuticalProduct" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VirtualPackagedPharmaceuticalProduct" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 6;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/be-vmpgroup>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/be-vmpgroup" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "be-vmpgroup" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;
@@ -422,11 +422,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/be-drug-cs>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/be-drug-cs" ]
+         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/beMedCS>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/beMedCS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Drug Code System" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for belgian medicine level " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 13;
@@ -464,11 +464,11 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/drug-cs>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/drug-cs" ]
+         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/medics>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/medics" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Drug Code System" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for medicine level" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 16;
@@ -631,6 +631,8 @@
      ]
   ] .
 
+<http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup> a fhir:us .
+
 <http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct> a fhir:us .
 
 <http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct> a fhir:us .
@@ -643,8 +645,6 @@
 
 <http://hl7.org/fhir/us/example/StructureDefinition/VirtualPackagedPharmaceuticalProduct> a fhir:us .
 
-<http://hl7.org/fhir/us/example/StructureDefinition/be-vmpgroup> a fhir:us .
-
 <http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProdut> a fhir:us .
 
 <http://hl7.org/fhir/us/example/StructureDefinition/SubstanceModel> a fhir:us .
@@ -655,13 +655,13 @@
 
 <http://hl7.org/fhir/us/example/ValueSet/granularity-vs> a fhir:us .
 
-<http://hl7.org/fhir/us/example/CodeSystem/be-drug-cs> a fhir:us .
+<http://hl7.org/fhir/us/example/CodeSystem/beMedCS> a fhir:us .
 
 <http://hl7.org/fhir/us/example/CodeSystem/drug-char-cs> a fhir:us .
 
 <http://hl7.org/fhir/us/example/CodeSystem/type-med-class-cs> a fhir:us .
 
-<http://hl7.org/fhir/us/example/CodeSystem/drug-cs> a fhir:us .
+<http://hl7.org/fhir/us/example/CodeSystem/medics> a fhir:us .
 
 <http://hl7.org/fhir/us/example/CodeSystem/rel-med-cs> a fhir:us .
 
