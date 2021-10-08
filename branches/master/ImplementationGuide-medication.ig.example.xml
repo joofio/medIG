@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2021-10-08T11:07:42+00:00"/>
+  <date value="2021-10-08T17:20:30+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -267,6 +267,28 @@
       </reference>
       <name value="VMPP logical model"/>
       <description value="VMPP logical model."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VirtualPharmaceuticalProdut"/>
+      </reference>
+      <name value="Virtual Pharmaceutical Product logical model"/>
+      <description value="Virtual Pharmaceutical Product logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VirtualPharmaceuticalProdutGroup"/>
+      </reference>
+      <name value="Virtual Pharmaceutical Product Group logical model"/>
+      <description value="Virtual Pharmaceutical Product Group logical model"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -38,7 +38,8 @@
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/allergyintolerance-duration": [
       "PharmaceuticalProdut.kinetics.halfLifePeriod",
-      "VirtualPackagePharmaceuticalProduct.kinetics.halfLifePeriod"
+      "VirtualPackagePharmaceuticalProduct.kinetics.halfLifePeriod",
+      "VirtualPharmaceuticalProdut.kinetics.halfLifePeriod"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"

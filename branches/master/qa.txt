@@ -1,10 +1,10 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 9, warn = 42, info = 8
+err = 11, warn = 58, info = 8
 IG Publisher Version: 1.1.81
-Generated Fri Oct 08 11:08:17 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
- Build Errors : 155 / 8 / 0
+Generated Fri Oct 08 17:21:21 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+ Build Errors : 171 / 8 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-medics : 1 / 0 / 1
@@ -28,6 +28,8 @@ Generated Fri Oct 08 11:08:17 UTC 2021. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/StructureDefinition-VMP : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPackagePharmaceuticalProduct : 1 / 15 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPackagedPharmaceuticalProduct : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPharmaceuticalProdut : 1 / 15 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPharmaceuticalProdutGroup : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-granularity-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-granularity-vs : 0 / 0 / 1
 </table>
@@ -181,6 +183,22 @@ ERROR: /github/workspace/output/StructureDefinition-VirtualPackagedPharmaceutica
 ERROR: /github/workspace/output/StructureDefinition-VirtualPackagedPharmaceuticalProduct.profile.json.html#/html/body/div/div/div/p/a at Line 6471, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-VirtualPackagedPharmaceuticalProduct.profile.ttl.html#/html/body/div/div/div/p/a at Line 5711, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-VirtualPackagedPharmaceuticalProduct.profile.xml.html#/html/body/div/div/div/p/a at Line 5794, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdut-definitions.html#/html/body/div/div/div/p/a at Line 546, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdut-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdut-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdut.html#/html/body/div/div/div/p/a at Line 869, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdut.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdut.profile.json.html#/html/body/div/div/div/p/a at Line 2234, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdut.profile.ttl.html#/html/body/div/div/div/p/a at Line 1826, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdut.profile.xml.html#/html/body/div/div/div/p/a at Line 1950, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdutGroup-definitions.html#/html/body/div/div/div/p/a at Line 431, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdutGroup-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdutGroup-mappings.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdutGroup.html#/html/body/div/div/div/p/a at Line 705, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdutGroup.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdutGroup.profile.json.html#/html/body/div/div/div/p/a at Line 1509, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdutGroup.profile.ttl.html#/html/body/div/div/div/p/a at Line 1258, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-VirtualPharmaceuticalProdutGroup.profile.xml.html#/html/body/div/div/div/p/a at Line 1331, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-be-granularity-vs.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-be-granularity-vs.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-be-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
@@ -191,7 +209,7 @@ ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/
 ERROR: /github/workspace/output/ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 228, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 413, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 431, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/download.html#/html/body/div/div/div/p/a at Line 184, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 155, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 137, column 28: The link '' for "" cannot be resolved
@@ -203,7 +221,7 @@ ERROR: CodeSystem.url: Resource id/url mismatch: medics/http://hl7.org/fhir/us/e
 == fsh-generated/resources/CodeSystem-type-med-class-cs.json ==
 == fsh-generated/resources/ImplementationGuide-medication.ig.example.json ==
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[12].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace
 == fsh-generated/resources/MedicationKnowledge-be-substance.json ==
 INFORMATION: MedicationKnowledge/be-substance: MedicationKnowledge.code.coding[0]: Code System URI 'https://be.codes.product/substance/' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationKnowledge-be-vmpgroup.json ==
@@ -269,5 +287,25 @@ WARNING: StructureDefinition/VirtualPackagePharmaceuticalProduct: StructureDefin
 ERROR: StructureDefinition/VirtualPackagedPharmaceuticalProduct: StructureDefinition.snapshot.element[29].pattern.ofType(CodeableConcept).coding[0]: Unknown Code http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMPP in http://hl7.org/fhir/us/example/CodeSystem/mediCS for 'http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMPP'
 ERROR: StructureDefinition/VirtualPackagedPharmaceuticalProduct: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: Unknown Code http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMPP in http://hl7.org/fhir/us/example/CodeSystem/mediCS for 'http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMPP'
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/VirtualPackagedPharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-VirtualPharmaceuticalProdut.json ==
+ERROR: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.snapshot.element[28].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.snapshot.element[35]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.snapshot.element[36]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.snapshot.element[37]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.snapshot.element[38]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.snapshot.element[39]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.snapshot.element[40]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.differential.element[28].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.differential.element[35]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.differential.element[36]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.differential.element[37]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.differential.element[38]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.differential.element[39]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.differential.element[40]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+== fsh-generated/resources/StructureDefinition-VirtualPharmaceuticalProdutGroup.json ==
+ERROR: StructureDefinition/VirtualPharmaceuticalProdutGroup: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+WARNING: StructureDefinition/VirtualPharmaceuticalProdutGroup: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/ValueSet-be-granularity-vs.json ==
 == fsh-generated/resources/ValueSet-granularity-vs.json ==

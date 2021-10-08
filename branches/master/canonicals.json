@@ -91,6 +91,20 @@
     "name": "VirtualPackagedPharmaceuticalProduct"
   },
   {
+    "id": "VirtualPharmaceuticalProdut",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/VirtualPharmaceuticalProdut",
+    "version": "0.1.0",
+    "name": "VirtualPharmaceuticalProdut"
+  },
+  {
+    "id": "VirtualPharmaceuticalProdutGroup",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/VirtualPharmaceuticalProdutGroup",
+    "version": "0.1.0",
+    "name": "VirtualPharmaceuticalProdutGroup"
+  },
+  {
     "id": "be-granularity-vs",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs",
