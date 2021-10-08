@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="be-vmpgroup"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title="Codes: {https://be.codes.product/vmpg/ x}">amlodipine oraal 10 mg</span></p><p><b>status</b>: active</p><p><b>amount</b>: 10 mg</p><p><b>synonym</b>: amlodipine oraal 10 mg</p><p><b>productType</b>: <span title="Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS PHARMPROD}">pharmaceutical product</span>, <span title="Codes: {http://hl7.org/fhir/us/example/CodeSystem/beMedCS VMPG}">Virtual Medicinal Product Group</span></p><p><b>intendedRoute</b>: <span title="Codes: {http://snomed.info/sct 26643006}">Oral Route</span></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="https://be.codes.product/vmpg/"/>
+      <code value="x"/>
+      <display value="amlodipine oraal 10 mg"/>
+    </coding>
+  </code>
+  <status value="active"/>
+  <amount>
+    <value value="10"/>
+    <unit value="mg"/>
+  </amount>
+  <synonym value="amlodipine oraal 10 mg"/>
+  <productType>
+    <coding>
+      <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
+      <code value="PHARMPROD"/>
+    </coding>
+  </productType>
+  <productType>
+    <coding>
+      <system value="http://hl7.org/fhir/us/example/CodeSystem/beMedCS"/>
+      <code value="VMPG"/>
+    </coding>
+  </productType>
+  <intendedRoute>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="26643006"/>
+      <display value="Oral Route"/>
+    </coding>
+  </intendedRoute>
+</MedicationKnowledge>

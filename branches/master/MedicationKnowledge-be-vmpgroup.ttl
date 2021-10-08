@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/be-vmpgroup> a fhir:MedicationKnowledge;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-vmpgroup"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://be.codes.product/vmpg/ x}\">amlodipine oraal 10 mg</span></p><p><b>status</b>: active</p><p><b>amount</b>: 10 mg</p><p><b>synonym</b>: amlodipine oraal 10 mg</p><p><b>productType</b>: <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS PHARMPROD}\">pharmaceutical product</span>, <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/beMedCS VMPG}\">Virtual Medicinal Product Group</span></p><p><b>intendedRoute</b>: <span title=\"Codes: {http://snomed.info/sct 26643006}\">Oral Route</span></p></div>"
+  ];
+  fhir:MedicationKnowledge.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://be.codes.product/vmpg/" ];
+       fhir:Coding.code [ fhir:value "x" ];
+       fhir:Coding.display [ fhir:value "amlodipine oraal 10 mg" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.status [ fhir:value "active"];
+  fhir:MedicationKnowledge.amount [
+     fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mg" ]
+  ];
+  fhir:MedicationKnowledge.synonym [
+     fhir:value "amlodipine oraal 10 mg";
+     fhir:index 0
+  ];
+  fhir:MedicationKnowledge.productType [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/mediCS" ];
+       fhir:Coding.code [ fhir:value "PHARMPROD" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/beMedCS" ];
+       fhir:Coding.code [ fhir:value "VMPG" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.intendedRoute [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:26643006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "26643006" ];
+       fhir:Coding.display [ fhir:value "Oral Route" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/be-vmpgroup.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/example/MedicationKnowledge/be-vmpgroup.ttl> .
+
+# -------------------------------------------------------------------------------------
+

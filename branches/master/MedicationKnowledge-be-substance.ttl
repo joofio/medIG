@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/be-substance> a fhir:MedicationKnowledge;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-substance"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/Substance";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/Substance>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://be.codes.product/substance/ x}\">amlodipine</span></p><p><b>status</b>: active</p><p><b>productType</b>: <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS SUBST}\">Substance</span></p><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType DOM}\">Domain of drug</span></p><p><b>value</b>: human</p></blockquote><blockquote><p><b>drugCharacteristic</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/productType DT}\">Drug Type</span></p><p><b>value</b>: small molecule</p></blockquote></div>"
+  ];
+  fhir:MedicationKnowledge.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://be.codes.product/substance/" ];
+       fhir:Coding.code [ fhir:value "x" ];
+       fhir:Coding.display [ fhir:value "amlodipine" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.status [ fhir:value "active"];
+  fhir:MedicationKnowledge.productType [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/mediCS" ];
+       fhir:Coding.code [ fhir:value "SUBST" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.drugCharacteristic [
+     fhir:index 0;
+     fhir:MedicationKnowledge.drugCharacteristic.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/productType" ];
+         fhir:Coding.code [ fhir:value "DOM" ]
+       ]
+     ];
+     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "human" ]
+  ], [
+     fhir:index 1;
+     fhir:MedicationKnowledge.drugCharacteristic.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/productType" ];
+         fhir:Coding.code [ fhir:value "DT" ]
+       ]
+     ];
+     fhir:MedicationKnowledge.drugCharacteristic.valueString [ fhir:value "small molecule" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/be-substance.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/example/MedicationKnowledge/be-substance.ttl> .
+
+# -------------------------------------------------------------------------------------
+
