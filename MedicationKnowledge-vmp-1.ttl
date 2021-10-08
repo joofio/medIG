@@ -1,0 +1,115 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/vmp-1> a fhir:MedicationKnowledge;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vmp-1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/VMP";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/VMP>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://be.codes.product/vmp/ x}\">amlodipine 10 mg tablet (or.)</span></p><p><b>status</b>: active</p><p><b>doseForm</b>: <span title=\"Codes: {http://snomed.info/sct 421026006}\">Oral Tablet</span></p><p><b>amount</b>: 10 mg</p><p><b>synonym</b>: amlodipine 10 mg tablet (or.)</p><blockquote><p><b>relatedMedicationKnowledge</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/relMedCS VPHARMOF}\">Is a Virtual Package Form of</span></p><p><b>reference</b>: <a href=\"MedicationKnowledge-be-substance.html\">Generated Summary: <span title=\"Codes: {https://be.codes.product/substance/ x}\">amlodipine</span>; status: active; <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS SUBST}\">Substance</span></a></p></blockquote><blockquote><p><b>relatedMedicationKnowledge</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/relMedCS HASG}\">Is a from a virtual pharmaceutical product group</span></p><p><b>reference</b>: <a href=\"MedicationKnowledge-be-vmpgroup.html\">Generated Summary: <span title=\"Codes: {https://be.codes.product/vmpg/ x}\">amlodipine oraal 10 mg</span>; status: active; 10 mg; synonym: amlodipine oraal 10 mg; <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS PHARMPROD}\">pharmaceutical product</span>, <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/beMedCS VMPG}\">Virtual Medicinal Product Group</span>; <span title=\"Codes: {http://snomed.info/sct 26643006}\">Oral Route</span></a></p></blockquote><p><b>productType</b>: <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS PHARMPROD}\">pharmaceutical product</span>, <span title=\"Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS VMP}\">VMP</span></p><p><b>intendedRoute</b>: <span title=\"Codes: {http://snomed.info/sct 26643006}\">Oral Route</span></p></div>"
+  ];
+  fhir:MedicationKnowledge.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://be.codes.product/vmp/" ];
+       fhir:Coding.code [ fhir:value "x" ];
+       fhir:Coding.display [ fhir:value "amlodipine 10 mg tablet (or.)" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.status [ fhir:value "active"];
+  fhir:MedicationKnowledge.doseForm [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:421026006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "421026006" ];
+       fhir:Coding.display [ fhir:value "Oral Tablet" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.amount [
+     fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mg" ]
+  ];
+  fhir:MedicationKnowledge.synonym [
+     fhir:value "amlodipine 10 mg tablet (or.)";
+     fhir:index 0
+  ];
+  fhir:MedicationKnowledge.relatedMedicationKnowledge [
+     fhir:index 0;
+     fhir:MedicationKnowledge.relatedMedicationKnowledge.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/relMedCS" ];
+         fhir:Coding.code [ fhir:value "VPHARMOF" ]
+       ]
+     ];
+     fhir:MedicationKnowledge.relatedMedicationKnowledge.reference [
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/example/MedicationKnowledge/be-substance>;
+       fhir:Reference.reference [ fhir:value "MedicationKnowledge/be-substance" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MedicationKnowledge.relatedMedicationKnowledge.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/relMedCS" ];
+         fhir:Coding.code [ fhir:value "HASG" ]
+       ]
+     ];
+     fhir:MedicationKnowledge.relatedMedicationKnowledge.reference [
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/example/MedicationKnowledge/be-vmpgroup>;
+       fhir:Reference.reference [ fhir:value "MedicationKnowledge/be-vmpgroup" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.productType [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/mediCS" ];
+       fhir:Coding.code [ fhir:value "PHARMPROD" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/mediCS" ];
+       fhir:Coding.code [ fhir:value "VMP" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.intendedRoute [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:26643006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "26643006" ];
+       fhir:Coding.display [ fhir:value "Oral Route" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/be-substance> a fhir:us .
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/be-vmpgroup> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/MedicationKnowledge/vmp-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/example/MedicationKnowledge/vmp-1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

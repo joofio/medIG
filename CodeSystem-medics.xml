@@ -3,17 +3,17 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="medics"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/mediCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">SUBST<a name="medics-SUBST"> </a></td><td>Substance</td><td>Substance</td></tr><tr><td style="white-space:nowrap">PHARMPROD<a name="medics-PHARMPROD"> </a></td><td>pharmaceutical product</td><td/></tr><tr><td style="white-space:nowrap">MEDPROD<a name="medics-MEDPROD"> </a></td><td>Medicinal Product</td><td/></tr><tr><td style="white-space:nowrap">PACKMEDPROD<a name="medics-PACKMEDPROD"> </a></td><td>Packaged Medicinal Product</td><td/></tr><tr><td style="white-space:nowrap">VMPP<a name="medics-VMPP"> </a></td><td>Virtual Medicinal Packaged Product</td><td/></tr><tr><td style="white-space:nowrap">VMP<a name="medics-VMP"> </a></td><td>Virtual Medicinal Product</td><td/></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/mediCS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">SUBST<a name="medics-SUBST"> </a></td><td>Substance</td><td>Substance</td></tr><tr><td style="white-space:nowrap">PHARMPROD<a name="medics-PHARMPROD"> </a></td><td>pharmaceutical product</td><td/></tr><tr><td style="white-space:nowrap">MEDPROD<a name="medics-MEDPROD"> </a></td><td>Medicinal Product</td><td/></tr><tr><td style="white-space:nowrap">PACKMEDPROD<a name="medics-PACKMEDPROD"> </a></td><td>Packaged Medicinal Product</td><td/></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
   <version value="0.1.0"/>
   <name value="MedicineCodeSystem"/>
   <title value="Drug Code System"/>
   <status value="active"/>
-  <date value="2021-10-08T09:20:52+00:00"/>
+  <date value="2021-10-08T09:56:27+00:00"/>
   <description value="Codes for medicine level"/>
   <content value="complete"/>
-  <count value="6"/>
+  <count value="4"/>
   <concept>
     <code value="SUBST"/>
     <display value="Substance"/>
@@ -30,13 +30,5 @@
   <concept>
     <code value="PACKMEDPROD"/>
     <display value="Packaged Medicinal Product"/>
-  </concept>
-  <concept>
-    <code value="VMPP"/>
-    <display value="Virtual Medicinal Packaged Product"/>
-  </concept>
-  <concept>
-    <code value="VMP"/>
-    <display value="Virtual Medicinal Product"/>
   </concept>
 </CodeSystem>

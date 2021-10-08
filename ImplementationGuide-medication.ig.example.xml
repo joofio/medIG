@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2021-10-08T09:20:52+00:00"/>
+  <date value="2021-10-08T09:56:27+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -350,6 +350,28 @@
         <valueString value="MedicationKnowledge"/>
       </extension>
       <reference>
+        <reference value="MedicationKnowledge/be-substance"/>
+      </reference>
+      <name value="Example of a substance for be market"/>
+      <description value="Example of a substance for be market"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/example/StructureDefinition/Substance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/be-vmpgroup"/>
+      </reference>
+      <name value="Example of VMP group"/>
+      <description value="Example of a VMP group"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
         <reference value="MedicationKnowledge/example-0-of-drug-med"/>
       </reference>
       <name value="Example of drug with granularity 0"/>
@@ -388,6 +410,17 @@
       <name value="Example of drug with granularity 3"/>
       <description value="Example of a drug with granularity 3"/>
       <exampleCanonical value="http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/vmp-1"/>
+      </reference>
+      <name value="Example of VMP"/>
+      <description value="Example of a VMP"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/example/StructureDefinition/VMP"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2021-10-08T09:20:52+00:00",
+  "date": "2021-10-08T09:56:27+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -504,6 +504,34 @@
           }
         ],
         "reference": {
+          "reference": "MedicationKnowledge/be-substance"
+        },
+        "name": "Example of a substance for be market",
+        "description": "Example of a substance for be market",
+        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/Substance"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationKnowledge"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationKnowledge/be-vmpgroup"
+        },
+        "name": "Example of VMP group",
+        "description": "Example of a VMP group",
+        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationKnowledge"
+          }
+        ],
+        "reference": {
           "reference": "MedicationKnowledge/example-0-of-drug-med"
         },
         "name": "Example of drug with granularity 0",
@@ -551,6 +579,20 @@
         "name": "Example of drug with granularity 3",
         "description": "Example of a drug with granularity 3",
         "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationKnowledge"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationKnowledge/vmp-1"
+        },
+        "name": "Example of VMP",
+        "description": "Example of a VMP",
+        "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/VMP"
       }
     ],
     "page": {

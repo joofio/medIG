@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="vmp-1"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/example/StructureDefinition/VMP"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title="Codes: {https://be.codes.product/vmp/ x}">amlodipine 10 mg tablet (or.)</span></p><p><b>status</b>: active</p><p><b>doseForm</b>: <span title="Codes: {http://snomed.info/sct 421026006}">Oral Tablet</span></p><p><b>amount</b>: 10 mg</p><p><b>synonym</b>: amlodipine 10 mg tablet (or.)</p><blockquote><p><b>relatedMedicationKnowledge</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/relMedCS VPHARMOF}">Is a Virtual Package Form of</span></p><p><b>reference</b>: <a href="MedicationKnowledge-be-substance.html">Generated Summary: <span title="Codes: {https://be.codes.product/substance/ x}">amlodipine</span>; status: active; <span title="Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS SUBST}">Substance</span></a></p></blockquote><blockquote><p><b>relatedMedicationKnowledge</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/relMedCS HASG}">Is a from a virtual pharmaceutical product group</span></p><p><b>reference</b>: <a href="MedicationKnowledge-be-vmpgroup.html">Generated Summary: <span title="Codes: {https://be.codes.product/vmpg/ x}">amlodipine oraal 10 mg</span>; status: active; 10 mg; synonym: amlodipine oraal 10 mg; <span title="Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS PHARMPROD}">pharmaceutical product</span>, <span title="Codes: {http://hl7.org/fhir/us/example/CodeSystem/beMedCS VMPG}">Virtual Medicinal Product Group</span>; <span title="Codes: {http://snomed.info/sct 26643006}">Oral Route</span></a></p></blockquote><p><b>productType</b>: <span title="Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS PHARMPROD}">pharmaceutical product</span>, <span title="Codes: {http://hl7.org/fhir/us/example/CodeSystem/mediCS VMP}">VMP</span></p><p><b>intendedRoute</b>: <span title="Codes: {http://snomed.info/sct 26643006}">Oral Route</span></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="https://be.codes.product/vmp/"/>
+      <code value="x"/>
+      <display value="amlodipine 10 mg tablet (or.)"/>
+    </coding>
+  </code>
+  <status value="active"/>
+  <doseForm>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="421026006"/>
+      <display value="Oral Tablet"/>
+    </coding>
+  </doseForm>
+  <amount>
+    <value value="10"/>
+    <unit value="mg"/>
+  </amount>
+  <synonym value="amlodipine 10 mg tablet (or.)"/>
+  <relatedMedicationKnowledge>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/relMedCS"/>
+        <code value="VPHARMOF"/>
+      </coding>
+    </type>
+    <reference>
+      <reference value="MedicationKnowledge/be-substance"/>
+    </reference>
+  </relatedMedicationKnowledge>
+  <relatedMedicationKnowledge>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/relMedCS"/>
+        <code value="HASG"/>
+      </coding>
+    </type>
+    <reference>
+      <reference value="MedicationKnowledge/be-vmpgroup"/>
+    </reference>
+  </relatedMedicationKnowledge>
+  <productType>
+    <coding>
+      <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
+      <code value="PHARMPROD"/>
+    </coding>
+  </productType>
+  <productType>
+    <coding>
+      <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
+      <code value="VMP"/>
+    </coding>
+  </productType>
+  <intendedRoute>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="26643006"/>
+      <display value="Oral Route"/>
+    </coding>
+  </intendedRoute>
+</MedicationKnowledge>

@@ -3,14 +3,14 @@
   "id": "beMedCS",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/beMedCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">VMPP<a name=\"beMedCS-VMPP\"> </a></td><td>Virtual Medicinal Packaged Product</td></tr><tr><td style=\"white-space:nowrap\">VMP<a name=\"beMedCS-VMP\"> </a></td><td>Virtual Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">VMPG<a name=\"beMedCS-VMPG\"> </a></td><td>asdas</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/beMedCS defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">VMPP<a name=\"beMedCS-VMPP\"> </a></td><td>Virtual Medicinal Packaged Product</td></tr><tr><td style=\"white-space:nowrap\">VMP<a name=\"beMedCS-VMP\"> </a></td><td>Virtual Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">VMPG<a name=\"beMedCS-VMPG\"> </a></td><td>Virtual Medicinal Product Group</td></tr></table></div>"
   },
   "url": "http://hl7.org/fhir/us/example/CodeSystem/beMedCS",
   "version": "0.1.0",
   "name": "BEMedicineCodeSystem",
   "title": "Drug Code System",
   "status": "active",
-  "date": "2021-10-08T09:20:52+00:00",
+  "date": "2021-10-08T09:56:27+00:00",
   "description": "Codes for belgian medicine level ",
   "content": "complete",
   "count": 3,
@@ -25,7 +25,7 @@
     },
     {
       "code": "VMPG",
-      "display": "asdas"
+      "display": "Virtual Medicinal Product Group"
     }
   ]
 }

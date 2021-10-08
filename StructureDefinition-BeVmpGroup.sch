@@ -13,7 +13,6 @@
     <sch:title>f:MedicationKnowledge</sch:title>
     <sch:rule context="f:MedicationKnowledge">
       <sch:assert test="count(f:doseForm) &lt;= 0">doseForm: maximum cardinality of 'doseForm' is 0</sch:assert>
-      <sch:assert test="count(f:packaging) &lt;= 0">packaging: maximum cardinality of 'packaging' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -104,14 +103,11 @@
     <sch:title>MedicationKnowledge.relatedMedicationKnowledge</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:relatedMedicationKnowledge">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>MedicationKnowledge.relatedMedicationKnowledge.extension</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:relatedMedicationKnowledge/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
@@ -121,21 +117,17 @@
     <sch:rule context="f:MedicationKnowledge/f:relatedMedicationKnowledge/f:modifierExtension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>MedicationKnowledge.relatedMedicationKnowledge.type</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:relatedMedicationKnowledge/f:type">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>MedicationKnowledge.relatedMedicationKnowledge.reference</sch:title>
     <sch:rule context="f:MedicationKnowledge/f:relatedMedicationKnowledge/f:reference">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

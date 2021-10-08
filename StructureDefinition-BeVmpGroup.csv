@@ -47,29 +47,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationKnowledge.synonym","","","",0,*,"Y","","Y","string {[]} {[]}
 ","Additional names for a medication","Additional names for a medication, for example, the name(s) given to a medication in different countries.  For example, acetaminophen and paracetamol or salbutamol and albuterol.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.synonym",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MedicationKnowledge.relatedMedicationKnowledge","","","",0,*,"Y","","","BackboneElement {[]} {[]}
-","Associated or related medication information","Associated or related knowledge about a medication.","","","","","","","","","",,,,,"","value:type}
-","Slice based on the component.code pattern",,"open","MedicationKnowledge.relatedMedicationKnowledge",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"MedicationKnowledge.relatedMedicationKnowledge.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"MedicationKnowledge.relatedMedicationKnowledge.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"MedicationKnowledge.relatedMedicationKnowledge.modifierExtension","","extensions
-user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
-","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
-
-Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"MedicationKnowledge.relatedMedicationKnowledge.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Category of medicationKnowledge","The category of the associated medication knowledge reference.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.relatedMedicationKnowledge.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"MedicationKnowledge.relatedMedicationKnowledge.reference","","","",1,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationKnowledge]]}
-","Associated documentation about the associated medication knowledge","Associated documentation about the associated medication knowledge.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.relatedMedicationKnowledge.reference",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"MedicationKnowledge.relatedMedicationKnowledge","isaPharmaceuticalProductOf","","",0,*,"Y","","","BackboneElement {[]} {[]}
+"MedicationKnowledge.relatedMedicationKnowledge","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Associated or related medication information","Associated or related knowledge about a medication.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.relatedMedicationKnowledge",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.relatedMedicationKnowledge.id","","","",0,1,"","","","string {[]} {[]}
@@ -85,12 +63,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "MedicationKnowledge.relatedMedicationKnowledge.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Category of medicationKnowledge","The category of the associated medication knowledge reference.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
-  <coding>
-    <system value=""http://terminology.hl7.org/CodeSystem/relMedCS""/>
-    <code value=""PHARMOF""/>
-  </coding>
-</valueCodeableConcept>","","","",,,,,"",,,,"MedicationKnowledge.relatedMedicationKnowledge.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Category of medicationKnowledge","The category of the associated medication knowledge reference.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.relatedMedicationKnowledge.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.relatedMedicationKnowledge.reference","","","",1,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationKnowledge]]}
 ","Associated documentation about the associated medication knowledge","Associated documentation about the associated medication knowledge.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.relatedMedicationKnowledge.reference",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -169,7 +142,7 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance
 "MedicationKnowledge.intendedRoute","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
 ","The intended or approved route of administration","The intended or approved route of administration.","","","","","","","","","",,"example","A coded concept defining the intended route of administration.","http://hl7.org/fhir/ValueSet/route-codes","",,,,"MedicationKnowledge.intendedRoute",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MedicationKnowledge.cost","","","",0,*,"Y","","","BackboneElement {[]} {[]}
+"MedicationKnowledge.cost","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","The pricing of the medication","The price of the medication.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.cost",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.cost.id","","","",0,1,"","","","string {[]} {[]}
@@ -322,7 +295,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationKnowledge.medicineClassification.classification","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Specific category assigned to the medication","Specific category assigned to the medication (e.g. anti-infective, anti-hypertensive, antibiotic, etc.).","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.medicineClassification.classification",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MedicationKnowledge.packaging","","","",0,0,"","","","BackboneElement {[]} {[]}
+"MedicationKnowledge.packaging","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Details about packaged medications","Information that only applies to packages (not products).","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.packaging",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.packaging.id","","","",0,1,"","","","string {[]} {[]}
@@ -446,7 +419,7 @@ string {[]} {[]}Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition
 "MedicationKnowledge.contraindication","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/DetectedIssue]]}
 ","Potential clinical issue with or between medication(s)","Potential clinical issue with or between medication(s) (for example, drug-drug interaction, drug-disease contraindication, drug-allergy interaction, etc.).","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.contraindication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MedicationKnowledge.regulatory","","","",0,*,"Y","","","BackboneElement {[]} {[]}
+"MedicationKnowledge.regulatory","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Regulatory information about a medication","Regulatory information about a medication.","","","","","","","","","",,,,,"",,,,"MedicationKnowledge.regulatory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MedicationKnowledge.regulatory.id","","","",0,1,"","","","string {[]} {[]}
