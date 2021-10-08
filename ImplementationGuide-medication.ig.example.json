@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2021-10-08T09:56:27+00:00",
+  "date": "2021-10-08T10:16:10+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -609,6 +609,11 @@
           "nameUrl": "download.html",
           "title": "Download",
           "generation": "html"
+        },
+        {
+          "nameUrl": "Resources-relations.html",
+          "title": "Resources Relations",
+          "generation": "markdown"
         }
       ]
     },

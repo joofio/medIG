@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "medicationIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-10-08T09:56:27+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-10-08T10:16:10+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "medication.ig.example"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -617,6 +617,11 @@
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "download.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Download" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Resources-relations.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Resources Relations" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];
      fhir:ImplementationGuide.definition.parameter [
