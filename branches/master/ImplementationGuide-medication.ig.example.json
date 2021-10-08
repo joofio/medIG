@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2021-09-14T08:27:49+00:00",
+  "date": "2021-10-08T08:43:20+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -326,9 +326,35 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/VMP"
+        },
+        "name": "VMP",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/VirtualPackagedPharmaceuticalProduct"
         },
         "name": "VirtualPackagedPharmaceuticalProduct",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-vmpgroup"
+        },
+        "name": "be-vmpgroup",
         "exampleBoolean": false
       },
       {
@@ -381,10 +407,38 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/be-granularity-vs"
+        },
+        "name": "Be Granularity Value Set",
+        "description": "Indicates the granularity of product",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/granularity-vs"
         },
         "name": "Granularity Value Set",
         "description": "Indicates the granularity of product",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/be-drug-cs"
+        },
+        "name": "Drug Code System",
+        "description": "Codes for ",
         "exampleBoolean": false
       },
       {

@@ -22,8 +22,16 @@
         "title": "Substance"
       },
       {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/VMP",
+        "title": "VMP"
+      },
+      {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/VirtualPackagedPharmaceuticalProduct",
         "title": "VirtualPackagedPharmaceuticalProduct"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/be-vmpgroup",
+        "title": "be-vmpgroup"
       }
     ]
   },

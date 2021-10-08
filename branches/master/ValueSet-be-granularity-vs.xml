@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-granularity-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-drug-cs.html"><code>http://terminology.hl7.org/CodeSystem/medicineCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-drug-cs.html#drug-cs-SUBST">SUBST</a></td><td>Substance</td><td>Substance</td></tr><tr><td><a href="CodeSystem-drug-cs.html#drug-cs-PHARMPROD">PHARMPROD</a></td><td>Pharmaceutical Product</td><td/></tr><tr><td><a href="CodeSystem-drug-cs.html#drug-cs-MEDPROD">MEDPROD</a></td><td>Medicinal Product</td><td/></tr><tr><td><a href="CodeSystem-drug-cs.html#drug-cs-PACKMEDPROD">PACKMEDPROD</a></td><td>Packaged Medicinal Product</td><td/></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-be-drug-cs.html"><code>http://terminology.hl7.org/CodeSystem/bemedicineCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-be-drug-cs.html#be-drug-cs-VMPG">VMPG</a></td><td>VMP Group</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs"/>
+  <version value="0.1.0"/>
+  <name value="BE-GranularityVS"/>
+  <title value="Be Granularity Value Set"/>
+  <status value="active"/>
+  <date value="2021-10-08T08:43:20+00:00"/>
+  <description value="Indicates the granularity of product"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/medicineCS"/>
+      <concept>
+        <code value="SUBST"/>
+        <display value="Substance"/>
+      </concept>
+      <concept>
+        <code value="PHARMPROD"/>
+        <display value="Pharmaceutical Product"/>
+      </concept>
+      <concept>
+        <code value="MEDPROD"/>
+        <display value="Medicinal Product"/>
+      </concept>
+      <concept>
+        <code value="PACKMEDPROD"/>
+        <display value="Packaged Medicinal Product"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/bemedicineCS"/>
+      <concept>
+        <code value="VMPG"/>
+        <display value="VMP Group"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
