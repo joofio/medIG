@@ -47,6 +47,12 @@ skinparam class<<PMP>> {
  HeaderBackgroundColor #f09090
 }
 
+skinparam class<<VMPG>> {
+ BorderColor DarkSlateGrey
+ BackgroundColor #DEE
+ HeaderBackgroundColor #A0B0B0
+}
+
 
 
   package " Graph Diagram   " as MR #E9EAE0 {
@@ -126,10 +132,10 @@ skinparam class<<PMP>> {
       VMPP
 }
 
-    class " **VMPG **  " as VMPG <<VMPG>>{
+    class " ** VMPG **  " as VMPGroup<<VMPG>>{
       --
-      |_ **identifier**
-      |_ <color:gray>//ingredient//</color>
+      |_ **identifier  **
+      |_ <color:gray>//ingredient     //</color>
         |_ <color:gray>//item//
         |_ <color:gray>//isActive//
         |_ <color:gray>//strength//
@@ -147,7 +153,8 @@ skinparam class<<PMP>> {
   
   CNPEM -u-> PhP: " Virtual Packaged form of"
   'CNPEM -r[hidden]--> MP
-    VMPG -u-> PhP: " Virtual Pharmaceutical Product Grouping"
+  VMPGroup -u-> PhP: Virtual Pharmaceutical\nProduct Grouping
+  VMPGroup -u[hidden]-> S
   'CNPEM -r[hidden]--> MP
 }
 @enduml
