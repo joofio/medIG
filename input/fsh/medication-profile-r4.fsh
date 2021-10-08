@@ -346,7 +346,7 @@ Parent: MedicationKnowledge
 * relatedMedicationKnowledge[VirtualpackageFormOf].type =  rel-med-cs#VIRTUALPACKOF
 
 
-Profile: be-vmpgroup
+Profile: BeVmpGroup
 Parent: MedicationKnowledge
 
 //* identifier MS

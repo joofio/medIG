@@ -96,12 +96,12 @@ Description: "Codes for drugCharacteristic"
 
 // Define a local code system
 CodeSystem: MedicineCodeSystem
-Id:         drug-cs
+Id:         medics
 Title: "Drug Code System"
-Description: "Codes for "
+Description: "Codes for medicine level"
 // You can choose any url, or use the default, but in this case we want the URL to be in the HL7 namespace
-* ^url =  http://terminology.hl7.org/CodeSystem/medicineCS
 // Spacing layout over three lines per term is optional, for clarity
+* ^url = "http://hl7.org/fhir/us/example/CodeSystem/mediCS"
 // The definition (second text string) is optional
 * #SUBST  
     "Substance"
@@ -117,13 +117,14 @@ Description: "Codes for "
 * #VMP
     "Virtual Medicinal Product"
 
+ 
+
 // Define a local code system
-CodeSystem: BE-MedicineCodeSystem
-Id:         be-drug-cs
+CodeSystem: BEMedicineCodeSystem
+Id:         beMedCS
 Title: "Drug Code System"
-Description: "Codes for "
+Description: "Codes for belgian medicine level "
 // You can choose any url, or use the default, but in this case we want the URL to be in the HL7 namespace
-* ^url =  http://terminology.hl7.org/CodeSystem/bemedicineCS
 // Spacing layout over three lines per term is optional, for clarity
 // The definition (second text string) is optional
 * #VMPP
@@ -133,9 +134,8 @@ Description: "Codes for "
 * #VMPG
     "asdas"
 
-// @Name: Include Single Codes
-// @Description: Value set with explicit codes
-Alias: medCS = http://terminology.hl7.org/CodeSystem/medicineCS
+Alias: medCS = http://hl7.org/fhir/us/example/CodeSystem/mediCS
+
 
 ValueSet: GranularityVS
 Id: granularity-vs
@@ -146,11 +146,8 @@ Description: "Indicates the granularity of product"
 * medCS#MEDPROD  "Medicinal Product"
 * medCS#PACKMEDPROD "Packaged Medicinal Product"
 
-// @Name: Include Single Codes
-// @Description: Value set with explicit codes
-Alias: beMedCS = http://terminology.hl7.org/CodeSystem/bemedicineCS
 
-ValueSet: BE-GranularityVS
+ValueSet: BEGranularityVS
 Id: be-granularity-vs
 Title: "Be Granularity Value Set"
 Description: "Indicates the granularity of product"
