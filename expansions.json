@@ -1,11 +1,71 @@
 {
   "resourceType" : "Bundle",
-  "id" : "c019d8fa-edba-489f-a496-c4864cc79a69",
+  "id" : "1e77537b-2f7a-4753-a5f8-c38a27450034",
   "meta" : {
-    "lastUpdated" : "2021-09-14T08:27:49.065+00:00"
+    "lastUpdated" : "2021-10-08T08:43:20.193+00:00"
   },
   "type" : "collection",
   "entry" : [{
+    "fullUrl" : "http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-granularity-vs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-drug-cs.html\">Drug Code System v0.1.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-be-drug-cs.html\">Drug Code System v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-SUBST\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-SUBST\">SUBST</a></td><td>http://terminology.hl7.org/CodeSystem/medicineCS</td><td>Substance</td><td>Substance</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-PHARMPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-PHARMPROD\">PHARMPROD</a></td><td>http://terminology.hl7.org/CodeSystem/medicineCS</td><td>Pharmaceutical Product</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-MEDPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-MEDPROD\">MEDPROD</a></td><td>http://terminology.hl7.org/CodeSystem/medicineCS</td><td>Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-medicineCS-PACKMEDPROD\"> </a><a href=\"CodeSystem-drug-cs.html#drug-cs-PACKMEDPROD\">PACKMEDPROD</a></td><td>http://terminology.hl7.org/CodeSystem/medicineCS</td><td>Packaged Medicinal Product</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-bemedicineCS-VMPG\"> </a><a href=\"CodeSystem-be-drug-cs.html#be-drug-cs-VMPG\">VMPG</a></td><td>http://terminology.hl7.org/CodeSystem/bemedicineCS</td><td>VMP Group</td><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs",
+      "version" : "0.1.0",
+      "name" : "BE-GranularityVS",
+      "title" : "Be Granularity Value Set",
+      "status" : "active",
+      "date" : "2021-10-08T08:43:20+00:00",
+      "description" : "Indicates the granularity of product",
+      "expansion" : {
+        "identifier" : "urn:uuid:7cdff184-613a-42ff-b01a-c372142a3f9f",
+        "timestamp" : "2021-10-08T08:43:43+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/medicineCS|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/bemedicineCS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicineCS",
+          "code" : "SUBST",
+          "display" : "Substance"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/medicineCS",
+          "code" : "PHARMPROD",
+          "display" : "Pharmaceutical Product"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/medicineCS",
+          "code" : "MEDPROD",
+          "display" : "Medicinal Product"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/medicineCS",
+          "code" : "PACKMEDPROD",
+          "display" : "Packaged Medicinal Product"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/bemedicineCS",
+          "code" : "VMPG",
+          "display" : "VMP Group"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://hl7.org/fhir/us/example/ValueSet/granularity-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -19,11 +79,11 @@
       "name" : "GranularityVS",
       "title" : "Granularity Value Set",
       "status" : "active",
-      "date" : "2021-09-14T08:27:49+00:00",
+      "date" : "2021-10-08T08:43:20+00:00",
       "description" : "Indicates the granularity of product",
       "expansion" : {
-        "identifier" : "urn:uuid:68962ab0-a4ab-4321-8b11-51a90c9942e8",
-        "timestamp" : "2021-09-14T08:28:06+00:00",
+        "identifier" : "urn:uuid:6448ecaa-180b-49bb-ae1c-3412e1345537",
+        "timestamp" : "2021-10-08T08:43:43+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",

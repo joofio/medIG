@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2021-09-14T08:27:49+00:00"/>
+  <date value="2021-10-08T08:43:20+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -211,9 +211,29 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/VMP"/>
+      </reference>
+      <name value="VMP"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/VirtualPackagedPharmaceuticalProduct"/>
       </reference>
       <name value="VirtualPackagedPharmaceuticalProduct"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-vmpgroup"/>
+      </reference>
+      <name value="be-vmpgroup"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -254,10 +274,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/be-granularity-vs"/>
+      </reference>
+      <name value="Be Granularity Value Set"/>
+      <description value="Indicates the granularity of product"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/granularity-vs"/>
       </reference>
       <name value="Granularity Value Set"/>
       <description value="Indicates the granularity of product"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-drug-cs"/>
+      </reference>
+      <name value="Drug Code System"/>
+      <description value="Codes for "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -49,6 +49,13 @@
     "name": "SubstanceModel"
   },
   {
+    "id": "VMP",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/VMP",
+    "version": "0.1.0",
+    "name": "VMP"
+  },
+  {
     "id": "VirtualPackagePharmaceuticalProduct",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/VirtualPackagePharmaceuticalProduct",
@@ -63,11 +70,32 @@
     "name": "VirtualPackagedPharmaceuticalProduct"
   },
   {
+    "id": "be-vmpgroup",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/be-vmpgroup",
+    "version": "0.1.0",
+    "name": "be-vmpgroup"
+  },
+  {
+    "id": "be-granularity-vs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs",
+    "version": "0.1.0",
+    "name": "BE-GranularityVS"
+  },
+  {
     "id": "granularity-vs",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/example/ValueSet/granularity-vs",
     "version": "0.1.0",
     "name": "GranularityVS"
+  },
+  {
+    "id": "be-drug-cs",
+    "type": "CodeSystem",
+    "url": "http://terminology.hl7.org/CodeSystem/bemedicineCS",
+    "version": "0.1.0",
+    "name": "BE-MedicineCodeSystem"
   },
   {
     "id": "drug-cs",
