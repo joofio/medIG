@@ -11,6 +11,7 @@ Title:    "CNPEM Questionnaire addition"
 * status = #active
 * item[0].linkId = "code-cnpem"
 * item[0].type = #integer
+
 * item[+].linkId = "ingredient-cnpem"
 * item[=].type = #choice
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/yesnodontknow"
@@ -21,7 +22,7 @@ Title:    "CNPEM Questionnaire addition"
 
 * item[+].linkId = "doseform-cnpem"
 * item[=].type = #choice
-* item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/yesnodontknow"
+* item[=].answerValueSet = "http://standardterms.edqm.eu/PAC"
 
 * item[+].linkId = "packsize-cnpem"
 * item[=].type = #quantity
