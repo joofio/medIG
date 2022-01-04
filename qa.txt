@@ -1,15 +1,15 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 11, warn = 58, info = 8
-IG Publisher Version: 1.1.81
-Generated Fri Oct 08 17:21:21 UTC 2021. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
- Build Errors : 171 / 8 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-medics : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs : 0 / 0 / 1
+err = 11, warn = 64, info = 8
+IG Publisher Version: 1.1.93
+Generated Tue Jan 04 09:42:06 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+ Build Errors : 176 / 8 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-medics : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/MedicationKnowledge-be-substance : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-be-vmpgroup : 0 / 0 / 2
@@ -18,6 +18,7 @@ Generated Fri Oct 08 17:21:21 UTC 2021. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/MedicationKnowledge-vmp-1 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-cnpem : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeVmpGroup : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct : 0 / 0 / 1
@@ -102,6 +103,11 @@ ERROR: /github/workspace/output/MedicationKnowledge-vmp-1.html#/html/body/div/di
 ERROR: /github/workspace/output/MedicationKnowledge-vmp-1.json.html#/html/body/div/div/div/p/a at Line 288, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-vmp-1.ttl.html#/html/body/div/div/div/p/a at Line 284, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-vmp-1.xml.html#/html/body/div/div/div/p/a at Line 260, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-cnpem.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-cnpem.html#/html/body/div/div/div/p/a at Line 192, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-cnpem.json.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-cnpem.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-cnpem.xml.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Resources-relations.html#/html/body/div/div/div/p/a at Line 168, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-definitions.html#/html/body/div/div/div/p/a at Line 1504, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-examples.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
@@ -209,16 +215,21 @@ ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/
 ERROR: /github/workspace/output/ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 228, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 431, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 440, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/download.html#/html/body/div/div/div/p/a at Line 184, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 155, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 137, column 28: The link '' for "" cannot be resolved
 == fsh-generated/resources/CodeSystem-beMedCS.json ==
+WARNING: CodeSystem/beMedCS: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
 == fsh-generated/resources/CodeSystem-drug-char-cs.json ==
+WARNING: CodeSystem/drug-char-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
 == fsh-generated/resources/CodeSystem-medics.json ==
 ERROR: CodeSystem.url: Resource id/url mismatch: medics/http://hl7.org/fhir/us/example/CodeSystem/mediCS
+WARNING: CodeSystem/medics: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
 == fsh-generated/resources/CodeSystem-rel-med-cs.json ==
+WARNING: CodeSystem/rel-med-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
 == fsh-generated/resources/CodeSystem-type-med-class-cs.json ==
+WARNING: CodeSystem/type-med-class-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
 == fsh-generated/resources/ImplementationGuide-medication.ig.example.json ==
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace
@@ -238,6 +249,8 @@ INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.pack
 == fsh-generated/resources/MedicationKnowledge-vmp-1.json ==
 INFORMATION: MedicationKnowledge/vmp-1: MedicationKnowledge.code.coding[0]: Code System URI 'https://be.codes.product/vmp/' is unknown so the code cannot be validated
 ERROR: MedicationKnowledge/vmp-1: MedicationKnowledge.productType[1].coding[0]: Unknown Code http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP in http://hl7.org/fhir/us/example/CodeSystem/mediCS for 'http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP'
+== fsh-generated/resources/Questionnaire-questionnaire-cnpem.json ==
+WARNING: Questionnaire/questionnaire-cnpem: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/StructureDefinition-BeVmpGroup.json ==
 == fsh-generated/resources/StructureDefinition-MedicinalProduct.json ==
 == fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct.json ==
