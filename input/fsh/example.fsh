@@ -150,9 +150,3 @@ Title: "Example of a substance for be market"
 
 * drugCharacteristic[domain].valueString = "human"
 * drugCharacteristic[drugType].valueString = "small molecule"
-
-
-Instance: med-know
-InstanceOf: MedicationKnowledge
-Description: "med med "
-Title:    "med med med"
