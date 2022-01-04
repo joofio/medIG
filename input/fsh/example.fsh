@@ -154,3 +154,5 @@ Title: "Example of a substance for be market"
 
 Instance: med-know
 InstanceOf: MedicationKnowledge
+Description: "med med "
+Title:    "med med med"
