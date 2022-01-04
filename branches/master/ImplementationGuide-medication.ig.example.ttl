@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "medicationIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-01-04T11:54:28+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-04T12:00:37+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "medication.ig.example"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -618,20 +618,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MedicationKnowledge" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/example/MedicationKnowledge/med-know>;
-         fhir:Reference.reference [ fhir:value "MedicationKnowledge/med-know" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "med med med" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "med med " ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 26;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Questionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -642,7 +628,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire for adding a drug level of CNPEM to a fhir server" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -792,8 +778,6 @@
 <http://hl7.org/fhir/us/example/MedicationKnowledge/example-2-of-drug-med> a fhir:us .
 
 <http://hl7.org/fhir/us/example/MedicationKnowledge/example-3-of-drug-med> a fhir:us .
-
-<http://hl7.org/fhir/us/example/MedicationKnowledge/med-know> a fhir:us .
 
 <http://hl7.org/fhir/us/example/Questionnaire/questionnaire-cnpem> a fhir:us .
 

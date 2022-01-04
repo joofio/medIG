@@ -1,23 +1,22 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 11, warn = 65, info = 8
+err = 11, warn = 64, info = 8
 IG Publisher Version: 1.1.93
-Generated Tue Jan 04 11:55:29 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
- Build Errors : 181 / 8 / 0
+Generated Tue Jan 04 12:01:27 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+ Build Errors : 176 / 8 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-medics : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/MedicationKnowledge-be-substance : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-be-vmpgroup : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/MedicationKnowledge-med-know : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationKnowledge-vmp-1 : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-cnpem : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeVmpGroup : 0 / 0 / 1
@@ -99,11 +98,6 @@ ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.html#/
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.json.html#/html/body/div/div/div/p/a at Line 277, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.ttl.html#/html/body/div/div/div/p/a at Line 271, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-example-3-of-drug-med.xml.html#/html/body/div/div/div/p/a at Line 254, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-med-know.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-med-know.html#/html/body/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-med-know.json.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-med-know.ttl.html#/html/body/div/div/div/p/a at Line 210, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/MedicationKnowledge-med-know.xml.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-vmp-1.change.history.html#/html/body/div/div/div/p/a at Line 201, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-vmp-1.html#/html/body/div/div/div/p/a at Line 186, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/MedicationKnowledge-vmp-1.json.html#/html/body/div/div/div/p/a at Line 288, column 28: The link '' for "" cannot be resolved
@@ -221,7 +215,7 @@ ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/
 ERROR: /github/workspace/output/ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 228, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 449, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 440, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/download.html#/html/body/div/div/div/p/a at Line 184, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 155, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 137, column 28: The link '' for "" cannot be resolved
@@ -239,7 +233,6 @@ WARNING: CodeSystem/type-med-class-cs: CodeSystem: HL7 Defined CodeSystems SHOUL
 == fsh-generated/resources/ImplementationGuide-medication.ig.example.json ==
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace
-WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[25].description: value should not start or finish with whitespace
 == fsh-generated/resources/MedicationKnowledge-be-substance.json ==
 INFORMATION: MedicationKnowledge/be-substance: MedicationKnowledge.code.coding[0]: Code System URI 'https://be.codes.product/substance/' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationKnowledge-be-vmpgroup.json ==
@@ -253,7 +246,6 @@ INFORMATION: MedicationKnowledge/example-2-of-drug-med: MedicationKnowledge.drug
 == fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med.json ==
 INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.cost[0].type.coding[0]: Code System URI 'http://infarmed.pt/' is unknown so the code cannot be validated
 INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.packaging.type.coding[0]: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
-== fsh-generated/resources/MedicationKnowledge-med-know.json ==
 == fsh-generated/resources/MedicationKnowledge-vmp-1.json ==
 INFORMATION: MedicationKnowledge/vmp-1: MedicationKnowledge.code.coding[0]: Code System URI 'https://be.codes.product/vmp/' is unknown so the code cannot be validated
 ERROR: MedicationKnowledge/vmp-1: MedicationKnowledge.productType[1].coding[0]: Unknown Code http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP in http://hl7.org/fhir/us/example/CodeSystem/mediCS for 'http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP'
