@@ -84,7 +84,7 @@
   <version value="0.1.0"/>
   <name value="MedicinalProduct"/>
   <status value="active"/>
-  <date value="2021-10-08T17:20:30+00:00"/>
+  <date value="2022-01-04T09:41:13+00:00"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
