@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2022-01-04T10:47:37+00:00",
+  "date": "2022-01-04T11:54:28+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -607,6 +607,20 @@
         "name": "Example of drug with granularity 3",
         "description": "Example of a drug with granularity 3",
         "exampleCanonical": "http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationKnowledge"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationKnowledge/med-know"
+        },
+        "name": "med med med",
+        "description": "med med ",
+        "exampleBoolean": true
       },
       {
         "extension": [
