@@ -11,28 +11,28 @@ Title:    "CNPEM Questionnaire addition"
 * status = #active
 * item[+].linkId = "code-cnpem"
 * item[=].type = #integer
-* item[=].required = "True"
+* item[=].required = true
 * item[=].text = "Code for the product"
 
 * item[+].linkId = "ingredient-cnpem"
 * item[=].type = #choice
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/yesnodontknow"
-* item[=].required = "True"
+* item[=].required = true
 * item[=].text = "Ingredient for the product"
 
 * item[+].linkId = "strength-cnpem"
 * item[=].type = #choice
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/yesnodontknow"
-* item[=].required = "True"
+* item[=].required = true
 * item[=].text = "Strength of the product"
 
 * item[+].linkId = "doseform-cnpem"
 * item[=].type = #choice
 * item[=].answerValueSet = "http://standardterms.edqm.eu/PAC"
-* item[=].required = "True"
+* item[=].required = true
 * item[=].text = "Dose Form of the product"
 
 * item[+].linkId = "packsize-cnpem"
 * item[=].type = #quantity
-* item[=].required = "True"
+* item[=].required = true
 * item[=].text = "Package size of the product"
