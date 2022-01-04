@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2022-01-04T10:47:37+00:00"/>
+  <date value="2022-01-04T11:54:28+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -432,6 +432,17 @@
       <name value="Example of drug with granularity 3"/>
       <description value="Example of a drug with granularity 3"/>
       <exampleCanonical value="http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/med-know"/>
+      </reference>
+      <name value="med med med"/>
+      <description value="med med "/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
