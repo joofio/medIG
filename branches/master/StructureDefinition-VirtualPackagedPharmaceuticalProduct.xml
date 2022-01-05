@@ -63,7 +63,7 @@
   <version value="0.1.0"/>
   <name value="VirtualPackagedPharmaceuticalProduct"/>
   <status value="active"/>
-  <date value="2022-01-04T12:00:37+00:00"/>
+  <date value="2022-01-05T09:45:00+00:00"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
