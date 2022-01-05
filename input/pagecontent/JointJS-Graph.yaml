@@ -1,0 +1,340 @@
+- type: Link
+  source:
+    id: medknowMedicationKnowledge
+    rowId: MedicationKnowledge.code
+    portType: outPort
+  target:
+    id: questQuestionnaire
+    rowId: item.0.text
+    portType: inPort
+  id: 2c6065e2-0e4e-4c3d-9472-8e2c852d78f1
+- type: Link
+  source:
+    id: medknowMedicationKnowledge
+    rowId: MedicationKnowledge.doseForm
+    portType: outPort
+  target:
+    id: questQuestionnaire
+    rowId: item.3.text
+    portType: inPort
+  id: 6b34ac6e-a1d2-4d37-8cc2-24da2c6169cb
+- type: Link
+  source:
+    id: medknowMedicationKnowledge
+    rowId: MedicationKnowledge.ingredient.item[x]
+    portType: outPort
+  target:
+    id: questQuestionnaire
+    rowId: item.1.text
+    portType: inPort
+  id: 9516d2be-4858-40ce-a97c-17677742a281
+- type: Link
+  source:
+    id: medknowMedicationKnowledge
+    rowId: MedicationKnowledge.ingredient.strength
+    portType: outPort
+  target:
+    id: questQuestionnaire
+    rowId: item.2.text
+    portType: inPort
+  id: d2d38348-bade-4314-8405-2283b1f6333c
+- type: Link
+  source:
+    id: medknowMedicationKnowledge
+    rowId: MedicationKnowledge.packaging.quantity
+    portType: outPort
+  target:
+    id: questQuestionnaire
+    rowId: item.4.text
+    portType: inPort
+  id: b0b1b9cf-d338-4c58-9ab2-b156aaef7188
+- type: Tree
+  rows:
+    - label: MedicationKnowledge
+      rows:
+        - label: id (0..1)
+          id: MedicationKnowledge.id
+          icon: http://hl7.org/fhirpath/System.String
+        - label: code (0..1)
+          id: MedicationKnowledge.code
+          icon: CodeableConcept
+        - label: status (0..1)
+          id: MedicationKnowledge.status
+          icon: code
+        - label: manufacturer (0..1)
+          id: MedicationKnowledge.manufacturer
+          icon: Reference
+        - label: doseForm (0..1)
+          id: MedicationKnowledge.doseForm
+          icon: CodeableConcept
+        - label: amount (0..1)
+          id: MedicationKnowledge.amount
+          icon: Quantity
+        - label: synonym (0..*)
+          id: MedicationKnowledge.synonym
+          icon: string
+        - label: relatedMedicationKnowledge (0..*)
+          id: MedicationKnowledge.relatedMedicationKnowledge
+          icon: BackboneElement
+          rows:
+            - label: id (0..1)
+              id: MedicationKnowledge.relatedMedicationKnowledge.id
+              icon: http://hl7.org/fhirpath/System.String
+            - label: type (1..1)
+              id: MedicationKnowledge.relatedMedicationKnowledge.type
+              icon: CodeableConcept
+            - label: reference (1..*)
+              id: MedicationKnowledge.relatedMedicationKnowledge.reference
+              icon: Reference
+        - label: associatedMedication (0..*)
+          id: MedicationKnowledge.associatedMedication
+          icon: Reference
+        - label: productType (0..*)
+          id: MedicationKnowledge.productType
+          icon: CodeableConcept
+        - label: monograph (0..*)
+          id: MedicationKnowledge.monograph
+          icon: BackboneElement
+          rows:
+            - label: id (0..1)
+              id: MedicationKnowledge.monograph.id
+              icon: http://hl7.org/fhirpath/System.String
+            - label: type (0..1)
+              id: MedicationKnowledge.monograph.type
+              icon: CodeableConcept
+            - label: source (0..1)
+              id: MedicationKnowledge.monograph.source
+              icon: Reference
+        - label: ingredient (0..*)
+          id: MedicationKnowledge.ingredient
+          icon: BackboneElement
+          rows:
+            - label: id (0..1)
+              id: MedicationKnowledge.ingredient.id
+              icon: http://hl7.org/fhirpath/System.String
+            - label: item[x] (1..1)
+              id: MedicationKnowledge.ingredient.item[x]
+              icon: CodeableConcept
+            - label: isActive (0..1)
+              id: MedicationKnowledge.ingredient.isActive
+              icon: boolean
+            - label: strength (0..1)
+              id: MedicationKnowledge.ingredient.strength
+              icon: Ratio
+        - label: preparationInstruction (0..1)
+          id: MedicationKnowledge.preparationInstruction
+          icon: markdown
+        - label: intendedRoute (0..*)
+          id: MedicationKnowledge.intendedRoute
+          icon: CodeableConcept
+        - label: cost (0..*)
+          id: MedicationKnowledge.cost
+          icon: BackboneElement
+          rows:
+            - label: id (0..1)
+              id: MedicationKnowledge.cost.id
+              icon: http://hl7.org/fhirpath/System.String
+            - label: type (1..1)
+              id: MedicationKnowledge.cost.type
+              icon: CodeableConcept
+            - label: source (0..1)
+              id: MedicationKnowledge.cost.source
+              icon: string
+            - label: cost (1..1)
+              id: MedicationKnowledge.cost.cost
+              icon: Money
+        - label: monitoringProgram (0..*)
+          id: MedicationKnowledge.monitoringProgram
+          icon: BackboneElement
+          rows:
+            - label: id (0..1)
+              id: MedicationKnowledge.monitoringProgram.id
+              icon: http://hl7.org/fhirpath/System.String
+            - label: type (0..1)
+              id: MedicationKnowledge.monitoringProgram.type
+              icon: CodeableConcept
+            - label: name (0..1)
+              id: MedicationKnowledge.monitoringProgram.name
+              icon: string
+        - label: administrationGuidelines (0..*)
+          id: MedicationKnowledge.administrationGuidelines
+          icon: BackboneElement
+          rows:
+            - label: id (0..1)
+              id: MedicationKnowledge.administrationGuidelines.id
+              icon: http://hl7.org/fhirpath/System.String
+            - label: dosage (0..*)
+              id: MedicationKnowledge.administrationGuidelines.dosage
+              icon: BackboneElement
+              rows:
+                - label: id (0..1)
+                  id: MedicationKnowledge.administrationGuidelines.dosage.id
+                  icon: http://hl7.org/fhirpath/System.String
+                - label: type (1..1)
+                  id: MedicationKnowledge.administrationGuidelines.dosage.type
+                  icon: CodeableConcept
+                - label: dosage (1..*)
+                  id: MedicationKnowledge.administrationGuidelines.dosage.dosage
+                  icon: Dosage
+            - label: indication[x] (0..1)
+              id: MedicationKnowledge.administrationGuidelines.indication[x]
+              icon: CodeableConcept
+            - label: patientCharacteristics (0..*)
+              id: >-
+                MedicationKnowledge.administrationGuidelines.patientCharacteristics
+              icon: BackboneElement
+              rows:
+                - label: id (0..1)
+                  id: >-
+                    MedicationKnowledge.administrationGuidelines.patientCharacteristics.id
+                  icon: http://hl7.org/fhirpath/System.String
+                - label: characteristic[x] (1..1)
+                  id: >-
+                    MedicationKnowledge.administrationGuidelines.patientCharacteristics.characteristic[x]
+                  icon: CodeableConcept
+                - label: value (0..*)
+                  id: >-
+                    MedicationKnowledge.administrationGuidelines.patientCharacteristics.value
+                  icon: string
+        - label: medicineClassification (0..*)
+          id: MedicationKnowledge.medicineClassification
+          icon: BackboneElement
+          rows:
+            - label: id (0..1)
+              id: MedicationKnowledge.medicineClassification.id
+              icon: http://hl7.org/fhirpath/System.String
+            - label: type (1..1)
+              id: MedicationKnowledge.medicineClassification.type
+              icon: CodeableConcept
+            - label: classification (0..*)
+              id: MedicationKnowledge.medicineClassification.classification
+              icon: CodeableConcept
+        - label: packaging (0..1)
+          id: MedicationKnowledge.packaging
+          icon: BackboneElement
+          rows:
+            - label: id (0..1)
+              id: MedicationKnowledge.packaging.id
+              icon: http://hl7.org/fhirpath/System.String
+            - label: type (0..1)
+              id: MedicationKnowledge.packaging.type
+              icon: CodeableConcept
+            - label: quantity (0..1)
+              id: MedicationKnowledge.packaging.quantity
+              icon: Quantity
+        - label: drugCharacteristic (0..*)
+          id: MedicationKnowledge.drugCharacteristic
+          icon: BackboneElement
+          rows:
+            - label: id (0..1)
+              id: MedicationKnowledge.drugCharacteristic.id
+              icon: http://hl7.org/fhirpath/System.String
+            - label: type (0..1)
+              id: MedicationKnowledge.drugCharacteristic.type
+              icon: CodeableConcept
+            - label: value[x] (0..1)
+              id: MedicationKnowledge.drugCharacteristic.value[x]
+              icon: CodeableConcept
+        - label: contraindication (0..*)
+          id: MedicationKnowledge.contraindication
+          icon: Reference
+        - label: regulatory (0..*)
+          id: MedicationKnowledge.regulatory
+          icon: BackboneElement
+          rows:
+            - label: id (0..1)
+              id: MedicationKnowledge.regulatory.id
+              icon: http://hl7.org/fhirpath/System.String
+            - label: regulatoryAuthority (1..1)
+              id: MedicationKnowledge.regulatory.regulatoryAuthority
+              icon: Reference
+            - label: substitution (0..*)
+              id: MedicationKnowledge.regulatory.substitution
+              icon: BackboneElement
+              rows:
+                - label: id (0..1)
+                  id: MedicationKnowledge.regulatory.substitution.id
+                  icon: http://hl7.org/fhirpath/System.String
+                - label: type (1..1)
+                  id: MedicationKnowledge.regulatory.substitution.type
+                  icon: CodeableConcept
+                - label: allowed (1..1)
+                  id: MedicationKnowledge.regulatory.substitution.allowed
+                  icon: boolean
+            - label: schedule (0..*)
+              id: MedicationKnowledge.regulatory.schedule
+              icon: BackboneElement
+              rows:
+                - label: id (0..1)
+                  id: MedicationKnowledge.regulatory.schedule.id
+                  icon: http://hl7.org/fhirpath/System.String
+                - label: schedule (1..1)
+                  id: MedicationKnowledge.regulatory.schedule.schedule
+                  icon: CodeableConcept
+            - label: maxDispense (0..1)
+              id: MedicationKnowledge.regulatory.maxDispense
+              icon: BackboneElement
+              rows:
+                - label: id (0..1)
+                  id: MedicationKnowledge.regulatory.maxDispense.id
+                  icon: http://hl7.org/fhirpath/System.String
+                - label: quantity (1..1)
+                  id: MedicationKnowledge.regulatory.maxDispense.quantity
+                  icon: Quantity
+                - label: period (0..1)
+                  id: MedicationKnowledge.regulatory.maxDispense.period
+                  icon: Duration
+        - label: kinetics (0..*)
+          id: MedicationKnowledge.kinetics
+          icon: BackboneElement
+          rows:
+            - label: id (0..1)
+              id: MedicationKnowledge.kinetics.id
+              icon: http://hl7.org/fhirpath/System.String
+            - label: areaUnderCurve (0..*)
+              id: MedicationKnowledge.kinetics.areaUnderCurve
+              icon: Quantity
+            - label: lethalDose50 (0..*)
+              id: MedicationKnowledge.kinetics.lethalDose50
+              icon: Quantity
+            - label: halfLifePeriod (0..1)
+              id: MedicationKnowledge.kinetics.halfLifePeriod
+              icon: Duration
+      id: medknowMedicationKnowledge.MedicationKnowledge
+  rowHeight: 25
+  headerHeight: 50
+  headerText: MedicationKnowledge (MedicationKnowledge)
+  attrs:
+    header:
+      fill: '#003B4A'
+  id: medknowMedicationKnowledge
+- type: Tree
+  rows:
+    - label: questionnaire-cnpem
+      rows:
+        - label: <b>Code for the product</b>
+          id: item.0.text
+          icon: integer
+        - label: <b>Ingredient for the product</b>
+          id: item.1.text
+          icon: choice
+        - label: <b>Strength of the product</b>
+          id: item.2.text
+          icon: choice
+        - label: <b>Dose Form of the product</b>
+          id: item.3.text
+          icon: choice
+        - label: <b>Package size of the product</b>
+          id: item.4.text
+          icon: quantity
+      id: questQuestionnaire.questionnaire-cnpem
+  rowHeight: 25
+  headerHeight: 50
+  headerText: questionnaire-cnpem (Questionnaire)
+  attrs:
+    header:
+      fill: '#d26742'
+  position:
+    x: 1040
+    'y': 110
+  id: questQuestionnaire
