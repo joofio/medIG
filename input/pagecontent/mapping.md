@@ -1,38 +1,58 @@
 ```
-map "http://hl7belgium.org/mapping/StructureMap/extractfindrisc" = "extractfindrisc"
+map "http://infarmed.pt/insertMed/" = "qr2med"
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QuestionnaireResponse as source
-uses "http://hl7.org/fhir/StructureDefinition/Observation" alias Observation as target
+uses "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge" alias MedicationKnowledge as target
 
+group doseform(source src: QuestionnaireResponse, target tgt: MedicationKnowledge) {
+  src.item as item where linkId.value in ('packsize-cnpem')  -> tgt as packsize then  packaging_format(item,packsize)  "rule for packsize"; 
 
-group QuestionnaireResponse(source src : QuestionnaireResponse, target tgt : Observation) {
-      src.item as item where linkId.value in ('findriscScore') -> tgt as scoreresult then item(item, scoreresult) "abc";
-      
-     src.item as item where linkId.value in ('findriscScore') -> tgt as scoreresult then patient(item, scoreresult) "abc";
+    src.item as item where linkId.value in ('code-cnpem')  -> tgt as code then code_format(item, code) "rule for code";
 
-group item(source src, target tgt : Observation) {
-     src -> tgt.code as code then itemcoding(src, code) "x1";
-       src -> tgt.status = 'final' "x2";
-        src -> tgt.value = (src.answer.valueDecimal) "x3";}
-        
-group patient(source src, target tgt : Observation) {
-     src -> tgt.subject as patref then patientid(src, patref) "x1a";
-     }
+    src.item as item where linkId.value in ('doseform-cnpem')  -> tgt as doseform then doseform_format(item, doseform) "rule for doseForm";
+    src.item as item where linkId.value in ('strength-cnpem')  -> tgt as strn then strn_format(item, strn) "rule for strength";
+    src.item as item where linkId.value in ('ingredient-cnpem')  -> tgt as ingre then ingre_format(item, ingre) "rule for ingredient";
 
-group patientid(source src, target tgt : Reference) {
-      src -> tgt.identifier as patid then idvalue(src, patid) "xtx";
 }
 
-group idvalue(source src, target tgt : Identifier) {
-      src -> tgt.value = (src.answer.valueDecimal) "qwe";
-      }
-      
-group itemcoding(source src, target tgt : CodeableConcept) {
+
+///pack size
+group packaging_format(source src, target tgt) {
+    src.answer as ab -> tgt.packaging as pack then itemcoding_quantity(ab,pack); // copy ab inside aa
+}
+group itemcoding_quantity(source src, target tgt ) {
+  src -> tgt.quantity=(src.valueQuantity) "xx";
+}
+
+
+
+////Code
+group code_format(source src, target tgt) {
+    src.answer as ab -> tgt.code as code then itemcoding_code(ab,code); // copy ab inside aa
+}
+
+group itemcoding_code(source src, target tgt: CodeableConcept ) {
   src -> tgt.coding as y then codingcode(src, y) "xx";
 }
 
 group codingcode(source src, target tgt : Coding) {
-  src -> tgt.code = '763117005' "xy1";
+  src -> tgt.code = (src.valueInteger) "xy1";
   src -> tgt.system = 'http://snomed.info/sct' "xy2";
   src -> tgt.display = 'FINDRISC (Finnish Diabetes Risk Score) score' "xy3";
 }
+
+///Dose Form
+group doseform_format(source src, target tgt) {
+    src.answer as ab -> tgt.doseForm as df then cc_df(ab,df); // copy ab inside aa
+}
+
+group cc_df(source src, target tgt: CodeableConcept) {
+
+src -> tgt.text="dose form" "text";
+src -> tgt.coding = (src.valueCoding) "fsf";
+
+}
+
+
+///ingredient
+
 ```
