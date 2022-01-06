@@ -1,3 +1,10 @@
+The relationship is as follows:
+
+<img src="map.png" width="100%"/>
+<br>
+
+The StructureMap is:
+
 ```
 map "http://infarmed.pt/insertMed/" = "qr2med"
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QuestionnaireResponse as source
