@@ -16,8 +16,11 @@ Title:    "VMP Questionnaire addition"
 
 * item[+].linkId = "ingredient"
 * item[=].type = #display
+* item[=].required = true
+
 
 * item[=].text = "Ingredient for the product"
+* item[=].repeats = true
 
 * item[=].item[+].linkId = "ingredient-vmp"
 * item[=].item[=].type = #choice
