@@ -11,7 +11,7 @@ Title:    "VMP Questionnaire addition"
 * status = #active
 * item[+].linkId = "code-vmp"
 * item[=].type = #integer
-* item[=].required = true
+* item[=].required = false
 * item[=].text = "Code for the product"
 
 * item[+].linkId = "ingredient"
@@ -37,7 +37,7 @@ Title:    "VMP Questionnaire addition"
 * item[=].item[=].type = #choice
 * item[=].item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/roles"
 * item[=].item[=].required = true
-* item[=].item[=].text = "ROles of the ingredient of the product"
+* item[=].item[=].text = "Roles of the ingredient of the product"
 
 
 * item[+].linkId = "doseform-vmp"
