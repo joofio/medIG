@@ -28,6 +28,13 @@
     "name": "questionnaire-cnpem"
   },
   {
+    "id": "questionnaire-vmp",
+    "type": "Questionnaire",
+    "url": "http://hl7.org/fhir/us/example/Questionnaire/questionnaire-vmp",
+    "version": "0.1.0",
+    "name": "questionnaire-vmp"
+  },
+  {
     "id": "BeVmpGroup",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup",
