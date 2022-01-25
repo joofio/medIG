@@ -1,10 +1,10 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 11, warn = 64, info = 8
-IG Publisher Version: 1.1.93
-Generated Thu Jan 06 17:46:54 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
- Build Errors : 177 / 8 / 0
+err = 13, warn = 65, info = 8
+IG Publisher Version: 1.1.97
+Generated Tue Jan 25 16:58:25 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+ Build Errors : 182 / 8 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-medics : 1 / 1 / 1
@@ -19,6 +19,7 @@ Generated Thu Jan 06 17:46:54 UTC 2022. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/MedicationKnowledge-vmp-1 : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-cnpem : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-vmp : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BeVmpGroup : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct : 0 / 0 / 1
@@ -108,6 +109,11 @@ ERROR: /github/workspace/output/Questionnaire-questionnaire-cnpem.html#/html/bod
 ERROR: /github/workspace/output/Questionnaire-questionnaire-cnpem.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-questionnaire-cnpem.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-questionnaire-cnpem.xml.html#/html/body/div/div/div/p/a at Line 248, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.ttl.html#/html/body/div/div/div/p/a at Line 276, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.xml.html#/html/body/div/div/div/p/a at Line 262, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Resources-relations.html#/html/body/div/div/div/p/a at Line 171, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-definitions.html#/html/body/div/div/div/p/a at Line 1507, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
@@ -215,7 +221,7 @@ ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/
 ERROR: /github/workspace/output/ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 443, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 452, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/download.html#/html/body/div/div/div/p/a at Line 187, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 158, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/mapping.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
@@ -252,6 +258,10 @@ INFORMATION: MedicationKnowledge/vmp-1: MedicationKnowledge.code.coding[0]: Code
 ERROR: MedicationKnowledge/vmp-1: MedicationKnowledge.productType[1].coding[0]: Unknown Code http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP in http://hl7.org/fhir/us/example/CodeSystem/mediCS for 'http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP'
 == fsh-generated/resources/Questionnaire-questionnaire-cnpem.json ==
 WARNING: Questionnaire/questionnaire-cnpem: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/Questionnaire-questionnaire-vmp.json ==
+WARNING: Questionnaire/questionnaire-vmp: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: Questionnaire/questionnaire-vmp: Questionnaire: que-2: 'The link ids for groups and questions must be unique within the questionnaire' Rule 'The link ids for groups and questions must be unique within the questionnaire' Failed
+ERROR: Questionnaire/questionnaire-vmp: Questionnaire.item[1]: que-1: 'Group items must have nested items, display items cannot have nested items' 'Group items must have nested items, display items cannot have nested items' ( (type: display; item: item=BackboneElement[5 children],item=BackboneElement[5 children],item=BackboneElement[5 children]))
 == fsh-generated/resources/StructureDefinition-BeVmpGroup.json ==
 == fsh-generated/resources/StructureDefinition-MedicinalProduct.json ==
 == fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct.json ==
