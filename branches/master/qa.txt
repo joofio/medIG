@@ -3,7 +3,7 @@
 
 err = 14, warn = 65, info = 8
 IG Publisher Version: 1.1.97
-Generated Tue Jan 25 17:06:42 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Tue Jan 25 17:19:06 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
  Build Errors : 182 / 8 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 1 / 1
@@ -111,9 +111,9 @@ ERROR: /github/workspace/output/Questionnaire-questionnaire-cnpem.ttl.html#/html
 ERROR: /github/workspace/output/Questionnaire-questionnaire-cnpem.xml.html#/html/body/div/div/div/p/a at Line 248, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.json.html#/html/body/div/div/div/p/a at Line 262, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.ttl.html#/html/body/div/div/div/p/a at Line 278, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.xml.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.json.html#/html/body/div/div/div/p/a at Line 263, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.ttl.html#/html/body/div/div/div/p/a at Line 279, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.xml.html#/html/body/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Resources-relations.html#/html/body/div/div/div/p/a at Line 171, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-definitions.html#/html/body/div/div/div/p/a at Line 1507, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
