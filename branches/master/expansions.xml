@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2d07afcf-6c7b-4a50-9d52-8b3bdb6e368e"/>
+  <id value="62594bf3-c334-40a2-9eee-50258e77fd72"/>
   <meta>
-    <lastUpdated value="2022-01-25T17:18:16.814+00:00"/>
+    <lastUpdated value="2022-01-25T17:23:33.639+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -94,11 +94,11 @@
         <name value="BEGranularityVS"/>
         <title value="Be Granularity Value Set"/>
         <status value="active"/>
-        <date value="2022-01-25T17:18:16+00:00"/>
+        <date value="2022-01-25T17:23:33+00:00"/>
         <description value="Indicates the granularity of product"/>
         <expansion>
-          <identifier value="urn:uuid:7176297a-ff74-4d44-98dd-ac40b59662b8"/>
-          <timestamp value="2022-01-25T17:18:47+00:00"/>
+          <identifier value="urn:uuid:e5366698-4bf0-4821-a679-afcc5efa8c08"/>
+          <timestamp value="2022-01-25T17:24:15+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -210,11 +210,11 @@
         <name value="GranularityVS"/>
         <title value="Granularity Value Set"/>
         <status value="active"/>
-        <date value="2022-01-25T17:18:16+00:00"/>
+        <date value="2022-01-25T17:23:33+00:00"/>
         <description value="Indicates the granularity of product"/>
         <expansion>
-          <identifier value="urn:uuid:5290649c-352f-455e-afda-1769e25869ff"/>
-          <timestamp value="2022-01-25T17:18:47+00:00"/>
+          <identifier value="urn:uuid:f96d6d47-ec3c-4de5-a9ef-75a7dba681ec"/>
+          <timestamp value="2022-01-25T17:24:15+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
