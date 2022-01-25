@@ -29,14 +29,13 @@ Title:    "VMP Questionnaire addition"
 * item[=].item[=].text = "Ingredient for the product"
 
 * item[=].item[+].linkId = "strength-vmp"
-* item[=].item[=].type = #choice
-* item[=].item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/yesnodontknow"
+* item[=].item[=].type = #quantity
 * item[=].item[=].required = true
 * item[=].item[=].text = "Strength of the ingredient of the product"
 
-* item[=].item[+].linkId = "strength-vmp"
+* item[=].item[+].linkId = "role-vmp"
 * item[=].item[=].type = #choice
-* item[=].item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/yesnodontknow"
+* item[=].item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/roles"
 * item[=].item[=].required = true
 * item[=].item[=].text = "ROles of the ingredient of the product"
 
@@ -50,5 +49,6 @@ Title:    "VMP Questionnaire addition"
 * item[+].linkId = "route-vmp"
 * item[=].type = #choice
 * item[=].required = true
+* item[=].answerValueSet = "http://standardterms.edqm.eu/Routes"
 * item[=].text = "Package size of the product"
 * item[=].repeats = true
