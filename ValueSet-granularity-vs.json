@@ -10,7 +10,7 @@
   "name": "GranularityVS",
   "title": "Granularity Value Set",
   "status": "active",
-  "date": "2022-01-25T17:18:16+00:00",
+  "date": "2022-01-25T17:23:33+00:00",
   "description": "Indicates the granularity of product",
   "compose": {
     "include": [
