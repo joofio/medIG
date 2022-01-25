@@ -51,3 +51,4 @@ Title:    "VMP Questionnaire addition"
 * item[=].type = #choice
 * item[=].required = true
 * item[=].text = "Package size of the product"
+* item[=].repeats = true
