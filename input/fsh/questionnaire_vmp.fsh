@@ -15,7 +15,7 @@ Title:    "VMP Questionnaire addition"
 * item[=].text = "Code for the product"
 
 * item[+].linkId = "ingredient"
-* item[=].type = #display
+* item[=].type = #group
 * item[=].required = true
 
 
