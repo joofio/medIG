@@ -302,7 +302,7 @@ Parent: MedicationKnowledge
 * productType ^slicing.rules = #open
 * productType contains
 	productLevel 1..1
-* productType[productLevel] = medCS#VMPP
+* productType[productLevel] = beMedCS#VMPP
 * medicineClassification MS
 * medicineClassification ^slicing.discriminator.type = #value
 * medicineClassification ^slicing.discriminator.path = "type"
@@ -425,7 +425,7 @@ Parent: MedicationKnowledge
     beproductLevel 1..1 MS 
 
 * productType[productLevel] = medCS#PHARMPROD
-* productType[beproductLevel] = medCS#VMP
+* productType[beproductLevel] = beMedCS#VMP
 * medicineClassification MS
 * medicineClassification ^slicing.discriminator.type = #value
 * medicineClassification ^slicing.discriminator.path = "type"
