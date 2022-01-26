@@ -1,0 +1,90 @@
+map "http://infarmed.pt/insertMed/" = "qr2vmp"
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QuestionnaireResponse as source
+uses "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge" alias MedicationKnowledge as target
+
+group doseform(source src: QuestionnaireResponse, target tgt: MedicationKnowledge) {
+    src.item as item where linkId.value in ('route-vmp')  -> tgt as route then  route_format(item,route)  "rule for routes"; 
+    src.item as item where linkId.value in ('code-vmp')  -> tgt as code then code_format(item, code) "rule for code";
+    src.item as item where linkId.value in ('doseform-vmp')  -> tgt as doseform then doseform_format(item, doseform) "rule for doseForm";
+    src.item as item where linkId.value in ('ingredient')  -> tgt.ingredient as ingre then ingredient_group(item, ingre) "rule for ingredient";
+
+
+}
+
+
+group ingredient_group(source src, target tgt: BackboneElement) {
+
+src.item as item where linkId.value in ('ingredient-vmp') log item  -> tgt.item = create('CodeableConcept') as cc then ingre_format(item, cc) "rule for ingredient";
+src.item as item where linkId.value in ('strength-vmp')  -> tgt.strength as strn then strn_format(item, strn) "rule for strength";
+//src.item as item where linkId.value in ('role-vmp')  -> tgt.isActive as role then role_format(item, role) "rule for role";
+
+}
+
+//strength
+group strn_format(source src, target tgt: Ratio) {
+    src.answer as ans -> tgt as numer then creat_numer(ans,numer) "create numearator" ;
+
+}
+
+group creat_numer(source src, target tgt: Quantity) {
+    src-> tgt.numerator = (src.valueQuantity) "create strength value";
+}
+
+
+//ingredient
+group ingre_format(source src, target tgt) {
+    src.answer as ans -> tgt as cc then  ingre_cc_format(ans,cc) "ingredient create CC";
+
+}
+//ingredient CC
+group ingre_cc_format(source src, target tgt) {
+    src -> tgt.coding = (src.valueCoding) "ingredient create";
+
+}
+
+//role
+group role_format(source src, target tgt) {
+    src.answer -> tgt = true "boolean";
+
+}
+
+
+
+
+///route
+group route_format(source src, target tgt) {
+    src.answer as ab -> tgt.intendedRoute as route then itemcoding_route(ab,route); // copy ab inside aa
+}
+group itemcoding_route(source src, target tgt ) {
+    src -> tgt.coding = (src.valueCoding) "create route as is";
+}
+
+
+////Code
+group code_format(source src, target tgt) {
+    src.answer as ab -> tgt.code as code then itemcoding_code(ab,code); // copy ab inside aa
+}
+
+group itemcoding_code(source src, target tgt: CodeableConcept ) {
+  src -> tgt.coding as y then codingcode(src, y) "xx";
+}
+
+group codingcode(source src, target tgt : Coding) {
+  src -> tgt.code = (src.valueInteger) "xy1";
+  src -> tgt.system = 'http://snomed.info/sct' "xy2";
+  src -> tgt.display = 'FINDRISC (Finnish Diabetes Risk Score) score' "xy3";
+}
+
+
+
+///Dose Form
+group doseform_format(source src, target tgt) {
+    src.answer as ab -> tgt.doseForm as df then cc_df(ab,df); // copy ab inside aa
+}
+
+group cc_df(source src, target tgt: CodeableConcept) {
+
+//src -> tgt.text="dose form" "text";
+src -> tgt.coding = (src.valueCoding) "cc dose form";
+
+}
