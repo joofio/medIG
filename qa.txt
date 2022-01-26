@@ -1,10 +1,10 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 12, warn = 65, info = 8
+err = 8, warn = 65, info = 12
 IG Publisher Version: 1.1.97
-Generated Tue Jan 25 17:32:23 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
- Build Errors : 182 / 8 / 0
+Generated Wed Jan 26 09:45:31 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+ Build Errors : 187 / 8 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-medics : 1 / 1 / 1
@@ -17,9 +17,10 @@ Generated Tue Jan 25 17:32:23 UTC 2022. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-1-of-drug-med : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-2-of-drug-med : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/MedicationKnowledge-vmp-1 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/MedicationKnowledge-vmp-1 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-cnpem : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-vmp : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp : 1 / 0 / 5
  /github/workspace/fsh-generated/resources/StructureDefinition-BeVmpGroup : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct : 0 / 0 / 1
@@ -27,9 +28,9 @@ Generated Tue Jan 25 17:32:23 UTC 2022. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/StructureDefinition-PharmaceuticalProdut : 1 / 15 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Substance : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-SubstanceModel : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-VMP : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-VMP : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPackagePharmaceuticalProduct : 1 / 15 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPackagedPharmaceuticalProduct : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPackagedPharmaceuticalProduct : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPharmaceuticalProdut : 1 / 15 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPharmaceuticalProdutGroup : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-granularity-vs : 0 / 0 / 1
@@ -114,6 +115,11 @@ ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.html#/html/body/
 ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.json.html#/html/body/div/div/div/p/a at Line 263, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.ttl.html#/html/body/div/div/div/p/a at Line 279, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.xml.html#/html/body/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.html#/html/body/div/div/div/p/a at Line 191, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Resources-relations.html#/html/body/div/div/div/p/a at Line 171, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-definitions.html#/html/body/div/div/div/p/a at Line 1507, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
@@ -221,7 +227,7 @@ ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/
 ERROR: /github/workspace/output/ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 452, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 461, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/download.html#/html/body/div/div/div/p/a at Line 187, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 158, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/mapping.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
@@ -255,12 +261,17 @@ INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.cost
 INFORMATION: MedicationKnowledge/example-3-of-drug-med: MedicationKnowledge.packaging.type.coding[0]: Code System URI 'http://standardterms.edqm.eu/PAC' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationKnowledge-vmp-1.json ==
 INFORMATION: MedicationKnowledge/vmp-1: MedicationKnowledge.code.coding[0]: Code System URI 'https://be.codes.product/vmp/' is unknown so the code cannot be validated
-ERROR: MedicationKnowledge/vmp-1: MedicationKnowledge.productType[1].coding[0]: Unknown Code http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP in http://hl7.org/fhir/us/example/CodeSystem/mediCS for 'http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP'
 == fsh-generated/resources/Questionnaire-questionnaire-cnpem.json ==
 WARNING: Questionnaire/questionnaire-cnpem: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/Questionnaire-questionnaire-vmp.json ==
 WARNING: Questionnaire/questionnaire-vmp: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: Questionnaire/questionnaire-vmp: Questionnaire.item[1].item[2].answerValueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/roles' does not resolve
+== fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp.json ==
+ERROR: QuestionnaireResponse.item[0].answer[0]: Unrecognised property '@valueQuantity'
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].answer[1].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].answer[2].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/StructureDefinition-BeVmpGroup.json ==
 == fsh-generated/resources/StructureDefinition-MedicinalProduct.json ==
 == fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct.json ==
@@ -287,8 +298,6 @@ WARNING: StructureDefinition/PharmaceuticalProdut: StructureDefinition: Unable t
 ERROR: StructureDefinition/SubstanceModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 WARNING: StructureDefinition/SubstanceModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/StructureDefinition-VMP.json ==
-ERROR: StructureDefinition/VMP: StructureDefinition.snapshot.element[42].pattern.ofType(CodeableConcept).coding[0]: Unknown Code http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP in http://hl7.org/fhir/us/example/CodeSystem/mediCS for 'http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP'
-ERROR: StructureDefinition/VMP: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept).coding[0]: Unknown Code http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP in http://hl7.org/fhir/us/example/CodeSystem/mediCS for 'http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMP'
 == fsh-generated/resources/StructureDefinition-VirtualPackagePharmaceuticalProduct.json ==
 ERROR: StructureDefinition/VirtualPackagePharmaceuticalProduct: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 WARNING: StructureDefinition/VirtualPackagePharmaceuticalProduct: StructureDefinition.snapshot.element[27].short: value should not start or finish with whitespace
@@ -307,8 +316,6 @@ WARNING: StructureDefinition/VirtualPackagePharmaceuticalProduct: StructureDefin
 WARNING: StructureDefinition/VirtualPackagePharmaceuticalProduct: StructureDefinition.differential.element[39]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/VirtualPackagePharmaceuticalProduct: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/StructureDefinition-VirtualPackagedPharmaceuticalProduct.json ==
-ERROR: StructureDefinition/VirtualPackagedPharmaceuticalProduct: StructureDefinition.snapshot.element[29].pattern.ofType(CodeableConcept).coding[0]: Unknown Code http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMPP in http://hl7.org/fhir/us/example/CodeSystem/mediCS for 'http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMPP'
-ERROR: StructureDefinition/VirtualPackagedPharmaceuticalProduct: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: Unknown Code http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMPP in http://hl7.org/fhir/us/example/CodeSystem/mediCS for 'http://hl7.org/fhir/us/example/CodeSystem/mediCS#VMPP'
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/VirtualPackagedPharmaceuticalProduct'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-VirtualPharmaceuticalProdut.json ==
 ERROR: StructureDefinition/VirtualPharmaceuticalProdut: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve

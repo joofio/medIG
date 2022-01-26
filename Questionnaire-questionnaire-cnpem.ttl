@@ -22,7 +22,7 @@
   fhir:Questionnaire.name [ fhir:value "questionnaire-cnpem"];
   fhir:Questionnaire.title [ fhir:value "Questionnaire for adding CNPEM"];
   fhir:Questionnaire.status [ fhir:value "active"];
-  fhir:Questionnaire.date [ fhir:value "2022-01-25T17:31:33+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2022-01-26T09:44:32+00:00"^^xsd:dateTime];
   fhir:Questionnaire.item [
      fhir:index 0;
      fhir:Questionnaire.item.linkId [ fhir:value "code-cnpem" ];
