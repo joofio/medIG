@@ -16,7 +16,7 @@ group ingredient_group(source src, target tgt: BackboneElement) {
 
 src.item as item where linkId.value in ('ingredient-vmp') log item  -> tgt.item = create('CodeableConcept') as cc then ingre_format(item, cc) "rule for ingredient";
 src.item as item where linkId.value in ('strength-vmp')  -> tgt.strength as strn then strn_format(item, strn) "rule for strength";
-//src.item as item where linkId.value in ('role-vmp')  -> tgt.isActive as role then role_format(item, role) "rule for role";
+src.item as item where linkId.value in ('role-vmp')  -> tgt as role then role_format(item, role) "rule for role";
 
 }
 
@@ -44,7 +44,13 @@ group ingre_cc_format(source src, target tgt) {
 
 //role
 group role_format(source src, target tgt) {
-    src.answer -> tgt = true "boolean";
+    src.answer  as ans -> tgt then role_trasnform(ans,tgt);
+
+}
+group role_trasnform(source src, target tgt) {
+    src.valueCoding as vc where code in ("AP")  -> tgt.isActive = true  "bool";
+    src.valueCoding as vc where code in ("NAP")  -> tgt.isActive = false  "bool";
+    src.valueCoding as vc where code in ("EXP")  -> tgt.isActive = false  "bool";
 
 }
 
