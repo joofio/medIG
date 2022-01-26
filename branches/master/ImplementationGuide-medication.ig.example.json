@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2022-01-26T09:44:32+00:00",
+  "date": "2022-01-26T10:23:18+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -634,6 +634,20 @@
         },
         "name": "VMP Questionnaire Response Addition",
         "description": "Questionnaire Response example for adding a drug level of VMP to a fhir server",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/questionnaire-response-vmp2"
+        },
+        "name": "VMP Questionnaire Response Addition",
+        "description": "Questionnaire Response example 2 for adding a drug level of VMP to a fhir server",
         "exampleBoolean": true
       },
       {
