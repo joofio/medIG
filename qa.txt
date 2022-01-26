@@ -1,10 +1,10 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 8, warn = 65, info = 12
+err = 9, warn = 65, info = 22
 IG Publisher Version: 1.1.97
-Generated Wed Jan 26 09:45:31 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
- Build Errors : 187 / 8 / 0
+Generated Wed Jan 26 10:24:12 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+ Build Errors : 192 / 8 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-medics : 1 / 1 / 1
@@ -20,7 +20,8 @@ Generated Wed Jan 26 09:45:31 UTC 2022. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/MedicationKnowledge-vmp-1 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-cnpem : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-vmp : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp : 1 / 0 / 5
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp : 1 / 0 / 7
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp2 : 1 / 0 / 9
  /github/workspace/fsh-generated/resources/StructureDefinition-BeVmpGroup : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct : 0 / 0 / 1
@@ -117,9 +118,14 @@ ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.ttl.html#/html/b
 ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.xml.html#/html/body/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.html#/html/body/div/div/div/p/a at Line 191, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.json.html#/html/body/div/div/div/p/a at Line 266, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.ttl.html#/html/body/div/div/div/p/a at Line 259, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.xml.html#/html/body/div/div/div/p/a at Line 256, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.html#/html/body/div/div/div/p/a at Line 192, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.json.html#/html/body/div/div/div/p/a at Line 304, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.ttl.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.xml.html#/html/body/div/div/div/p/a at Line 289, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Resources-relations.html#/html/body/div/div/div/p/a at Line 171, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-definitions.html#/html/body/div/div/div/p/a at Line 1507, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
@@ -227,7 +233,7 @@ ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/
 ERROR: /github/workspace/output/ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 461, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 470, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/download.html#/html/body/div/div/div/p/a at Line 187, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 158, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/mapping.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
@@ -267,11 +273,23 @@ WARNING: Questionnaire/questionnaire-cnpem: Questionnaire: que-0: 'Name should b
 WARNING: Questionnaire/questionnaire-vmp: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: Questionnaire/questionnaire-vmp: Questionnaire.item[1].item[2].answerValueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/roles' does not resolve
 == fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp.json ==
-ERROR: QuestionnaireResponse.item[0].answer[0]: Unrecognised property '@valueQuantity'
+ERROR: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0]: qrs-1: 'Nested item can't be beneath both item and answer' Rule 'Nested item can't be beneath both item and answer' Failed
 INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
 INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].answer[1].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
 INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].answer[2].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].item[0].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].item[2].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
 INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
+== fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp2.json ==
+ERROR: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0]: qrs-1: 'Nested item can't be beneath both item and answer' Rule 'Nested item can't be beneath both item and answer' Failed
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0].answer[1].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0].answer[2].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0].item[0].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0].item[2].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0].item[3].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0].item[5].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/StructureDefinition-BeVmpGroup.json ==
 == fsh-generated/resources/StructureDefinition-MedicinalProduct.json ==
 == fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct.json ==

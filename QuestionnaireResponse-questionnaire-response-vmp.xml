@@ -32,5 +32,34 @@
         <display value="Acetaminophen"/>
       </valueCoding>
     </answer>
+    <item>
+      <linkId value="ingredient-vmp"/>
+      <answer>
+        <valueCoding>
+          <system value="https://go.drugbank.com/drugs/"/>
+          <code value="DB00316"/>
+          <display value="Acetaminophen"/>
+        </valueCoding>
+      </answer>
+    </item>
+    <item>
+      <linkId value="strength-vmp"/>
+      <answer>
+        <valueQuantity>
+          <value value="20"/>
+          <unit value="mg"/>
+        </valueQuantity>
+      </answer>
+    </item>
+    <item>
+      <linkId value="role-vmp"/>
+      <answer>
+        <valueCoding>
+          <system value="https://go.drugbank.com/drugs/"/>
+          <code value="DB00316"/>
+          <display value="Acetaminophen"/>
+        </valueCoding>
+      </answer>
+    </item>
   </item>
 </QuestionnaireResponse>

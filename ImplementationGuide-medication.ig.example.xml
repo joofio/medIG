@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2022-01-26T09:44:32+00:00"/>
+  <date value="2022-01-26T10:23:18+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -453,6 +453,17 @@
       </reference>
       <name value="VMP Questionnaire Response Addition"/>
       <description value="Questionnaire Response example for adding a drug level of VMP to a fhir server"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/questionnaire-response-vmp2"/>
+      </reference>
+      <name value="VMP Questionnaire Response Addition"/>
+      <description value="Questionnaire Response example 2 for adding a drug level of VMP to a fhir server"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

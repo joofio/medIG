@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "medicationIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-01-26T09:44:32+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-26T10:23:18+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "medication.ig.example"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -646,6 +646,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/QuestionnaireResponse/questionnaire-response-vmp2>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/questionnaire-response-vmp2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VMP Questionnaire Response Addition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire Response example 2 for adding a drug level of VMP to a fhir server" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Questionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -656,7 +670,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire for adding a drug level of VMP to a fhir server" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -815,6 +829,8 @@
 <http://hl7.org/fhir/us/example/Questionnaire/questionnaire-cnpem> a fhir:us .
 
 <http://hl7.org/fhir/us/example/QuestionnaireResponse/questionnaire-response-vmp> a fhir:us .
+
+<http://hl7.org/fhir/us/example/QuestionnaireResponse/questionnaire-response-vmp2> a fhir:us .
 
 <http://hl7.org/fhir/us/example/Questionnaire/questionnaire-vmp> a fhir:us .
 

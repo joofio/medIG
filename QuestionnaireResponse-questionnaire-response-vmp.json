@@ -32,6 +32,43 @@
             "display": "Acetaminophen"
           }
         }
+      ],
+      "item": [
+        {
+          "linkId": "ingredient-vmp",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "https://go.drugbank.com/drugs/",
+                "code": "DB00316",
+                "display": "Acetaminophen"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "strength-vmp",
+          "answer": [
+            {
+              "valueQuantity": {
+                "value": 20,
+                "unit": "mg"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "role-vmp",
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "https://go.drugbank.com/drugs/",
+                "code": "DB00316",
+                "display": "Acetaminophen"
+              }
+            }
+          ]
+        }
       ]
     }
   ]
