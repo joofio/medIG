@@ -1,16 +1,17 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 7, warn = 65, info = 22
+err = 14, warn = 69, info = 19
 IG Publisher Version: 1.1.97
-Generated Wed Jan 26 10:33:19 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
- Build Errors : 192 / 8 / 0
+Generated Wed Jan 26 15:10:29 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+ Build Errors : 202 / 8 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-drug-char-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-medics : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-rolemed-cs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/MedicationKnowledge-be-substance : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-be-vmpgroup : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med : 0 / 0 / 2
@@ -20,8 +21,8 @@ Generated Wed Jan 26 10:33:19 UTC 2022. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/MedicationKnowledge-vmp-1 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-cnpem : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-vmp : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp : 0 / 0 / 7
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp2 : 0 / 0 / 9
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp : 2 / 0 / 7
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp2 : 4 / 0 / 6
  /github/workspace/fsh-generated/resources/StructureDefinition-BeVmpGroup : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicinalProduct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PackagedMedicinalProduct : 0 / 0 / 1
@@ -36,6 +37,7 @@ Generated Wed Jan 26 10:33:19 UTC 2022. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/StructureDefinition-VirtualPharmaceuticalProdutGroup : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-granularity-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-granularity-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-role-medication-vs : 1 / 1 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BeVmpGroup.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -66,6 +68,11 @@ ERROR: /github/workspace/output/CodeSystem-rel-med-cs.html#/html/body/div/div/di
 ERROR: /github/workspace/output/CodeSystem-rel-med-cs.json.html#/html/body/div/div/div/p/a at Line 243, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-rel-med-cs.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-rel-med-cs.xml.html#/html/body/div/div/div/p/a at Line 241, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rolemed-cs.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rolemed-cs.html#/html/body/div/div/div/p/a at Line 211, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rolemed-cs.json.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rolemed-cs.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rolemed-cs.xml.html#/html/body/div/div/div/p/a at Line 220, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.html#/html/body/div/div/div/p/a at Line 211, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-type-med-class-cs.json.html#/html/body/div/div/div/p/a at Line 222, column 28: The link '' for "" cannot be resolved
@@ -118,14 +125,14 @@ ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.ttl.html#/html/b
 ERROR: /github/workspace/output/Questionnaire-questionnaire-vmp.xml.html#/html/body/div/div/div/p/a at Line 265, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.html#/html/body/div/div/div/p/a at Line 196, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.json.html#/html/body/div/div/div/p/a at Line 274, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.ttl.html#/html/body/div/div/div/p/a at Line 266, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.json.html#/html/body/div/div/div/p/a at Line 281, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.ttl.html#/html/body/div/div/div/p/a at Line 271, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp.xml.html#/html/body/div/div/div/p/a at Line 274, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.html#/html/body/div/div/div/p/a at Line 200, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.json.html#/html/body/div/div/div/p/a at Line 322, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.ttl.html#/html/body/div/div/div/p/a at Line 297, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.xml.html#/html/body/div/div/div/p/a at Line 311, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.json.html#/html/body/div/div/div/p/a at Line 315, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.ttl.html#/html/body/div/div/div/p/a at Line 292, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.xml.html#/html/body/div/div/div/p/a at Line 304, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Resources-relations.html#/html/body/div/div/div/p/a at Line 171, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-definitions.html#/html/body/div/div/div/p/a at Line 1507, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
@@ -233,7 +240,12 @@ ERROR: /github/workspace/output/ValueSet-granularity-vs.html#/html/body/div/div/
 ERROR: /github/workspace/output/ValueSet-granularity-vs.json.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 470, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-role-medication-vs.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-role-medication-vs.html#/html/body/div/div/div/p/a at Line 250, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-role-medication-vs.json.html#/html/body/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-role-medication-vs.ttl.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-role-medication-vs.xml.html#/html/body/div/div/div/p/a at Line 212, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 487, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/download.html#/html/body/div/div/div/p/a at Line 187, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 158, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/mapping.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
@@ -247,11 +259,15 @@ ERROR: CodeSystem.url: Resource id/url mismatch: medics/http://hl7.org/fhir/us/e
 WARNING: CodeSystem/medics: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
 == fsh-generated/resources/CodeSystem-rel-med-cs.json ==
 WARNING: CodeSystem/rel-med-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
+== fsh-generated/resources/CodeSystem-rolemed-cs.json ==
+WARNING: CodeSystem/rolemed-cs: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: CodeSystem/rolemed-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
 == fsh-generated/resources/CodeSystem-type-med-class-cs.json ==
 WARNING: CodeSystem/type-med-class-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
 == fsh-generated/resources/ImplementationGuide-medication.ig.example.json ==
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[15].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[20].description: value should not start or finish with whitespace
 == fsh-generated/resources/MedicationKnowledge-be-substance.json ==
 INFORMATION: MedicationKnowledge/be-substance: MedicationKnowledge.code.coding[0]: Code System URI 'https://be.codes.product/substance/' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationKnowledge-be-vmpgroup.json ==
@@ -271,22 +287,25 @@ INFORMATION: MedicationKnowledge/vmp-1: MedicationKnowledge.code.coding[0]: Code
 WARNING: Questionnaire/questionnaire-cnpem: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/Questionnaire-questionnaire-vmp.json ==
 WARNING: Questionnaire/questionnaire-vmp: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: Questionnaire/questionnaire-vmp: Questionnaire.item[1].item[2].answerValueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/roles' does not resolve
+ERROR: Questionnaire/questionnaire-vmp: Questionnaire.item[1].item[2].answerValueSet: Canonical URL 'http://hl7.org/fhir/example/valueSet/roleVS' does not resolve
 == fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp.json ==
 INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].item[0].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
-INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].item[2].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
-INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[1].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
-INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[2].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
-INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[2].answer[1].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+ERROR: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].item[2].answer[0].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/example/valueSet/roleVS'
+ERROR: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[0].item[2].answer[0].value.ofType(Coding).system: URL value 'http://hl7.org/fhir/example/valueSet/roleVS' does not resolve
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[1].answer[0].value.ofType(Coding): Code System URI 'http://standardterms.edqm.eu/PDF/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[2].answer[0].value.ofType(Coding): Code System URI 'http://standardterms.edqm.eu/ROA/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[2].answer[1].value.ofType(Coding): Code System URI 'http://standardterms.edqm.eu/ROA/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[2].answer[2].value.ofType(Coding): Code System URI 'http://standardterms.edqm.eu/ROA/' is unknown so the code cannot be validated
 INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp2.json ==
 INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0].item[0].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
-INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0].item[2].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+ERROR: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0].item[2].answer[0].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/example/valueSet/roleVS'
+ERROR: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[0].item[2].answer[0].value.ofType(Coding).system: URL value 'http://hl7.org/fhir/example/valueSet/roleVS' does not resolve
 INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[1].item[0].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
-INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[1].item[2].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
-INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[2].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
-INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[3].answer[0].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
-INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[3].answer[1].value.ofType(Coding): Code System URI 'https://go.drugbank.com/drugs/' is unknown so the code cannot be validated
+ERROR: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[1].item[2].answer[0].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/example/valueSet/roleVS'
+ERROR: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[1].item[2].answer[0].value.ofType(Coding).system: URL value 'http://hl7.org/fhir/example/valueSet/roleVS' does not resolve
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[2].answer[0].value.ofType(Coding): Code System URI 'http://standardterms.edqm.eu/PDF/' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse.item[3].answer[0].value.ofType(Coding): Code System URI 'http://standardterms.edqm.eu/ROA/' is unknown so the code cannot be validated
 INFORMATION: QuestionnaireResponse/questionnaire-response-vmp2: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/StructureDefinition-BeVmpGroup.json ==
 == fsh-generated/resources/StructureDefinition-MedicinalProduct.json ==
@@ -355,3 +374,6 @@ ERROR: StructureDefinition/VirtualPharmaceuticalProdutGroup: StructureDefinition
 WARNING: StructureDefinition/VirtualPharmaceuticalProdutGroup: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/ValueSet-be-granularity-vs.json ==
 == fsh-generated/resources/ValueSet-granularity-vs.json ==
+== fsh-generated/resources/ValueSet-role-medication-vs.json ==
+ERROR: ValueSet/role-medication-vs: ValueSet.compose.include[0].system: URL value 'http://hl7.org/fhir/example/CodeSystem/roleCS' does not resolve
+WARNING: ValueSet.where(id = 'role-medication-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/example/CodeSystem/roleCS

@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "medicationIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-01-26T10:32:28+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-26T15:09:20+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "medication.ig.example"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -447,6 +447,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/ValueSet/role-medication-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/role-medication-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingredient role Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the role that an ingredient takes into a product" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -457,7 +471,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for belgian medicine level " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -471,7 +485,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for drugCharacteristic" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -485,7 +499,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for classificating medicines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -499,7 +513,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for medicine level" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -512,7 +526,21 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "RelatedMedicationKnowledgeCS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/rolemed-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Role Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for role in ingredient level " ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -529,7 +557,7 @@
          fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/Substance>
        ]
      ], [
-       fhir:index 20;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -546,7 +574,7 @@
          fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/BeVmpGroup>
        ]
      ], [
-       fhir:index 21;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -563,7 +591,7 @@
          fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/Substance>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -580,7 +608,7 @@
          fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/PharmaceuticalProduct>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -597,7 +625,7 @@
          fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MedicinalProduct>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -614,7 +642,7 @@
          fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/PackagedMedicinalProduct>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -628,7 +656,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire for adding a drug level of CNPEM to a fhir server" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -642,7 +670,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire Response example for adding a drug level of VMP to a fhir server" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -656,7 +684,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire Response example 2 for adding a drug level of VMP to a fhir server" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -670,7 +698,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Questionnaire for adding a drug level of VMP to a fhir server" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -804,6 +832,8 @@
 
 <http://hl7.org/fhir/us/example/ValueSet/granularity-vs> a fhir:us .
 
+<http://hl7.org/fhir/us/example/ValueSet/role-medication-vs> a fhir:us .
+
 <http://hl7.org/fhir/us/example/CodeSystem/beMedCS> a fhir:us .
 
 <http://hl7.org/fhir/us/example/CodeSystem/drug-char-cs> a fhir:us .
@@ -813,6 +843,8 @@
 <http://hl7.org/fhir/us/example/CodeSystem/medics> a fhir:us .
 
 <http://hl7.org/fhir/us/example/CodeSystem/rel-med-cs> a fhir:us .
+
+<http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs> a fhir:us .
 
 <http://hl7.org/fhir/us/example/MedicationKnowledge/be-substance> a fhir:us .
 

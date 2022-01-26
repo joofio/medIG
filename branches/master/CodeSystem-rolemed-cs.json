@@ -1,0 +1,31 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "rolemed-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AP<a name=\"rolemed-cs-AP\"> </a></td><td>Active Principle</td></tr><tr><td style=\"white-space:nowrap\">NAP<a name=\"rolemed-cs-NAP\"> </a></td><td>Non-Active</td></tr><tr><td style=\"white-space:nowrap\">EXP<a name=\"rolemed-cs-EXP\"> </a></td><td>Excipient</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs",
+  "version": "0.1.0",
+  "name": "RoleIngredinent-cs",
+  "title": "Role Code System",
+  "status": "active",
+  "date": "2022-01-26T15:09:20+00:00",
+  "description": "Codes for role in ingredient level ",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "AP",
+      "display": "Active Principle"
+    },
+    {
+      "code": "NAP",
+      "display": "Non-Active"
+    },
+    {
+      "code": "EXP",
+      "display": "Excipient"
+    }
+  ]
+}

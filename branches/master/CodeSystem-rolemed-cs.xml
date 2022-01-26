@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="rolemed-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">AP<a name="rolemed-cs-AP"> </a></td><td>Active Principle</td></tr><tr><td style="white-space:nowrap">NAP<a name="rolemed-cs-NAP"> </a></td><td>Non-Active</td></tr><tr><td style="white-space:nowrap">EXP<a name="rolemed-cs-EXP"> </a></td><td>Excipient</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs"/>
+  <version value="0.1.0"/>
+  <name value="RoleIngredinent-cs"/>
+  <title value="Role Code System"/>
+  <status value="active"/>
+  <date value="2022-01-26T15:09:20+00:00"/>
+  <description value="Codes for role in ingredient level "/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="AP"/>
+    <display value="Active Principle"/>
+  </concept>
+  <concept>
+    <code value="NAP"/>
+    <display value="Non-Active"/>
+  </concept>
+  <concept>
+    <code value="EXP"/>
+    <display value="Excipient"/>
+  </concept>
+</CodeSystem>
