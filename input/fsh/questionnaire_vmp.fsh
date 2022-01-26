@@ -35,20 +35,20 @@ Title:    "VMP Questionnaire addition"
 
 * item[=].item[+].linkId = "role-vmp"
 * item[=].item[=].type = #choice
-* item[=].item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/roles"
+* item[=].item[=].answerValueSet = rolevs
 * item[=].item[=].required = true
 * item[=].item[=].text = "Roles of the ingredient of the product"
 
 
 * item[+].linkId = "doseform-vmp"
 * item[=].type = #choice
-* item[=].answerValueSet = "http://standardterms.edqm.eu/PAC"
+* item[=].answerValueSet = "http://standardterms.edqm.eu/PDF"
 * item[=].required = true
 * item[=].text = "Dose Form of the product"
 
 * item[+].linkId = "route-vmp"
 * item[=].type = #choice
 * item[=].required = true
-* item[=].answerValueSet = "http://standardterms.edqm.eu/Routes"
-* item[=].text = "Package size of the product"
+* item[=].answerValueSet = "http://standardterms.edqm.eu/ROA"
+* item[=].text = "Route of administration"
 * item[=].repeats = true

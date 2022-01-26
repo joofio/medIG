@@ -153,3 +153,33 @@ Description: "Indicates the granularity of product"
 * medCS#PACKMEDPROD "Packaged Medicinal Product"
 * beMedCS#VMPG "VMP Group"
 
+
+
+// Define a local code system
+CodeSystem: RoleIngredinent-cs
+Id:         rolemed-cs
+Title: "Role Code System"
+Description: "Codes for role in ingredient level "
+// You can choose any url, or use the default, but in this case we want the URL to be in the HL7 namespace
+// Spacing layout over three lines per term is optional, for clarity
+// The definition (second text string) is optional
+* #AP
+    "Active Principle"
+* #NAP
+    "Non-Active"
+* #EXP
+    "Excipient"
+
+
+Alias: roleCS = http://hl7.org/fhir/example/CodeSystem/roleCS
+
+
+ValueSet: RoleMedicationVS
+Id: role-medication-vs
+Title: "Ingredient role Value Set"
+Description: "Indicates the role that an ingredient takes into a product"
+* include codes from system roleCS
+
+Alias: rolevs = http://hl7.org/fhir/example/valueSet/roleVS
+
+
