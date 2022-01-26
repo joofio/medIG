@@ -14,6 +14,13 @@
     "name": "MedicineCodeSystem"
   },
   {
+    "id": "rolemed-cs",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs",
+    "version": "0.1.0",
+    "name": "RoleIngredinent-cs"
+  },
+  {
     "id": "medication.ig.example",
     "type": "ImplementationGuide",
     "url": "http://hl7.org/fhir/us/example/ImplementationGuide/medication.ig.example",
@@ -131,6 +138,13 @@
     "url": "http://hl7.org/fhir/us/example/ValueSet/granularity-vs",
     "version": "0.1.0",
     "name": "GranularityVS"
+  },
+  {
+    "id": "role-medication-vs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/example/ValueSet/role-medication-vs",
+    "version": "0.1.0",
+    "name": "RoleMedicationVS"
   },
   {
     "id": "type-med-class-cs",

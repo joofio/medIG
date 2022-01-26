@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2022-01-26T10:32:28+00:00"/>
+  <date value="2022-01-26T15:09:20+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -315,6 +315,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/role-medication-vs"/>
+      </reference>
+      <name value="Ingredient role Value Set"/>
+      <description value="Indicates the role that an ingredient takes into a product"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -365,6 +376,17 @@
         <reference value="CodeSystem/rel-med-cs"/>
       </reference>
       <name value="RelatedMedicationKnowledgeCS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/rolemed-cs"/>
+      </reference>
+      <name value="Role Code System"/>
+      <description value="Codes for role in ingredient level "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

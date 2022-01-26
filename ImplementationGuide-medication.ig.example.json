@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2022-01-26T10:32:28+00:00",
+  "date": "2022-01-26T15:09:20+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -459,6 +459,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/role-medication-vs"
+        },
+        "name": "Ingredient role Value Set",
+        "description": "Indicates the role that an ingredient takes into a product",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
@@ -522,6 +536,20 @@
           "reference": "CodeSystem/rel-med-cs"
         },
         "name": "RelatedMedicationKnowledgeCS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/rolemed-cs"
+        },
+        "name": "Role Code System",
+        "description": "Codes for role in ingredient level ",
         "exampleBoolean": false
       },
       {
