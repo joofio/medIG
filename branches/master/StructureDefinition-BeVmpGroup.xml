@@ -57,7 +57,7 @@
   <version value="0.1.0"/>
   <name value="BeVmpGroup"/>
   <status value="active"/>
-  <date value="2022-01-25T17:31:33+00:00"/>
+  <date value="2022-01-26T09:44:32+00:00"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>

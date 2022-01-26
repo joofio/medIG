@@ -105,7 +105,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MedicationKnowledge.productType","productLevel","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Category of the medication or product","Category of the medication or product (e.g. branded product, therapeutic moeity, generic product, innovator product, etc.).","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/us/example/CodeSystem/mediCS""/>
+    <system value=""http://hl7.org/fhir/us/example/CodeSystem/beMedCS""/>
     <code value=""VMPP""/>
   </coding>
 </valueCodeableConcept>","","","",,,,,"",,,,"MedicationKnowledge.productType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
