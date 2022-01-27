@@ -76,3 +76,44 @@ Title:    "VMP Questionnaire Response 2"
 * item[+].linkId = "route-vmp"
 * item[=].answer[+].valueCoding = http://snomed.info/sct#26643006  "Oral Use"
 
+
+
+Instance: questionnaire-response-amp
+InstanceOf: QuestionnaireResponse
+Description: "Questionnaire Response example  for adding a drug level of AMP to a fhir server"
+Title:    "AMP Questionnaire Response "
+
+* status = #in-progress
+* authored = "2022-01-26T02:00:00Z"
+
+* item[+].linkId = "ingredient"
+
+* item[=].item[+].linkId = "ingredient-amp"
+* item[=].item[=].answer[+].valueCoding = beingredient-cs#000004 "Rosuvastatine"
+
+* item[=].item[+].linkId = "strength-amp"
+* item[=].item[=].answer.valueQuantity.value = 40
+* item[=].item[=].answer.valueQuantity.unit = "mg"
+
+
+* item[=].item[+].linkId = "role-amp"
+* item[=].item[=].answer.valueCoding = be-rolemed-cs#AP "Active Principle"
+
+
+* item[+].linkId = "doseform-amp"
+* item[=].answer.valueCoding = http://snomed.info/sct#385055001 "Tablet"
+
+
+* item[+].linkId = "route-amp"
+* item[=].answer[+].valueCoding = http://snomed.info/sct#26643006  "Oral Use"
+
+* item[+].linkId = "marketingauhtorization-amp"
+* item[=].answer[+].valueCoding = 
+
+
+* item[+].linkId = "marketingauhtorization-holder-amp"
+* item[=].answer[+].valueCoding = 
+
+* item[+].linkId = "brandname-amp"
+* item[=].answer[+].valueString = "Crestor 40 mg filmomh. tabl."
+

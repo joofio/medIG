@@ -209,3 +209,58 @@ Description: "Indicates the ingredient inside a product"
 Alias: ingredientVS = http://hl7.org/fhir/us/example/ValueSet/medication-vs
 
 
+// Define a local code system
+CodeSystem: beMACS
+Id:         be-marketingauthorization-cs
+Title: "Marketing Authorization Code System"
+Description: "Codes for ingredient"
+
+* #000001 
+    "Paracetamol"
+
+* #000002 
+    "Insuline lispro"
+
+* #000003 
+    "Tramadol"
+    
+
+Alias: MACS = http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs
+
+
+ValueSet: beMAVS
+Id: marketingauthorization-vs
+Title: "Marketing Authorization Value Set"
+Description: "Indicates the Marketing Authorization for product"
+* include codes from system be-marketingauthorization-cs
+
+Alias: MAVS = http://hl7.org/fhir/us/example/ValueSet/marketingauthorization-vs
+
+
+// Define a local code system
+CodeSystem: beMAHolderCS
+Id:         be-marketingauthorization-holder-cs
+Title: "Marketing Authorization Code System"
+Description: "Codes for ingredient"
+
+* #000001 
+    "Paracetamol"
+
+* #000002 
+    "Insuline lispro"
+
+* #000003 
+    "Tramadol"
+    
+
+Alias: MACS = http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs
+
+
+ValueSet: beMAHolderVS
+Id: marketingauthorization-holder-vs
+Title: "Marketing Authorization Value Set"
+Description: "Indicates the Marketing Authorization for product"
+* include codes from system be-marketingauthorization-holder-cs
+
+Alias: MAVS = http://hl7.org/fhir/us/example/ValueSet/marketingauthorization-holder-vs
+
