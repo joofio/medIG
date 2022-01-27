@@ -7,10 +7,10 @@
   </text>
   <url value="http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs"/>
   <version value="0.1.0"/>
-  <name value="RoleIngredinent-cs"/>
+  <name value="beRoleIngredinent-cs"/>
   <title value="Role Code System"/>
   <status value="active"/>
-  <date value="2022-01-27T11:55:52+00:00"/>
+  <date value="2022-01-27T12:11:00+00:00"/>
   <description value="Codes for role in ingredient level "/>
   <content value="complete"/>
   <count value="3"/>

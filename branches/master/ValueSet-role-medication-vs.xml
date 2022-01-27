@@ -7,10 +7,10 @@
   </text>
   <url value="http://hl7.org/fhir/us/example/ValueSet/role-medication-vs"/>
   <version value="0.1.0"/>
-  <name value="RoleMedicationVS"/>
+  <name value="beRoleMedicationVS"/>
   <title value="Ingredient role Value Set"/>
   <status value="active"/>
-  <date value="2022-01-27T11:55:52+00:00"/>
+  <date value="2022-01-27T12:11:00+00:00"/>
   <description value="Indicates the role that an ingredient takes into a product"/>
   <compose>
     <include>

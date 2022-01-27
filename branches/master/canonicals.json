@@ -4,7 +4,14 @@
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/example/CodeSystem/beMedCS",
     "version": "0.1.0",
-    "name": "BEMedicineCodeSystem"
+    "name": "beMedicineCodeSystem"
+  },
+  {
+    "id": "ingredient-cs",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/example/CodeSystem/ingredient-cs",
+    "version": "0.1.0",
+    "name": "beIngredinent-cs"
   },
   {
     "id": "medics",
@@ -18,7 +25,7 @@
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs",
     "version": "0.1.0",
-    "name": "RoleIngredinent-cs"
+    "name": "beRoleIngredinent-cs"
   },
   {
     "id": "medication.ig.example",
@@ -130,7 +137,7 @@
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs",
     "version": "0.1.0",
-    "name": "BEGranularityVS"
+    "name": "beGranularityVS"
   },
   {
     "id": "granularity-vs",
@@ -140,11 +147,18 @@
     "name": "GranularityVS"
   },
   {
+    "id": "medication-vs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/example/ValueSet/medication-vs",
+    "version": "0.1.0",
+    "name": "beMedicationVS"
+  },
+  {
     "id": "role-medication-vs",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/example/ValueSet/role-medication-vs",
     "version": "0.1.0",
-    "name": "RoleMedicationVS"
+    "name": "beRoleMedicationVS"
   },
   {
     "id": "type-med-class-cs",
