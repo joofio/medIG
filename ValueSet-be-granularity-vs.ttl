@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "beGranularityVS"];
   fhir:ValueSet.title [ fhir:value "Be Granularity Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-01-27T12:18:33+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-01-27T13:02:02+00:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "Indicates the granularity of product for belgium"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [

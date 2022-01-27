@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="cf3c363c-1bd2-4b0e-8d78-8016c45a2dc7"/>
+  <id value="85305857-dde2-4252-b6a5-c4c430472dcb"/>
   <meta>
-    <lastUpdated value="2022-01-27T12:18:33.056+00:00"/>
+    <lastUpdated value="2022-01-27T13:02:02.378+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -75,11 +75,11 @@
         <name value="GranularityVS"/>
         <title value="Granularity Value Set"/>
         <status value="active"/>
-        <date value="2022-01-27T12:18:33+00:00"/>
+        <date value="2022-01-27T13:02:02+00:00"/>
         <description value="Indicates the granularity of product"/>
         <expansion>
-          <identifier value="urn:uuid:edf13e54-48f6-443a-bef2-a137a6ebe14d"/>
-          <timestamp value="2022-01-27T12:19:03+00:00"/>
+          <identifier value="urn:uuid:ad965ce7-75d9-4bcf-b73f-723a6d66c6c9"/>
+          <timestamp value="2022-01-27T13:02:43+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -201,11 +201,11 @@
         <name value="beGranularityVS"/>
         <title value="Be Granularity Value Set"/>
         <status value="active"/>
-        <date value="2022-01-27T12:18:33+00:00"/>
+        <date value="2022-01-27T13:02:02+00:00"/>
         <description value="Indicates the granularity of product for belgium"/>
         <expansion>
-          <identifier value="urn:uuid:73baba37-e112-4eb0-b1ac-cfb515b163ae"/>
-          <timestamp value="2022-01-27T12:19:03+00:00"/>
+          <identifier value="urn:uuid:b30b5673-8db0-4f70-8d39-8ca81e34f2cf"/>
+          <timestamp value="2022-01-27T13:02:43+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -243,6 +243,182 @@
             <system value="http://hl7.org/fhir/us/example/CodeSystem/beMedCS"/>
             <code value="VMPG"/>
             <display value="VMP Group"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/medication-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="medication-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-beingredient-cs.html">Ingredient Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-beingredient-cs.html">
+                <code>http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-beingredient-cs-000001"> </a>
+                  <a href="CodeSystem-beingredient-cs.html#beingredient-cs-000001">000001</a>
+                </td>
+                <td>Paracetamol</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-beingredient-cs-000002"> </a>
+                  <a href="CodeSystem-beingredient-cs.html#beingredient-cs-000002">000002</a>
+                </td>
+                <td>Insuline lispro</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-beingredient-cs-000003"> </a>
+                  <a href="CodeSystem-beingredient-cs.html#beingredient-cs-000003">000003</a>
+                </td>
+                <td>Tramadol</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/example/ValueSet/medication-vs"/>
+        <version value="0.1.0"/>
+        <name value="beMedicationVS"/>
+        <title value="Ingredient  Value Set"/>
+        <status value="active"/>
+        <date value="2022-01-27T13:02:02+00:00"/>
+        <description value="Indicates the role that an ingredient takes into a product"/>
+        <expansion>
+          <identifier value="urn:uuid:1a1999c3-0349-4741-9791-e8290279125b"/>
+          <timestamp value="2022-01-27T13:02:43+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs"/>
+            <code value="000001"/>
+            <display value="Paracetamol"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs"/>
+            <code value="000002"/>
+            <display value="Insuline lispro"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs"/>
+            <code value="000003"/>
+            <display value="Tramadol"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="be-role-medication-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-rolemed-cs.html">Role Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-be-rolemed-cs.html">
+                <code>http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-be-rolemed-cs-AP"> </a>
+                  <a href="CodeSystem-be-rolemed-cs.html#be-rolemed-cs-AP">AP</a>
+                </td>
+                <td>Active Principle</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-be-rolemed-cs-NAP"> </a>
+                  <a href="CodeSystem-be-rolemed-cs.html#be-rolemed-cs-NAP">NAP</a>
+                </td>
+                <td>Non-Active</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-be-rolemed-cs-EXP"> </a>
+                  <a href="CodeSystem-be-rolemed-cs.html#be-rolemed-cs-EXP">EXP</a>
+                </td>
+                <td>Excipient</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs"/>
+        <version value="0.1.0"/>
+        <name value="beRoleMedicationVS"/>
+        <title value="Ingredient role Value Set"/>
+        <status value="active"/>
+        <date value="2022-01-27T13:02:02+00:00"/>
+        <description value="Indicates the role that an ingredient takes into a product"/>
+        <expansion>
+          <identifier value="urn:uuid:40e8de56-4fc6-410c-b276-7bd3ea6db678"/>
+          <timestamp value="2022-01-27T13:02:43+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs"/>
+            <code value="AP"/>
+            <display value="Active Principle"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs"/>
+            <code value="NAP"/>
+            <display value="Non-Active"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs"/>
+            <code value="EXP"/>
+            <display value="Excipient"/>
           </contains>
         </expansion>
       </ValueSet>

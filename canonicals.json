@@ -4,7 +4,7 @@
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs",
     "version": "0.1.0",
-    "name": "beRoleIngredinent-cs"
+    "name": "beRoleIngredinentCS"
   },
   {
     "id": "beMedCS",
@@ -18,7 +18,7 @@
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs",
     "version": "0.1.0",
-    "name": "beIngredinent-cs"
+    "name": "beIngredientCS"
   },
   {
     "id": "medics",
