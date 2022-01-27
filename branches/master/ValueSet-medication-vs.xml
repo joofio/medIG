@@ -3,18 +3,18 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="medication-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>http://hl7.org/fhir/example/CodeSystem/ingredientCS</code></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>http://hl7.org/fhir/example/CodeSystem/beingredient-cs</code></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/example/ValueSet/medication-vs"/>
   <version value="0.1.0"/>
   <name value="beMedicationVS"/>
   <title value="Ingredient  Value Set"/>
   <status value="active"/>
-  <date value="2022-01-27T12:11:00+00:00"/>
+  <date value="2022-01-27T12:18:33+00:00"/>
   <description value="Indicates the role that an ingredient takes into a product"/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/example/CodeSystem/ingredientCS"/>
+      <system value="http://hl7.org/fhir/example/CodeSystem/beingredient-cs"/>
     </include>
   </compose>
 </ValueSet>

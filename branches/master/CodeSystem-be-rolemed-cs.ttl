@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-rolemed-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AP<a name=\"be-rolemed-cs-AP\"> </a></td><td>Active Principle</td></tr><tr><td style=\"white-space:nowrap\">NAP<a name=\"be-rolemed-cs-NAP\"> </a></td><td>Non-Active</td></tr><tr><td style=\"white-space:nowrap\">EXP<a name=\"be-rolemed-cs-EXP\"> </a></td><td>Excipient</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "beRoleIngredinent-cs"];
+  fhir:CodeSystem.title [ fhir:value "Role Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-01-27T12:18:33+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.description [ fhir:value "Codes for role in ingredient level "];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "AP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Active Principle" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "NAP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non-Active" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "EXP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Excipient" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/example/CodeSystem/be-rolemed-cs.ttl> .
+
+# -------------------------------------------------------------------------------------
+

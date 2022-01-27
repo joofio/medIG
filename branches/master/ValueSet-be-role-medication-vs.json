@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-role-medication-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs</code></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs",
+  "version": "0.1.0",
+  "name": "beRoleMedicationVS",
+  "title": "Ingredient role Value Set",
+  "status": "active",
+  "date": "2022-01-27T12:18:33+00:00",
+  "description": "Indicates the role that an ingredient takes into a product",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs"
+      }
+    ]
+  }
+}
