@@ -1,4 +1,4 @@
-map "http://infarmed.pt/insertMed/" = "qr2vmp"
+map "http://webiste.be/transformtovmp/" = "qr2vmp"
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QuestionnaireResponse as source
 uses "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge" alias MedicationKnowledge as target
 
