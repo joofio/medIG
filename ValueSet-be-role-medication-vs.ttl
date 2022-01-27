@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "BeRoleMedicationVS"];
   fhir:ValueSet.title [ fhir:value "Ingredient role Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-01-27T17:34:32+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-01-27T17:42:33+00:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "Indicates the role that an ingredient takes into a product"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
