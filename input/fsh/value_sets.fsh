@@ -236,7 +236,7 @@ Alias: MAVS = http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-
 // Define a local code system
 CodeSystem: BeMAHolderCS
 Id:         be-marketingauthorization-holder-cs
-Title: "Marketing Authorization Code System"
+Title: "Marketing Authorization Holder Code System"
 Description: "Codes for ingredient"
 
 * #000001 
@@ -248,7 +248,7 @@ Alias: MAHCS = http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorizati
 
 ValueSet: BeMAHolderVS
 Id: be-marketingauthorization-holder-vs
-Title: "Marketing Authorization Value Set"
+Title: "Marketing Authorization Holder Value Set"
 Description: "Indicates the Marketing Authorization for product"
 * include codes from system be-marketingauthorization-holder-cs
 
