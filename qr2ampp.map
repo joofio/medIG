@@ -10,8 +10,7 @@ group doseform(source src: QuestionnaireResponse, target tgt: MedicationKnowledg
     src.item as item where linkId.value in ('marketingauhtorization')  -> tgt.drugCharacteristic as dc then marketing(item, dc) "rule for MA";
     src.item as item where linkId.value in ('marketingholder')  -> tgt.drugCharacteristic as dc then marketing_holder(item, dc) "rule for holder";
     src.item as item where linkId.value in ('brandname')  -> tgt as brand then synonym_format(item, brand) "rule for brand";
-    src.item as item where linkId.value in ('pack')  -> tgt as brand then packsize_format(item, brand) "rule for brand";
-    src.item as item where linkId.value in ('packtype')  -> tgt as brand then packtype_format(item, brand) "rule for brand";
+    src.item as item where linkId.value in ('packaging')  -> tgt.packaging as pack then packaging_format(item, pack) "rule for brand";
 
 
 }
@@ -73,6 +72,30 @@ group codingcode_MA(source src, target tgt : Coding) {
   src -> tgt.code = "MA" "xy1";
   src -> tgt.system = 'http://example.info/xx' "xy2";
   src -> tgt.display = 'Marketing Authorization' "xy3";
+}
+
+group packaging_format(source src, target tgt: BackboneElement) {
+
+src.item as item where linkId.value in ('packtype')  -> tgt.item = create('CodeableConcept') as cc then packtype_format(item, cc) "rule for pack type";
+src.item as item where linkId.value in ('packsize')  -> tgt.quantity as size then pack_size_format(item, size) "rule for strength";
+
+}
+group packtype_format(source src, target tgt: Quantity) {
+    src.anwser as ans-> tgt then pack_type_creation(ans,tgt) "sds";
+}
+group pack_type_creation(source src, target tgt: Quantity) {
+
+ src -> tgt.coding =(src.valueCoding) "create pack type value"
+}
+
+
+group pack_size_format(source src, target tgt: Quantity) {
+    src.anwser as ans-> tgt then pack_size_creation(ans,tgt) "sds";
+}
+
+group pack_size_creation(source src, target tgt: Quantity) {
+
+ src -> tgt=(src.valueQuantity) "create packsize value"
 }
 
 group ingredient_group(source src, target tgt: BackboneElement) {
