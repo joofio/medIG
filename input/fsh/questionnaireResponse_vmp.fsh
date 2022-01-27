@@ -80,7 +80,7 @@ Title:    "VMP Questionnaire Response 2"
 
 Instance: questionnaire-response-amp
 InstanceOf: QuestionnaireResponse
-Description: "Questionnaire Response example  for adding a drug level of AMP to a fhir server"
+Description: "Questionnaire Response example for adding a drug level of AMP to a fhir server"
 Title:    "AMP Questionnaire Response "
 
 * status = #in-progress
@@ -108,12 +108,59 @@ Title:    "AMP Questionnaire Response "
 * item[=].answer[+].valueCoding = http://snomed.info/sct#26643006  "Oral Use"
 
 * item[+].linkId = "marketingauhtorization-amp"
-* item[=].answer[+].valueCoding = beMACS#000001 ""
+* item[=].answer[+].valueCoding = BeMACS#000001 "Authorization"
 
 
 * item[+].linkId = "marketingauhtorization-holder-amp"
-* item[=].answer[+].valueCoding = beMAHolderCS#000001 ""
+* item[=].answer[+].valueCoding = BeMAHolderCS#000001 "AstraZeneca"
 
 * item[+].linkId = "brandname-amp"
 * item[=].answer[+].valueString = "Crestor 40 mg filmomh. tabl."
 
+
+Instance: questionnaire-response-ampp
+InstanceOf: QuestionnaireResponse
+Description: "Questionnaire Response example for adding a drug level of AMPP to a fhir server"
+Title:    "AMPP Questionnaire Response"
+
+* status = #in-progress
+* authored = "2022-01-26T02:00:00Z"
+
+* item[+].linkId = "ingredient"
+
+* item[=].item[+].linkId = "ingredient-amp"
+* item[=].item[=].answer[+].valueCoding = beingredient-cs#000004 "Rosuvastatin"
+
+* item[=].item[+].linkId = "strength-amp"
+* item[=].item[=].answer.valueQuantity.value = 40
+* item[=].item[=].answer.valueQuantity.unit = "mg"
+
+
+* item[=].item[+].linkId = "role-amp"
+* item[=].item[=].answer.valueCoding = be-rolemed-cs#AP "Active Principle"
+
+
+* item[+].linkId = "doseform-amp"
+* item[=].answer.valueCoding = http://snomed.info/sct#385055001 "Tablet"
+
+
+* item[+].linkId = "route-amp"
+* item[=].answer[+].valueCoding = http://snomed.info/sct#26643006  "Oral Use"
+
+* item[+].linkId = "marketingauhtorization-amp"
+* item[=].answer[+].valueCoding = BeMACS#000001 "Authorization"
+
+
+* item[+].linkId = "marketingauhtorization-holder-amp"
+* item[=].answer[+].valueCoding = BeMAHolderCS#000001 "AstraZeneca"
+
+* item[+].linkId = "brandname-amp"
+* item[=].answer[+].valueString = "Crestor 40 mg filmomh. tabl."
+
+* item[+].linkId = "packsize-ampp"
+* item[=].answer.valueQuantity.value = 98
+* item[=].answer.valueQuantity.unit = "units"
+
+
+* item[+].linkId = "packtype-ampp"
+* item[=].answer[+].valueCoding = http://terminology.hl7.org/CodeSystem/medicationknowledge-package-type#blstrpk "Blister Pack"

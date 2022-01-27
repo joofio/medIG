@@ -116,7 +116,7 @@ Description: "Codes for medicine level"
  
 
 // Define a local code system
-CodeSystem: beMedicineCodeSystem
+CodeSystem: BeMedicineCodeSystem
 Id:         beMedCS
 Title: "Drug Code System"
 Description: "Codes for belgian medicine level "
@@ -143,7 +143,7 @@ Description: "Indicates the granularity of product"
 * medCS#PACKMEDPROD "Packaged Medicinal Product"
 
 
-ValueSet: beGranularityVS
+ValueSet: BeGranularityVS
 Id: be-granularity-vs
 Title: "Be Granularity Value Set"
 Description: "Indicates the granularity of product for belgium"
@@ -156,7 +156,7 @@ Description: "Indicates the granularity of product for belgium"
 
 
 // Define a local code system
-CodeSystem: beRoleIngredinentCS
+CodeSystem: BeRoleIngredinentCS
 Id:         be-rolemed-cs
 Title: "Role Code System"
 Description: "Codes for role in ingredient level "
@@ -172,17 +172,17 @@ Description: "Codes for role in ingredient level "
 Alias: roleCS = http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs
 
 
-ValueSet: beRoleMedicationVS
+ValueSet: BeRoleMedicationVS
 Id: be-role-medication-vs
 Title: "Ingredient role Value Set"
 Description: "Indicates the role that an ingredient takes into a product"
-* include codes from system beRoleIngredinentCS
+* include codes from system BeRoleIngredinentCS
 
 Alias: rolevs = http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs
 
 
 // Define a local code system
-CodeSystem: beIngredientCS
+CodeSystem: BeIngredientCS
 Id:         beingredient-cs
 Title: "Ingredient Code System"
 Description: "Codes for ingredient"
@@ -202,35 +202,29 @@ Description: "Codes for ingredient"
 Alias: ingredientCS = http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs
 
 
-ValueSet: beMedicationVS
+ValueSet: BeMedicationVS
 Id: medication-vs
 Title: "Ingredient  Value Set"
 Description: "Indicates the ingredient inside a product"
-* include codes from system beIngredientCS
+* include codes from system BeIngredientCS
 
 Alias: ingredientVS = http://hl7.org/fhir/us/example/ValueSet/medication-vs
 
 
 // Define a local code system
-CodeSystem: beMACS
+CodeSystem: BeMACS
 Id:         be-marketingauthorization-cs
 Title: "Marketing Authorization Code System"
 Description: "Codes for ingredient"
 
 * #000001 
-    "Paracetamol"
-
-* #000002 
-    "Insuline lispro"
-
-* #000003 
-    "Tramadol"
+    "Authorization"
     
 
 Alias: MACS = http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs
 
 
-ValueSet: beMAVS
+ValueSet: BeMAVS
 Id: be-marketingauthorization-vs
 Title: "Marketing Authorization Value Set"
 Description: "Indicates the Marketing Authorization for product"
@@ -240,29 +234,23 @@ Alias: MAVS = http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-
 
 
 // Define a local code system
-CodeSystem: beMAHolderCS
+CodeSystem: BeMAHolderCS
 Id:         be-marketingauthorization-holder-cs
 Title: "Marketing Authorization Code System"
 Description: "Codes for ingredient"
 
 * #000001 
-    "Paracetamol"
+    "AstraZeneca"
 
-* #000002 
-    "Insuline lispro"
-
-* #000003 
-    "Tramadol"
-    
 
 Alias: MAHCS = http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs
 
 
-ValueSet: beMAHolderVS
-Id: marketingauthorization-holder-vs
+ValueSet: BeMAHolderVS
+Id: be-marketingauthorization-holder-vs
 Title: "Marketing Authorization Value Set"
 Description: "Indicates the Marketing Authorization for product"
 * include codes from system be-marketingauthorization-holder-cs
 
-Alias: MAHVS = http://hl7.org/fhir/us/example/ValueSet/marketingauthorization-holder-vs
+Alias: MAHVS = http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-holder-vs
 
