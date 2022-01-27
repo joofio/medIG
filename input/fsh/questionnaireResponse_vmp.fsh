@@ -47,8 +47,8 @@ Title:    "VMP Questionnaire Response 2"
 * item[=].item[=].answer[+].valueCoding = beingredient-cs#000003 "Tramadol"
 
 * item[=].item[+].linkId = "strength-vmp"
-* item[=].item[=].answer[+].valueQuantity.value = 37.5
-* item[=].item[=].answer[=].valueQuantity.unit = "mg"
+* item[=].item[=].answer.valueQuantity.value = 37.5
+* item[=].item[=].answer.valueQuantity.unit = "mg"
 
 
 * item[=].item[+].linkId = "role-vmp"
@@ -60,8 +60,8 @@ Title:    "VMP Questionnaire Response 2"
 * item[=].item[=].answer[+].valueCoding = beingredient-cs#000001 "Acetaminophen"
 
 * item[=].item[+].linkId = "strength-vmp"
-* item[=].item[=].answer[+].valueQuantity.value = 325
-* item[=].item[=].answer[=].valueQuantity.unit = "mg"
+* item[=].item[=].answer.valueQuantity.value = 325
+* item[=].item[=].answer.valueQuantity.unit = "mg"
 
 
 * item[=].item[+].linkId = "role-vmp"
