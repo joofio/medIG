@@ -10,7 +10,7 @@
   "name": "BeMAHolderVS",
   "title": "Marketing Authorization Holder Value Set",
   "status": "active",
-  "date": "2022-01-27T17:42:33+00:00",
+  "date": "2022-01-27T17:55:49+00:00",
   "description": "Indicates the Marketing Authorization Holder of a product",
   "compose": {
     "include": [
