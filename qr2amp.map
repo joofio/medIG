@@ -1,4 +1,4 @@
-map "http://webiste.be/transformtovmp/" = "qr2vmp"
+map "http://webiste.be/transformtoamp/" = "qr2amp"
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QuestionnaireResponse as source
 uses "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge" alias MedicationKnowledge as target
 
@@ -7,8 +7,8 @@ group doseform(source src: QuestionnaireResponse, target tgt: MedicationKnowledg
     src.item as item where linkId.value in ('code')  -> tgt as code then code_format(item, code) "rule for code";
     src.item as item where linkId.value in ('doseform')  -> tgt as doseform then doseform_format(item, doseform) "rule for doseForm";
     src.item as item where linkId.value in ('ingredient')  -> tgt.ingredient as ingre then ingredient_group(item, ingre) "rule for ingredient";
-    src.item as item where linkId.value in ('marketingauhtorization')  -> tgt.ingredient as ingre then marketing(item, ingre) "rule for MA";
-    src.item as item where linkId.value in ('marketingauhtorization-holder')  -> tgt.ingredient as ingre then marketing_holder(item, ingre) "rule for holder";
+    src.item as item where linkId.value in ('marketingauhtorization')  -> tgt.drugCharacteristic as dc then marketing(item, dc) "rule for MA";
+    src.item as item where linkId.value in ('marketingholder')  -> tgt.drugCharacteristic as dc then marketing_holder(item, dc) "rule for holder";
     src.item as item where linkId.value in ('brandname')  -> tgt as brand then synonym_format(item, brand) "rule for brand";
 
 
@@ -16,10 +16,62 @@ group doseform(source src: QuestionnaireResponse, target tgt: MedicationKnowledg
 
 //brand name
 group synonym_format(source src, target tgt) {
-src.answer -> tgt.synonym = (src.valueString) "create synonym";
+src.answer  as ans-> tgt then add_synonym(ans,tgt) "create synonym";
 
 }
+///brand name
+group add_synonym(source src, target tgt) {
+src -> tgt.synonym = (src.valueString) "create synonym";
+}
 
+
+
+// marketing holder
+group marketing_holder(source src, target tgt) {
+    src.answer as ans -> tgt  then create_drug_chart(ans,tgt) "create marketing holder" ;
+
+}
+// marketing holder
+group create_drug_chart(source src, target tgt) {
+    src -> tgt.type = create('CodeableConcept') as cc then itemcoding_code_MAH(src,cc) "asa";
+    src ->tgt.value =create('CodeableConcept') as cc then  create_cc(src,cc) "aaa3";
+}
+
+group create_cc(source src, target tgt) {
+    src -> tgt.coding = (src.valueCoding) "sddss";
+}
+
+group itemcoding_code_MAH(source src, target tgt: CodeableConcept ) {
+  src -> tgt.coding as y then codingcode_MAH(src, y) "xx";
+}
+
+group codingcode_MAH(source src, target tgt : Coding) {
+  src -> tgt.code = "MAH" "xy1";
+  src -> tgt.system = 'http://example.info/xx' "xy2";
+  src -> tgt.display = 'Marketing Authorization Holder' "xy3";
+}
+
+
+
+// marketing
+group marketing(source src, target tgt) {
+    src.answer as ans -> tgt  then create_drug_chart_MA(ans,tgt) "create marketing holder" ;
+
+}
+group create_drug_chart_MA(source src, target tgt) {
+    src -> tgt.type = create('CodeableConcept') as cc then itemcoding_code_MA(src,cc) "asa";
+    src ->tgt.value =create('CodeableConcept') as cc then  create_cc(src,cc) "aaa3";
+}
+
+group itemcoding_code_MA(source src, target tgt: CodeableConcept ) {
+  src -> tgt.coding as y then codingcode_MA(src, y) "xx";
+}
+
+group codingcode_MA(source src, target tgt : Coding) {
+  src -> tgt.code = "MA" "xy1";
+  src -> tgt.system = 'http://example.info/xx' "xy2";
+  src -> tgt.display = 'Marketing Authorization' "xy3";
+}
 
 group ingredient_group(source src, target tgt: BackboneElement) {
 
