@@ -10,7 +10,7 @@
   "name": "PharmaceuticalProdut",
   "title": "Pharmaceutical Product logical model",
   "status": "active",
-  "date": "2022-01-27T13:14:27+00:00",
+  "date": "2022-01-27T13:16:24+00:00",
   "description": "Pharmaceutical Product logical model",
   "fhirVersion": "4.0.1",
   "mapping": [

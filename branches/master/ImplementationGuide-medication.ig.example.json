@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2022-01-27T13:14:27+00:00",
+  "date": "2022-01-27T13:16:24+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -466,7 +466,7 @@
           "reference": "ValueSet/medication-vs"
         },
         "name": "Ingredient  Value Set",
-        "description": "Indicates the role that an ingredient takes into a product",
+        "description": "Indicates the ingredient inside a product",
         "exampleBoolean": false
       },
       {
@@ -549,7 +549,7 @@
           "reference": "CodeSystem/beingredient-cs"
         },
         "name": "Ingredient Code System",
-        "description": "Codes for role in ingredient level ",
+        "description": "Codes for ingredient",
         "exampleBoolean": false
       },
       {
