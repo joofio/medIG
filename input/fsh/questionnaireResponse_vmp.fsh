@@ -70,7 +70,7 @@ Title:    "VMP Questionnaire Response 2"
 
 
 * item[+].linkId = "doseform-vmp"
-* item[=].answer.valueCoding =  http://snomed.info/sct#385055001 "Tablet"
+* item[=].answer.valueCoding = http://snomed.info/sct#385055001 "Tablet"
 
 
 * item[+].linkId = "route-vmp"
