@@ -10,7 +10,7 @@
   "name": "BEGranularityVS",
   "title": "Be Granularity Value Set",
   "status": "active",
-  "date": "2022-01-26T17:42:05+00:00",
+  "date": "2022-01-27T10:33:03+00:00",
   "description": "Indicates the granularity of product",
   "compose": {
     "include": [
