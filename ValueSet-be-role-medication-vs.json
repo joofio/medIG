@@ -10,7 +10,7 @@
   "name": "beRoleMedicationVS",
   "title": "Ingredient role Value Set",
   "status": "active",
-  "date": "2022-01-27T14:15:49+00:00",
+  "date": "2022-01-27T14:24:59+00:00",
   "description": "Indicates the role that an ingredient takes into a product",
   "compose": {
     "include": [
