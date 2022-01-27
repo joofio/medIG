@@ -16,13 +16,13 @@
   fhir:Questionnaire.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://hl7belgium.org" ];
-     fhir:Identifier.value [ fhir:value "questionnaire-cnpem" ]
+     fhir:Identifier.value [ fhir:value "questionnaire-vmp" ]
   ];
   fhir:Questionnaire.version [ fhir:value "0.1.0"];
   fhir:Questionnaire.name [ fhir:value "questionnaire-vmp"];
   fhir:Questionnaire.title [ fhir:value "Questionnaire for adding VMP"];
   fhir:Questionnaire.status [ fhir:value "active"];
-  fhir:Questionnaire.date [ fhir:value "2022-01-27T13:02:02+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2022-01-27T13:14:27+00:00"^^xsd:dateTime];
   fhir:Questionnaire.item [
      fhir:index 0;
      fhir:Questionnaire.item.linkId [ fhir:value "code-vmp" ];
