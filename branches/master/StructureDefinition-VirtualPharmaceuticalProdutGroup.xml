@@ -52,7 +52,7 @@
   <name value="VirtualPharmaceuticalProdutGroup"/>
   <title value="Virtual Pharmaceutical Product Group logical model"/>
   <status value="active"/>
-  <date value="2022-01-27T17:42:33+00:00"/>
+  <date value="2022-01-27T17:55:49+00:00"/>
   <description value="Virtual Pharmaceutical Product Group logical model"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
