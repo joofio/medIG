@@ -16,13 +16,13 @@
   <url value="http://hl7.org/fhir/us/example/Questionnaire/questionnaire-vmp"/>
   <identifier>
     <system value="http://hl7belgium.org"/>
-    <value value="questionnaire-cnpem"/>
+    <value value="questionnaire-vmp"/>
   </identifier>
   <version value="0.1.0"/>
   <name value="questionnaire-vmp"/>
   <title value="Questionnaire for adding VMP"/>
   <status value="active"/>
-  <date value="2022-01-27T13:02:02+00:00"/>
+  <date value="2022-01-27T13:14:27+00:00"/>
   <item>
     <linkId value="code-vmp"/>
     <text value="Code for the product"/>

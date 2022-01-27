@@ -9,14 +9,14 @@
   "identifier": [
     {
       "system": "http://hl7belgium.org",
-      "value": "questionnaire-cnpem"
+      "value": "questionnaire-vmp"
     }
   ],
   "version": "0.1.0",
   "name": "questionnaire-vmp",
   "title": "Questionnaire for adding VMP",
   "status": "active",
-  "date": "2022-01-27T13:02:02+00:00",
+  "date": "2022-01-27T13:14:27+00:00",
   "item": [
     {
       "linkId": "code-vmp",
