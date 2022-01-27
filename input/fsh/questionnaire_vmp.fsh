@@ -17,8 +17,6 @@ Title:    "VMP Questionnaire"
 * item[+].linkId = "ingredient"
 * item[=].type = #group
 * item[=].required = true
-
-
 * item[=].text = "Ingredient"
 * item[=].repeats = true
 
@@ -199,15 +197,20 @@ Title:    "AMPP Questionnaire"
 * item[=].required = true
 * item[=].text = "Brand Name"
 
-* item[+].linkId = "packsize"
-* item[=].type = #quantity
+* item[=].linkId = "packaging"
+* item[=].type = #group
 * item[=].required = true
-* item[=].text = "Package Size"
+* item[=].text = "Packaging"
 
-* item[+].linkId = "packtype"
-* item[=].type = #choice
-* item[=].required = true
-* item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/medicationknowledge-package-type"
-* item[=].text = "Packaging Type"
+* item[=].item[+].linkId = "packsize"
+* item[=].item[=].type = #quantity
+* item[=].item[=].required = true
+* item[=].item[=].text = "Package Size"
 
+
+* item[=].item[+].linkId = "packtype"
+* item[=].item[=].type = #choice
+* item[=].item[=].required = true
+* item[=].item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/medicationknowledge-package-type"
+* item[=].item[=].text = "SPackaging Type"
 

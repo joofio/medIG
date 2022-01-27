@@ -10,6 +10,8 @@ group doseform(source src: QuestionnaireResponse, target tgt: MedicationKnowledg
     src.item as item where linkId.value in ('marketingauhtorization')  -> tgt.drugCharacteristic as dc then marketing(item, dc) "rule for MA";
     src.item as item where linkId.value in ('marketingholder')  -> tgt.drugCharacteristic as dc then marketing_holder(item, dc) "rule for holder";
     src.item as item where linkId.value in ('brandname')  -> tgt as brand then synonym_format(item, brand) "rule for brand";
+    src.item as item where linkId.value in ('pack')  -> tgt as brand then packsize_format(item, brand) "rule for brand";
+    src.item as item where linkId.value in ('packtype')  -> tgt as brand then packtype_format(item, brand) "rule for brand";
 
 
 }
