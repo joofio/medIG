@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "2bc3298b-8173-4262-a2e5-070b5583c72d",
+  "id" : "24d82adc-9986-40ad-9804-db69669abf4c",
   "meta" : {
-    "lastUpdated" : "2022-01-27T13:14:27.552+00:00"
+    "lastUpdated" : "2022-01-27T13:16:24.102+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,11 +19,11 @@
       "name" : "GranularityVS",
       "title" : "Granularity Value Set",
       "status" : "active",
-      "date" : "2022-01-27T13:14:27+00:00",
+      "date" : "2022-01-27T13:16:24+00:00",
       "description" : "Indicates the granularity of product",
       "expansion" : {
-        "identifier" : "urn:uuid:84f4ff83-de42-4ec0-b395-8c5b80c4a2b6",
-        "timestamp" : "2022-01-27T13:15:02+00:00",
+        "identifier" : "urn:uuid:0117a9be-c991-4d91-a515-cee53534d36a",
+        "timestamp" : "2022-01-27T13:17:01+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -70,11 +70,11 @@
       "name" : "beGranularityVS",
       "title" : "Be Granularity Value Set",
       "status" : "active",
-      "date" : "2022-01-27T13:14:27+00:00",
+      "date" : "2022-01-27T13:16:24+00:00",
       "description" : "Indicates the granularity of product for belgium",
       "expansion" : {
-        "identifier" : "urn:uuid:c9a32abb-7032-4b9a-b159-c698808fde45",
-        "timestamp" : "2022-01-27T13:15:02+00:00",
+        "identifier" : "urn:uuid:07d9adf3-bd89-4e9a-9fb0-6731e38126fc",
+        "timestamp" : "2022-01-27T13:17:01+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -130,11 +130,11 @@
       "name" : "beMedicationVS",
       "title" : "Ingredient  Value Set",
       "status" : "active",
-      "date" : "2022-01-27T13:14:27+00:00",
-      "description" : "Indicates the role that an ingredient takes into a product",
+      "date" : "2022-01-27T13:16:24+00:00",
+      "description" : "Indicates the ingredient inside a product",
       "expansion" : {
-        "identifier" : "urn:uuid:a29e0128-151c-4ffd-ac5c-4cabe709f785",
-        "timestamp" : "2022-01-27T13:15:02+00:00",
+        "identifier" : "urn:uuid:2587bbfb-ce20-4d23-b9d6-0a140604debd",
+        "timestamp" : "2022-01-27T13:17:01+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -176,11 +176,11 @@
       "name" : "beRoleMedicationVS",
       "title" : "Ingredient role Value Set",
       "status" : "active",
-      "date" : "2022-01-27T13:14:27+00:00",
+      "date" : "2022-01-27T13:16:24+00:00",
       "description" : "Indicates the role that an ingredient takes into a product",
       "expansion" : {
-        "identifier" : "urn:uuid:6791de18-13e7-426e-ae31-7208ff9ba8f7",
-        "timestamp" : "2022-01-27T13:15:02+00:00",
+        "identifier" : "urn:uuid:35ee5fb5-2111-43a5-a756-025942f699f4",
+        "timestamp" : "2022-01-27T13:17:01+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",

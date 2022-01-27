@@ -10,8 +10,8 @@
   <name value="beMedicationVS"/>
   <title value="Ingredient  Value Set"/>
   <status value="active"/>
-  <date value="2022-01-27T13:14:27+00:00"/>
-  <description value="Indicates the role that an ingredient takes into a product"/>
+  <date value="2022-01-27T13:16:24+00:00"/>
+  <description value="Indicates the ingredient inside a product"/>
   <compose>
     <include>
       <system value="http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs"/>

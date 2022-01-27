@@ -1,9 +1,9 @@
 ﻿medicationIG : Validation Results
 =========================================
 
-err = 7, warn = 76, info = 16
+err = 6, warn = 75, info = 16
 IG Publisher Version: 1.1.97
-Generated Thu Jan 27 13:15:27 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Thu Jan 27 13:17:25 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
  Build Errors : 218 / 8 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-be-rolemed-cs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 2 / 1
@@ -12,7 +12,7 @@ Generated Thu Jan 27 13:15:27 UTC 2022. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/CodeSystem-medics : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-rel-med-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-type-med-class-cs : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/MedicationKnowledge-be-substance : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-be-vmpgroup : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-0-of-drug-med : 0 / 0 / 2
@@ -21,7 +21,7 @@ Generated Thu Jan 27 13:15:27 UTC 2022. FHIR version 4.0.1 for medication.ig.exa
  /github/workspace/fsh-generated/resources/MedicationKnowledge-example-3-of-drug-med : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/MedicationKnowledge-vmp-1 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-cnpem : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-vmp : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-vmp : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp2 : 0 / 1 / 4
  /github/workspace/fsh-generated/resources/StructureDefinition-BeVmpGroup : 0 / 0 / 1
@@ -249,7 +249,7 @@ ERROR: /github/workspace/output/ValueSet-be-granularity-vs.json.html#/html/body/
 ERROR: /github/workspace/output/ValueSet-be-granularity-vs.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-be-granularity-vs.xml.html#/html/body/div/div/div/p/a at Line 234, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-be-role-medication-vs.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-be-role-medication-vs.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-be-role-medication-vs.html#/html/body/div/div/div/p/a at Line 251, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-be-role-medication-vs.json.html#/html/body/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-be-role-medication-vs.ttl.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-be-role-medication-vs.xml.html#/html/body/div/div/div/p/a at Line 212, column 28: The link '' for "" cannot be resolved
@@ -262,7 +262,7 @@ ERROR: /github/workspace/output/ValueSet-medication-vs.change.history.html#/html
 ERROR: /github/workspace/output/ValueSet-medication-vs.html#/html/body/div/div/div/p/a at Line 251, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-medication-vs.json.html#/html/body/div/div/div/p/a at Line 213, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-medication-vs.ttl.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-medication-vs.xml.html#/html/body/div/div/div/p/a at Line 212, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-medication-vs.xml.html#/html/body/div/div/div/p/a at Line 211, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 504, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/download.html#/html/body/div/div/div/p/a at Line 187, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 158, column 28: The link '' for "" cannot be resolved
@@ -288,7 +288,6 @@ WARNING: CodeSystem/rel-med-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have 
 WARNING: CodeSystem/type-med-class-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
 == fsh-generated/resources/ImplementationGuide-medication.ig.example.json ==
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[20].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[21].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/medication.ig.example: ImplementationGuide.definition.resource[22].description: value should not start or finish with whitespace
 == fsh-generated/resources/MedicationKnowledge-be-substance.json ==
@@ -310,7 +309,6 @@ INFORMATION: MedicationKnowledge/vmp-1: MedicationKnowledge.code.coding[0]: Code
 WARNING: Questionnaire/questionnaire-cnpem: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/Questionnaire-questionnaire-vmp.json ==
 WARNING: Questionnaire/questionnaire-vmp: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: Questionnaire/questionnaire-vmp: Questionnaire.item[1].item[2].answerValueSet: Canonical URL 'http://hl7.org/fhir/us/example/valueSet/be-role-medication-vs' does not resolve
 == fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp.json ==
 INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[1].answer[0].value.ofType(Coding): Code System URI 'http://standardterms.edqm.eu/PDF/' is unknown so the code cannot be validated
 INFORMATION: QuestionnaireResponse/questionnaire-response-vmp: QuestionnaireResponse.item[2].answer[0].value.ofType(Coding): Code System URI 'http://standardterms.edqm.eu/ROA/' is unknown so the code cannot be validated

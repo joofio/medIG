@@ -10,8 +10,8 @@
   "name": "beMedicationVS",
   "title": "Ingredient  Value Set",
   "status": "active",
-  "date": "2022-01-27T13:14:27+00:00",
-  "description": "Indicates the role that an ingredient takes into a product",
+  "date": "2022-01-27T13:16:24+00:00",
+  "description": "Indicates the ingredient inside a product",
   "compose": {
     "include": [
       {
