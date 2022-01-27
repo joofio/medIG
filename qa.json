@@ -3,7 +3,7 @@
   "name": "medicationIG",
   "package-id": "medication.ig.example",
   "ig-ver": "0.1.0",
-  "date": "Thu, 27 Jan, 2022 12:11:00 +0000",
+  "date": "Thu, 27 Jan, 2022 12:18:33 +0000",
   "errs": 22,
   "warnings": 77,
   "hints": 16,

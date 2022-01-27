@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2350fa06-a87a-4f34-a9f1-248b2f718800"/>
+  <id value="cf3c363c-1bd2-4b0e-8d78-8016c45a2dc7"/>
   <meta>
-    <lastUpdated value="2022-01-27T12:11:00.058+00:00"/>
+    <lastUpdated value="2022-01-27T12:18:33.056+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -75,11 +75,11 @@
         <name value="GranularityVS"/>
         <title value="Granularity Value Set"/>
         <status value="active"/>
-        <date value="2022-01-27T12:11:00+00:00"/>
+        <date value="2022-01-27T12:18:33+00:00"/>
         <description value="Indicates the granularity of product"/>
         <expansion>
-          <identifier value="urn:uuid:3958b1d6-5742-41bb-952c-aeecb6a45303"/>
-          <timestamp value="2022-01-27T12:11:37+00:00"/>
+          <identifier value="urn:uuid:edf13e54-48f6-443a-bef2-a137a6ebe14d"/>
+          <timestamp value="2022-01-27T12:19:03+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -201,11 +201,11 @@
         <name value="beGranularityVS"/>
         <title value="Be Granularity Value Set"/>
         <status value="active"/>
-        <date value="2022-01-27T12:11:00+00:00"/>
+        <date value="2022-01-27T12:18:33+00:00"/>
         <description value="Indicates the granularity of product for belgium"/>
         <expansion>
-          <identifier value="urn:uuid:deb63320-46ce-4d4b-bda2-34ceef7e5b8c"/>
-          <timestamp value="2022-01-27T12:11:37+00:00"/>
+          <identifier value="urn:uuid:73baba37-e112-4eb0-b1ac-cfb515b163ae"/>
+          <timestamp value="2022-01-27T12:19:03+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

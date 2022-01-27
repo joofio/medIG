@@ -5,32 +5,32 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/example/ValueSet/role-medication-vs> a fhir:ValueSet;
+<http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "role-medication-vs"];
+  fhir:Resource.id [ fhir:value "be-role-medication-vs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://hl7.org/fhir/example/CodeSystem/roleCS</code></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs</code></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/example/ValueSet/role-medication-vs"];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "beRoleMedicationVS"];
   fhir:ValueSet.title [ fhir:value "Ingredient role Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-01-27T12:11:00+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-01-27T12:18:33+00:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "Indicates the role that an ingredient takes into a product"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/example/CodeSystem/roleCS" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/example/ValueSet/role-medication-vs.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/example/ValueSet/role-medication-vs.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/example/ValueSet/be-role-medication-vs.ttl> .
 
 # -------------------------------------------------------------------------------------
 

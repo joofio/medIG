@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs> a fhir:CodeSystem;
+<http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "rolemed-cs"];
+  fhir:Resource.id [ fhir:value "be-rolemed-cs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AP<a name=\"rolemed-cs-AP\"> </a></td><td>Active Principle</td></tr><tr><td style=\"white-space:nowrap\">NAP<a name=\"rolemed-cs-NAP\"> </a></td><td>Non-Active</td></tr><tr><td style=\"white-space:nowrap\">EXP<a name=\"rolemed-cs-EXP\"> </a></td><td>Excipient</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AP<a name=\"be-rolemed-cs-AP\"> </a></td><td>Active Principle</td></tr><tr><td style=\"white-space:nowrap\">NAP<a name=\"be-rolemed-cs-NAP\"> </a></td><td>Non-Active</td></tr><tr><td style=\"white-space:nowrap\">EXP<a name=\"be-rolemed-cs-EXP\"> </a></td><td>Excipient</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs"];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "beRoleIngredinent-cs"];
   fhir:CodeSystem.title [ fhir:value "Role Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-01-27T12:11:00+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-01-27T12:18:33+00:00"^^xsd:dateTime];
   fhir:CodeSystem.description [ fhir:value "Codes for role in ingredient level "];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
@@ -37,9 +37,9 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs.ttl> a owl:Ontology;
+<http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://build.fhir.org/us/example/CodeSystem/rolemed-cs.ttl> .
+  owl:versionIRI <http://build.fhir.org/us/example/CodeSystem/be-rolemed-cs.ttl> .
 
 # -------------------------------------------------------------------------------------
 

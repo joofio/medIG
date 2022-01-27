@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>MEDICATION.IG.EXAMPLE\Ingredient Code System - XML Representation - FHIR v4.0.1</title>
+    <title>MEDICATION.IG.EXAMPLE\Ingredient role Value Set - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.21"}
-    h3,h4,h5,h6{--heading-prefix:"5.21"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.16"}
+    h3,h4,h5,h6{--heading-prefix:"5.16"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -91,7 +91,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Ingredient Code System</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Ingredient role Value Set</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -103,9 +103,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 7" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">medicationIG - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">medicationIG - Local Development build (v0.1.0). See the <a href="http://hl7.org/fhir/us/example/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
 
 
 
@@ -114,28 +114,28 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="CodeSystem-ingredient-cs.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
   
-    <li class="active">
-      <a href="#">XML</a>
+    <li>
+      <a href="ValueSet-be-role-medication-vs.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-ingredient-cs.json.html">JSON</a>
+      <a href="ValueSet-be-role-medication-vs.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-ingredient-cs.ttl.html">TTL</a>
+      <a href="ValueSet-be-role-medication-vs.ttl.html">TTL</a>
     </li>
   
 
@@ -143,55 +143,87 @@
 
 </ul>
 
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: Ingredient role Value Set</h2>
+  <p>
+    <b>Summary</b>
+  </p>
+  <table class="grid">
+<tbody>
+<tr><td>Defining URL:</td><td>http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs</td></tr>
+ <tr><td>Version:</td><td>0.1.0</td></tr>
+ <tr><td>Name:</td><td>beRoleMedicationVS</td></tr>
+ <tr><td>Title:</td><td>Ingredient role Value Set</td></tr>
+ <tr><td>Status:</td><td>Active as of 1/27/22, 12:18 PM</td></tr>
+ <tr><td>Definition:</td><td><p>Indicates the role that an ingredient takes into a product</p>
+</td></tr>
+ <tr><td>Source Resource:</td><td><a href="ValueSet-be-role-medication-vs.xml.html">XML</a> / <a href="ValueSet-be-role-medication-vs.json.html">JSON</a> / <a href="ValueSet-be-role-medication-vs.ttl.html">Turtle</a></td></tr>
+</tbody></table>
 
-<a name="root"> </a>
 
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
 
-<h2 id="root">: Ingredient Code System - XML Representation</h2>
-
-<p><a href="CodeSystem-ingredient-cs.xml" no-download="true">Raw xml</a> | <a download="null" href="CodeSystem-ingredient-cs.xml">Download</a></p>
 
     <!-- insert intro if present -->
   
 
 
 
-  <pre class="xml"><code class="language-xml">
+  <a name="definition"> </a>
 
-&lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a> xmlns="http://hl7.org/fhir"&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ingredient-cs"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;This code system http://hl7.org/fhir/us/example/CodeSystem/ingredient-cs defines the following codes:&lt;/p&gt;&lt;table class="codes"&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;000001&lt;a name="ingredient-cs-000001"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Paracetamol&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;000002&lt;a name="ingredient-cs-000002"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Insuline lispro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;000003&lt;a name="ingredient-cs-000003"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tramadol&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://hl7.org/fhir/us/example/CodeSystem/ingredient-cs"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="0.1.0"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="beIngredinent-cs"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Ingredient Code System"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2022-01-27T12:11:00+00:00"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="Codes for role in ingredient level "/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="complete"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>="3"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="000001"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Paracetamol"/&gt;
-  &lt;/concept&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="000002"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Insuline lispro"/&gt;
-  &lt;/concept&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="000003"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Tramadol"/&gt;
-  &lt;/concept&gt;
-&lt;/CodeSystem&gt;</code></pre>
+  <!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div><ul><li>Include all codes defined in <code>http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs</code></li></ul></div>
 
+  <p>&nbsp;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <p><span style="color: maroon; font-weight: bold" title="Publication Tooling Error: [Unable to expand imported value set: Error from server: Unable to provide support for code system http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs, Error from server: Unable to provide support for code system http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs]">No Expansion for this valueset (Unknown Code System  <!-- [Unable to expand imported value set: Error from server: Unable to provide support for code system http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs, Error from server: Unable to provide support for code system http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs] -->)</span></p>
+
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
 
     <!-- insert notes if present -->
   
 
 
+
+  
 
 </div>
         </div>    <!-- /inner-wrapper -->
@@ -214,8 +246,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l421">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package medication.ig.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 27, 2022 12:11+0000">2022-01-27</span>
+        <p><a name="l460">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package medication.ig.example#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 27, 2022 12:18+0000">2022-01-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

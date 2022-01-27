@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "medicationIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-01-27T12:11:00+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-27T12:18:33+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "medication.ig.example"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -464,8 +464,8 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/example/ValueSet/role-medication-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/role-medication-vs" ]
+         fhir:link <http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-role-medication-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingredient role Value Set" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the role that an ingredient takes into a product" ];
@@ -533,8 +533,8 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/ingredient-cs>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/ingredient-cs" ]
+         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/beingredient-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingredient Code System" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for role in ingredient level " ];
@@ -561,8 +561,8 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/rolemed-cs" ]
+         fhir:link <http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-rolemed-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Role Code System" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for role in ingredient level " ];
@@ -862,7 +862,7 @@
 
 <http://hl7.org/fhir/us/example/ValueSet/medication-vs> a fhir:us .
 
-<http://hl7.org/fhir/us/example/ValueSet/role-medication-vs> a fhir:us .
+<http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs> a fhir:us .
 
 <http://hl7.org/fhir/us/example/CodeSystem/drug-char-cs> a fhir:us .
 
@@ -872,11 +872,11 @@
 
 <http://hl7.org/fhir/us/example/CodeSystem/rel-med-cs> a fhir:us .
 
-<http://hl7.org/fhir/us/example/CodeSystem/ingredient-cs> a fhir:us .
+<http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs> a fhir:us .
 
 <http://hl7.org/fhir/us/example/CodeSystem/beMedCS> a fhir:us .
 
-<http://hl7.org/fhir/us/example/CodeSystem/rolemed-cs> a fhir:us .
+<http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs> a fhir:us .
 
 <http://hl7.org/fhir/us/example/MedicationKnowledge/be-substance> a fhir:us .
 
