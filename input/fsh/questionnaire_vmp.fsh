@@ -1,7 +1,7 @@
 Instance: questionnaire-vmp
 InstanceOf: Questionnaire
 Description: "Questionnaire for adding a drug level of VMP to a fhir server"
-Title:    "VMP Questionnaire addition"
+Title:    "VMP Questionnaire"
 
 * identifier[0].system = "http://hl7belgium.org"
 * identifier[0].value = "questionnaire-cnpem"
@@ -19,12 +19,12 @@ Title:    "VMP Questionnaire addition"
 * item[=].required = true
 
 
-* item[=].text = "Ingredient for the product"
+* item[=].text = "Ingredient"
 * item[=].repeats = true
 
 * item[=].item[+].linkId = "ingredient-vmp"
-* item[=].item[=].type = #choice
-* item[=].item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/yesnodontknow"
+* item[=].item[=].type = #open-choice
+* item[=].item[=].answerValueSet = ingredientVS 
 * item[=].item[=].required = true
 * item[=].item[=].text = "Ingredient for the product"
 

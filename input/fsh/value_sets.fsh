@@ -116,7 +116,7 @@ Description: "Codes for medicine level"
  
 
 // Define a local code system
-CodeSystem: BEMedicineCodeSystem
+CodeSystem: beMedicineCodeSystem
 Id:         beMedCS
 Title: "Drug Code System"
 Description: "Codes for belgian medicine level "
@@ -143,10 +143,10 @@ Description: "Indicates the granularity of product"
 * medCS#PACKMEDPROD "Packaged Medicinal Product"
 
 
-ValueSet: BEGranularityVS
+ValueSet: beGranularityVS
 Id: be-granularity-vs
 Title: "Be Granularity Value Set"
-Description: "Indicates the granularity of product"
+Description: "Indicates the granularity of product for belgium"
 * medCS#SUBST  "Substance"
 * medCS#PHARMPROD "Pharmaceutical Product"
 * medCS#MEDPROD  "Medicinal Product"
@@ -156,7 +156,7 @@ Description: "Indicates the granularity of product"
 
 
 // Define a local code system
-CodeSystem: RoleIngredinent-cs
+CodeSystem: beRoleIngredinent-cs
 Id:         rolemed-cs
 Title: "Role Code System"
 Description: "Codes for role in ingredient level "
@@ -174,12 +174,41 @@ Description: "Codes for role in ingredient level "
 Alias: roleCS = http://hl7.org/fhir/example/CodeSystem/roleCS
 
 
-ValueSet: RoleMedicationVS
+ValueSet: beRoleMedicationVS
 Id: role-medication-vs
 Title: "Ingredient role Value Set"
 Description: "Indicates the role that an ingredient takes into a product"
 * include codes from system roleCS
 
 Alias: rolevs = http://hl7.org/fhir/example/valueSet/roleVS
+
+
+
+// Define a local code system
+CodeSystem: beIngredinent-cs
+Id:         ingredient-cs
+Title: "Ingredient Code System"
+Description: "Codes for role in ingredient level "
+
+* #000001 
+    "Paracetamol"
+
+* #000002 
+    "Insuline lispro"
+
+* #000003 
+    "Tramadol"
+    
+
+Alias: ingredientCS = http://hl7.org/fhir/example/CodeSystem/ingredientCS
+
+
+ValueSet: beRoleMedicationVS
+Id: medication-vs
+Title: "Ingredient  Value Set"
+Description: "Indicates the role that an ingredient takes into a product"
+* include codes from system ingredientCS
+
+Alias: ingredientVS = http://hl7.org/fhir/example/valueSet/ingredientVS
 
 

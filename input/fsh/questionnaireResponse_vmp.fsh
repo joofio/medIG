@@ -2,7 +2,7 @@
 Instance: questionnaire-response-vmp
 InstanceOf: QuestionnaireResponse
 Description: "Questionnaire Response example for adding a drug level of VMP to a fhir server"
-Title:    "VMP Questionnaire Response Addition"
+Title:    "VMP Questionnaire Response 1"
 
 
 * status = #in-progress
@@ -11,7 +11,7 @@ Title:    "VMP Questionnaire Response Addition"
 * item[+].linkId = "ingredient"
 
 * item[=].item[+].linkId = "ingredient-vmp"
-* item[=].item[=].answer.valueCoding = https://go.drugbank.com/drugs/#DB00316 "insuline lispro"
+* item[=].item[=].answer.valueCoding = ingredientVS#000002 "insuline lispro"
 
 * item[=].item[+].linkId = "strength-vmp"
 * item[=].item[=].answer.valueQuantity.value = 100
@@ -36,7 +36,7 @@ Title:    "VMP Questionnaire Response Addition"
 Instance: questionnaire-response-vmp2
 InstanceOf: QuestionnaireResponse
 Description: "Questionnaire Response example 2 for adding a drug level of VMP to a fhir server"
-Title:    "VMP Questionnaire Response Addition"
+Title:    "VMP Questionnaire Response 2"
 
 * status = #in-progress
 * authored = "2022-01-26T02:00:00Z"
@@ -44,7 +44,7 @@ Title:    "VMP Questionnaire Response Addition"
 * item[+].linkId = "ingredient"
 
 * item[=].item[+].linkId = "ingredient-vmp"
-* item[=].item[=].answer[+].valueCoding = https://go.drugbank.com/drugs/#DB00316 "Tramadol"
+* item[=].item[=].answer[+].valueCoding = ingredientVS#000003 "Tramadol"
 
 * item[=].item[+].linkId = "strength-vmp"
 * item[=].item[=].answer[+].valueQuantity.value = 37.5
@@ -57,7 +57,7 @@ Title:    "VMP Questionnaire Response Addition"
 * item[+].linkId = "ingredient"
 
 * item[=].item[+].linkId = "ingredient-vmp"
-* item[=].item[=].answer[+].valueCoding = https://go.drugbank.com/drugs/#DB00316 "Acetaminophen"
+* item[=].item[=].answer[+].valueCoding = ingredientVS#000001 "Acetaminophen"
 
 * item[=].item[+].linkId = "strength-vmp"
 * item[=].item[=].answer[+].valueQuantity.value = 325

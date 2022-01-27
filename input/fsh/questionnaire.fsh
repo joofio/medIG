@@ -1,7 +1,7 @@
 Instance: questionnaire-cnpem
 InstanceOf: Questionnaire
 Description: "Questionnaire for adding a drug level of CNPEM to a fhir server"
-Title:    "CNPEM Questionnaire addition"
+Title:    "CNPEM Questionnaire"
 
 * identifier[0].system = "http://infarmed.pt"
 * identifier[0].value = "questionnaire-cnpem"
