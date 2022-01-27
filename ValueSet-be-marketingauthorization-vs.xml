@@ -10,8 +10,8 @@
   <name value="BeMAVS"/>
   <title value="Marketing Authorization Value Set"/>
   <status value="active"/>
-  <date value="2022-01-27T15:35:43+00:00"/>
-  <description value="Indicates the Marketing Authorization for product"/>
+  <date value="2022-01-27T16:48:37+00:00"/>
+  <description value="Indicates the Marketing Authorization for a product"/>
   <compose>
     <include>
       <system value="http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs"/>

@@ -10,8 +10,8 @@
   "name": "BeMAVS",
   "title": "Marketing Authorization Value Set",
   "status": "active",
-  "date": "2022-01-27T15:35:43+00:00",
-  "description": "Indicates the Marketing Authorization for product",
+  "date": "2022-01-27T16:48:37+00:00",
+  "description": "Indicates the Marketing Authorization for a product",
   "compose": {
     "include": [
       {

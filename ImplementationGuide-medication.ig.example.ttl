@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "medicationIG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-01-27T15:35:43+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-27T16:48:37+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "medication.ig.example"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -440,7 +440,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/be-marketingauthorization-holder-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Authorization Holder Value Set" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the Marketing Authorization for product" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the Marketing Authorization Holder of a product" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 14;
@@ -454,7 +454,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/be-marketingauthorization-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Authorization Value Set" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the Marketing Authorization for product" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the Marketing Authorization for a product" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 15;
@@ -524,7 +524,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/be-marketingauthorization-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Authorization Code System" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for ingredient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Marketing Authorization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 20;
@@ -538,7 +538,7 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/be-marketingauthorization-holder-cs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Marketing Authorization Holder Code System" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for ingredient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for Marketing Authorization Holder" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 21;

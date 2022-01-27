@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2022-01-27T15:35:43+00:00"/>
+  <date value="2022-01-27T16:48:37+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -310,7 +310,7 @@
         <reference value="ValueSet/be-marketingauthorization-holder-vs"/>
       </reference>
       <name value="Marketing Authorization Holder Value Set"/>
-      <description value="Indicates the Marketing Authorization for product"/>
+      <description value="Indicates the Marketing Authorization Holder of a product"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -321,7 +321,7 @@
         <reference value="ValueSet/be-marketingauthorization-vs"/>
       </reference>
       <name value="Marketing Authorization Value Set"/>
-      <description value="Indicates the Marketing Authorization for product"/>
+      <description value="Indicates the Marketing Authorization for a product"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -376,7 +376,7 @@
         <reference value="CodeSystem/be-marketingauthorization-cs"/>
       </reference>
       <name value="Marketing Authorization Code System"/>
-      <description value="Codes for ingredient"/>
+      <description value="Codes for Marketing Authorization"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -387,7 +387,7 @@
         <reference value="CodeSystem/be-marketingauthorization-holder-cs"/>
       </reference>
       <name value="Marketing Authorization Holder Code System"/>
-      <description value="Codes for ingredient"/>
+      <description value="Codes for Marketing Authorization Holder"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
