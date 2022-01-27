@@ -24,7 +24,7 @@ Title:    "VMP Questionnaire"
 
 * item[=].item[+].linkId = "ingredient-vmp"
 * item[=].item[=].type = #open-choice
-* item[=].item[=].answerValueSet = ingredientVS 
+* item[=].item[=].answerValueSet = ingredientVS
 * item[=].item[=].required = true
 * item[=].item[=].text = "Ingredient for the product"
 

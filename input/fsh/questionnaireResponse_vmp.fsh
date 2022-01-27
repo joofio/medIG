@@ -11,7 +11,7 @@ Title:    "VMP Questionnaire Response 1"
 * item[+].linkId = "ingredient"
 
 * item[=].item[+].linkId = "ingredient-vmp"
-* item[=].item[=].answer.valueCoding = ingredientVS#000002 "insuline lispro"
+* item[=].item[=].answer.valueCoding = beingredient-cs#000002 "insuline lispro"
 
 * item[=].item[+].linkId = "strength-vmp"
 * item[=].item[=].answer.valueQuantity.value = 100
@@ -44,7 +44,7 @@ Title:    "VMP Questionnaire Response 2"
 * item[+].linkId = "ingredient"
 
 * item[=].item[+].linkId = "ingredient-vmp"
-* item[=].item[=].answer[+].valueCoding = ingredientVS#000003 "Tramadol"
+* item[=].item[=].answer[+].valueCoding = beingredient-cs#000003 "Tramadol"
 
 * item[=].item[+].linkId = "strength-vmp"
 * item[=].item[=].answer[+].valueQuantity.value = 37.5
@@ -57,7 +57,7 @@ Title:    "VMP Questionnaire Response 2"
 * item[+].linkId = "ingredient"
 
 * item[=].item[+].linkId = "ingredient-vmp"
-* item[=].item[=].answer[+].valueCoding = ingredientVS#000001 "Acetaminophen"
+* item[=].item[=].answer[+].valueCoding = beingredient-cs#000001 "Acetaminophen"
 
 * item[=].item[+].linkId = "strength-vmp"
 * item[=].item[=].answer[+].valueQuantity.value = 325
