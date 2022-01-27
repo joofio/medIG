@@ -178,14 +178,14 @@ Title: "Ingredient role Value Set"
 Description: "Indicates the role that an ingredient takes into a product"
 * include codes from system beRoleIngredinentCS
 
-Alias: rolevs = http://hl7.org/fhir/us/example/valueSet/be-role-medication-vs
+Alias: rolevs = http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs
 
 
 // Define a local code system
 CodeSystem: beIngredientCS
 Id:         beingredient-cs
 Title: "Ingredient Code System"
-Description: "Codes for role in ingredient level "
+Description: "Codes for ingredient"
 
 * #000001 
     "Paracetamol"
@@ -203,7 +203,7 @@ Alias: ingredientCS = http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs
 ValueSet: beMedicationVS
 Id: medication-vs
 Title: "Ingredient  Value Set"
-Description: "Indicates the role that an ingredient takes into a product"
+Description: "Indicates the ingredient inside a product"
 * include codes from system beIngredientCS
 
 Alias: ingredientVS = http://hl7.org/fhir/us/example/ValueSet/medication-vs
