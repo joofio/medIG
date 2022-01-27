@@ -9,7 +9,7 @@ Title:    "VMP Questionnaire"
 * name = "questionnaire-vmp"
 * title = "Questionnaire for adding VMP"
 * status = #active
-* item[+].linkId = "code-vmp"
+* item[+].linkId = "code"
 * item[=].type = #integer
 * item[=].required = false
 * item[=].text = "Code for the product"
@@ -22,31 +22,31 @@ Title:    "VMP Questionnaire"
 * item[=].text = "Ingredient"
 * item[=].repeats = true
 
-* item[=].item[+].linkId = "ingredient-vmp"
+* item[=].item[+].linkId = "ingredient-element"
 * item[=].item[=].type = #open-choice
 * item[=].item[=].answerValueSet = ingredientVS
 * item[=].item[=].required = true
 * item[=].item[=].text = "Ingredient for the product"
 
-* item[=].item[+].linkId = "strength-vmp"
+* item[=].item[+].linkId = "strength"
 * item[=].item[=].type = #quantity
 * item[=].item[=].required = true
 * item[=].item[=].text = "Strength of the ingredient of the product"
 
-* item[=].item[+].linkId = "role-vmp"
+* item[=].item[+].linkId = "role"
 * item[=].item[=].type = #choice
 * item[=].item[=].answerValueSet = rolevs
 * item[=].item[=].required = true
 * item[=].item[=].text = "Roles of the ingredient of the product"
 
 
-* item[+].linkId = "doseform-vmp"
+* item[+].linkId = "doseform"
 * item[=].type = #choice
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/medication-form-codes"
 * item[=].required = true
 * item[=].text = "Dose Form of the product"
 
-* item[+].linkId = "route-vmp"
+* item[+].linkId = "route"
 * item[=].type = #choice
 * item[=].required = true
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/route-codes"
@@ -62,10 +62,10 @@ Title:    "AMP Questionnaire"
 * identifier[0].system = "http://hl7belgium.org"
 * identifier[0].value = "questionnaire-amp"
 
-* name = "questionnaire-vmp"
+* name = "questionnaire-amp"
 * title = "Questionnaire for adding AMP"
 * status = #active
-* item[+].linkId = "code-vmp"
+* item[+].linkId = "code"
 * item[=].type = #integer
 * item[=].required = false
 * item[=].text = "Code for the product"
@@ -78,50 +78,50 @@ Title:    "AMP Questionnaire"
 * item[=].text = "Ingredient"
 * item[=].repeats = true
 
-* item[=].item[+].linkId = "ingredient-vmp"
+* item[=].item[+].linkId = "ingredient-element"
 * item[=].item[=].type = #open-choice
 * item[=].item[=].answerValueSet = ingredientVS
 * item[=].item[=].required = true
 * item[=].item[=].text = "Ingredient for the product"
 
-* item[=].item[+].linkId = "strength-vmp"
+* item[=].item[+].linkId = "strength"
 * item[=].item[=].type = #quantity
 * item[=].item[=].required = true
 * item[=].item[=].text = "Strength of the ingredient of the product"
 
-* item[=].item[+].linkId = "role-vmp"
+* item[=].item[+].linkId = "role"
 * item[=].item[=].type = #choice
 * item[=].item[=].answerValueSet = rolevs
 * item[=].item[=].required = true
 * item[=].item[=].text = "Roles of the ingredient of the product"
 
 
-* item[+].linkId = "doseform-vmp"
+* item[+].linkId = "doseform"
 * item[=].type = #choice
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/medication-form-codes"
 * item[=].required = true
 * item[=].text = "Dose Form of the product"
 
-* item[+].linkId = "route-vmp"
+* item[+].linkId = "route"
 * item[=].type = #choice
 * item[=].required = true
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/route-codes"
 * item[=].text = "Route of administration"
 * item[=].repeats = true
 
-* item[+].linkId = "marketingauhtorization-amp"
+* item[+].linkId = "marketingauhtorization"
 * item[=].type = #open-choice
 * item[=].answerValueSet = MAVS
 * item[=].required = true
 * item[=].text = "Marketing Authorization of the product"
 
-* item[+].linkId = "marketingauhtorization-holder-amp"
+* item[+].linkId = "marketingauhtorization-holder"
 * item[=].type = #open-choice
 * item[=].required = true
 * item[=].answerValueSet = MAHVS
 * item[=].text = "Marketing Auhtorization Holder"
 
-* item[+].linkId = "brandname-amp"
+* item[+].linkId = "brandname"
 * item[=].type = #string
 * item[=].required = true
 * item[=].text = "Brand Name"
@@ -138,7 +138,7 @@ Title:    "AMPP Questionnaire"
 * name = "questionnaire-ampp"
 * title = "Questionnaire for adding AMPP"
 * status = #active
-* item[+].linkId = "code-ampp"
+* item[+].linkId = "code"
 * item[=].type = #integer
 * item[=].required = false
 * item[=].text = "Code for the product"
@@ -151,60 +151,60 @@ Title:    "AMPP Questionnaire"
 * item[=].text = "Ingredient"
 * item[=].repeats = true
 
-* item[=].item[+].linkId = "ingredient-ampp"
+* item[=].item[+].linkId = "ingredient-element"
 * item[=].item[=].type = #open-choice
 * item[=].item[=].answerValueSet = ingredientVS
 * item[=].item[=].required = true
 * item[=].item[=].text = "Ingredient for the product"
 
-* item[=].item[+].linkId = "strength-ampp"
+* item[=].item[+].linkId = "strength"
 * item[=].item[=].type = #quantity
 * item[=].item[=].required = true
 * item[=].item[=].text = "Strength of the ingredient of the product"
 
-* item[=].item[+].linkId = "role-ampp"
+* item[=].item[+].linkId = "role"
 * item[=].item[=].type = #choice
 * item[=].item[=].answerValueSet = rolevs
 * item[=].item[=].required = true
 * item[=].item[=].text = "Roles of the ingredient of the product"
 
 
-* item[+].linkId = "doseform-ampp"
+* item[+].linkId = "doseform"
 * item[=].type = #choice
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/medication-form-codes"
 * item[=].required = true
 * item[=].text = "Dose Form of the product"
 
-* item[+].linkId = "route-ampp"
+* item[+].linkId = "route"
 * item[=].type = #choice
 * item[=].required = true
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/route-codes"
 * item[=].text = "Route of administration"
 * item[=].repeats = true
 
-* item[+].linkId = "marketingauhtorization-ampp"
+* item[+].linkId = "marketingauhtorization"
 * item[=].type = #choice
 * item[=].answerValueSet = MAVS
 * item[=].required = true
 * item[=].text = "Marketing Authorization of the product"
 
-* item[+].linkId = "marketingauhtorization-holder-ampp"
+* item[+].linkId = "marketingauhtorization-holder"
 * item[=].type = #choice
 * item[=].required = true
 * item[=].answerValueSet = MAHVS
 * item[=].text = "Marketing Auhtorization Holder"
 
-* item[+].linkId = "brandname-ampp"
+* item[+].linkId = "brandname"
 * item[=].type = #string
 * item[=].required = true
 * item[=].text = "Brand Name"
 
-* item[+].linkId = "packsize-ampp"
+* item[+].linkId = "packsize"
 * item[=].type = #quantity
 * item[=].required = true
 * item[=].text = "Package Size"
 
-* item[+].linkId = "packtype-ampp"
+* item[+].linkId = "packtype"
 * item[=].type = #choice
 * item[=].required = true
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/medicationknowledge-package-type"

@@ -7,7 +7,16 @@ group doseform(source src: QuestionnaireResponse, target tgt: MedicationKnowledg
     src.item as item where linkId.value in ('code')  -> tgt as code then code_format(item, code) "rule for code";
     src.item as item where linkId.value in ('doseform')  -> tgt as doseform then doseform_format(item, doseform) "rule for doseForm";
     src.item as item where linkId.value in ('ingredient')  -> tgt.ingredient as ingre then ingredient_group(item, ingre) "rule for ingredient";
+    src.item as item where linkId.value in ('marketingauhtorization')  -> tgt.ingredient as ingre then marketing(item, ingre) "rule for MA";
+    src.item as item where linkId.value in ('marketingauhtorization-holder')  -> tgt.ingredient as ingre then marketing_holder(item, ingre) "rule for holder";
+    src.item as item where linkId.value in ('brandname')  -> tgt as brand then synonym_format(item, brand) "rule for brand";
 
+
+}
+
+//brand name
+group synonym_format(source src, target tgt) {
+src.answer -> tgt.synonym = (src.valueString) "create synonym";
 
 }
 
