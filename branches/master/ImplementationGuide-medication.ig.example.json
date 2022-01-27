@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2022-01-27T15:35:43+00:00",
+  "date": "2022-01-27T16:48:37+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -452,7 +452,7 @@
           "reference": "ValueSet/be-marketingauthorization-holder-vs"
         },
         "name": "Marketing Authorization Holder Value Set",
-        "description": "Indicates the Marketing Authorization for product",
+        "description": "Indicates the Marketing Authorization Holder of a product",
         "exampleBoolean": false
       },
       {
@@ -466,7 +466,7 @@
           "reference": "ValueSet/be-marketingauthorization-vs"
         },
         "name": "Marketing Authorization Value Set",
-        "description": "Indicates the Marketing Authorization for product",
+        "description": "Indicates the Marketing Authorization for a product",
         "exampleBoolean": false
       },
       {
@@ -536,7 +536,7 @@
           "reference": "CodeSystem/be-marketingauthorization-cs"
         },
         "name": "Marketing Authorization Code System",
-        "description": "Codes for ingredient",
+        "description": "Codes for Marketing Authorization",
         "exampleBoolean": false
       },
       {
@@ -550,7 +550,7 @@
           "reference": "CodeSystem/be-marketingauthorization-holder-cs"
         },
         "name": "Marketing Authorization Holder Code System",
-        "description": "Codes for ingredient",
+        "description": "Codes for Marketing Authorization Holder",
         "exampleBoolean": false
       },
       {

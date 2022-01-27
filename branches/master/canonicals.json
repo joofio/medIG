@@ -53,7 +53,7 @@
     "type": "Questionnaire",
     "url": "http://hl7.org/fhir/us/example/Questionnaire/questionnaire-amp",
     "version": "0.1.0",
-    "name": "questionnaire-vmp"
+    "name": "questionnaire-amp"
   },
   {
     "id": "questionnaire-ampp",

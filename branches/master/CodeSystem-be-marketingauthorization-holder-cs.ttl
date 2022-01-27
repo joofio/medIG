@@ -17,8 +17,8 @@
   fhir:CodeSystem.name [ fhir:value "BeMAHolderCS"];
   fhir:CodeSystem.title [ fhir:value "Marketing Authorization Holder Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-01-27T15:35:43+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.description [ fhir:value "Codes for ingredient"];
+  fhir:CodeSystem.date [ fhir:value "2022-01-27T16:48:37+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.description [ fhir:value "Codes for Marketing Authorization Holder"];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
