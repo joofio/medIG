@@ -1,0 +1,157 @@
+map "http://webiste.be/transformtoampp/" = "qr2ampp"
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QuestionnaireResponse as source
+uses "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge" alias MedicationKnowledge as target
+
+group doseform(source src: QuestionnaireResponse, target tgt: MedicationKnowledge) {
+    src.item as item where linkId.value in ('route')  -> tgt as route then  route_format(item,route)  "rule for routes"; 
+    src.item as item where linkId.value in ('code')  -> tgt as code then code_format(item, code) "rule for code";
+    src.item as item where linkId.value in ('doseform')  -> tgt as doseform then doseform_format(item, doseform) "rule for doseForm";
+    src.item as item where linkId.value in ('ingredient')  -> tgt.ingredient as ingre then ingredient_group(item, ingre) "rule for ingredient";
+    src.item as item where linkId.value in ('marketingauhtorization')  -> tgt.drugCharacteristic as dc then marketing(item, dc) "rule for MA";
+    src.item as item where linkId.value in ('marketingholder')  -> tgt.drugCharacteristic as dc then marketing_holder(item, dc) "rule for holder";
+    src.item as item where linkId.value in ('brandname')  -> tgt as brand then synonym_format(item, brand) "rule for brand";
+
+
+}
+
+//brand name
+group synonym_format(source src, target tgt) {
+src.answer  as ans-> tgt then add_synonym(ans,tgt) "create synonym";
+
+}
+///brand name
+group add_synonym(source src, target tgt) {
+src -> tgt.synonym = (src.valueString) "create synonym";
+}
+
+
+
+// marketing holder
+group marketing_holder(source src, target tgt) {
+    src.answer as ans -> tgt  then create_drug_chart(ans,tgt) "create marketing holder" ;
+
+}
+// marketing holder
+group create_drug_chart(source src, target tgt) {
+    src -> tgt.type = create('CodeableConcept') as cc then itemcoding_code_MAH(src,cc) "asa";
+    src ->tgt.value =create('CodeableConcept') as cc then  create_cc(src,cc) "aaa3";
+}
+
+group create_cc(source src, target tgt) {
+    src -> tgt.coding = (src.valueCoding) "sddss";
+}
+
+group itemcoding_code_MAH(source src, target tgt: CodeableConcept ) {
+  src -> tgt.coding as y then codingcode_MAH(src, y) "xx";
+}
+
+group codingcode_MAH(source src, target tgt : Coding) {
+  src -> tgt.code = "MAH" "xy1";
+  src -> tgt.system = 'http://example.info/xx' "xy2";
+  src -> tgt.display = 'Marketing Authorization Holder' "xy3";
+}
+
+
+
+// marketing
+group marketing(source src, target tgt) {
+    src.answer as ans -> tgt  then create_drug_chart_MA(ans,tgt) "create marketing holder" ;
+
+}
+group create_drug_chart_MA(source src, target tgt) {
+    src -> tgt.type = create('CodeableConcept') as cc then itemcoding_code_MA(src,cc) "asa";
+    src ->tgt.value =create('CodeableConcept') as cc then  create_cc(src,cc) "aaa3";
+}
+
+group itemcoding_code_MA(source src, target tgt: CodeableConcept ) {
+  src -> tgt.coding as y then codingcode_MA(src, y) "xx";
+}
+
+group codingcode_MA(source src, target tgt : Coding) {
+  src -> tgt.code = "MA" "xy1";
+  src -> tgt.system = 'http://example.info/xx' "xy2";
+  src -> tgt.display = 'Marketing Authorization' "xy3";
+}
+
+group ingredient_group(source src, target tgt: BackboneElement) {
+
+src.item as item where linkId.value in ('ingredient-element') log item  -> tgt.item = create('CodeableConcept') as cc then ingre_format(item, cc) "rule for ingredient";
+src.item as item where linkId.value in ('strength')  -> tgt.strength as strn then strn_format(item, strn) "rule for strength";
+src.item as item where linkId.value in ('role')  -> tgt as role then role_format(item, role) "rule for role";
+
+}
+
+//strength
+group strn_format(source src, target tgt: Ratio) {
+    src.answer as ans -> tgt as numer then creat_numer(ans,numer) "create numearator" ;
+
+}
+
+group creat_numer(source src, target tgt: Quantity) {
+    src-> tgt.numerator = (src.valueQuantity) "create strength value";
+}
+
+
+//ingredient
+group ingre_format(source src, target tgt) {
+    src.answer as ans -> tgt as cc then  ingre_cc_format(ans,cc) "ingredient create CC";
+
+}
+//ingredient CC
+group ingre_cc_format(source src, target tgt) {
+    src -> tgt.coding = (src.valueCoding) "ingredient create";
+
+}
+
+//role
+group role_format(source src, target tgt) {
+    src.answer  as ans -> tgt then role_trasnform(ans,tgt);
+
+}
+group role_trasnform(source src, target tgt) {
+    src.valueCoding as vc where code in ("AP")  -> tgt.isActive = true  "bool";
+    src.valueCoding as vc where code in ("NAP")  -> tgt.isActive = false  "bool";
+    src.valueCoding as vc where code in ("EXP")  -> tgt.isActive = false  "bool";
+
+}
+
+
+
+
+///route
+group route_format(source src, target tgt) {
+    src.answer as ab -> tgt.intendedRoute as route then itemcoding_route(ab,route); // copy ab inside aa
+}
+group itemcoding_route(source src, target tgt ) {
+    src -> tgt.coding = (src.valueCoding) "create route as is";
+}
+
+
+////Code
+group code_format(source src, target tgt) {
+    src.answer as ab -> tgt.code as code then itemcoding_code(ab,code); // copy ab inside aa
+}
+
+group itemcoding_code(source src, target tgt: CodeableConcept ) {
+  src -> tgt.coding as y then codingcode(src, y) "xx";
+}
+
+group codingcode(source src, target tgt : Coding) {
+  src -> tgt.code = (src.valueInteger) "xy1";
+  src -> tgt.system = 'http://snomed.info/sct' "xy2";
+  src -> tgt.display = 'FINDRISC (Finnish Diabetes Risk Score) score' "xy3";
+}
+
+
+
+///Dose Form
+group doseform_format(source src, target tgt) {
+    src.answer as ab -> tgt.doseForm as df then cc_df(ab,df); // copy ab inside aa
+}
+
+group cc_df(source src, target tgt: CodeableConcept) {
+
+//src -> tgt.text="dose form" "text";
+src -> tgt.coding = (src.valueCoding) "cc dose form";
+
+}
