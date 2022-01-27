@@ -42,13 +42,13 @@ Title:    "VMP Questionnaire"
 
 * item[+].linkId = "doseform-vmp"
 * item[=].type = #choice
-* item[=].answerValueSet = "http://standardterms.edqm.eu/PDF"
+* item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/medication-form-codes"
 * item[=].required = true
 * item[=].text = "Dose Form of the product"
 
 * item[+].linkId = "route-vmp"
 * item[=].type = #choice
 * item[=].required = true
-* item[=].answerValueSet = "http://standardterms.edqm.eu/ROA"
+* item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/route-codes"
 * item[=].text = "Route of administration"
 * item[=].repeats = true

@@ -23,13 +23,13 @@ Title:    "VMP Questionnaire Response 1"
 
 
 * item[+].linkId = "doseform-vmp"
-* item[=].answer.valueCoding = http://standardterms.edqm.eu/PDF/#50060000 "Solution for injection/infusion"
+* item[=].answer.valueCoding = http://hl7.org/fhir/ValueSet/medication-form-codes#385219001 "Injection solution"
 
 
 * item[+].linkId = "route-vmp"
-* item[=].answer[+].valueCoding = http://standardterms.edqm.eu/ROA/#20045000 "Intravenous Use"
-* item[=].answer[+].valueCoding = http://standardterms.edqm.eu/ROA/#20035000 "Intramuscular Use"
-* item[=].answer[+].valueCoding = http://standardterms.edqm.eu/ROA/#20066000 "Intramuscular Use"
+* item[=].answer[+].valueCoding = http://hl7.org/fhir/ValueSet/route-codes#47625008 "Intravenous Use"
+* item[=].answer[+].valueCoding = http://hl7.org/fhir/ValueSet/route-codes#34206005  "SC Use"
+* item[=].answer[+].valueCoding = http://hl7.org/fhir/ValueSet/route-codes#78421000 "Intramuscular Use"
 
 
 
@@ -70,9 +70,9 @@ Title:    "VMP Questionnaire Response 2"
 
 
 * item[+].linkId = "doseform-vmp"
-* item[=].answer.valueCoding = http://standardterms.edqm.eu/PDF/#10220000 "Coated Tablet"
+* item[=].answer.valueCoding = http://hl7.org/fhir/ValueSet/medication-form-codes#385055001 "Tablet"
 
 
 * item[+].linkId = "route-vmp"
-* item[=].answer[+].valueCoding = http://standardterms.edqm.eu/ROA/#20053000 "Oral Use"
+* item[=].answer[+].valueCoding = http://hl7.org/fhir/ValueSet/route-codes#26643006  "Oral Use"
 
