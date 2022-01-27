@@ -10,19 +10,19 @@
   fhir:Resource.id [ fhir:value "be-role-medication-vs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs</code></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-be-rolemed-cs.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "beRoleMedicationVS"];
   fhir:ValueSet.title [ fhir:value "Ingredient role Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-01-27T12:18:33+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-01-27T13:02:02+00:00"^^xsd:dateTime];
   fhir:ValueSet.description [ fhir:value "Indicates the role that an ingredient takes into a product"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs" ]
      ]
   ] .
 

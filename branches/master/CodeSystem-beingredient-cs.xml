@@ -7,10 +7,10 @@
   </text>
   <url value="http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs"/>
   <version value="0.1.0"/>
-  <name value="beIngredinent-cs"/>
+  <name value="beIngredientCS"/>
   <title value="Ingredient Code System"/>
   <status value="active"/>
-  <date value="2022-01-27T12:18:33+00:00"/>
+  <date value="2022-01-27T13:02:02+00:00"/>
   <description value="Codes for role in ingredient level "/>
   <content value="complete"/>
   <count value="3"/>

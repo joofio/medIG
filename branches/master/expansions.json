@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "cf3c363c-1bd2-4b0e-8d78-8016c45a2dc7",
+  "id" : "85305857-dde2-4252-b6a5-c4c430472dcb",
   "meta" : {
-    "lastUpdated" : "2022-01-27T12:18:33.056+00:00"
+    "lastUpdated" : "2022-01-27T13:02:02.378+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,11 +19,11 @@
       "name" : "GranularityVS",
       "title" : "Granularity Value Set",
       "status" : "active",
-      "date" : "2022-01-27T12:18:33+00:00",
+      "date" : "2022-01-27T13:02:02+00:00",
       "description" : "Indicates the granularity of product",
       "expansion" : {
-        "identifier" : "urn:uuid:edf13e54-48f6-443a-bef2-a137a6ebe14d",
-        "timestamp" : "2022-01-27T12:19:03+00:00",
+        "identifier" : "urn:uuid:ad965ce7-75d9-4bcf-b73f-723a6d66c6c9",
+        "timestamp" : "2022-01-27T13:02:43+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -70,11 +70,11 @@
       "name" : "beGranularityVS",
       "title" : "Be Granularity Value Set",
       "status" : "active",
-      "date" : "2022-01-27T12:18:33+00:00",
+      "date" : "2022-01-27T13:02:02+00:00",
       "description" : "Indicates the granularity of product for belgium",
       "expansion" : {
-        "identifier" : "urn:uuid:73baba37-e112-4eb0-b1ac-cfb515b163ae",
-        "timestamp" : "2022-01-27T12:19:03+00:00",
+        "identifier" : "urn:uuid:b30b5673-8db0-4f70-8d39-8ca81e34f2cf",
+        "timestamp" : "2022-01-27T13:02:43+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -112,6 +112,98 @@
           "system" : "http://hl7.org/fhir/us/example/CodeSystem/beMedCS",
           "code" : "VMPG",
           "display" : "VMP Group"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/us/example/ValueSet/medication-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "medication-vs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-beingredient-cs.html\">Ingredient Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-beingredient-cs.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-beingredient-cs-000001\"> </a><a href=\"CodeSystem-beingredient-cs.html#beingredient-cs-000001\">000001</a></td><td>Paracetamol</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-beingredient-cs-000002\"> </a><a href=\"CodeSystem-beingredient-cs.html#beingredient-cs-000002\">000002</a></td><td>Insuline lispro</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-beingredient-cs-000003\"> </a><a href=\"CodeSystem-beingredient-cs.html#beingredient-cs-000003\">000003</a></td><td>Tramadol</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/example/ValueSet/medication-vs",
+      "version" : "0.1.0",
+      "name" : "beMedicationVS",
+      "title" : "Ingredient  Value Set",
+      "status" : "active",
+      "date" : "2022-01-27T13:02:02+00:00",
+      "description" : "Indicates the role that an ingredient takes into a product",
+      "expansion" : {
+        "identifier" : "urn:uuid:1a1999c3-0349-4741-9791-e8290279125b",
+        "timestamp" : "2022-01-27T13:02:43+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs",
+          "code" : "000001",
+          "display" : "Paracetamol"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs",
+          "code" : "000002",
+          "display" : "Insuline lispro"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs",
+          "code" : "000003",
+          "display" : "Tramadol"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "be-role-medication-vs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-rolemed-cs.html\">Role Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-be-rolemed-cs.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-be-rolemed-cs-AP\"> </a><a href=\"CodeSystem-be-rolemed-cs.html#be-rolemed-cs-AP\">AP</a></td><td>Active Principle</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-be-rolemed-cs-NAP\"> </a><a href=\"CodeSystem-be-rolemed-cs.html#be-rolemed-cs-NAP\">NAP</a></td><td>Non-Active</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-be-rolemed-cs-EXP\"> </a><a href=\"CodeSystem-be-rolemed-cs.html#be-rolemed-cs-EXP\">EXP</a></td><td>Excipient</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs",
+      "version" : "0.1.0",
+      "name" : "beRoleMedicationVS",
+      "title" : "Ingredient role Value Set",
+      "status" : "active",
+      "date" : "2022-01-27T13:02:02+00:00",
+      "description" : "Indicates the role that an ingredient takes into a product",
+      "expansion" : {
+        "identifier" : "urn:uuid:40e8de56-4fc6-410c-b276-7bd3ea6db678",
+        "timestamp" : "2022-01-27T13:02:43+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs",
+          "code" : "AP",
+          "display" : "Active Principle"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs",
+          "code" : "NAP",
+          "display" : "Non-Active"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs",
+          "code" : "EXP",
+          "display" : "Excipient"
         }]
       }
     }
