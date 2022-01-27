@@ -171,7 +171,7 @@ Description: "Codes for role in ingredient level "
     "Excipient"
 
 
-Alias: roleCS = http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs
+Alias: roleCS = http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs
 
 
 ValueSet: beRoleMedicationVS
@@ -180,7 +180,7 @@ Title: "Ingredient role Value Set"
 Description: "Indicates the role that an ingredient takes into a product"
 * include codes from system roleCS
 
-Alias: rolevs = http://hl7.org/fhir/example/valueSet/be-role-medication-vs
+Alias: rolevs = http://hl7.org/fhir/us/example/valueSet/be-role-medication-vs
 
 
 
@@ -200,7 +200,7 @@ Description: "Codes for role in ingredient level "
     "Tramadol"
     
 
-Alias: ingredientCS = http://hl7.org/fhir/example/CodeSystem/beingredient-cs
+Alias: ingredientCS = http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs
 
 
 ValueSet: beMedicationVS
@@ -209,6 +209,6 @@ Title: "Ingredient  Value Set"
 Description: "Indicates the role that an ingredient takes into a product"
 * include codes from system ingredientCS
 
-Alias: ingredientVS = http://hl7.org/fhir/example/valueSet/medication-vs
+Alias: ingredientVS = http://hl7.org/fhir/us/example/ValueSet/medication-vs
 
 
