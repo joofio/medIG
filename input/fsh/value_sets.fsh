@@ -215,7 +215,7 @@ Alias: ingredientVS = http://hl7.org/fhir/us/example/ValueSet/medication-vs
 CodeSystem: BeMACS
 Id:         be-marketingauthorization-cs
 Title: "Marketing Authorization Code System"
-Description: "Codes for ingredient"
+Description: "Codes for Marketing Authorization"
 
 * #000001 
     "Authorization"
@@ -227,7 +227,7 @@ Alias: MACS = http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorizatio
 ValueSet: BeMAVS
 Id: be-marketingauthorization-vs
 Title: "Marketing Authorization Value Set"
-Description: "Indicates the Marketing Authorization for product"
+Description: "Indicates the Marketing Authorization for a product"
 * include codes from system be-marketingauthorization-cs
 
 Alias: MAVS = http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-vs
@@ -237,7 +237,7 @@ Alias: MAVS = http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-
 CodeSystem: BeMAHolderCS
 Id:         be-marketingauthorization-holder-cs
 Title: "Marketing Authorization Holder Code System"
-Description: "Codes for ingredient"
+Description: "Codes for Marketing Authorization Holder"
 
 * #000001 
     "AstraZeneca"
@@ -249,7 +249,7 @@ Alias: MAHCS = http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorizati
 ValueSet: BeMAHolderVS
 Id: be-marketingauthorization-holder-vs
 Title: "Marketing Authorization Holder Value Set"
-Description: "Indicates the Marketing Authorization for product"
+Description: "Indicates the Marketing Authorization Holder of a product"
 * include codes from system be-marketingauthorization-holder-cs
 
 Alias: MAHVS = http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-holder-vs
