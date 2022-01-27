@@ -157,7 +157,7 @@ Description: "Indicates the granularity of product for belgium"
 
 // Define a local code system
 CodeSystem: beRoleIngredinent-cs
-Id:         rolemed-cs
+Id:         be-rolemed-cs
 Title: "Role Code System"
 Description: "Codes for role in ingredient level "
 // You can choose any url, or use the default, but in this case we want the URL to be in the HL7 namespace
@@ -171,22 +171,22 @@ Description: "Codes for role in ingredient level "
     "Excipient"
 
 
-Alias: roleCS = http://hl7.org/fhir/example/CodeSystem/roleCS
+Alias: roleCS = http://hl7.org/fhir/example/CodeSystem/be-rolemed-cs
 
 
 ValueSet: beRoleMedicationVS
-Id: role-medication-vs
+Id: be-role-medication-vs
 Title: "Ingredient role Value Set"
 Description: "Indicates the role that an ingredient takes into a product"
 * include codes from system roleCS
 
-Alias: rolevs = http://hl7.org/fhir/example/valueSet/roleVS
+Alias: rolevs = http://hl7.org/fhir/example/valueSet/be-role-medication-vs
 
 
 
 // Define a local code system
 CodeSystem: beIngredinent-cs
-Id:         ingredient-cs
+Id:         beingredient-cs
 Title: "Ingredient Code System"
 Description: "Codes for role in ingredient level "
 
@@ -200,7 +200,7 @@ Description: "Codes for role in ingredient level "
     "Tramadol"
     
 
-Alias: ingredientCS = http://hl7.org/fhir/example/CodeSystem/ingredientCS
+Alias: ingredientCS = http://hl7.org/fhir/example/CodeSystem/beingredient-cs
 
 
 ValueSet: beMedicationVS
@@ -209,6 +209,6 @@ Title: "Ingredient  Value Set"
 Description: "Indicates the role that an ingredient takes into a product"
 * include codes from system ingredientCS
 
-Alias: ingredientVS = http://hl7.org/fhir/example/valueSet/ingredientVS
+Alias: ingredientVS = http://hl7.org/fhir/example/valueSet/medication-vs
 
 
