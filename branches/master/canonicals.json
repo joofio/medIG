@@ -1,24 +1,38 @@
 [
   {
+    "id": "be-marketingauthorization-cs",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs",
+    "version": "0.1.0",
+    "name": "BeMACS"
+  },
+  {
+    "id": "be-marketingauthorization-holder-cs",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs",
+    "version": "0.1.0",
+    "name": "BeMAHolderCS"
+  },
+  {
     "id": "be-rolemed-cs",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs",
     "version": "0.1.0",
-    "name": "beRoleIngredinentCS"
+    "name": "BeRoleIngredinentCS"
   },
   {
     "id": "beMedCS",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/example/CodeSystem/beMedCS",
     "version": "0.1.0",
-    "name": "beMedicineCodeSystem"
+    "name": "BeMedicineCodeSystem"
   },
   {
     "id": "beingredient-cs",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs",
     "version": "0.1.0",
-    "name": "beIngredientCS"
+    "name": "BeIngredientCS"
   },
   {
     "id": "medics",
@@ -33,6 +47,20 @@
     "url": "http://hl7.org/fhir/us/example/ImplementationGuide/medication.ig.example",
     "version": "0.1.0",
     "name": "medicationIG"
+  },
+  {
+    "id": "questionnaire-amp",
+    "type": "Questionnaire",
+    "url": "http://hl7.org/fhir/us/example/Questionnaire/questionnaire-amp",
+    "version": "0.1.0",
+    "name": "questionnaire-vmp"
+  },
+  {
+    "id": "questionnaire-ampp",
+    "type": "Questionnaire",
+    "url": "http://hl7.org/fhir/us/example/Questionnaire/questionnaire-ampp",
+    "version": "0.1.0",
+    "name": "questionnaire-ampp"
   },
   {
     "id": "questionnaire-cnpem",
@@ -137,14 +165,28 @@
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs",
     "version": "0.1.0",
-    "name": "beGranularityVS"
+    "name": "BeGranularityVS"
+  },
+  {
+    "id": "be-marketingauthorization-holder-vs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-holder-vs",
+    "version": "0.1.0",
+    "name": "BeMAHolderVS"
+  },
+  {
+    "id": "be-marketingauthorization-vs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-vs",
+    "version": "0.1.0",
+    "name": "BeMAVS"
   },
   {
     "id": "be-role-medication-vs",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs",
     "version": "0.1.0",
-    "name": "beRoleMedicationVS"
+    "name": "BeRoleMedicationVS"
   },
   {
     "id": "granularity-vs",
@@ -158,7 +200,7 @@
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/example/ValueSet/medication-vs",
     "version": "0.1.0",
-    "name": "beMedicationVS"
+    "name": "BeMedicationVS"
   },
   {
     "id": "type-med-class-cs",

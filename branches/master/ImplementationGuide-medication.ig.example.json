@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2022-01-27T14:37:11+00:00",
+  "date": "2022-01-27T15:29:00+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -435,10 +435,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/granularity-vs"
+          "reference": "ValueSet/be-granularity-vs"
         },
-        "name": "Granularity Value Set",
-        "description": "Indicates the granularity of product",
+        "name": "Be Granularity Value Set",
+        "description": "Indicates the granularity of product for belgium",
         "exampleBoolean": false
       },
       {
@@ -449,10 +449,24 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/be-granularity-vs"
+          "reference": "ValueSet/be-marketingauthorization-holder-vs"
         },
-        "name": "Be Granularity Value Set",
-        "description": "Indicates the granularity of product for belgium",
+        "name": "Marketing Authorization Value Set",
+        "description": "Indicates the Marketing Authorization for product",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/be-marketingauthorization-vs"
+        },
+        "name": "Marketing Authorization Value Set",
+        "description": "Indicates the Marketing Authorization for product",
         "exampleBoolean": false
       },
       {
@@ -481,6 +495,90 @@
         },
         "name": "Ingredient role Value Set",
         "description": "Indicates the role that an ingredient takes into a product",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/granularity-vs"
+        },
+        "name": "Granularity Value Set",
+        "description": "Indicates the granularity of product",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/beingredient-cs"
+        },
+        "name": "Ingredient Code System",
+        "description": "Codes for ingredient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/be-marketingauthorization-cs"
+        },
+        "name": "Marketing Authorization Code System",
+        "description": "Codes for ingredient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/be-marketingauthorization-holder-cs"
+        },
+        "name": "Marketing Authorization Code System",
+        "description": "Codes for ingredient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/beMedCS"
+        },
+        "name": "Drug Code System",
+        "description": "Codes for belgian medicine level ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/be-rolemed-cs"
+        },
+        "name": "Role Code System",
+        "description": "Codes for role in ingredient level ",
         "exampleBoolean": false
       },
       {
@@ -536,48 +634,6 @@
           "reference": "CodeSystem/rel-med-cs"
         },
         "name": "RelatedMedicationKnowledgeCS",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/beingredient-cs"
-        },
-        "name": "Ingredient Code System",
-        "description": "Codes for ingredient",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/beMedCS"
-        },
-        "name": "Drug Code System",
-        "description": "Codes for belgian medicine level ",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/be-rolemed-cs"
-        },
-        "name": "Role Code System",
-        "description": "Codes for role in ingredient level ",
         "exampleBoolean": false
       },
       {
@@ -672,10 +728,66 @@
           }
         ],
         "reference": {
+          "reference": "Questionnaire/questionnaire-amp"
+        },
+        "name": "AMP Questionnaire",
+        "description": "Questionnaire for adding a drug level of AMP to a fhir server",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/questionnaire-ampp"
+        },
+        "name": "AMPP Questionnaire",
+        "description": "Questionnaire for adding a drug level of AMPP to a fhir server",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
           "reference": "Questionnaire/questionnaire-cnpem"
         },
         "name": "CNPEM Questionnaire",
         "description": "Questionnaire for adding a drug level of CNPEM to a fhir server",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/questionnaire-response-amp"
+        },
+        "name": "AMP Questionnaire Response ",
+        "description": "Questionnaire Response example for adding a drug level of AMP to a fhir server",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/questionnaire-response-ampp"
+        },
+        "name": "AMPP Questionnaire Response",
+        "description": "Questionnaire Response example for adding a drug level of AMPP to a fhir server",
         "exampleBoolean": true
       },
       {

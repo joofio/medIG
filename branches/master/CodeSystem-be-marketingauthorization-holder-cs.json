@@ -1,0 +1,23 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "be-marketingauthorization-holder-cs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"be-marketingauthorization-holder-cs-000001\"> </a></td><td>AstraZeneca</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs",
+  "version": "0.1.0",
+  "name": "BeMAHolderCS",
+  "title": "Marketing Authorization Code System",
+  "status": "active",
+  "date": "2022-01-27T15:29:00+00:00",
+  "description": "Codes for ingredient",
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "000001",
+      "display": "AstraZeneca"
+    }
+  ]
+}

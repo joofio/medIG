@@ -10,17 +10,17 @@
   fhir:Resource.id [ fhir:value "beingredient-cs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"beingredient-cs-000001\"> </a></td><td>Paracetamol</td></tr><tr><td style=\"white-space:nowrap\">000002<a name=\"beingredient-cs-000002\"> </a></td><td>Insuline lispro</td></tr><tr><td style=\"white-space:nowrap\">000003<a name=\"beingredient-cs-000003\"> </a></td><td>Tramadol</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"beingredient-cs-000001\"> </a></td><td>Paracetamol</td></tr><tr><td style=\"white-space:nowrap\">000002<a name=\"beingredient-cs-000002\"> </a></td><td>Insuline lispro</td></tr><tr><td style=\"white-space:nowrap\">000003<a name=\"beingredient-cs-000003\"> </a></td><td>Tramadol</td></tr><tr><td style=\"white-space:nowrap\">000004<a name=\"beingredient-cs-000004\"> </a></td><td>Rosuvastatin</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
-  fhir:CodeSystem.name [ fhir:value "beIngredientCS"];
+  fhir:CodeSystem.name [ fhir:value "BeIngredientCS"];
   fhir:CodeSystem.title [ fhir:value "Ingredient Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-01-27T14:37:11+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-01-27T15:29:00+00:00"^^xsd:dateTime];
   fhir:CodeSystem.description [ fhir:value "Codes for ingredient"];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "000001" ];
@@ -33,6 +33,10 @@
      fhir:index 2;
      fhir:CodeSystem.concept.code [ fhir:value "000003" ];
      fhir:CodeSystem.concept.display [ fhir:value "Tramadol" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "000004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rosuvastatin" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
