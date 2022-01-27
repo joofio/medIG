@@ -203,7 +203,7 @@ Description: "Codes for role in ingredient level "
 Alias: ingredientCS = http://hl7.org/fhir/example/CodeSystem/ingredientCS
 
 
-ValueSet: beRoleMedicationVS
+ValueSet: beMedicationVS
 Id: medication-vs
 Title: "Ingredient  Value Set"
 Description: "Indicates the role that an ingredient takes into a product"
