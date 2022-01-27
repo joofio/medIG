@@ -3,17 +3,17 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="beingredient-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">000001<a name="beingredient-cs-000001"> </a></td><td>Paracetamol</td></tr><tr><td style="white-space:nowrap">000002<a name="beingredient-cs-000002"> </a></td><td>Insuline lispro</td></tr><tr><td style="white-space:nowrap">000003<a name="beingredient-cs-000003"> </a></td><td>Tramadol</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">000001<a name="beingredient-cs-000001"> </a></td><td>Paracetamol</td></tr><tr><td style="white-space:nowrap">000002<a name="beingredient-cs-000002"> </a></td><td>Insuline lispro</td></tr><tr><td style="white-space:nowrap">000003<a name="beingredient-cs-000003"> </a></td><td>Tramadol</td></tr><tr><td style="white-space:nowrap">000004<a name="beingredient-cs-000004"> </a></td><td>Rosuvastatin</td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs"/>
   <version value="0.1.0"/>
-  <name value="beIngredientCS"/>
+  <name value="BeIngredientCS"/>
   <title value="Ingredient Code System"/>
   <status value="active"/>
-  <date value="2022-01-27T14:37:11+00:00"/>
+  <date value="2022-01-27T15:29:00+00:00"/>
   <description value="Codes for ingredient"/>
   <content value="complete"/>
-  <count value="3"/>
+  <count value="4"/>
   <concept>
     <code value="000001"/>
     <display value="Paracetamol"/>
@@ -25,5 +25,9 @@
   <concept>
     <code value="000003"/>
     <display value="Tramadol"/>
+  </concept>
+  <concept>
+    <code value="000004"/>
+    <display value="Rosuvastatin"/>
   </concept>
 </CodeSystem>

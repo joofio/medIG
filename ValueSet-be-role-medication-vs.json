@@ -7,10 +7,10 @@
   },
   "url": "http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs",
   "version": "0.1.0",
-  "name": "beRoleMedicationVS",
+  "name": "BeRoleMedicationVS",
   "title": "Ingredient role Value Set",
   "status": "active",
-  "date": "2022-01-27T14:37:11+00:00",
+  "date": "2022-01-27T15:29:00+00:00",
   "description": "Indicates the role that an ingredient takes into a product",
   "compose": {
     "include": [

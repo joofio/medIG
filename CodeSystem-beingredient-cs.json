@@ -3,17 +3,17 @@
   "id": "beingredient-cs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"beingredient-cs-000001\"> </a></td><td>Paracetamol</td></tr><tr><td style=\"white-space:nowrap\">000002<a name=\"beingredient-cs-000002\"> </a></td><td>Insuline lispro</td></tr><tr><td style=\"white-space:nowrap\">000003<a name=\"beingredient-cs-000003\"> </a></td><td>Tramadol</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"beingredient-cs-000001\"> </a></td><td>Paracetamol</td></tr><tr><td style=\"white-space:nowrap\">000002<a name=\"beingredient-cs-000002\"> </a></td><td>Insuline lispro</td></tr><tr><td style=\"white-space:nowrap\">000003<a name=\"beingredient-cs-000003\"> </a></td><td>Tramadol</td></tr><tr><td style=\"white-space:nowrap\">000004<a name=\"beingredient-cs-000004\"> </a></td><td>Rosuvastatin</td></tr></table></div>"
   },
   "url": "http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs",
   "version": "0.1.0",
-  "name": "beIngredientCS",
+  "name": "BeIngredientCS",
   "title": "Ingredient Code System",
   "status": "active",
-  "date": "2022-01-27T14:37:11+00:00",
+  "date": "2022-01-27T15:29:00+00:00",
   "description": "Codes for ingredient",
   "content": "complete",
-  "count": 3,
+  "count": 4,
   "concept": [
     {
       "code": "000001",
@@ -26,6 +26,10 @@
     {
       "code": "000003",
       "display": "Tramadol"
+    },
+    {
+      "code": "000004",
+      "display": "Rosuvastatin"
     }
   ]
 }

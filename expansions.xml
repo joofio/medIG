@@ -1,118 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ed0f3f1d-83f9-4bcb-9385-45c92f18ba25"/>
+  <id value="0aaccab9-6064-4c9e-a84e-694076617bc3"/>
   <meta>
-    <lastUpdated value="2022-01-27T14:37:11.557+00:00"/>
+    <lastUpdated value="2022-01-27T15:29:00.668+00:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/granularity-vs"/>
-    <resource>
-      <ValueSet>
-        <id value="granularity-vs"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-medics.html">Drug Code System v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-medics.html">
-                <code>http://hl7.org/fhir/us/example/CodeSystem/mediCS</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-SUBST"> </a>
-                  <a href="CodeSystem-medics.html#medics-SUBST">SUBST</a>
-                </td>
-                <td>Substance</td>
-                <td>Substance</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-PHARMPROD"> </a>
-                  <a href="CodeSystem-medics.html#medics-PHARMPROD">PHARMPROD</a>
-                </td>
-                <td>Pharmaceutical Product</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-MEDPROD"> </a>
-                  <a href="CodeSystem-medics.html#medics-MEDPROD">MEDPROD</a>
-                </td>
-                <td>Medicinal Product</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-PACKMEDPROD"> </a>
-                  <a href="CodeSystem-medics.html#medics-PACKMEDPROD">PACKMEDPROD</a>
-                </td>
-                <td>Packaged Medicinal Product</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.org/fhir/us/example/ValueSet/granularity-vs"/>
-        <version value="0.1.0"/>
-        <name value="GranularityVS"/>
-        <title value="Granularity Value Set"/>
-        <status value="active"/>
-        <date value="2022-01-27T14:37:11+00:00"/>
-        <description value="Indicates the granularity of product"/>
-        <expansion>
-          <identifier value="urn:uuid:5d35e17f-77ca-46fa-9ccf-791a4dca0120"/>
-          <timestamp value="2022-01-27T14:37:52+00:00"/>
-          <total value="4"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/example/CodeSystem/mediCS|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
-            <code value="SUBST"/>
-            <display value="Substance"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
-            <code value="PHARMPROD"/>
-            <display value="Pharmaceutical Product"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
-            <code value="MEDPROD"/>
-            <display value="Medicinal Product"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
-            <code value="PACKMEDPROD"/>
-            <display value="Packaged Medicinal Product"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs"/>
     <resource>
@@ -198,14 +91,14 @@
         </text>
         <url value="http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs"/>
         <version value="0.1.0"/>
-        <name value="beGranularityVS"/>
+        <name value="BeGranularityVS"/>
         <title value="Be Granularity Value Set"/>
         <status value="active"/>
-        <date value="2022-01-27T14:37:11+00:00"/>
+        <date value="2022-01-27T15:29:00+00:00"/>
         <description value="Indicates the granularity of product for belgium"/>
         <expansion>
-          <identifier value="urn:uuid:0939528c-1ad7-44e3-85df-8293c43da78c"/>
-          <timestamp value="2022-01-27T14:37:52+00:00"/>
+          <identifier value="urn:uuid:ca2f6de2-0a91-4309-a802-0e37893a37b6"/>
+          <timestamp value="2022-01-27T15:29:37+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -249,6 +142,134 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-holder-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="be-marketingauthorization-holder-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-marketingauthorization-holder-cs.html">Marketing Authorization Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-be-marketingauthorization-holder-cs.html">
+                <code>http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-be-marketingauthorization-holder-cs-000001"> </a>
+                  <a href="CodeSystem-be-marketingauthorization-holder-cs.html#be-marketingauthorization-holder-cs-000001">000001</a>
+                </td>
+                <td>AstraZeneca</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-holder-vs"/>
+        <version value="0.1.0"/>
+        <name value="BeMAHolderVS"/>
+        <title value="Marketing Authorization Value Set"/>
+        <status value="active"/>
+        <date value="2022-01-27T15:29:00+00:00"/>
+        <description value="Indicates the Marketing Authorization for product"/>
+        <expansion>
+          <identifier value="urn:uuid:60365ae5-503e-44ac-951c-5b85688e8105"/>
+          <timestamp value="2022-01-27T15:29:37+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs"/>
+            <code value="000001"/>
+            <display value="AstraZeneca"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="be-marketingauthorization-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-be-marketingauthorization-cs.html">Marketing Authorization Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-be-marketingauthorization-cs.html">
+                <code>http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-be-marketingauthorization-cs-000001"> </a>
+                  <a href="CodeSystem-be-marketingauthorization-cs.html#be-marketingauthorization-cs-000001">000001</a>
+                </td>
+                <td>Authorization</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-vs"/>
+        <version value="0.1.0"/>
+        <name value="BeMAVS"/>
+        <title value="Marketing Authorization Value Set"/>
+        <status value="active"/>
+        <date value="2022-01-27T15:29:00+00:00"/>
+        <description value="Indicates the Marketing Authorization for product"/>
+        <expansion>
+          <identifier value="urn:uuid:5419235d-25d8-461f-acf6-b2795871c8bf"/>
+          <timestamp value="2022-01-27T15:29:37+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs"/>
+            <code value="000001"/>
+            <display value="Authorization"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/medication-vs"/>
     <resource>
       <ValueSet>
@@ -256,7 +277,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
+            <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-beingredient-cs.html">Ingredient Code System v0.1.0 (CodeSystem)</a>
             </p>
@@ -295,20 +316,27 @@
                 </td>
                 <td>Tramadol</td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-beingredient-cs-000004"> </a>
+                  <a href="CodeSystem-beingredient-cs.html#beingredient-cs-000004">000004</a>
+                </td>
+                <td>Rosuvastatin</td>
+              </tr>
             </table>
           </div>
         </text>
         <url value="http://hl7.org/fhir/us/example/ValueSet/medication-vs"/>
         <version value="0.1.0"/>
-        <name value="beMedicationVS"/>
+        <name value="BeMedicationVS"/>
         <title value="Ingredient  Value Set"/>
         <status value="active"/>
-        <date value="2022-01-27T14:37:11+00:00"/>
+        <date value="2022-01-27T15:29:00+00:00"/>
         <description value="Indicates the ingredient inside a product"/>
         <expansion>
-          <identifier value="urn:uuid:525bb63b-fc3a-48eb-ae2b-4e58b2892d3b"/>
-          <timestamp value="2022-01-27T14:37:52+00:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:9d5de6cf-544c-420a-bb26-9db867c59457"/>
+          <timestamp value="2022-01-27T15:29:37+00:00"/>
+          <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -331,6 +359,11 @@
             <system value="http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs"/>
             <code value="000003"/>
             <display value="Tramadol"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs"/>
+            <code value="000004"/>
+            <display value="Rosuvastatin"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -388,14 +421,14 @@
         </text>
         <url value="http://hl7.org/fhir/us/example/ValueSet/be-role-medication-vs"/>
         <version value="0.1.0"/>
-        <name value="beRoleMedicationVS"/>
+        <name value="BeRoleMedicationVS"/>
         <title value="Ingredient role Value Set"/>
         <status value="active"/>
-        <date value="2022-01-27T14:37:11+00:00"/>
+        <date value="2022-01-27T15:29:00+00:00"/>
         <description value="Indicates the role that an ingredient takes into a product"/>
         <expansion>
-          <identifier value="urn:uuid:beeb3509-8749-401e-bf6c-97d822181a50"/>
-          <timestamp value="2022-01-27T14:37:53+00:00"/>
+          <identifier value="urn:uuid:11a83e0f-42c5-4e4a-be63-ca8d90a4b304"/>
+          <timestamp value="2022-01-27T15:29:37+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -419,6 +452,113 @@
             <system value="http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs"/>
             <code value="EXP"/>
             <display value="Excipient"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/granularity-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="granularity-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-medics.html">Drug Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-medics.html">
+                <code>http://hl7.org/fhir/us/example/CodeSystem/mediCS</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-SUBST"> </a>
+                  <a href="CodeSystem-medics.html#medics-SUBST">SUBST</a>
+                </td>
+                <td>Substance</td>
+                <td>Substance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-PHARMPROD"> </a>
+                  <a href="CodeSystem-medics.html#medics-PHARMPROD">PHARMPROD</a>
+                </td>
+                <td>Pharmaceutical Product</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-MEDPROD"> </a>
+                  <a href="CodeSystem-medics.html#medics-MEDPROD">MEDPROD</a>
+                </td>
+                <td>Medicinal Product</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-PACKMEDPROD"> </a>
+                  <a href="CodeSystem-medics.html#medics-PACKMEDPROD">PACKMEDPROD</a>
+                </td>
+                <td>Packaged Medicinal Product</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/example/ValueSet/granularity-vs"/>
+        <version value="0.1.0"/>
+        <name value="GranularityVS"/>
+        <title value="Granularity Value Set"/>
+        <status value="active"/>
+        <date value="2022-01-27T15:29:00+00:00"/>
+        <description value="Indicates the granularity of product"/>
+        <expansion>
+          <identifier value="urn:uuid:c11ab442-fc7a-45ae-b121-7257d9fe3dcb"/>
+          <timestamp value="2022-01-27T15:29:37+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/example/CodeSystem/mediCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
+            <code value="SUBST"/>
+            <display value="Substance"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
+            <code value="PHARMPROD"/>
+            <display value="Pharmaceutical Product"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
+            <code value="MEDPROD"/>
+            <display value="Medicinal Product"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
+            <code value="PACKMEDPROD"/>
+            <display value="Packaged Medicinal Product"/>
           </contains>
         </expansion>
       </ValueSet>

@@ -7,10 +7,10 @@
   </text>
   <url value="http://hl7.org/fhir/us/example/CodeSystem/beMedCS"/>
   <version value="0.1.0"/>
-  <name value="beMedicineCodeSystem"/>
+  <name value="BeMedicineCodeSystem"/>
   <title value="Drug Code System"/>
   <status value="active"/>
-  <date value="2022-01-27T14:37:11+00:00"/>
+  <date value="2022-01-27T15:29:00+00:00"/>
   <description value="Codes for belgian medicine level "/>
   <content value="complete"/>
   <count value="3"/>

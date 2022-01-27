@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-marketingauthorization-holder-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-be-marketingauthorization-holder-cs.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs</code></a></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-holder-vs",
+  "version": "0.1.0",
+  "name": "BeMAHolderVS",
+  "title": "Marketing Authorization Value Set",
+  "status": "active",
+  "date": "2022-01-27T15:29:00+00:00",
+  "description": "Indicates the Marketing Authorization for product",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs"
+      }
+    ]
+  }
+}
