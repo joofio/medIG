@@ -157,10 +157,13 @@ Title:    "AMPP Questionnaire Response"
 * item[+].linkId = "brandname"
 * item[=].answer[+].valueString = "Crestor 40 mg filmomh. tabl."
 
-* item[+].linkId = "packsize"
-* item[=].answer.valueQuantity.value = 98
-* item[=].answer.valueQuantity.unit = "units"
+* item[+].linkId = "packaging"
 
 
-* item[+].linkId = "packtype"
-* item[=].answer[+].valueCoding = http://terminology.hl7.org/CodeSystem/medicationknowledge-package-type#blstrpk "Blister Pack"
+* item[=].item[+].linkId = "packsize"
+* item[=].item[=].answer.valueQuantity.value = 98
+* item[=].item[=].answer.valueQuantity.unit = "units"
+
+
+* item[=].item[+].linkId = "packtype"
+* item[=].item[=].answer[+].valueCoding = http://terminology.hl7.org/CodeSystem/medicationknowledge-package-type#blstrpk "Blister Pack"

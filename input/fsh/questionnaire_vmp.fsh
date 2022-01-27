@@ -212,5 +212,5 @@ Title:    "AMPP Questionnaire"
 * item[=].item[=].type = #choice
 * item[=].item[=].required = true
 * item[=].item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/medicationknowledge-package-type"
-* item[=].item[=].text = "SPackaging Type"
+* item[=].item[=].text = "Packaging Type"
 
