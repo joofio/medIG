@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2022-01-27T11:55:52+00:00"/>
+  <date value="2022-01-27T12:11:00+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -296,17 +296,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/be-granularity-vs"/>
-      </reference>
-      <name value="Be Granularity Value Set"/>
-      <description value="Indicates the granularity of product"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/granularity-vs"/>
       </reference>
       <name value="Granularity Value Set"/>
@@ -318,21 +307,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/role-medication-vs"/>
+        <reference value="ValueSet/be-granularity-vs"/>
       </reference>
-      <name value="Ingredient role Value Set"/>
+      <name value="Be Granularity Value Set"/>
+      <description value="Indicates the granularity of product for belgium"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medication-vs"/>
+      </reference>
+      <name value="Ingredient  Value Set"/>
       <description value="Indicates the role that an ingredient takes into a product"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/beMedCS"/>
+        <reference value="ValueSet/role-medication-vs"/>
       </reference>
-      <name value="Drug Code System"/>
-      <description value="Codes for belgian medicine level "/>
+      <name value="Ingredient role Value Set"/>
+      <description value="Indicates the role that an ingredient takes into a product"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -376,6 +376,28 @@
         <reference value="CodeSystem/rel-med-cs"/>
       </reference>
       <name value="RelatedMedicationKnowledgeCS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ingredient-cs"/>
+      </reference>
+      <name value="Ingredient Code System"/>
+      <description value="Codes for role in ingredient level "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/beMedCS"/>
+      </reference>
+      <name value="Drug Code System"/>
+      <description value="Codes for belgian medicine level "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -462,7 +484,7 @@
       <reference>
         <reference value="Questionnaire/questionnaire-cnpem"/>
       </reference>
-      <name value="CNPEM Questionnaire addition"/>
+      <name value="CNPEM Questionnaire"/>
       <description value="Questionnaire for adding a drug level of CNPEM to a fhir server"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -473,7 +495,7 @@
       <reference>
         <reference value="QuestionnaireResponse/questionnaire-response-vmp"/>
       </reference>
-      <name value="VMP Questionnaire Response Addition"/>
+      <name value="VMP Questionnaire Response 1"/>
       <description value="Questionnaire Response example for adding a drug level of VMP to a fhir server"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -484,7 +506,7 @@
       <reference>
         <reference value="QuestionnaireResponse/questionnaire-response-vmp2"/>
       </reference>
-      <name value="VMP Questionnaire Response Addition"/>
+      <name value="VMP Questionnaire Response 2"/>
       <description value="Questionnaire Response example 2 for adding a drug level of VMP to a fhir server"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -495,7 +517,7 @@
       <reference>
         <reference value="Questionnaire/questionnaire-vmp"/>
       </reference>
-      <name value="VMP Questionnaire addition"/>
+      <name value="VMP Questionnaire"/>
       <description value="Questionnaire for adding a drug level of VMP to a fhir server"/>
       <exampleBoolean value="true"/>
     </resource>

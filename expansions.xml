@@ -1,11 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8d8462d1-6ed9-44e8-a758-9032859fbd20"/>
+  <id value="2350fa06-a87a-4f34-a9f1-248b2f718800"/>
   <meta>
-    <lastUpdated value="2022-01-27T11:55:52.937+00:00"/>
+    <lastUpdated value="2022-01-27T12:11:00.058+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/granularity-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="granularity-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-medics.html">Drug Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-medics.html">
+                <code>http://hl7.org/fhir/us/example/CodeSystem/mediCS</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-SUBST"> </a>
+                  <a href="CodeSystem-medics.html#medics-SUBST">SUBST</a>
+                </td>
+                <td>Substance</td>
+                <td>Substance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-PHARMPROD"> </a>
+                  <a href="CodeSystem-medics.html#medics-PHARMPROD">PHARMPROD</a>
+                </td>
+                <td>Pharmaceutical Product</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-MEDPROD"> </a>
+                  <a href="CodeSystem-medics.html#medics-MEDPROD">MEDPROD</a>
+                </td>
+                <td>Medicinal Product</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-PACKMEDPROD"> </a>
+                  <a href="CodeSystem-medics.html#medics-PACKMEDPROD">PACKMEDPROD</a>
+                </td>
+                <td>Packaged Medicinal Product</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/example/ValueSet/granularity-vs"/>
+        <version value="0.1.0"/>
+        <name value="GranularityVS"/>
+        <title value="Granularity Value Set"/>
+        <status value="active"/>
+        <date value="2022-01-27T12:11:00+00:00"/>
+        <description value="Indicates the granularity of product"/>
+        <expansion>
+          <identifier value="urn:uuid:3958b1d6-5742-41bb-952c-aeecb6a45303"/>
+          <timestamp value="2022-01-27T12:11:37+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/example/CodeSystem/mediCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
+            <code value="SUBST"/>
+            <display value="Substance"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
+            <code value="PHARMPROD"/>
+            <display value="Pharmaceutical Product"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
+            <code value="MEDPROD"/>
+            <display value="Medicinal Product"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
+            <code value="PACKMEDPROD"/>
+            <display value="Packaged Medicinal Product"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs"/>
     <resource>
@@ -91,14 +198,14 @@
         </text>
         <url value="http://hl7.org/fhir/us/example/ValueSet/be-granularity-vs"/>
         <version value="0.1.0"/>
-        <name value="BEGranularityVS"/>
+        <name value="beGranularityVS"/>
         <title value="Be Granularity Value Set"/>
         <status value="active"/>
-        <date value="2022-01-27T11:55:52+00:00"/>
-        <description value="Indicates the granularity of product"/>
+        <date value="2022-01-27T12:11:00+00:00"/>
+        <description value="Indicates the granularity of product for belgium"/>
         <expansion>
-          <identifier value="urn:uuid:28b883ac-759b-4e73-8ab8-e43025707c20"/>
-          <timestamp value="2022-01-27T11:56:34+00:00"/>
+          <identifier value="urn:uuid:deb63320-46ce-4d4b-bda2-34ceef7e5b8c"/>
+          <timestamp value="2022-01-27T12:11:37+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -136,113 +243,6 @@
             <system value="http://hl7.org/fhir/us/example/CodeSystem/beMedCS"/>
             <code value="VMPG"/>
             <display value="VMP Group"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/granularity-vs"/>
-    <resource>
-      <ValueSet>
-        <id value="granularity-vs"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 4 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-medics.html">Drug Code System v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-medics.html">
-                <code>http://hl7.org/fhir/us/example/CodeSystem/mediCS</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-SUBST"> </a>
-                  <a href="CodeSystem-medics.html#medics-SUBST">SUBST</a>
-                </td>
-                <td>Substance</td>
-                <td>Substance</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-PHARMPROD"> </a>
-                  <a href="CodeSystem-medics.html#medics-PHARMPROD">PHARMPROD</a>
-                </td>
-                <td>Pharmaceutical Product</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-MEDPROD"> </a>
-                  <a href="CodeSystem-medics.html#medics-MEDPROD">MEDPROD</a>
-                </td>
-                <td>Medicinal Product</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-mediCS-PACKMEDPROD"> </a>
-                  <a href="CodeSystem-medics.html#medics-PACKMEDPROD">PACKMEDPROD</a>
-                </td>
-                <td>Packaged Medicinal Product</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.org/fhir/us/example/ValueSet/granularity-vs"/>
-        <version value="0.1.0"/>
-        <name value="GranularityVS"/>
-        <title value="Granularity Value Set"/>
-        <status value="active"/>
-        <date value="2022-01-27T11:55:52+00:00"/>
-        <description value="Indicates the granularity of product"/>
-        <expansion>
-          <identifier value="urn:uuid:b8a22dba-0397-4432-bda1-ec4d66b615a5"/>
-          <timestamp value="2022-01-27T11:56:34+00:00"/>
-          <total value="4"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/example/CodeSystem/mediCS|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
-            <code value="SUBST"/>
-            <display value="Substance"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
-            <code value="PHARMPROD"/>
-            <display value="Pharmaceutical Product"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
-            <code value="MEDPROD"/>
-            <display value="Medicinal Product"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/mediCS"/>
-            <code value="PACKMEDPROD"/>
-            <display value="Packaged Medicinal Product"/>
           </contains>
         </expansion>
       </ValueSet>

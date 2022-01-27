@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2022-01-27T11:55:52+00:00",
+  "date": "2022-01-27T12:11:00+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -435,20 +435,6 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/be-granularity-vs"
-        },
-        "name": "Be Granularity Value Set",
-        "description": "Indicates the granularity of product",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
           "reference": "ValueSet/granularity-vs"
         },
         "name": "Granularity Value Set",
@@ -463,9 +449,23 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/role-medication-vs"
+          "reference": "ValueSet/be-granularity-vs"
         },
-        "name": "Ingredient role Value Set",
+        "name": "Be Granularity Value Set",
+        "description": "Indicates the granularity of product for belgium",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/medication-vs"
+        },
+        "name": "Ingredient  Value Set",
         "description": "Indicates the role that an ingredient takes into a product",
         "exampleBoolean": false
       },
@@ -473,14 +473,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/beMedCS"
+          "reference": "ValueSet/role-medication-vs"
         },
-        "name": "Drug Code System",
-        "description": "Codes for belgian medicine level ",
+        "name": "Ingredient role Value Set",
+        "description": "Indicates the role that an ingredient takes into a product",
         "exampleBoolean": false
       },
       {
@@ -536,6 +536,34 @@
           "reference": "CodeSystem/rel-med-cs"
         },
         "name": "RelatedMedicationKnowledgeCS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ingredient-cs"
+        },
+        "name": "Ingredient Code System",
+        "description": "Codes for role in ingredient level ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/beMedCS"
+        },
+        "name": "Drug Code System",
+        "description": "Codes for belgian medicine level ",
         "exampleBoolean": false
       },
       {
@@ -646,7 +674,7 @@
         "reference": {
           "reference": "Questionnaire/questionnaire-cnpem"
         },
-        "name": "CNPEM Questionnaire addition",
+        "name": "CNPEM Questionnaire",
         "description": "Questionnaire for adding a drug level of CNPEM to a fhir server",
         "exampleBoolean": true
       },
@@ -660,7 +688,7 @@
         "reference": {
           "reference": "QuestionnaireResponse/questionnaire-response-vmp"
         },
-        "name": "VMP Questionnaire Response Addition",
+        "name": "VMP Questionnaire Response 1",
         "description": "Questionnaire Response example for adding a drug level of VMP to a fhir server",
         "exampleBoolean": true
       },
@@ -674,7 +702,7 @@
         "reference": {
           "reference": "QuestionnaireResponse/questionnaire-response-vmp2"
         },
-        "name": "VMP Questionnaire Response Addition",
+        "name": "VMP Questionnaire Response 2",
         "description": "Questionnaire Response example 2 for adding a drug level of VMP to a fhir server",
         "exampleBoolean": true
       },
@@ -688,7 +716,7 @@
         "reference": {
           "reference": "Questionnaire/questionnaire-vmp"
         },
-        "name": "VMP Questionnaire addition",
+        "name": "VMP Questionnaire",
         "description": "Questionnaire for adding a drug level of VMP to a fhir server",
         "exampleBoolean": true
       },
