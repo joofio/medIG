@@ -3,7 +3,7 @@
 
 err = 6, warn = 76, info = 10
 IG Publisher Version: 1.1.97
-Generated Thu Jan 27 14:16:48 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
+Generated Thu Jan 27 14:25:52 UTC 2022. FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = http://hl7.org/fhir/us/example)
  Build Errors : 218 / 8 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-be-rolemed-cs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-beMedCS : 0 / 2 / 1
@@ -143,9 +143,9 @@ ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp
 ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.html#/html/body/div/div/div/div/div/div/table/tr/td/span/span/a at Line 166, column 1169: The link 'CodeSystem-beingredient-cs.html#000001' for "http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, root, stripe, segment-footer, beingredient-cs-000001, beingredient-cs-000002, segment-navbar, codesystem-ingredient-code-system, beingredient-cs-000003, segment-content, segment-breadcrumb])
 ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.html#/html/body/div/div/div/div/div/div/table/tr/td/span/span/a at Line 168, column 1167: The link 'CodeSystem-be-rolemed-cs.html#AP' for "http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs" cannot be resolved (valid targets: [segment-header, publish-box, bottom, codesystem-role-code-system, segment-post-footer, be-rolemed-cs-NAP, be-rolemed-cs-EXP, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, be-rolemed-cs-AP])
 ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.html#/html/body/div/div/div/p/a at Line 200, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.json.html#/html/body/div/div/div/p/a at Line 315, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.ttl.html#/html/body/div/div/div/p/a at Line 295, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.xml.html#/html/body/div/div/div/p/a at Line 308, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.json.html#/html/body/div/div/div/p/a at Line 307, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.ttl.html#/html/body/div/div/div/p/a at Line 291, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-questionnaire-response-vmp2.xml.html#/html/body/div/div/div/p/a at Line 300, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/Resources-relations.html#/html/body/div/div/div/p/a at Line 171, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-definitions.html#/html/body/div/div/div/p/a at Line 1507, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BeVmpGroup-examples.html#/html/body/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
