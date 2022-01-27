@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "BeMACS"];
   fhir:CodeSystem.title [ fhir:value "Marketing Authorization Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-01-27T16:48:37+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-01-27T17:34:32+00:00"^^xsd:dateTime];
   fhir:CodeSystem.description [ fhir:value "Codes for Marketing Authorization"];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];

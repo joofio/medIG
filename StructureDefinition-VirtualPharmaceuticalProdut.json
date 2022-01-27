@@ -10,7 +10,7 @@
   "name": "VirtualPharmaceuticalProdut",
   "title": "Virtual Pharmaceutical Product logical model",
   "status": "active",
-  "date": "2022-01-27T16:48:37+00:00",
+  "date": "2022-01-27T17:34:32+00:00",
   "description": "Virtual Pharmaceutical Product logical model",
   "fhirVersion": "4.0.1",
   "mapping": [

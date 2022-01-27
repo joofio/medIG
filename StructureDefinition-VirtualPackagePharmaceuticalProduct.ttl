@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "VirtualPackagePharmaceuticalProduct"];
   fhir:StructureDefinition.title [ fhir:value "VMPP logical model"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-01-27T16:48:37+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-01-27T17:34:32+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "VMPP logical model."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
