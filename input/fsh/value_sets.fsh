@@ -156,7 +156,7 @@ Description: "Indicates the granularity of product for belgium"
 
 
 // Define a local code system
-CodeSystem: beRoleIngredinent-cs
+CodeSystem: beRoleIngredinentCS
 Id:         be-rolemed-cs
 Title: "Role Code System"
 Description: "Codes for role in ingredient level "
@@ -178,14 +178,14 @@ ValueSet: beRoleMedicationVS
 Id: be-role-medication-vs
 Title: "Ingredient role Value Set"
 Description: "Indicates the role that an ingredient takes into a product"
-* include codes from system roleCS
+* include codes from system beRoleIngredinentCS
 
 Alias: rolevs = http://hl7.org/fhir/us/example/valueSet/be-role-medication-vs
 
 
 
 // Define a local code system
-CodeSystem: beIngredinent-cs
+CodeSystem: beIngredientCS
 Id:         beingredient-cs
 Title: "Ingredient Code System"
 Description: "Codes for role in ingredient level "
@@ -207,7 +207,7 @@ ValueSet: beMedicationVS
 Id: medication-vs
 Title: "Ingredient  Value Set"
 Description: "Indicates the role that an ingredient takes into a product"
-* include codes from system ingredientCS
+* include codes from system beIngredientCS
 
 Alias: ingredientVS = http://hl7.org/fhir/us/example/ValueSet/medication-vs
 
