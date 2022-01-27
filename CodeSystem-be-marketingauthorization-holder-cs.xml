@@ -8,9 +8,9 @@
   <url value="http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs"/>
   <version value="0.1.0"/>
   <name value="BeMAHolderCS"/>
-  <title value="Marketing Authorization Code System"/>
+  <title value="Marketing Authorization Holder Code System"/>
   <status value="active"/>
-  <date value="2022-01-27T15:29:00+00:00"/>
+  <date value="2022-01-27T15:35:43+00:00"/>
   <description value="Codes for ingredient"/>
   <content value="complete"/>
   <count value="1"/>

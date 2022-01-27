@@ -19,7 +19,7 @@
   "version": "0.1.0",
   "name": "PackagedMedicinalProduct",
   "status": "active",
-  "date": "2022-01-27T15:29:00+00:00",
+  "date": "2022-01-27T15:35:43+00:00",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
