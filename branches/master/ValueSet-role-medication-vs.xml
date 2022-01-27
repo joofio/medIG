@@ -10,7 +10,7 @@
   <name value="RoleMedicationVS"/>
   <title value="Ingredient role Value Set"/>
   <status value="active"/>
-  <date value="2022-01-27T10:33:03+00:00"/>
+  <date value="2022-01-27T11:55:52+00:00"/>
   <description value="Indicates the role that an ingredient takes into a product"/>
   <compose>
     <include>
