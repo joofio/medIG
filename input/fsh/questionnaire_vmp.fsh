@@ -4,7 +4,7 @@ Description: "Questionnaire for adding a drug level of VMP to a fhir server"
 Title:    "VMP Questionnaire"
 
 * identifier[0].system = "http://hl7belgium.org"
-* identifier[0].value = "questionnaire-cnpem"
+* identifier[0].value = "questionnaire-vmp"
 
 * name = "questionnaire-vmp"
 * title = "Questionnaire for adding VMP"

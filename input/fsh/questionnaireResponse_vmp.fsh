@@ -19,7 +19,7 @@ Title:    "VMP Questionnaire Response 1"
 
 
 * item[=].item[+].linkId = "role-vmp"
-* item[=].item[=].answer.valueCoding = rolevs#AP "Active Principle"
+* item[=].item[=].answer.valueCoding = be-rolemed-cs#AP "Active Principle"
 
 
 * item[+].linkId = "doseform-vmp"
@@ -52,7 +52,7 @@ Title:    "VMP Questionnaire Response 2"
 
 
 * item[=].item[+].linkId = "role-vmp"
-* item[=].item[=].answer.valueCoding = rolevs#AP "Active Principle"
+* item[=].item[=].answer.valueCoding = be-rolemed-cs#AP "Active Principle"
 
 * item[+].linkId = "ingredient"
 
@@ -65,7 +65,7 @@ Title:    "VMP Questionnaire Response 2"
 
 
 * item[=].item[+].linkId = "role-vmp"
-* item[=].item[=].answer.valueCoding = rolevs#AP "Active Principle"
+* item[=].item[=].answer.valueCoding = be-rolemed-cs#AP "Active Principle"
 
 
 

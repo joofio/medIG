@@ -160,9 +160,7 @@ CodeSystem: beRoleIngredinentCS
 Id:         be-rolemed-cs
 Title: "Role Code System"
 Description: "Codes for role in ingredient level "
-// You can choose any url, or use the default, but in this case we want the URL to be in the HL7 namespace
-// Spacing layout over three lines per term is optional, for clarity
-// The definition (second text string) is optional
+
 * #AP
     "Active Principle"
 * #NAP
@@ -181,7 +179,6 @@ Description: "Indicates the role that an ingredient takes into a product"
 * include codes from system beRoleIngredinentCS
 
 Alias: rolevs = http://hl7.org/fhir/us/example/valueSet/be-role-medication-vs
-
 
 
 // Define a local code system
