@@ -23,13 +23,13 @@ Title:    "VMP Questionnaire Response 1"
 
 
 * item[+].linkId = "doseform-vmp"
-* item[=].answer.valueCoding =  http://snomed.info/sct#385219001 "Injection solution"
+* item[=].answer.valueCoding = http://snomed.info/sct#385219001 "Injection solution"
 
 
 * item[+].linkId = "route-vmp"
-* item[=].answer[+].valueCoding =  http://snomed.info/sct#47625008 "Intravenous Use"
-* item[=].answer[+].valueCoding =  http://snomed.info/sct#34206005  "SC Use"
-* item[=].answer[+].valueCoding =  http://snomed.info/sct#78421000 "Intramuscular Use"
+* item[=].answer[+].valueCoding = http://snomed.info/sct#47625008 "Intravenous Use"
+* item[=].answer[+].valueCoding = http://snomed.info/sct#34206005 "SC Use"
+* item[=].answer[+].valueCoding = http://snomed.info/sct#78421000 "Intramuscular Use"
 
 
 
@@ -48,7 +48,7 @@ Title:    "VMP Questionnaire Response 2"
 
 * item[=].item[+].linkId = "strength-vmp"
 * item[=].item[=].answer[+].valueQuantity.value = 37.5
-* item[=].item[=].answer[+].valueQuantity.unit = "mg"
+* item[=].item[=].answer[=].valueQuantity.unit = "mg"
 
 
 * item[=].item[+].linkId = "role-vmp"
@@ -61,7 +61,7 @@ Title:    "VMP Questionnaire Response 2"
 
 * item[=].item[+].linkId = "strength-vmp"
 * item[=].item[=].answer[+].valueQuantity.value = 325
-* item[=].item[=].answer[+].valueQuantity.unit = "mg"
+* item[=].item[=].answer[=].valueQuantity.unit = "mg"
 
 
 * item[=].item[+].linkId = "role-vmp"
@@ -74,5 +74,5 @@ Title:    "VMP Questionnaire Response 2"
 
 
 * item[+].linkId = "route-vmp"
-* item[=].answer[+].valueCoding =  http://snomed.info/sct#26643006  "Oral Use"
+* item[=].answer[+].valueCoding = http://snomed.info/sct#26643006  "Oral Use"
 
