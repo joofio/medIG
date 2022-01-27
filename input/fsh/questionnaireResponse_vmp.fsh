@@ -23,13 +23,13 @@ Title:    "VMP Questionnaire Response 1"
 
 
 * item[+].linkId = "doseform-vmp"
-* item[=].answer.valueCoding = http://hl7.org/fhir/ValueSet/medication-form-codes#385219001 "Injection solution"
+* item[=].answer.valueCoding =  http://snomed.info/sct#385219001 "Injection solution"
 
 
 * item[+].linkId = "route-vmp"
-* item[=].answer[+].valueCoding = http://hl7.org/fhir/ValueSet/route-codes#47625008 "Intravenous Use"
-* item[=].answer[+].valueCoding = http://hl7.org/fhir/ValueSet/route-codes#34206005  "SC Use"
-* item[=].answer[+].valueCoding = http://hl7.org/fhir/ValueSet/route-codes#78421000 "Intramuscular Use"
+* item[=].answer[+].valueCoding =  http://snomed.info/sct#47625008 "Intravenous Use"
+* item[=].answer[+].valueCoding =  http://snomed.info/sct#34206005  "SC Use"
+* item[=].answer[+].valueCoding =  http://snomed.info/sct#78421000 "Intramuscular Use"
 
 
 
@@ -70,9 +70,9 @@ Title:    "VMP Questionnaire Response 2"
 
 
 * item[+].linkId = "doseform-vmp"
-* item[=].answer.valueCoding = http://hl7.org/fhir/ValueSet/medication-form-codes#385055001 "Tablet"
+* item[=].answer.valueCoding =  http://snomed.info/sct#385055001 "Tablet"
 
 
 * item[+].linkId = "route-vmp"
-* item[=].answer[+].valueCoding = http://hl7.org/fhir/ValueSet/route-codes#26643006  "Oral Use"
+* item[=].answer[+].valueCoding =  http://snomed.info/sct#26643006  "Oral Use"
 
