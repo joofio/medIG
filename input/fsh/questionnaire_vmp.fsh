@@ -111,14 +111,14 @@ Title:    "AMP Questionnaire"
 
 * item[+].linkId = "marketingauhtorization-amp"
 * item[=].type = #open-choice
-* item[=].answerValueSet = beMAVS
+* item[=].answerValueSet = MAVS
 * item[=].required = true
 * item[=].text = "Marketing Authorization of the product"
 
 * item[+].linkId = "marketingauhtorization-holder-amp"
 * item[=].type = #open-choice
 * item[=].required = true
-* item[=].answerValueSet = beMAHolderVS
+* item[=].answerValueSet = MAHVS
 * item[=].text = "Marketing Auhtorization Holder"
 
 * item[+].linkId = "brandname-amp"
@@ -184,14 +184,14 @@ Title:    "AMPP Questionnaire"
 
 * item[+].linkId = "marketingauhtorization-ampp"
 * item[=].type = #choice
-* item[=].answerValueSet = beMAVS
+* item[=].answerValueSet = MAVS
 * item[=].required = true
 * item[=].text = "Marketing Authorization of the product"
 
 * item[+].linkId = "marketingauhtorization-holder-ampp"
 * item[=].type = #choice
 * item[=].required = true
-* item[=].answerValueSet = beMAHolderVS
+* item[=].answerValueSet = MAHVS
 * item[=].text = "Marketing Auhtorization Holder"
 
 * item[+].linkId = "brandname-ampp"
@@ -209,4 +209,5 @@ Title:    "AMPP Questionnaire"
 * item[=].required = true
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/medicationknowledge-package-type"
 * item[=].text = "Packaging Type"
+
 

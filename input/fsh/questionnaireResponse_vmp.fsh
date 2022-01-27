@@ -89,7 +89,7 @@ Title:    "AMP Questionnaire Response "
 * item[+].linkId = "ingredient"
 
 * item[=].item[+].linkId = "ingredient-amp"
-* item[=].item[=].answer[+].valueCoding = beingredient-cs#000004 "Rosuvastatine"
+* item[=].item[=].answer[+].valueCoding = beingredient-cs#000004 "Rosuvastatin"
 
 * item[=].item[+].linkId = "strength-amp"
 * item[=].item[=].answer.valueQuantity.value = 40
@@ -108,11 +108,11 @@ Title:    "AMP Questionnaire Response "
 * item[=].answer[+].valueCoding = http://snomed.info/sct#26643006  "Oral Use"
 
 * item[+].linkId = "marketingauhtorization-amp"
-* item[=].answer[+].valueCoding = 
+* item[=].answer[+].valueCoding = beMACS#000001 ""
 
 
 * item[+].linkId = "marketingauhtorization-holder-amp"
-* item[=].answer[+].valueCoding = 
+* item[=].answer[+].valueCoding = beMAHolderCS#000001 ""
 
 * item[+].linkId = "brandname-amp"
 * item[=].answer[+].valueString = "Crestor 40 mg filmomh. tabl."

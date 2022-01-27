@@ -195,7 +195,9 @@ Description: "Codes for ingredient"
 
 * #000003 
     "Tramadol"
-    
+
+* #000004 
+    "Rosuvastatin"   
 
 Alias: ingredientCS = http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs
 
@@ -229,12 +231,12 @@ Alias: MACS = http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorizatio
 
 
 ValueSet: beMAVS
-Id: marketingauthorization-vs
+Id: be-marketingauthorization-vs
 Title: "Marketing Authorization Value Set"
 Description: "Indicates the Marketing Authorization for product"
 * include codes from system be-marketingauthorization-cs
 
-Alias: MAVS = http://hl7.org/fhir/us/example/ValueSet/marketingauthorization-vs
+Alias: MAVS = http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-vs
 
 
 // Define a local code system
@@ -253,7 +255,7 @@ Description: "Codes for ingredient"
     "Tramadol"
     
 
-Alias: MACS = http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs
+Alias: MAHCS = http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-holder-cs
 
 
 ValueSet: beMAHolderVS
@@ -262,5 +264,5 @@ Title: "Marketing Authorization Value Set"
 Description: "Indicates the Marketing Authorization for product"
 * include codes from system be-marketingauthorization-holder-cs
 
-Alias: MAVS = http://hl7.org/fhir/us/example/ValueSet/marketingauthorization-holder-vs
+Alias: MAHVS = http://hl7.org/fhir/us/example/ValueSet/marketingauthorization-holder-vs
 
