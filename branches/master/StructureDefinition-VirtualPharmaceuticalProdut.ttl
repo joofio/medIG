@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "VirtualPharmaceuticalProdut"];
   fhir:StructureDefinition.title [ fhir:value "Virtual Pharmaceutical Product logical model"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-01-27T17:55:49+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-01-28T08:56:12+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "Virtual Pharmaceutical Product logical model"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
