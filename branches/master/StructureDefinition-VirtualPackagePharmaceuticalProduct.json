@@ -10,7 +10,7 @@
   "name": "VirtualPackagePharmaceuticalProduct",
   "title": "VMPP logical model",
   "status": "active",
-  "date": "2022-01-28T10:40:14+00:00",
+  "date": "2022-01-28T10:43:57+00:00",
   "description": "VMPP logical model.",
   "fhirVersion": "4.0.1",
   "mapping": [

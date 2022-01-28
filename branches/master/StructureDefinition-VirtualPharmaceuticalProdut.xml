@@ -75,7 +75,7 @@
   <name value="VirtualPharmaceuticalProdut"/>
   <title value="Virtual Pharmaceutical Product logical model"/>
   <status value="active"/>
-  <date value="2022-01-28T10:40:14+00:00"/>
+  <date value="2022-01-28T10:43:57+00:00"/>
   <description value="Virtual Pharmaceutical Product logical model"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
