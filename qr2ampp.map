@@ -10,7 +10,7 @@ group doseform(source src: QuestionnaireResponse, target tgt: MedicationKnowledg
     src.item as item where linkId.value in ('marketingauhtorization')  -> tgt.drugCharacteristic as dc then marketing(item, dc) "rule for MA";
     src.item as item where linkId.value in ('marketingholder')  -> tgt.drugCharacteristic as dc then marketing_holder(item, dc) "rule for holder";
     src.item as item where linkId.value in ('brandname')  -> tgt as brand then synonym_format(item, brand) "rule for brand";
-    src.item as item where linkId.value in ('packaging')  -> tgt.packaging as pack then packaging_format(item, pack) "rule for brand";
+    src.item as item where linkId.value in ('packaging')  -> tgt.packaging as packa then packaging_format(item, packa) "rule for packaging";
 
 
 }
@@ -74,30 +74,34 @@ group codingcode_MA(source src, target tgt : Coding) {
   src -> tgt.display = 'Marketing Authorization' "xy3";
 }
 
-group packaging_format(source src, target tgt: BackboneElement) {
+///packaging
+group packaging_format(source src, target tgt) {
 
-src.item as item where linkId.value in ('packtype')  -> tgt.item = create('CodeableConcept') as cc then packtype_format(item, cc) "rule for pack type";
-src.item as item where linkId.value in ('packsize')  -> tgt.quantity as size then pack_size_format(item, size) "rule for strength";
+src.item as item where linkId.value in ('packtype')  -> tgt.type = create('CodeableConcept') as cc then packtype_format(item, cc) "rule for pack type";
+src.item as item where linkId.value in ('packsize')  -> tgt.quantity as s then pack_size_format(item, s) "rule for pack size";
 
 }
-group packtype_format(source src, target tgt: Quantity) {
-    src.anwser as ans-> tgt then pack_type_creation(ans,tgt) "sds";
+//packtype
+group packtype_format(source src, target tgt: CodeableConcept) {
+    src.answer as ans-> tgt then pack_type_creation(ans,tgt) "pack type get anwser";
 }
-group pack_type_creation(source src, target tgt: Quantity) {
-
- src -> tgt.coding =(src.valueCoding) "create pack type value"
+group pack_type_creation(source src, target tgt: CodeableConcept) {
+    src -> tgt.coding = (src.valueCoding) "create pack type value";
 }
-
-
+///pack size
 group pack_size_format(source src, target tgt: Quantity) {
-    src.anwser as ans-> tgt then pack_size_creation(ans,tgt) "sds";
+    src.answer as ans-> tgt then pack_size_creation(ans,tgt) "get pack size answer";
 }
-
 group pack_size_creation(source src, target tgt: Quantity) {
+    src.valueQuantity as q-> tgt then create_value_quantity(q,tgt) "create packsize value";
+}
+group create_value_quantity(source src, target tgt: Quantity) {
+    src -> tgt.value = (src.value) "create packsize value";
+    src -> tgt.unit = (src.unit) "create packsize unit";
 
- src -> tgt=(src.valueQuantity) "create packsize value"
 }
 
+///ingredients
 group ingredient_group(source src, target tgt: BackboneElement) {
 
 src.item as item where linkId.value in ('ingredient-element') log item  -> tgt.item = create('CodeableConcept') as cc then ingre_format(item, cc) "rule for ingredient";
@@ -111,7 +115,6 @@ group strn_format(source src, target tgt: Ratio) {
     src.answer as ans -> tgt as numer then creat_numer(ans,numer) "create numearator" ;
 
 }
-
 group creat_numer(source src, target tgt: Quantity) {
     src-> tgt.numerator = (src.valueQuantity) "create strength value";
 }
@@ -139,9 +142,6 @@ group role_trasnform(source src, target tgt) {
     src.valueCoding as vc where code in ("EXP")  -> tgt.isActive = false  "bool";
 
 }
-
-
-
 
 ///route
 group route_format(source src, target tgt) {
