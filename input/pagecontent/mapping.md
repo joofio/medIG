@@ -77,3 +77,5 @@ src -> tgt.coding = (src.valueCoding) "fsf";
 
 ## For AMPP
 
+<img src="map_ampp.png" width="100%"/>
+<br>
