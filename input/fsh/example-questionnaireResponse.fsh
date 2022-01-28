@@ -167,3 +167,44 @@ Title:    "AMPP Questionnaire Response"
 
 * item[=].item[+].linkId = "packtype"
 * item[=].item[=].answer[+].valueCoding = http://terminology.hl7.org/CodeSystem/medicationknowledge-package-type#blstrpk "Blister Pack"
+
+
+Instance: questionnaire-response-cnpem
+InstanceOf: QuestionnaireResponse
+Description: "Questionnaire Response example for adding a drug level of CNPEM to a fhir server"
+Title:    "CNPEM Questionnaire Response"
+
+* status = #in-progress
+* authored = "2022-01-26T02:00:00Z"
+
+* item[+].linkId = "ingredient"
+
+* item[=].item[+].linkId = "ingredient-element"
+* item[=].item[=].answer[+].valueCoding = beingredient-cs#000004 "Rosuvastatin"
+
+* item[=].item[+].linkId = "strength"
+* item[=].item[=].answer.valueQuantity.value = 40
+* item[=].item[=].answer.valueQuantity.unit = "mg"
+
+
+* item[=].item[+].linkId = "role"
+* item[=].item[=].answer.valueCoding = be-rolemed-cs#AP "Active Principle"
+
+
+* item[+].linkId = "doseform"
+* item[=].answer.valueCoding = http://snomed.info/sct#385055001 "Tablet"
+
+
+* item[+].linkId = "route"
+* item[=].answer[+].valueCoding = http://snomed.info/sct#26643006  "Oral Use"
+
+* item[+].linkId = "packaging"
+
+
+* item[=].item[+].linkId = "packsize"
+* item[=].item[=].answer.valueQuantity.value = 98
+* item[=].item[=].answer.valueQuantity.unit = "units"
+
+
+* item[=].item[+].linkId = "packtype"
+* item[=].item[=].answer[+].valueCoding = http://terminology.hl7.org/CodeSystem/medicationknowledge-package-type#blstrpk "Blister Pack"
