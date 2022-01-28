@@ -1,6 +1,6 @@
 The relationship is as follows:
 
-<img src="map.png" width="100%"/>
+<img src="mapCNPEM.png" width="100%"/>
 <br>
 
 The StructureMap is:
@@ -63,3 +63,17 @@ src -> tgt.coding = (src.valueCoding) "fsf";
 ///ingredient
 
 ```
+
+
+## For VMP
+
+<img src="map_vmp.png" width="100%"/>
+<br>
+
+## For AMP
+
+<img src="map_amp.png" width="100%"/>
+<br>
+
+## For AMPP
+

@@ -207,7 +207,6 @@ Title:    "AMPP Questionnaire"
 * item[=].item[=].required = true
 * item[=].item[=].text = "Package Size"
 
-
 * item[=].item[+].linkId = "packtype"
 * item[=].item[=].type = #choice
 * item[=].item[=].required = true
