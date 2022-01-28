@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="medicationIG"/>
   <status value="draft"/>
-  <date value="2022-01-28T10:43:57+00:00"/>
+  <date value="2022-01-28T10:49:11+00:00"/>
   <packageId value="medication.ig.example"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -574,6 +574,17 @@
       </reference>
       <name value="AMPP Questionnaire Response"/>
       <description value="Questionnaire Response example for adding a drug level of AMPP to a fhir server"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/questionnaire-response-cnpem"/>
+      </reference>
+      <name value="CNPEM Questionnaire Response"/>
+      <description value="Questionnaire Response example for adding a drug level of CNPEM to a fhir server"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

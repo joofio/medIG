@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "medicationIG",
   "status": "draft",
-  "date": "2022-01-28T10:43:57+00:00",
+  "date": "2022-01-28T10:49:11+00:00",
   "packageId": "medication.ig.example",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -788,6 +788,20 @@
         },
         "name": "AMPP Questionnaire Response",
         "description": "Questionnaire Response example for adding a drug level of AMPP to a fhir server",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/questionnaire-response-cnpem"
+        },
+        "name": "CNPEM Questionnaire Response",
+        "description": "Questionnaire Response example for adding a drug level of CNPEM to a fhir server",
         "exampleBoolean": true
       },
       {
