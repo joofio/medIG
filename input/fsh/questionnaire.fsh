@@ -6,6 +6,9 @@ Title:    "VMP Questionnaire"
 * identifier[0].system = "http://hl7belgium.org"
 * identifier[0].value = "questionnaire-vmp"
 
+* extension.url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
+* extension.valueCanonical = "http://webiste.be/transformtovmp/"
+
 * name = "questionnaire-vmp"
 * title = "Questionnaire for adding VMP"
 * status = #active
@@ -59,6 +62,10 @@ Title:    "AMP Questionnaire"
 
 * identifier[0].system = "http://hl7belgium.org"
 * identifier[0].value = "questionnaire-amp"
+
+* extension.url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
+* extension.valueCanonical = "http://webiste.be/transformtoamp/"
+
 
 * name = "questionnaire-amp"
 * title = "Questionnaire for adding AMP"
@@ -130,6 +137,9 @@ Title:    "AMPP Questionnaire"
 
 * identifier[0].system = "http://hl7belgium.org"
 * identifier[0].value = "questionnaire-ampp"
+
+* extension.url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
+* extension.valueCanonical = "http://webiste.be/transformtoampp/"
 
 * name = "questionnaire-ampp"
 * title = "Questionnaire for adding AMPP"
@@ -219,6 +229,9 @@ Title:    "CNPEM Questionnaire"
 
 * identifier[0].system = "http://infarmed.pt"
 * identifier[0].value = "questionnaire-cnpem"
+
+* extension.url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
+* extension.valueCanonical = "http://infarmed.pt/insertCNPEM/"
 
 * name = "questionnaire-cnpem"
 * title = "Questionnaire for adding CNPEM"
