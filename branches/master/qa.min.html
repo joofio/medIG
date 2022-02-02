@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 273, errors = 7, warn = 75, info = 13 -->
+<!-- broken links = 273, errors = 15, warn = 75, info = 13 -->
 <head>
   <title>medicationIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,9 +36,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for medicationIG</h1>
- <p>Generated Fri Jan 28 10:54:35 UTC 2022, FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/example">http://hl7.org/fhir/us/example</a> (<a href="http://hl7.org/fhir/us/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Wed Feb 02 15:41:17 UTC 2022, FHIR version 4.0.1 for medication.ig.example#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/example">http://hl7.org/fhir/us/example</a> (<a href="http://hl7.org/fhir/us/example/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.97</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.98</span></td></tr>
  <tr><td>Publication Code:</td><td>example<span style="color: maroon; font-weight: bold"> </span>. PackageId = medication.ig.example, Canonical = http://hl7.org/fhir/us/example</td></tr>
  <tr><td>Realm Check for IG:</td><td><span style="color: maroon; font-weight: bold">Error: realms in canonical and package id are different: ig vs us</span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
@@ -49,8 +49,8 @@
  <tr><td>Publication Rules:</td><td>Code = example. package-list.json: file not found in /github/workspace <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.org/fhir/us/example (Problem #1 with package-list.json at http://hl7.org/fhir/us/example: http://hl7.org/fhir/us/example/package-list.json?nocache=1643367213378)</td></tr>
- <tr><td>Summary:</td><td> broken links = 273, errors = 7, warn = 75, info = 13</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.org/fhir/us/example (Problem #1 with package-list.json at http://hl7.org/fhir/us/example: Invalid HTTP response 404 from http://hl7.org/fhir/us/example/package-list.json?nocache=1643816423852)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 273, errors = 15, warn = 75, info = 13</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -89,17 +89,17 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-medication.ig.example"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-medication.ig.example</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-amp"><b>/github/workspace/fsh-generated/resources/Questionnaire-questionnaire-amp</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-ampp"><b>/github/workspace/fsh-generated/resources/Questionnaire-questionnaire-ampp</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-amp"><b>/github/workspace/fsh-generated/resources/Questionnaire-questionnaire-amp</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-cnpem"><b>/github/workspace/fsh-generated/resources/Questionnaire-questionnaire-cnpem</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-ampp"><b>/github/workspace/fsh-generated/resources/Questionnaire-questionnaire-ampp</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-vmp"><b>/github/workspace/fsh-generated/resources/Questionnaire-questionnaire-vmp</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-cnpem"><b>/github/workspace/fsh-generated/resources/Questionnaire-questionnaire-cnpem</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-vmp"><b>/github/workspace/fsh-generated/resources/Questionnaire-questionnaire-vmp</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_QuestionnaireResponse-questionnaire-response-vmp"><b>/github/workspace/fsh-generated/resources/QuestionnaireResponse-questionnaire-response-vmp</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -402,13 +402,13 @@
      <td><b><a href="Questionnaire-questionnaire-amp.html#l501">output/Questionnaire-questionnaire-amp.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-amp.json.html#l496">output/Questionnaire-questionnaire-amp.json.html#/html/body/div/div/div/p/a at Line 283, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-amp.json.html#l505">output/Questionnaire-questionnaire-amp.json.html#/html/body/div/div/div/p/a at Line 289, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-amp.ttl.html#l716">output/Questionnaire-questionnaire-amp.ttl.html#/html/body/div/div/div/p/a at Line 303, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-amp.ttl.html#l737">output/Questionnaire-questionnaire-amp.ttl.html#/html/body/div/div/div/p/a at Line 310, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-amp.xml.html#l691">output/Questionnaire-questionnaire-amp.xml.html#/html/body/div/div/div/p/a at Line 292, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-amp.xml.html#l703">output/Questionnaire-questionnaire-amp.xml.html#/html/body/div/div/div/p/a at Line 296, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="Questionnaire-questionnaire-ampp.change.history.html#l283">output/Questionnaire-questionnaire-ampp.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
@@ -417,13 +417,13 @@
      <td><b><a href="Questionnaire-questionnaire-ampp.html#l536">output/Questionnaire-questionnaire-ampp.html#/html/body/div/div/div/p/a at Line 202, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-ampp.json.html#l526">output/Questionnaire-questionnaire-ampp.json.html#/html/body/div/div/div/p/a at Line 298, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-ampp.json.html#l535">output/Questionnaire-questionnaire-ampp.json.html#/html/body/div/div/div/p/a at Line 304, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-ampp.ttl.html#l782">output/Questionnaire-questionnaire-ampp.ttl.html#/html/body/div/div/div/p/a at Line 317, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-ampp.ttl.html#l803">output/Questionnaire-questionnaire-ampp.ttl.html#/html/body/div/div/div/p/a at Line 324, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-ampp.xml.html#l751">output/Questionnaire-questionnaire-ampp.xml.html#/html/body/div/div/div/p/a at Line 308, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-ampp.xml.html#l763">output/Questionnaire-questionnaire-ampp.xml.html#/html/body/div/div/div/p/a at Line 312, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="Questionnaire-questionnaire-cnpem.change.history.html#l283">output/Questionnaire-questionnaire-cnpem.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
@@ -432,13 +432,13 @@
      <td><b><a href="Questionnaire-questionnaire-cnpem.html#l485">output/Questionnaire-questionnaire-cnpem.html#/html/body/div/div/div/p/a at Line 199, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-cnpem.json.html#l484">output/Questionnaire-questionnaire-cnpem.json.html#/html/body/div/div/div/p/a at Line 278, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-cnpem.json.html#l493">output/Questionnaire-questionnaire-cnpem.json.html#/html/body/div/div/div/p/a at Line 284, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-cnpem.ttl.html#l683">output/Questionnaire-questionnaire-cnpem.ttl.html#/html/body/div/div/div/p/a at Line 293, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-cnpem.ttl.html#l704">output/Questionnaire-questionnaire-cnpem.ttl.html#/html/body/div/div/div/p/a at Line 300, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-cnpem.xml.html#l658">output/Questionnaire-questionnaire-cnpem.xml.html#/html/body/div/div/div/p/a at Line 283, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-cnpem.xml.html#l670">output/Questionnaire-questionnaire-cnpem.xml.html#/html/body/div/div/div/p/a at Line 287, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="Questionnaire-questionnaire-vmp.change.history.html#l283">output/Questionnaire-questionnaire-vmp.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
@@ -447,13 +447,13 @@
      <td><b><a href="Questionnaire-questionnaire-vmp.html#l450">output/Questionnaire-questionnaire-vmp.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-vmp.json.html#l454">output/Questionnaire-questionnaire-vmp.json.html#/html/body/div/div/div/p/a at Line 263, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-vmp.json.html#l463">output/Questionnaire-questionnaire-vmp.json.html#/html/body/div/div/div/p/a at Line 269, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-vmp.ttl.html#l617">output/Questionnaire-questionnaire-vmp.ttl.html#/html/body/div/div/div/p/a at Line 279, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-vmp.ttl.html#l638">output/Questionnaire-questionnaire-vmp.ttl.html#/html/body/div/div/div/p/a at Line 286, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-questionnaire-vmp.xml.html#l598">output/Questionnaire-questionnaire-vmp.xml.html#/html/body/div/div/div/p/a at Line 267, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-questionnaire-vmp.xml.html#l610">output/Questionnaire-questionnaire-vmp.xml.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="QuestionnaireResponse-questionnaire-response-amp.change.history.html#l283">output/QuestionnaireResponse-questionnaire-response-amp.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
@@ -534,7 +534,7 @@
      <td><b><a href="QuestionnaireResponse-questionnaire-response-vmp.change.history.html#l283">output/QuestionnaireResponse-questionnaire-response-vmp.change.history.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-questionnaire-response-vmp.html#l301">output/QuestionnaireResponse-questionnaire-response-vmp.html#/html/body/div/div/div/div/div/div/table/tr/td/span/span/a at Line 162, column 1165</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-beingredient-cs.html#000002' for &quot;http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs&quot; cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, beingredient-cs-000004, root, stripe, segment-footer, beingredient-cs-000001, beingredient-cs-000002, segment-navbar, codesystem-ingredient-code-system, beingredient-cs-000003, segment-content, segment-breadcrumb])</b></td>
+     <td><b><a href="QuestionnaireResponse-questionnaire-response-vmp.html#l301">output/QuestionnaireResponse-questionnaire-response-vmp.html#/html/body/div/div/div/div/div/div/table/tr/td/span/span/a at Line 162, column 1173</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-beingredient-cs.html#000002' for &quot;http://hl7.org/fhir/us/example/CodeSystem/beingredient-cs&quot; cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, beingredient-cs-000004, root, stripe, segment-footer, beingredient-cs-000001, beingredient-cs-000002, segment-navbar, codesystem-ingredient-code-system, beingredient-cs-000003, segment-content, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="QuestionnaireResponse-questionnaire-response-vmp.html#l331">output/QuestionnaireResponse-questionnaire-response-vmp.html#/html/body/div/div/div/div/div/div/table/tr/td/span/span/a at Line 164, column 1163</a></b></td><td><b>error</b></td><td><b>The link 'CodeSystem-be-rolemed-cs.html#AP' for &quot;http://hl7.org/fhir/us/example/CodeSystem/be-rolemed-cs&quot; cannot be resolved (valid targets: [segment-header, publish-box, bottom, codesystem-role-code-system, segment-post-footer, be-rolemed-cs-NAP, be-rolemed-cs-EXP, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, be-rolemed-cs-AP])</b></td>
@@ -1128,6 +1128,12 @@
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire</b></td><td><b>warning</b></td><td title="que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' does not resolve</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-ampp"> </a>
@@ -1141,6 +1147,12 @@
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire</b></td><td><b>warning</b></td><td title="que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' does not resolve</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Questionnaire-questionnaire-cnpem"> </a>
@@ -1153,6 +1165,12 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire</b></td><td><b>warning</b></td><td title="que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Questionnaire.item[3]</b></td><td><b>error</b></td><td title="que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet' Rule 'Only 'choice' and 'open-choice' items can have answerValueSet' Failed"><b>que-5: 'Only 'choice' and 'open-choice' items can have answerValueSet' Rule 'Only 'choice' and 'open-choice' items can have answerValueSet' Failed</b></td>
@@ -1170,6 +1188,12 @@
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire</b></td><td><b>warning</b></td><td title="que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.extension[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.extension[0].url</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' does not resolve</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_QuestionnaireResponse-questionnaire-response-vmp"> </a>
@@ -1181,7 +1205,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>QuestionnaireResponse.item[1].answer[0].value.ofType(Coding) (l52/c33)</b></td><td><b>warning</b></td><td><b>The display &quot;Injection solution&quot; is not a valid display for the code {http://snomed.info/sct}385219001 - should be one of ['Solution for injection', 'Conventional release solution for injection', 'Conventional release solution for injection (dose form)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#385219001'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
+     <td><b>QuestionnaireResponse.item[1].answer[0].value.ofType(Coding) (l52/c33)</b></td><td><b>warning</b></td><td><b>The display &quot;Injection solution&quot; is not a valid display for the code {http://snomed.info/sct}385219001 - should be one of ['Solution for injection', 'Conventional release solution for injection', 'Conventional release solution for injection (dose form)'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#385219001'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>QuestionnaireResponse (l1/c2)</b></td><td><b>information</b></td><td title="Questionnaire_QR_Q_None"><b>No questionnaire is identified, so no validation can be performed against the base questionnaire</b></td>
@@ -1427,6 +1451,23 @@
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="Extension_EXT_Unknown_NotHere"> </a>
+<h2>Extension_EXT_Unknown_NotHere</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-questionnaire-amp.html">fsh-generated/resources/Questionnaire-questionnaire-amp.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-questionnaire-ampp.html">fsh-generated/resources/Questionnaire-questionnaire-ampp.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-questionnaire-cnpem.html">fsh-generated/resources/Questionnaire-questionnaire-cnpem.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-questionnaire-vmp.html">fsh-generated/resources/Questionnaire-questionnaire-vmp.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap is unknown, and not allowed here</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Questionnaire_QR_Q_None"> </a>
 <h2>Questionnaire_QR_Q_None</h2>
  <table class="grid">
@@ -1544,6 +1585,23 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-VirtualPharmaceuticalProdut.html">fsh-generated/resources/StructureDefinition-VirtualPharmaceuticalProdut.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-questionnaire-amp.html">fsh-generated/resources/Questionnaire-questionnaire-amp.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-questionnaire-ampp.html">fsh-generated/resources/Questionnaire-questionnaire-ampp.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-questionnaire-cnpem.html">fsh-generated/resources/Questionnaire-questionnaire-cnpem.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-questionnaire-vmp.html">fsh-generated/resources/Questionnaire-questionnaire-vmp.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' does not resolve</b></td>
    </tr>
 </table>
 </body>
