@@ -162,11 +162,10 @@ group itemcoding_code(source src, target tgt: CodeableConcept ) {
 }
 
 group codingcode(source src, target tgt : Coding) {
-  src -> tgt.code = (src.valueInteger) "xy1";
-  src -> tgt.system = 'http://snomed.info/sct' "xy2";
-  src -> tgt.display = 'FINDRISC (Finnish Diabetes Risk Score) score' "xy3";
+  src -> tgt.code = (src.valueInteger) "value coding";
+  src -> tgt.system = 'http://website.be/code' "system coding";
+  src -> tgt.display = 'Product Code' "display coding";
 }
-
 
 
 ///Dose Form
