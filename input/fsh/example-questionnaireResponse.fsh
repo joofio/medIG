@@ -10,7 +10,7 @@ Title:    "VMP Questionnaire Response 1"
 
 * item[+].linkId = "ingredient"
 
-* item[=].item[+].linkId = "ingredient"
+* item[=].item[+].linkId = "ingredient-element"
 * item[=].item[=].answer.valueCoding = beingredient-cs#000002 "insuline lispro"
 
 * item[=].item[+].linkId = "strength"
