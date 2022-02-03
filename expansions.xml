@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="c1e01ded-b83a-4d25-b69a-bc4135a1b39e"/>
+  <id value="1816d64d-9941-4cdb-941c-71c08b802f6b"/>
   <meta>
-    <lastUpdated value="2022-02-02T15:40:24.510+00:00"/>
+    <lastUpdated value="2022-02-03T09:51:12.888+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -94,11 +94,11 @@
         <name value="BeGranularityVS"/>
         <title value="Be Granularity Value Set"/>
         <status value="active"/>
-        <date value="2022-02-02T15:40:24+00:00"/>
+        <date value="2022-02-03T09:51:12+00:00"/>
         <description value="Indicates the granularity of product for belgium"/>
         <expansion>
-          <identifier value="urn:uuid:4e69048a-1e01-4226-a829-b32fc26087cf"/>
-          <timestamp value="2022-02-02T15:40:56+00:00"/>
+          <identifier value="urn:uuid:244f8368-c10b-4f67-a820-ee5cb961e88a"/>
+          <timestamp value="2022-02-03T09:51:54+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -182,11 +182,11 @@
         <name value="BeMAHolderVS"/>
         <title value="Marketing Authorization Holder Value Set"/>
         <status value="active"/>
-        <date value="2022-02-02T15:40:24+00:00"/>
+        <date value="2022-02-03T09:51:12+00:00"/>
         <description value="Indicates the Marketing Authorization Holder of a product"/>
         <expansion>
-          <identifier value="urn:uuid:fe2088c1-b7d1-4bdb-8698-1e1207ba9477"/>
-          <timestamp value="2022-02-02T15:40:56+00:00"/>
+          <identifier value="urn:uuid:3309059f-c813-4f47-89dd-dd755d5f012f"/>
+          <timestamp value="2022-02-03T09:51:54+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -213,7 +213,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
+            <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-be-marketingauthorization-cs.html">Marketing Authorization Code System v0.1.0 (CodeSystem)</a>
             </p>
@@ -236,7 +236,14 @@
                   <a name="http---hl7.org-fhir-us-example-CodeSystem-be-marketingauthorization-cs-000001"> </a>
                   <a href="CodeSystem-be-marketingauthorization-cs.html#be-marketingauthorization-cs-000001">000001</a>
                 </td>
-                <td>Authorization</td>
+                <td>ABCD0123</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-be-marketingauthorization-cs-000002"> </a>
+                  <a href="CodeSystem-be-marketingauthorization-cs.html#be-marketingauthorization-cs-000002">000002</a>
+                </td>
+                <td>XDFG9876</td>
               </tr>
             </table>
           </div>
@@ -246,12 +253,12 @@
         <name value="BeMAVS"/>
         <title value="Marketing Authorization Value Set"/>
         <status value="active"/>
-        <date value="2022-02-02T15:40:24+00:00"/>
+        <date value="2022-02-03T09:51:12+00:00"/>
         <description value="Indicates the Marketing Authorization for a product"/>
         <expansion>
-          <identifier value="urn:uuid:837cd6ab-dae3-4edb-baaa-dc3d51b20a2a"/>
-          <timestamp value="2022-02-02T15:40:57+00:00"/>
-          <total value="1"/>
+          <identifier value="urn:uuid:c55de8f7-46e7-459c-ae5e-3d73cb45f9b8"/>
+          <timestamp value="2022-02-03T09:51:54+00:00"/>
+          <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -263,7 +270,12 @@
           <contains>
             <system value="http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs"/>
             <code value="000001"/>
-            <display value="Authorization"/>
+            <display value="ABCD0123"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs"/>
+            <code value="000002"/>
+            <display value="XDFG9876"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -331,11 +343,11 @@
         <name value="BeMedicationVS"/>
         <title value="Ingredient  Value Set"/>
         <status value="active"/>
-        <date value="2022-02-02T15:40:24+00:00"/>
+        <date value="2022-02-03T09:51:12+00:00"/>
         <description value="Indicates the ingredient inside a product"/>
         <expansion>
-          <identifier value="urn:uuid:8b5aae78-d6d2-47f9-aece-5aa827dd1b29"/>
-          <timestamp value="2022-02-02T15:40:57+00:00"/>
+          <identifier value="urn:uuid:81d2cf14-d33f-4b57-a66e-05059fe4f833"/>
+          <timestamp value="2022-02-03T09:51:54+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -424,11 +436,11 @@
         <name value="BeRoleMedicationVS"/>
         <title value="Ingredient role Value Set"/>
         <status value="active"/>
-        <date value="2022-02-02T15:40:24+00:00"/>
+        <date value="2022-02-03T09:51:12+00:00"/>
         <description value="Indicates the role that an ingredient takes into a product"/>
         <expansion>
-          <identifier value="urn:uuid:bc78db6c-4f3a-478d-a10f-6de3e6c71392"/>
-          <timestamp value="2022-02-02T15:40:57+00:00"/>
+          <identifier value="urn:uuid:71f2fd50-2584-42f1-8019-9e48a541662a"/>
+          <timestamp value="2022-02-03T09:51:54+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -526,11 +538,11 @@
         <name value="GranularityVS"/>
         <title value="Granularity Value Set"/>
         <status value="active"/>
-        <date value="2022-02-02T15:40:24+00:00"/>
+        <date value="2022-02-03T09:51:12+00:00"/>
         <description value="Indicates the granularity of product"/>
         <expansion>
-          <identifier value="urn:uuid:24d60af9-3842-4a50-bf60-8ab2f47606fb"/>
-          <timestamp value="2022-02-02T15:40:57+00:00"/>
+          <identifier value="urn:uuid:ea7b2c8a-c32d-4d3d-a79f-2db60109bb87"/>
+          <timestamp value="2022-02-03T09:51:54+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

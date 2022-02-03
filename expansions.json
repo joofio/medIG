@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "c1e01ded-b83a-4d25-b69a-bc4135a1b39e",
+  "id" : "1816d64d-9941-4cdb-941c-71c08b802f6b",
   "meta" : {
-    "lastUpdated" : "2022-02-02T15:40:24.510+00:00"
+    "lastUpdated" : "2022-02-03T09:51:12.888+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,11 +19,11 @@
       "name" : "BeGranularityVS",
       "title" : "Be Granularity Value Set",
       "status" : "active",
-      "date" : "2022-02-02T15:40:24+00:00",
+      "date" : "2022-02-03T09:51:12+00:00",
       "description" : "Indicates the granularity of product for belgium",
       "expansion" : {
-        "identifier" : "urn:uuid:4e69048a-1e01-4226-a829-b32fc26087cf",
-        "timestamp" : "2022-02-02T15:40:56+00:00",
+        "identifier" : "urn:uuid:244f8368-c10b-4f67-a820-ee5cb961e88a",
+        "timestamp" : "2022-02-03T09:51:54+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -79,11 +79,11 @@
       "name" : "BeMAHolderVS",
       "title" : "Marketing Authorization Holder Value Set",
       "status" : "active",
-      "date" : "2022-02-02T15:40:24+00:00",
+      "date" : "2022-02-03T09:51:12+00:00",
       "description" : "Indicates the Marketing Authorization Holder of a product",
       "expansion" : {
-        "identifier" : "urn:uuid:fe2088c1-b7d1-4bdb-8698-1e1207ba9477",
-        "timestamp" : "2022-02-02T15:40:56+00:00",
+        "identifier" : "urn:uuid:3309059f-c813-4f47-89dd-dd755d5f012f",
+        "timestamp" : "2022-02-03T09:51:54+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -108,19 +108,19 @@
       "id" : "be-marketingauthorization-vs",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-marketingauthorization-cs.html\">Marketing Authorization Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-be-marketingauthorization-cs.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-be-marketingauthorization-cs-000001\"> </a><a href=\"CodeSystem-be-marketingauthorization-cs.html#be-marketingauthorization-cs-000001\">000001</a></td><td>Authorization</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-be-marketingauthorization-cs.html\">Marketing Authorization Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-be-marketingauthorization-cs.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-be-marketingauthorization-cs-000001\"> </a><a href=\"CodeSystem-be-marketingauthorization-cs.html#be-marketingauthorization-cs-000001\">000001</a></td><td>ABCD0123</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-be-marketingauthorization-cs-000002\"> </a><a href=\"CodeSystem-be-marketingauthorization-cs.html#be-marketingauthorization-cs-000002\">000002</a></td><td>XDFG9876</td></tr></table></div>"
       },
       "url" : "http://hl7.org/fhir/us/example/ValueSet/be-marketingauthorization-vs",
       "version" : "0.1.0",
       "name" : "BeMAVS",
       "title" : "Marketing Authorization Value Set",
       "status" : "active",
-      "date" : "2022-02-02T15:40:24+00:00",
+      "date" : "2022-02-03T09:51:12+00:00",
       "description" : "Indicates the Marketing Authorization for a product",
       "expansion" : {
-        "identifier" : "urn:uuid:837cd6ab-dae3-4edb-baaa-dc3d51b20a2a",
-        "timestamp" : "2022-02-02T15:40:57+00:00",
-        "total" : 1,
+        "identifier" : "urn:uuid:c55de8f7-46e7-459c-ae5e-3d73cb45f9b8",
+        "timestamp" : "2022-02-03T09:51:54+00:00",
+        "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -132,7 +132,12 @@
         "contains" : [{
           "system" : "http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs",
           "code" : "000001",
-          "display" : "Authorization"
+          "display" : "ABCD0123"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs",
+          "code" : "000002",
+          "display" : "XDFG9876"
         }]
       }
     }
@@ -151,11 +156,11 @@
       "name" : "BeMedicationVS",
       "title" : "Ingredient  Value Set",
       "status" : "active",
-      "date" : "2022-02-02T15:40:24+00:00",
+      "date" : "2022-02-03T09:51:12+00:00",
       "description" : "Indicates the ingredient inside a product",
       "expansion" : {
-        "identifier" : "urn:uuid:8b5aae78-d6d2-47f9-aece-5aa827dd1b29",
-        "timestamp" : "2022-02-02T15:40:57+00:00",
+        "identifier" : "urn:uuid:81d2cf14-d33f-4b57-a66e-05059fe4f833",
+        "timestamp" : "2022-02-03T09:51:54+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -202,11 +207,11 @@
       "name" : "BeRoleMedicationVS",
       "title" : "Ingredient role Value Set",
       "status" : "active",
-      "date" : "2022-02-02T15:40:24+00:00",
+      "date" : "2022-02-03T09:51:12+00:00",
       "description" : "Indicates the role that an ingredient takes into a product",
       "expansion" : {
-        "identifier" : "urn:uuid:bc78db6c-4f3a-478d-a10f-6de3e6c71392",
-        "timestamp" : "2022-02-02T15:40:57+00:00",
+        "identifier" : "urn:uuid:71f2fd50-2584-42f1-8019-9e48a541662a",
+        "timestamp" : "2022-02-03T09:51:54+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -248,11 +253,11 @@
       "name" : "GranularityVS",
       "title" : "Granularity Value Set",
       "status" : "active",
-      "date" : "2022-02-02T15:40:24+00:00",
+      "date" : "2022-02-03T09:51:12+00:00",
       "description" : "Indicates the granularity of product",
       "expansion" : {
-        "identifier" : "urn:uuid:24d60af9-3842-4a50-bf60-8ab2f47606fb",
-        "timestamp" : "2022-02-02T15:40:57+00:00",
+        "identifier" : "urn:uuid:ea7b2c8a-c32d-4d3d-a79f-2db60109bb87",
+        "timestamp" : "2022-02-03T09:51:54+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
