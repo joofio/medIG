@@ -10,21 +10,25 @@
   fhir:Resource.id [ fhir:value "be-marketingauthorization-cs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"be-marketingauthorization-cs-000001\"> </a></td><td>Authorization</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000001<a name=\"be-marketingauthorization-cs-000001\"> </a></td><td>ABCD0123</td></tr><tr><td style=\"white-space:nowrap\">000002<a name=\"be-marketingauthorization-cs-000002\"> </a></td><td>XDFG9876</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/us/example/CodeSystem/be-marketingauthorization-cs"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "BeMACS"];
   fhir:CodeSystem.title [ fhir:value "Marketing Authorization Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-02-02T15:40:24+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-02-03T09:51:12+00:00"^^xsd:dateTime];
   fhir:CodeSystem.description [ fhir:value "Codes for Marketing Authorization"];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "000001" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Authorization" ]
+     fhir:CodeSystem.concept.display [ fhir:value "ABCD0123" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "000002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "XDFG9876" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
